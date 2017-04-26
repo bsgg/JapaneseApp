@@ -1,0 +1,43 @@
+{
+	"HiraganaAlphabet":	
+	[
+		{
+			"Title": "Hiragana Vowels",
+			"Hiragana": 
+			[
+				"あ",
+				"い",
+				"う",
+				"え",
+				"お"
+			],
+			"Romanji":
+			[ 
+				"A",
+				"I",
+				"U",
+				"E",
+				"O"
+			]		
+		},
+		{
+			"Title": "Hiragana Consonants 1",
+			"Hiragana": 
+			[
+				"か",
+				"き",
+				"く",
+				"け",
+				"こ"
+			],
+			"Romanji":
+			[ 
+				"Ka",
+				"Ki",
+				"Ku",
+				"Ke",
+				"Ko"
+			]		
+		}
+	]
+}
