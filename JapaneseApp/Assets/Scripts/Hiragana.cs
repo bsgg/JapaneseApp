@@ -11,34 +11,35 @@ namespace JapaneseApp
 			get { return m_Title; }
 		}
 
-		private string m_Hiragana;
-		public string Hiragana
-		{
-			set { m_Hiragana = value; }
-			get { return m_Hiragana; }
+		private List<string> m_HiraganaChar;
+		public List<string> HiraganaChar
+        {
+			set { m_HiraganaChar = value; }
+			get { return m_HiraganaChar; }
 		}
 
-		private string m_Romanji;
-		public string Romanji
-		{
-			set { m_Romanji = value; }
-			get { return m_Romanji; }
+		private List<string> m_RomanjiChar;
+		public List<string> RomanjiChar
+        {
+			set { m_RomanjiChar = value; }
+			get { return m_RomanjiChar; }
 		}
 	}
 
 	public class HiraganaData
 	{
-		private List<HiraganaAlphabet> m_HiraganaAlphabet;
-		public List<HiraganaAlphabet> HiraganaAlphabet
+        private List<HiraganaAlphabet> m_Hiragana;
+		public List<HiraganaAlphabet> Hiragana
 		{
-			get { return m_HiraganaAlphabet; }
-			set { m_HiraganaAlphabet = value; }
+			get { return m_Hiragana; }
+			set { m_Hiragana = value; }
 		}
 
 		public HiraganaData()
 		{
-			m_HiraganaAlphabet = new List<HiraganaAlphabet>();
+            m_Hiragana = new List<HiraganaAlphabet>();
 		}
-	}
+    }
+
 }
 

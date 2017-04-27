@@ -1,9 +1,9 @@
 {
-	"HiraganaAlphabet":	
+	"Hiragana":	
 	[
 		{
 			"Title": "Hiragana Vowels",
-			"Hiragana": 
+			"HiraganaChar": 
 			[
 				"あ",
 				"い",
@@ -11,7 +11,7 @@
 				"え",
 				"お"
 			],
-			"Romanji":
+			"RomanjiChar":
 			[ 
 				"A",
 				"I",
@@ -22,7 +22,7 @@
 		},
 		{
 			"Title": "Hiragana Consonants 1",
-			"Hiragana": 
+			"HiraganaChar": 
 			[
 				"か",
 				"き",
@@ -30,7 +30,7 @@
 				"け",
 				"こ"
 			],
-			"Romanji":
+			"RomanjiChar":
 			[ 
 				"Ka",
 				"Ki",
