@@ -2,7 +2,7 @@
 	"Hiragana":	
 	[
 		{
-			"Title": "Hiragana Vowels",
+			"Title": "Lesson 1: Hiragana Vowels",
 			"HiraganaChar": 
 			[
 				"あ",
@@ -11,17 +11,40 @@
 				"え",
 				"お"
 			],
-			"RomanjiChar":
-			[ 
-				"A",
-				"I",
-				"U",
-				"E",
-				"O"
-			]		
+      "RomanjiChar": [
+        "A",
+        "I",
+        "U",
+        "E",
+        "O"
+      ],
+      "Vocabulary": {
+            "Hiragana": 
+			    [
+				    "あう",
+				    "いう",
+				    "いえ",
+				    "うえ",
+				    "あおい"
+			    ],
+            "Romanji": [
+              "Au",
+              "Iu",
+              "Ie",
+              "Ue",
+              "Aoi"
+            ],
+            "Meaning": [
+              "To meet",
+              "To say",
+              "House",
+              "Above",
+              "Blue"
+            ]
+      }		
 		},
 		{
-			"Title": "Hiragana Consonants 1",
+			"Title": "Lesson 2: Hiragana Consonants and Vowels",
 			"HiraganaChar": 
 			[
 				"か",
@@ -30,14 +53,37 @@
 				"け",
 				"こ"
 			],
-			"RomanjiChar":
-			[ 
-				"Ka",
-				"Ki",
-				"Ku",
-				"Ke",
-				"Ko"
-			]		
+      "RomanjiChar": [
+        "Ka",
+        "Ki",
+        "Ku",
+        "Ke",
+        "Ko"
+      ],
+      "Vocabulary": {
+            "Hiragana": 
+			    [
+				    "かお",
+				    "あかい",
+				    "かう",
+				    "あき",
+				    "えき"
+			    ],
+            "Romanji": [
+              "Kao",
+              "Akai",
+              "Kau",
+              "Aki",
+              "Eki"
+            ],
+            "Meaning": [
+              "Face",
+              "Red",
+              "To Buy",
+              "Autumn",
+              "Train Station"
+            ]
+      }				
 		}
 	]
 }

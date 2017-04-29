@@ -13,9 +13,25 @@ namespace JapaneseApp
 
         private HiraganaData m_HiraganaData;
 
+        [SerializeField]
+        private ScrollPanelUI m_ScrollHiraganaMenu;
+
         void Start ()
         {
             LoadHiraganaData();
+
+            m_ScrollHiraganaMenu.OnButtonPress += OnScrollButton;
+        }
+
+        private void OnScrollButton(int id)
+        {
+            Debug.LogFormat("OnScrollButton {0} ", id);
+
+            if ((m_HiraganaData != null) && (m_HiraganaData.Hiragana != null) && (id < m_HiraganaData.Hiragana.Count))
+            {
+               
+            }
+            
         }
 
         public void LoadHiraganaData()
@@ -28,10 +44,12 @@ namespace JapaneseApp
             }
 
             string text = "";
+            List<string> lTitle = new List<string>();
             for (int i= 0; i< m_HiraganaData.Hiragana.Count; i++)
             {
                 HiraganaAlphabet ha = m_HiraganaData.Hiragana[i];
-                text = ha.Title;
+                lTitle.Add(ha.Title);
+                text += ha.Title;
                 text += "\n Hiragana |   Romanji ";
 
                 for (int j= 0; j< ha.HiraganaChar.Count; j++)
@@ -42,7 +60,7 @@ namespace JapaneseApp
             }
             m_TextTest.text = text;
 
-
+            m_ScrollHiraganaMenu.InitScroll(lTitle);
 
         }
 

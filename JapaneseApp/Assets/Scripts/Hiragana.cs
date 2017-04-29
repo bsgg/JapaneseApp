@@ -2,7 +2,10 @@
 
 namespace JapaneseApp
 {
-	public class HiraganaAlphabet
+    
+
+
+    public class HiraganaAlphabet
 	{
 		private string m_Title;
 		public string Title
@@ -24,9 +27,43 @@ namespace JapaneseApp
 			set { m_RomanjiChar = value; }
 			get { return m_RomanjiChar; }
 		}
-	}
 
-	public class HiraganaData
+        private Vocabulary m_Vocabulary;
+        public Vocabulary Vocabulary
+        {
+            set { m_Vocabulary = value; }
+            get { return m_Vocabulary; }
+        }
+    }
+
+
+    public class Vocabulary
+    {
+
+        private List<string> m_Hiragana;
+        public List<string> Hiragana
+        {
+            set { m_Hiragana = value; }
+            get { return m_Hiragana; }
+        }
+
+        private List<string> m_Romanji;
+        public List<string> Romanji
+        {
+            set { m_Romanji = value; }
+            get { return m_Romanji; }
+        }
+
+        private List<string> m_Meaning;
+        public List<string> Meaning
+        {
+            set { m_Meaning = value; }
+            get { return m_Meaning; }
+        }
+    }
+
+
+    public class HiraganaData
 	{
         private List<HiraganaAlphabet> m_Hiragana;
 		public List<HiraganaAlphabet> Hiragana
