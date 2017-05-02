@@ -8,13 +8,16 @@ namespace JapaneseApp
 {
     public class AppController : MonoBehaviour
     {
-        [SerializeField]
-        private Text m_TextTest;
+       // [SerializeField]
+       // private Text m_TextTest;
 
         private HiraganaData m_HiraganaData;
 
         [SerializeField]
         private ScrollPanelUI m_ScrollHiraganaMenu;
+
+        [SerializeField]
+        private Table m_HiraganaSymbolsTable;
 
         void Start ()
         {
@@ -29,10 +32,11 @@ namespace JapaneseApp
 
             if ((m_HiraganaData != null) && (m_HiraganaData.Hiragana != null) && (id < m_HiraganaData.Hiragana.Count))
             {
-               
+                m_HiraganaSymbolsTable.InitializeTable(m_HiraganaData.Hiragana[id]);
             }
             
         }
+
 
         public void LoadHiraganaData()
         {
@@ -58,7 +62,7 @@ namespace JapaneseApp
                 }
 
             }
-            m_TextTest.text = text;
+            //m_TextTest.text = text;
 
             m_ScrollHiraganaMenu.InitScroll(lTitle);
 

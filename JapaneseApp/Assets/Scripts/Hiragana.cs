@@ -2,8 +2,6 @@
 
 namespace JapaneseApp
 {
-    
-
 
     public class HiraganaAlphabet
 	{
