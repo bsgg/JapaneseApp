@@ -17,7 +17,7 @@ namespace JapaneseApp
         private ScrollPanelUI m_ScrollHiraganaMenu;
 
         [SerializeField]
-        private Table m_HiraganaSymbolsTable;
+        private HiraganaTable m_HiraganaTable;
 
         void Start ()
         {
@@ -32,7 +32,7 @@ namespace JapaneseApp
 
             if ((m_HiraganaData != null) && (m_HiraganaData.Hiragana != null) && (id < m_HiraganaData.Hiragana.Count))
             {
-                m_HiraganaSymbolsTable.InitializeTable(m_HiraganaData.Hiragana[id]);
+                m_HiraganaTable.Initialize(m_HiraganaData.Hiragana[id]);
             }
             
         }
