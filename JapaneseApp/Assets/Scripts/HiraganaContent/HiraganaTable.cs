@@ -5,29 +5,17 @@ using UnityEngine.UI;
 
 namespace JapaneseApp
 {
-    public class HiraganaTable : MonoBehaviour
+    public class HiraganaTable : UIBase
     {
 
-        [SerializeField] private
-        GridLayoutGroup m_HiraganaTable;
-        [SerializeField]
-        private List<CellText> m_ListHiraganaCells;
+        [SerializeField] private GridLayoutGroup m_HiraganaTable;
+        [SerializeField] private List<CellText> m_ListHiraganaCells;
 
-
-        [SerializeField] private   GridLayoutGroup m_VocabularyTable;
-        [SerializeField]
-        private List<CellText> m_ListVocabularyCells;
-
+        [SerializeField] private GridLayoutGroup m_VocabularyTable;
+        [SerializeField] private List<CellText> m_ListVocabularyCells;
 
         void Start()
         {
-            /*int id = 9;
-
-            int row = (id / m_NumberColums);
-            int column = (id % m_NumberColums);*/
-
-            // id = column + (row * width)
-
             m_ListHiraganaCells = new List<CellText>();
             for (int i= 0; i < m_HiraganaTable.transform.childCount; i++)
             {

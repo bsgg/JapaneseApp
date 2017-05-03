@@ -8,37 +8,95 @@ namespace JapaneseApp
 {
     public class AppController : MonoBehaviour
     {
-       // [SerializeField]
-       // private Text m_TextTest;
+        #region Instance
+        private static AppController m_Instance;
+        public static AppController Instance
+        {
+            get
+            {
+                if (m_Instance == null)
+                {
+                    m_Instance = (AppController)FindObjectOfType(typeof(AppController));
 
-        private HiraganaData m_HiraganaData;
+                    if (m_Instance == null)
+                    {
+                        Debug.LogError("An instance of " + typeof(AppController) + " is needed in the scene, but there is none.");
+                    }
+                }
+                return m_Instance;
+            }
+        }
+        #endregion Instance
 
         [SerializeField]
-        private ScrollPanelUI m_ScrollHiraganaMenu;
+        private HiraganaContent m_HiraganaContent;
+
+
+       /* private HiraganaData m_HiraganaData;
+
+        public HiraganaData HiraganaData
+        {
+            get { return m_HiraganaData;  }
+            set { m_HiraganaData = value; }
+        }
+
+        public HiraganaAlphabet GetHiraganaAlphabetById(int id)
+        {
+            if ((m_HiraganaData != null) && (m_HiraganaData.Hiragana != null) && (id < m_HiraganaData.Hiragana.Count))
+            {
+               return m_HiraganaData.Hiragana[id];
+            }
+            return null;
+        }
+
+        public void HandleMenu()
+        {
+
+        }*/
+
+
+       /* public void ShowHiraganaTable(int id)
+        {
+
+            m_HiraganaTableController.Initialize(GetHiraganaAlphabetById(id));
+            m_LessonMenuController.Hide();
+            m_HiraganaTableController.Show();
+        }
+        */
+
+      /*  [SerializeField]
+        private LessonMenuController m_LessonMenuController;
 
         [SerializeField]
-        private HiraganaTable m_HiraganaTable;
+        private HiraganaTable m_HiraganaTableController;*/
 
         void Start ()
         {
-            LoadHiraganaData();
+            m_HiraganaContent.Init();
+            m_HiraganaContent.Show();
 
-            m_ScrollHiraganaMenu.OnButtonPress += OnScrollButton;
+            /*LoadHiraganaData();
+
+           
+            m_LessonMenuController.Init();
+
+            m_HiraganaTableController.Init();
+
+            m_LessonMenuController.Show();
+            m_HiraganaTableController.Hide();*/
+
         }
 
-        private void OnScrollButton(int id)
+        private void Update()
         {
-            Debug.LogFormat("OnScrollButton {0} ", id);
-
-            if ((m_HiraganaData != null) && (m_HiraganaData.Hiragana != null) && (id < m_HiraganaData.Hiragana.Count))
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
-                m_HiraganaTable.Initialize(m_HiraganaData.Hiragana[id]);
+                m_HiraganaContent.Back();
             }
-            
+
         }
 
-
-        public void LoadHiraganaData()
+       /* public void LoadHiraganaData()
         {
             m_HiraganaData = new HiraganaData();
             string jsonActionsString = Utility.LoadJSONResource("Data/Hiragana");
@@ -47,26 +105,14 @@ namespace JapaneseApp
                 m_HiraganaData = JsonMapper.ToObject<HiraganaData>(jsonActionsString);
             }
 
-            string text = "";
             List<string> lTitle = new List<string>();
             for (int i= 0; i< m_HiraganaData.Hiragana.Count; i++)
             {
                 HiraganaAlphabet ha = m_HiraganaData.Hiragana[i];
                 lTitle.Add(ha.Title);
-                text += ha.Title;
-                text += "\n Hiragana |   Romanji ";
-
-                for (int j= 0; j< ha.HiraganaChar.Count; j++)
-                {
-                    text += "\n" + ha.HiraganaChar[j] + " | " + ha.RomanjiChar[j];
-                }
-
             }
-            //m_TextTest.text = text;
-
-            m_ScrollHiraganaMenu.InitScroll(lTitle);
-
-        }
+            m_LessonMenuController.InitScrollMenu(lTitle);
+        }*/
 
     }
 }
