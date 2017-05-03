@@ -49,6 +49,11 @@ namespace JapaneseApp
             }
             m_MainScrollMenu.InitScrollMenu(lTitle);
             m_MainScrollMenu.ScrollMenu.OnButtonPress += OnButtonMenuPress;
+
+
+            HiraganaDrill drill = new HiraganaDrill(m_HiraganaData, 0);
+
+
         }
         public override void Show()
         {

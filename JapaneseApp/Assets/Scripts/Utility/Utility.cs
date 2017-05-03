@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 namespace JapaneseApp
-{
+{    
     public static class Utility
     {
         public static List<T> Shuffle<T>(List<T> source)
@@ -18,6 +18,24 @@ namespace JapaneseApp
             }
             return copy;
         }
+
+
+        /*public static T[] Shuffle<T>(T[] source)
+        {
+            T[] elements = source;
+            T[] copy = new T[elements.Length];
+            int index = 0;
+            for (int i = elements.Length - 1; i >= 0; i--)
+            {
+                int swapIndex = Random.Range(0, i + 1);
+                copy[i] = elements[index];
+                elements[swapIndex] = elements[i];
+
+                index++;
+            }
+            return copy;
+        }*/
+
 
         public static int Compare(string a, string b)
         {
