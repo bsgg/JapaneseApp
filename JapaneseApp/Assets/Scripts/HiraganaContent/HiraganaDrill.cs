@@ -28,7 +28,7 @@ namespace JapaneseApp
             int startDrill = 0;
 
             // Hiragana symbol questions
-            for (int i = startDrill; i < (startDrill + nUnits); i++)
+            /*for (int i = startDrill; i < (startDrill + nUnits); i++)
             {
                 m_Drills[i].TypeQuestion = ETYPEEDRILL.H_SYMBOL;
                 m_Drills[i].IndexQuestion = Random.Range(0, data.Hiragana[idData].HiraganaChar.Count);
@@ -80,7 +80,7 @@ namespace JapaneseApp
                 m_Drills[i].IndexQuestion = Random.Range(0, data.Hiragana[idData].Vocabulary.Romanji.Count);
                 m_Drills[i].TypeAnswer = ETYPEEDRILL.H_WORD;
 
-            }
+            }*/
 
             // Suffle drills
             //DrillUnit[] RandomDrills = Utility.Shuffle(m_Drills);
