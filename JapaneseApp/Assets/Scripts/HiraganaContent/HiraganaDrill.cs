@@ -26,14 +26,27 @@ namespace JapaneseApp
         {
             int nUnits = m_NumberDrills / 2;
 
+            int startDrill = 0;
+
             // Hiragana symbol questions
-            for (int i = 0; i < nUnits; i++)
+            for (int i = startDrill; i < (startDrill + nUnits); i++)
             {
                 m_Drills[i].TypeQuestion = ETYPEEDRILL.H_SYMBOL;
                 m_Drills[i].IndexQuestion = Random.Range(0, data.Hiragana[idData].HiraganaChar.Count);
                 m_Drills[i].TypeAnswer = ETYPEEDRILL.H_ROMANJI;
             }
-           
+            startDrill += nUnits;
+
+            // Hiragana romanji questions
+            for (int i = startDrill; i < (startDrill + nUnits); i++)
+            {
+                m_Drills[i].TypeQuestion = ETYPEEDRILL.H_ROMANJI;
+                m_Drills[i].IndexQuestion = Random.Range(0, data.Hiragana[idData].RomanjiChar.Count);
+                m_Drills[i].TypeAnswer = ETYPEEDRILL.H_SYMBOL;
+            }
+
+            // Words
+
 
         }
     }
