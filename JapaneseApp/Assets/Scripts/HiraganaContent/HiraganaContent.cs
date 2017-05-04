@@ -7,7 +7,7 @@ namespace JapaneseApp
 {
     public class HiraganaContent : UIBase
     {
-        public enum ETYPEMENU { NONE, MAINMENU, HIRAGANATABLE };
+        public enum ETYPEMENU { NONE, MAINMENU, HIRAGANATABLE, DRILL };
         private ETYPEMENU m_CurrentMenu;
 
         private HiraganaData m_HiraganaData;
@@ -25,7 +25,11 @@ namespace JapaneseApp
         [SerializeField] private HiraganaTable m_HiraganaTable;
 
         // Exercises
-        
+        [SerializeField]
+        private HiraganaDrillContent m_HiraganaDrill;
+        private HiraganaDrill m_CurrentDrill;
+
+
         public override void Init()
         {
             base.Init();
@@ -49,10 +53,7 @@ namespace JapaneseApp
             }
             m_MainScrollMenu.InitScrollMenu(lTitle);
             m_MainScrollMenu.ScrollMenu.OnButtonPress += OnButtonMenuPress;
-
-
-            HiraganaDrill drill = new HiraganaDrill(m_HiraganaData, 0);
-
+            
 
         }
         public override void Show()
@@ -86,6 +87,10 @@ namespace JapaneseApp
                     m_HiraganaTable.Hide();
                     m_MainScrollMenu.Show();
                 break;
+                case ETYPEMENU.DRILL:
+                    //m_HiraganaTable.Hide();
+                    //m_MainScrollMenu.Show();
+                break;
             }
 
         }
@@ -95,11 +100,25 @@ namespace JapaneseApp
             if ((m_HiraganaData != null) && (m_HiraganaData.Hiragana != null) && (id < m_HiraganaData.Hiragana.Count))
             {
                 m_HiraganaTable.Initialize(m_HiraganaData.Hiragana[id]);
+                // Generate drill
+                m_CurrentDrill = new HiraganaDrill(m_HiraganaData, id);
+
+                m_HiraganaDrill.HiraganaData = m_HiraganaData.Hiragana[id];
+
                 m_MainScrollMenu.Hide();
                 m_HiraganaTable.Show();
-
                 m_CurrentMenu = ETYPEMENU.HIRAGANATABLE;
             }
+        }
+
+
+        public void OnDrillPress()
+        {
+            m_CurrentMenu = ETYPEMENU.DRILL;
+
+            m_HiraganaTable.Hide();
+            m_HiraganaDrill.Drill = m_CurrentDrill;
+            m_HiraganaDrill.Show();
         }
 
     }
