@@ -20,21 +20,18 @@ namespace JapaneseApp
         }
 
 
-        /*public static T[] Shuffle<T>(T[] source)
+        public static void Shuffle<T>(T[] source)
         {
-            T[] elements = source;
-            T[] copy = new T[elements.Length];
-            int index = 0;
-            for (int i = elements.Length - 1; i >= 0; i--)
+            for (int t = 0; t < source.Length; t++)
             {
-                int swapIndex = Random.Range(0, i + 1);
-                copy[i] = elements[index];
-                elements[swapIndex] = elements[i];
-
-                index++;
+                T tmp = source[t];
+                int r = Random.Range(t, source.Length);
+                source[t] = source[r];
+                source[r] = tmp;
             }
-            return copy;
-        }*/
+        }
+        
+        
 
 
         public static int Compare(string a, string b)

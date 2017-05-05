@@ -117,6 +117,7 @@ namespace JapaneseApp
             m_CurrentMenu = ETYPEMENU.DRILL;
 
             m_HiraganaTable.Hide();
+
             m_HiraganaDrill.Drill = m_CurrentDrill;
             m_HiraganaDrill.Show();
         }
