@@ -43,16 +43,15 @@
             ]
       }		
 		},
-		{
-			"Title": "Lesson 2: Hiragana Consonants and Vowels",
-			"HiraganaChar": 
-			[
-				"か",
-				"き",
-				"く",
-				"け",
-				"こ"
-			],
+    {
+      "Title": "Lesson 2: Hiragana Consonants and Vowels",
+      "HiraganaChar": [
+        "か",
+        "き",
+        "く",
+        "け",
+        "こ"
+      ],
       "RomanjiChar": [
         "Ka",
         "Ki",
@@ -61,29 +60,68 @@
         "Ko"
       ],
       "Vocabulary": {
-            "Hiragana": 
-			    [
-				    "かお",
-				    "あかい",
-				    "かう",
-				    "あき",
-				    "えき"
-			    ],
-            "Romanji": [
-              "Kao",
-              "Akai",
-              "Kau",
-              "Aki",
-              "Eki"
-            ],
-            "Meaning": [
-              "Face",
-              "Red",
-              "To Buy",
-              "Autumn",
-              "Train Station"
-            ]
-      }				
-		}
+        "Hiragana": [
+          "かお",
+          "あかい",
+          "かう",
+          "あき",
+          "えき"
+        ],
+        "Romanji": [
+          "Kao",
+          "Akai",
+          "Kau",
+          "Aki",
+          "Eki"
+        ],
+        "Meaning": [
+          "Face",
+          "Red",
+          "To Buy",
+          "Autumn",
+          "Train Station"
+        ]
+      }
+    },
+    {
+      "Title": "Lesson 2: Hiragana Consonants and Vowels",
+      "HiraganaChar": [
+        "が",
+        "ぎ",
+        "ぐ",
+        "げ",
+        "ご"
+      ],
+      "RomanjiChar": [
+        "Ga",
+        "Gi",
+        "Gu",
+        "Ge",
+        "Go"
+      ],
+      "Vocabulary": {
+        "Hiragana": [
+          "かお",
+          "あかい",
+          "かう",
+          "あき",
+          "えき"
+        ],
+        "Romanji": [
+          "Eiga",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Meaning": [
+          "Movie",
+          "",
+          "",
+          "",
+          ""
+        ]
+      }
+    }
 	]
 }
