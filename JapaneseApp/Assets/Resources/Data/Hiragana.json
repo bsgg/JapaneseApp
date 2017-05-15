@@ -2,7 +2,7 @@
 	"Hiragana":	
 	[
 		{
-			"Title": "Lesson 1: Hiragana Vowels",
+			"Title": "Hiragana 1: Vowels",
 			"HiraganaChar": 
 			[
 				"あ",
@@ -44,7 +44,7 @@
       }		
 		},
     {
-      "Title": "Lesson 2: Hiragana Consonants and Vowels",
+      "Title": "Hiragana 2: Consonants and Vowels",
       "HiraganaChar": [
         "か",
         "き",
@@ -84,7 +84,7 @@
       }
     },
     {
-      "Title": "Lesson 2: Hiragana Consonants and Vowels",
+      "Title": "Hiragana 3: Dakuten",
       "HiraganaChar": [
         "が",
         "ぎ",
@@ -101,11 +101,11 @@
       ],
       "Vocabulary": {
         "Hiragana": [
-          "かお",
-          "あかい",
-          "かう",
-          "あき",
-          "えき"
+          "えいが",
+          "",
+          "",
+          "",
+          ""
         ],
         "Romanji": [
           "Eiga",
@@ -119,6 +119,46 @@
           "",
           "",
           "",
+          ""
+        ]
+      }
+    },
+    {
+      "Title": "Hiragana 4: Consonants",
+      "HiraganaChar": [
+        "さ",
+        "し",
+        "す",
+        "せ",
+        "そ"
+      ],
+      "RomanjiChar": [
+        "Sa",
+        "Shi",
+        "Su",
+        "Se",
+        "So"
+      ],
+      "Vocabulary": {
+        "Hiragana": [
+          "あさ",
+          "すし",
+          "すえいえ",
+          "あそこ",
+          ""
+        ],
+        "Romanji": [
+          "Asa",
+          "Sushi",
+          "Sueie",
+          "Asoko",
+          ""
+        ],
+        "Meaning": [
+          "Morning",
+          "Sushi",
+          "Swimming",
+          "Over there",
           ""
         ]
       }
