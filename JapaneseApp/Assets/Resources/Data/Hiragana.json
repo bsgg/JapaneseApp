@@ -162,6 +162,46 @@
           ""
         ]
       }
+    },
+     {
+      "Title": "Hiragana 5: Consonants",
+      "HiraganaChar": [
+        "ざ",
+        "じ",
+        "ず",
+        "ぜ",
+        "ぞ"
+      ],
+      "RomanjiChar": [
+        "Za",
+        "Zi - /ji/",
+        "Zu",
+        "Ze",
+        "Zo"
+      ],
+      "Vocabulary": {
+        "Hiragana": [
+          "かぜ",
+          "ざせき",
+          "くじ",
+          "かぞく",
+          ""
+        ],
+        "Romanji": [
+          "Kaze",
+          "Zaseki",
+          "Kuzi",
+          "Kasoku",
+          ""
+        ],
+        "Meaning": [
+          "Wind",
+          "Seat",
+          "Lottery",
+          "Family",          
+          ""
+        ]
+      }
     }
 	]
 }
