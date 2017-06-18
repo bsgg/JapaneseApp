@@ -163,7 +163,7 @@
         ]
       }
     },
-     {
+    {
       "Title": "Hiragana 5: Consonants",
       "HiraganaChar": [
         "ざ",
@@ -198,7 +198,47 @@
           "Wind",
           "Seat",
           "Lottery",
-          "Family",          
+          "Family",
+          ""
+        ]
+      }
+    },
+    {
+      "Title": "Hiragana 6: Consonants",
+      "HiraganaChar": [
+        "た",
+        "ち",
+        "つ",
+        "て",
+        "と"
+      ],
+      "RomanjiChar": [
+        "Ta",
+        "Chi",
+        "Tsu",
+        "Te",
+        "To"
+      ],
+      "Vocabulary": {
+        "Hiragana": [
+          "たかい",
+          "ちいさい",
+          "て",
+          "",
+          ""
+        ],
+        "Romanji": [
+          "Takai",
+          "Chiisai",
+          "Te",
+          "",
+          ""
+        ],
+        "Meaning": [
+          "High, Tall, Expensive",
+          "Small",
+          "Hand",
+          "",          
           ""
         ]
       }
