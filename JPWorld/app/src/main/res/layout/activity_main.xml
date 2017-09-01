@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cubenary.jpworld.MainActivity">
+
+
+    <TextView
+        android:id="@+id/hiraganaSymbolTxt"
+        android:layout_width="345dp"
+        android:layout_height="335dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="80sp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/romanjiTxt"
+        android:layout_width="335dp"
+        android:layout_height="38dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="390dp" />
+</android.support.constraint.ConstraintLayout>
