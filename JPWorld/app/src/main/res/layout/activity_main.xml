@@ -6,22 +6,52 @@
     android:layout_height="match_parent"
     tools:context="com.cubenary.jpworld.MainActivity">
 
-
-    <TextView
-        android:id="@+id/hiraganaSymbolTxt"
-        android:layout_width="345dp"
-        android:layout_height="335dp"
-        android:text="TextView"
-        android:textAlignment="center"
-        android:textSize="80sp"
-        tools:layout_editor_absoluteX="20dp"
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="351dp"
+        android:layout_height="456dp"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"
+        tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="16dp" />
 
-    <TextView
-        android:id="@+id/romanjiTxt"
-        android:layout_width="335dp"
-        android:layout_height="38dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="390dp" />
+    <!--<TextView
+         android:id="@+id/hiraganaSymbolTxt"
+         android:layout_width="345dp"
+         android:layout_height="335dp"
+         android:text="TextView"
+         android:textAlignment="center"
+         android:textSize="80sp"
+         tools:layout_editor_absoluteX="20dp"
+         tools:layout_editor_absoluteY="16dp" />
+
+     <TextView
+         android:id="@+id/romanjiTxt"
+         android:layout_width="335dp"
+         android:layout_height="38dp"
+         android:text="TextView"
+         tools:layout_editor_absoluteX="25dp"
+         tools:layout_editor_absoluteY="390dp" />
+
+     <Button
+         android:id="@+id/btnTestLayout"
+         android:layout_width="237dp"
+         android:layout_height="43dp"
+         android:layout_marginBottom="8dp"
+         android:layout_marginLeft="8dp"
+         android:layout_marginRight="8dp"
+         android:layout_marginTop="8dp"
+         android:text="ChangeLayout"
+         android:onClick="OnTestLayout"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintHorizontal_bias="0.502"
+         app:layout_constraintLeft_toLeftOf="parent"
+         app:layout_constraintRight_toRightOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/romanjiTxt"
+         app:layout_constraintVertical_bias="0.227"
+         tools:layout_editor_absoluteX="45dp" />-->
 </android.support.constraint.ConstraintLayout>
