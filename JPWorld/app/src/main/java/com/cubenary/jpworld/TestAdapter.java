@@ -73,8 +73,8 @@ public class TestAdapter extends BaseAdapter
 
         //text.setText(mItems.get(position));
 
-        text.setText(mItems.get(position).GetTitle());
-
+        //text.setText(mItems.get(position).GetTitle());
+        text.setText( DataManager.getInstance().GetHiraganaData().get(position).GetTitle());
         return view;
     }
 

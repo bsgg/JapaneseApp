@@ -67,17 +67,17 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
 
-        //mHiraganaSymbolTxt = (TextView) findViewById(R.id.hiraganaSymbolTxt) ;
-       // mRomanjiTxt = (TextView) findViewById(R.id.romanjiTxt) ;
+        mHiraganaSymbolTxt = (TextView) findViewById(R.id.hiraganaSymbolTxt) ;
+        mRomanjiTxt = (TextView) findViewById(R.id.romanjiTxt) ;
 
 
-        //btnTestLayout = (Button) findViewById(R.id.btnTestLayout);
+        btnTestLayout = (Button) findViewById(R.id.btnTestLayout);
         btnBackMainLayout = (Button) findViewById(R.id.btnBackLayout);
 
-        GridView gridview = (GridView) findViewById(R.id.gridview);
 
 
-        ArrayList<String> myStringArray =  new ArrayList<String>();
+
+        //ArrayList<String> myStringArray =  new ArrayList<String>();
         /*ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 gridview, myStringArray);*/
 
@@ -100,7 +100,11 @@ public class MainActivity extends AppCompatActivity
        /* ArrayList<String> items = new ArrayList<String>();
         items.add("1 , Hello11 , Hello12");
         items.add("2 , Hello21 , Hello22");*/
-        gridview.setAdapter(new TestAdapter(DataManager.getInstance().GetHiraganaData()));
+        View inflatedView = getLayoutInflater().inflate(R.layout.hiragana_layout, null);
+        GridView gridview = (GridView) inflatedView.findViewById(R.id.gridview);
+       if (gridview != null) {
+           gridview.setAdapter(new TestAdapter(DataManager.getInstance().GetHiraganaData()));
+       }
 
 
 
@@ -269,7 +273,7 @@ public class MainActivity extends AppCompatActivity
     public void OnTestLayout(View view)
     {
         // click handling code
-        setContentView(R.layout.second_layout);
+        setContentView(R.layout.hiragana_layout);
     }
 
     public void OnBackLayout(View view)
