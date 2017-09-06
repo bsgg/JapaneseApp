@@ -1,10 +1,12 @@
 package com.cubenary.jpworld;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -28,20 +30,20 @@ public class TestAdapter extends BaseAdapter
         mItems = items;
 
         // for small size of items it's ok to do it here, sync way
-        /*for (Alphabet item : items)
+        for (Alphabet item : items)
         {
 
-
+            Log.e("JP", "[TestAdapter.TestAdapter] " + item.GetTitle());
 
             // get separate string parts, divided by ,
-            final String[] parts = item.split(",");
+            /*final String[] parts = item.split(",");
 
             // remove spaces from parts
             for (String part : parts) {
                 part.replace(" ", "");
                 mItems.add(part);
-            }
-        }*/
+            }*/
+        }
     }
 
     @Override
@@ -69,12 +71,18 @@ public class TestAdapter extends BaseAdapter
             view = LayoutInflater.from(parent.getContext()).inflate(android.R.layout.simple_list_item_1, parent, false);
         }
 
+        //Button button = (Button) view.findViewById(android.R.id.grid_item);
+
         final TextView text = (TextView) view.findViewById(android.R.id.text1);
 
         //text.setText(mItems.get(position));
 
         //text.setText(mItems.get(position).GetTitle());
-        text.setText( DataManager.getInstance().GetHiraganaData().get(position).GetTitle());
+
+        String titleH = DataManager.getInstance().GetHiraganaData().get(position).GetTitle();
+        Log.e("JP", "[TestAdapter.getView] " + titleH);
+
+        text.setText( titleH);
         return view;
     }
 

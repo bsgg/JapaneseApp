@@ -56,14 +56,14 @@ public class DataManager
                     JSONArray hChar = hiRow.getJSONArray("HiraganaChar");
                     for (int c = 0; c < hChar.length(); c++)
                     {
-                        Log.e("", "[MAINBSGG] hChar: " + hChar.getString(c));
+                        Log.e("JP", "[MAINBSGG] hChar: " + hChar.getString(c));
                         alp.GetHiragana().add(hChar.getString(c));
                     }
 
                     JSONArray jChar = hiRow.getJSONArray("RomanjiChar");
                     for (int c = 0; c < jChar.length(); c++)
                     {
-                        Log.e("", "[MAINBSGG] hChar: " + jChar.getString(c));
+                        Log.e("JP", "[MAINBSGG] hChar: " + jChar.getString(c));
                         alp.GetRomanji().add(hChar.getString(c));
                     }
 

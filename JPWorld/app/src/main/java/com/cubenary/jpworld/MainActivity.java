@@ -57,9 +57,12 @@ public class MainActivity extends AppCompatActivity
     private TextView mHiraganaSymbolTxt;
     private TextView mRomanjiTxt;
 
+    private GridView gridviewtest;
 
     Button btnTestLayout;
     Button btnBackMainLayout;
+
+    View HiraganaLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,7 +74,7 @@ public class MainActivity extends AppCompatActivity
         mRomanjiTxt = (TextView) findViewById(R.id.romanjiTxt) ;
 
 
-        btnTestLayout = (Button) findViewById(R.id.btnTestLayout);
+        btnTestLayout = (Button) findViewById(R.id.btnHiraganaMenu);
         btnBackMainLayout = (Button) findViewById(R.id.btnBackLayout);
 
 
@@ -100,11 +103,28 @@ public class MainActivity extends AppCompatActivity
        /* ArrayList<String> items = new ArrayList<String>();
         items.add("1 , Hello11 , Hello12");
         items.add("2 , Hello21 , Hello22");*/
-        View inflatedView = getLayoutInflater().inflate(R.layout.hiragana_layout, null);
-        GridView gridview = (GridView) inflatedView.findViewById(R.id.gridview);
-       if (gridview != null) {
-           gridview.setAdapter(new TestAdapter(DataManager.getInstance().GetHiraganaData()));
-       }
+        HiraganaLayout= getLayoutInflater().inflate(R.layout.hiragana_layout, null);
+        if (HiraganaLayout == null) {
+
+            Log.e("JP", "inflatedView NULL");
+        }else
+        {
+            Log.e("JP", "inflatedView not null ");
+
+            TextView testTitle = (TextView) HiraganaLayout.findViewById(R.id.txtTitle) ;
+            testTitle.setText("TEST TITLE");
+        }
+
+        gridviewtest= (GridView) HiraganaLayout.findViewById(R.id.gridview);
+           if (gridviewtest != null)
+           {
+               Log.e("JP", "[BSGG] grid is not null fILLING WITH INFORMATION ");
+               gridviewtest.setAdapter(new TestAdapter(DataManager.getInstance().GetHiraganaData()));
+              // gridviewtest.setOnItemClickListener(  OnHiraganaElementClick());
+           }else
+           {
+               Log.e("JP", "[BSGG] grid is null ");
+           }
 
 
 
@@ -125,88 +145,6 @@ public class MainActivity extends AppCompatActivity
        // Log.e("", "Response from url: " + jsonStr);
 
 
-       /* if (jsonStr != null)
-        {
-            try
-            {
-               //ArrayList<HashMap<String, String>> studentList = new ArrayList<HashMap<String, String>>();
-
-
-                JSONObject jsonObj = new JSONObject(jsonStr);
-
-                JSONArray lHiragana = jsonObj.getJSONArray("Hiragana");
-
-                Log.e("", "[MAINBSGG] NumberStudents: " + lHiragana.length());
-
-                //for (int i = 0; i < lHiragana.length(); i++)
-                {
-                    JSONObject c = lHiragana.getJSONObject(0);
-
-                    String title = c.getString("Title");
-
-                    mRomanjiTxt.setText(title);
-
-                    Log.e("", "[MAINBSGG] title: " + title);
-
-                    JSONArray hChar = c.getJSONArray("HiraganaChar");
-
-                    Log.e("", "[MAINBSGG] hChar elements: " + hChar.length());
-
-                    for (int h = 0; h < hChar.length(); h++)
-                    {
-
-                        mHiraganaSymbolTxt.setText(hChar.getString(h));
-                       Log.e("", "[MAINBSGG] hChar: " + hChar.getString(h));
-
-
-                    }
-
-                    JSONArray rChar = c.getJSONArray("RomanjiChar");
-                    for (int h = 0; h < hChar.length(); h++)
-                    {
-
-                        mRomanjiTxt.setText(rChar.getString(h));
-                        Log.e("", "[MAINBSGG] rChar: " + rChar.getString(h));
-
-
-                    }
-
-
-                   /* String id = c.getString(TAG_ID);
-                    String name = c.getString(TAG_NAME);
-                    String email = c.getString(TAG_EMAIL);
-                    String address = c.getString(TAG_ADDRESS);
-                    String gender = c.getString(TAG_GENDER);
-
-                    // Phone node is JSON Object
-                    JSONObject phone = c.getJSONObject(TAG_PHONE);
-                    String mobile = phone.getString(TAG_PHONE_MOBILE);
-                    String home = phone.getString(TAG_PHONE_HOME);
-
-                    // tmp hashmap for single student
-                    HashMap<String, String> student = new HashMap<String, String>();
-
-                    // adding each child node to HashMap key => value
-                    student.put(TAG_ID, id);
-                    student.put(TAG_NAME, name);
-                    student.put(TAG_EMAIL, email);
-                    student.put(TAG_PHONE_MOBILE, mobile);
-
-                    // adding student to students list
-                    studentList.add(student);*/
-
-              /*  }
-
-
-
-
-            } catch (JSONException ex)
-            {
-                ex.printStackTrace();
-                Log.e("", "Exception: " + ex.toString());
-            }
-        }
-*/
 
 
 
@@ -216,64 +154,28 @@ public class MainActivity extends AppCompatActivity
 
 
 
-       /* if (jsonStr != null)
-        {
-            try
-            {
-                ArrayList<HashMap<String, String>> studentList = new ArrayList<HashMap<String, String>>();
-
-
-                JSONObject jsonObj = new JSONObject(jsonStr);
-
-                JSONArray lStudents = jsonObj.getJSONArray(TAG_STUDENTINFO);
-
-                Log.e("", "[MAINBSGG] NumberStudents: " + lStudents.length());
-
-                for (int i = 0; i < lStudents.length(); i++)
-                {
-                    JSONObject c = lStudents.getJSONObject(i);
-
-                    String id = c.getString(TAG_ID);
-                    String name = c.getString(TAG_NAME);
-                    String email = c.getString(TAG_EMAIL);
-                    String address = c.getString(TAG_ADDRESS);
-                    String gender = c.getString(TAG_GENDER);
-
-                    // Phone node is JSON Object
-                    JSONObject phone = c.getJSONObject(TAG_PHONE);
-                    String mobile = phone.getString(TAG_PHONE_MOBILE);
-                    String home = phone.getString(TAG_PHONE_HOME);
-
-                    // tmp hashmap for single student
-                    HashMap<String, String> student = new HashMap<String, String>();
-
-                    // adding each child node to HashMap key => value
-                    student.put(TAG_ID, id);
-                    student.put(TAG_NAME, name);
-                    student.put(TAG_EMAIL, email);
-                    student.put(TAG_PHONE_MOBILE, mobile);
-
-                    // adding student to students list
-                    studentList.add(student);
-
-                }
-
-
-
-
-            } catch (JSONException ex)
-            {
-                ex.printStackTrace();
-                Log.e("", "Exception: " + ex.toString());
-            }
-        }*/
 
     }
 
     public void OnTestLayout(View view)
     {
         // click handling code
-        setContentView(R.layout.hiragana_layout);
+        //setContentView(R.layout.hiragana_layout);
+        setContentView(HiraganaLayout);
+
+
+        /*TextView testTitle = (TextView) HiraganaLayout.findViewById(R.id.txtTitle) ;
+        testTitle.setText("TEST TITLE");*/
+
+
+        /*if (gridviewtest != null)
+        {
+            Log.e("JP", "[BSGG] grid is not null fILLING WITH INFORMATION ");
+            gridviewtest.setAdapter(new TestAdapter(DataManager.getInstance().GetHiraganaData()));
+        }else
+        {
+            Log.e("JP", "[BSGG] grid is null ");
+        }*/
     }
 
     public void OnBackLayout(View view)
@@ -282,7 +184,12 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
     }
 
-    public String loadJSONFromAsset()
+    public void OnHiraganaElementClick(AdapterView<?> parent, View v, int position, long id)
+    {
+        Log.e("JP", "[OnHiraganaElementClick] " + position + " id: " + id);
+    }
+
+   /*public String loadJSONFromAsset()
     {
         String json = null;
         try
@@ -300,7 +207,7 @@ public class MainActivity extends AppCompatActivity
             return null;
         }
         return json;
-    }
+    }*/
 
 
 
