@@ -35,30 +35,7 @@ namespace JapaneseApp
     }
 
 
-    public class Vocabulary
-    {
-
-        private List<string> m_Hiragana;
-        public List<string> Hiragana
-        {
-            set { m_Hiragana = value; }
-            get { return m_Hiragana; }
-        }
-
-        private List<string> m_Romanji;
-        public List<string> Romanji
-        {
-            set { m_Romanji = value; }
-            get { return m_Romanji; }
-        }
-
-        private List<string> m_Meaning;
-        public List<string> Meaning
-        {
-            set { m_Meaning = value; }
-            get { return m_Meaning; }
-        }
-    }
+   
 
 
     public class HiraganaData

@@ -10,6 +10,8 @@ namespace JapaneseApp
         public enum ETYPEMENU { NONE, MAINMENU, HIRAGANATABLE, DRILL };
         private ETYPEMENU m_CurrentMenu;
 
+        private string m_PathData = "Data/Hiragana";
+
         private HiraganaData m_HiraganaData;
 
         public HiraganaData HiraganaData
@@ -39,7 +41,7 @@ namespace JapaneseApp
 
             // Init Hiragana data an menu
             m_HiraganaData = new HiraganaData();
-            string jsonActionsString = Utility.LoadJSONResource("Data/Hiragana");
+            string jsonActionsString = Utility.LoadJSONResource(m_PathData);
             if (jsonActionsString != "")
             {
                 m_HiraganaData = JsonMapper.ToObject<HiraganaData>(jsonActionsString);

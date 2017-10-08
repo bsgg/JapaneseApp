@@ -32,6 +32,10 @@ namespace JapaneseApp
         private HiraganaContent m_HiraganaContent;
 
 
+        [SerializeField]
+        private VocabularyControl m_VocabularyControl;
+
+
        /* private HiraganaData m_HiraganaData;
 
         public HiraganaData HiraganaData
@@ -74,6 +78,10 @@ namespace JapaneseApp
         {
             m_HiraganaContent.Init();
             m_HiraganaContent.Show();
+
+
+            m_VocabularyControl.Init();
+
 
             /*LoadHiraganaData();
 

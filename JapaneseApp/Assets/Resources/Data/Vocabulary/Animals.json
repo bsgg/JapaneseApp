@@ -1,0 +1,34 @@
+{
+	"Animals":	
+	[
+		{
+			"Word": "蟹",
+			"Hiragana": "かに",
+			"Romanji": "Kani",
+			"Meaning": "Crab",
+			"SentencesExamples": 
+			{
+				"Sentence": 
+				[
+					"蟹　が　はまべ　を　あるいて　いる。",
+				    "オレンジ と 赤 の 蟹"
+				],
+				"Hiragana": 
+				[				
+				  "かに が　はまべ　を　あるいて　いる。",
+				  "オレンジ と あか の かに"
+				],
+				"Romanji": 
+				[
+				  "Kani ga hamabe o aruite iru.",
+				  "Orenji to aka no kani"
+				],
+				"English": 
+				[
+				  "The crab is walking on the beach.",
+				  "Orange and red crab"
+				]
+			}		
+		}
+	]
+}
