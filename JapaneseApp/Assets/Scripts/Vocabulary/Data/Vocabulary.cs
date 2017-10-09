@@ -43,11 +43,11 @@ namespace JapaneseApp
         }
 
         [SerializeField]
-        private List<string> m_Hiragana= new List<string>();
-        public List<string> Hiragana
+        private List<string> m_Kanjis= new List<string>();
+        public List<string> Kanjis
         {
-            set { m_Hiragana = value; }
-            get { return m_Hiragana; }
+            set { m_Kanjis = value; }
+            get { return m_Kanjis; }
         }
 
         [SerializeField]
