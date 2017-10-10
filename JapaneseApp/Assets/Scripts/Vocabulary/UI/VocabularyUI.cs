@@ -61,11 +61,14 @@ namespace JapaneseApp
 
         #region Handles
 
-        
-       
+
+
         public void OnWordPlay()
         {
-
+            if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+            {
+                EasyTTSUtil.SpeechFlush(m_Word.text);
+            }
         }
 
         #endregion  Handles

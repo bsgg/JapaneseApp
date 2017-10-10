@@ -76,6 +76,15 @@ namespace JapaneseApp
 
         void Start ()
         {
+            // Initialize EasyTTUTIL
+            if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+            {
+                
+                EasyTTSUtil.Initialize(EasyTTSUtil.Japan);
+            }
+
+
+
             m_HiraganaContent.Init();
             //m_HiraganaContent.Show();
 
