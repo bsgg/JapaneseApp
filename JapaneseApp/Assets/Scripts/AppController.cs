@@ -77,10 +77,11 @@ namespace JapaneseApp
         void Start ()
         {
             m_HiraganaContent.Init();
-            m_HiraganaContent.Show();
+            //m_HiraganaContent.Show();
 
 
             m_VocabularyControl.Init();
+            m_VocabularyControl.Show();
 
 
             /*LoadHiraganaData();

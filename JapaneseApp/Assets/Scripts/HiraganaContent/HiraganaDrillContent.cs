@@ -93,7 +93,7 @@ namespace JapaneseApp
             //m_Question.text = m_Drill.Drills[m_CurrentQuestion].IndexQuestion;
 
 
-            StartCoroutine(TimeRoutine(30));
+            //StartCoroutine(TimeRoutine(30));
         }
 
         

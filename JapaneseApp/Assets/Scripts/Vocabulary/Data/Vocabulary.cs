@@ -120,6 +120,42 @@ namespace JapaneseApp
             get { return m_Animals; }
             set { m_Animals = value; }
         }
-        
+
+
+        public WordVocabulary GetRandomWord()
+        {
+            if (m_Animals != null)
+            {
+                int iRand = Random.Range(0, m_Animals.Count);
+                return m_Animals[iRand];
+            }
+
+            return null;
+        }
     }
+
+    [System.Serializable]
+    public class PlacesData
+    {
+        [SerializeField]
+        private List<WordVocabulary> m_Places = new List<WordVocabulary>();
+        public List<WordVocabulary> Places
+        {
+            get { return m_Places; }
+            set { m_Places = value; }
+        }
+
+
+        public WordVocabulary GetRandomWord()
+        {
+            if (m_Places != null)
+            {
+                int iRand = Random.Range(0, m_Places.Count);
+                return m_Places[iRand];
+            }
+
+            return null;
+        }
+    }
+
 }

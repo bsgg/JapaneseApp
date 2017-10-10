@@ -1,0 +1,34 @@
+{
+	"Places":	
+	[
+		{
+			"Word": "学生",
+			"Hiragana": "がくせい",
+			"Romanji": "Gakusei",
+			"Meaning": "Student",
+			"SentencesExamples": 
+			{
+				"Sentence": 
+				[
+					"ﾏﾘｱさん学生です",
+				  "わたしも学生です"
+				],
+				"Kanjis": 
+				[
+          "- 学生 : がくせい",
+          "- 学生 : がくせい"
+				],
+				"Romanji": 
+				[
+				  "Maria san gakusei desu.",
+				  "Watashi mo gakusei desu."
+				],
+				"English": 
+				[
+				  "Maria is a student.",
+				  "I am also a student."
+				]
+			}		
+		}
+	]
+}

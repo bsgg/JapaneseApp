@@ -1,0 +1,69 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+namespace JapaneseApp
+{
+    public class ExamplesUI : UIBase
+    {
+        [Header("ExamplesUI")]
+
+        [SerializeField]
+        private Text m_Sentence;
+        public string Sentence
+        {
+            set { m_Sentence.text = value; }
+            get { return m_Sentence.text; }
+        }
+
+        [SerializeField]
+        private Text m_Romanji;
+        public string Romanji
+        {
+            set { m_Romanji.text = value; }
+            get { return m_Romanji.text; }
+        }
+
+        [SerializeField]
+        private Text m_English;
+        public string English
+        {
+            set { m_English.text = value; }
+            get { return m_English.text; }
+        }
+
+        [SerializeField]
+        private Text m_Kanji;
+        public string Kanji
+        {
+            set { m_Kanji.text = value; }
+            get { return m_Kanji.text; }
+        }
+
+
+        [SerializeField]
+        private GameObject m_NextSentenceButton;
+        public GameObject NextSentenceButton
+        {
+            set { m_NextSentenceButton = value; }
+            get { return m_NextSentenceButton; }
+        }
+
+
+        #region Handles
+
+        public void OnJapanesePlay()
+        {
+
+        }
+
+        public void OnEnglishPlay()
+        {
+
+        }
+
+        #endregion Handles
+
+    }
+}
