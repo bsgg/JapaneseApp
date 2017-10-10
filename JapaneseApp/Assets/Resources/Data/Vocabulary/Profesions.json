@@ -1,0 +1,58 @@
+{
+	"Profesions":	
+	[
+    {
+      "Word": "学生",
+      "Hiragana": "がくせい",
+      "Romanji": "Gakusei",
+      "Meaning": "Student",
+      "SentencesExamples": {
+        "Sentence": [
+          "ﾏﾘｱさん学生です",
+          "わたしも学生です"
+        ],
+        "Kanjis": [
+          "- 学生 : がくせい - Student",
+          "- 学生 : がくせい - Student"
+        ],
+        "Romanji": [
+          "Maria san gakusei desu.",
+          "Watashi mo gakusei desu."
+        ],
+        "English": [
+          "Maria is a student.",
+          "I am also a student."
+        ]
+      }
+    },
+    {
+			"Word": "先生",
+			"Hiragana": "せんせい",
+			"Romanji": "Sensei",
+			"Meaning": "Teacher, Doctor",
+			"SentencesExamples": 
+			{
+				"Sentence": 
+				[
+					"マリアは先生です",
+				  "先生ですか"
+				],
+				"Kanjis": 
+				[
+          "- 先生 : せんせい - Teacher, Doctor",
+          "- 先生 : せんせい - Teacher, Doctor"
+				],
+				"Romanji": 
+				[
+				  "Maria wa sensei desu.",
+				  "Sensei desu ka?"
+				],
+				"English": 
+				[
+				  "Maria is a teacher.",
+				  "Are you a teacher?"
+				]
+			}		
+		}
+	]
+}

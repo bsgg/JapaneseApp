@@ -158,4 +158,28 @@ namespace JapaneseApp
         }
     }
 
+    [System.Serializable]
+    public class ProfesionsData
+    {
+        [SerializeField]
+        private List<WordVocabulary> m_Profesions = new List<WordVocabulary>();
+        public List<WordVocabulary> Profesions
+        {
+            get { return m_Profesions; }
+            set { m_Profesions = value; }
+        }
+
+
+        public WordVocabulary GetRandomWord()
+        {
+            if (m_Profesions != null)
+            {
+                int iRand = Random.Range(0, m_Profesions.Count);
+                return m_Profesions[iRand];
+            }
+
+            return null;
+        }
+    }
+
 }

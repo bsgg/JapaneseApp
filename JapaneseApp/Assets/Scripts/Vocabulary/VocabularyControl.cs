@@ -7,14 +7,22 @@ namespace JapaneseApp
 {
     public class VocabularyControl : Base
     {
+        [SerializeField]
         private string m_AnimalsPathData = "Data/Vocabulary/Animals";
 
         [SerializeField] private AnimalsData m_AnimalsData;
 
+        [SerializeField]
         private string m_PlacesPathData = "Data/Vocabulary/Places";
 
         [SerializeField]
         private PlacesData m_PlacesData;
+
+        [SerializeField]
+        private string m_ProfesionsPathData = "Data/Vocabulary/Profesions";
+
+        [SerializeField]
+        private ProfesionsData m_ProfesionsData;
 
         [SerializeField]
         private VocabularyUI m_VocabularyUI;
@@ -46,17 +54,28 @@ namespace JapaneseApp
                 m_PlacesData = JsonMapper.ToObject<PlacesData>(jsonActionsString);
             }
 
+            m_ProfesionsData = new ProfesionsData();
+            jsonActionsString = Utility.LoadJSONResource(m_ProfesionsPathData);
+            if (jsonActionsString != "")
+            {
+                m_ProfesionsData = JsonMapper.ToObject<ProfesionsData>(jsonActionsString);
+            }
+            
+
         }
 
         private void SetRandomWord()
         {
-            int iSection = Random.Range(0,2);
+            int iSection = Random.Range(0,3);
             switch (iSection)
             {
                 case 0:
                     m_CurrentWord = m_AnimalsData.GetRandomWord();
                     break;
                 case 1:
+                    m_CurrentWord = m_ProfesionsData.GetRandomWord();
+                    break;
+                case 2:
                     m_CurrentWord = m_PlacesData.GetRandomWord();
                     break;
             }
