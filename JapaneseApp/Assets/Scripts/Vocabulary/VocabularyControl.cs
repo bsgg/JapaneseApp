@@ -5,24 +5,39 @@ using UnityEngine;
 
 namespace JapaneseApp
 {
+    [System.Serializable]
+    public class VocabularyData
+    {
+        public string Name = "";
+        public VocabularyControl.ECategory Category;
+        public string DataPath = "";
+        public WordData WordData;
+
+        [SerializeField]  public List<Sprite> Sprites;
+
+        public Sprite SpriteByKey(string key)
+        {
+            for (int i = 0; i < Sprites.Count; i++)
+            {
+                Debug.Log("Sprite: " + Sprites[i].name);
+                if (Sprites[i].name.Equals(key))
+                {
+                    return Sprites[i];
+                }
+            }
+
+            return null;
+        }
+    }
+
     public class VocabularyControl : Base
     {
-        [SerializeField]
-        private string m_AnimalsPathData = "Data/Vocabulary/Animals";
+        public enum ECategory { NONE = -1, ANIMALS, PROFESIONS,  NUM };
 
-        [SerializeField] private AnimalsData m_AnimalsData;
 
         [SerializeField]
-        private string m_PlacesPathData = "Data/Vocabulary/Places";
-
-        [SerializeField]
-        private PlacesData m_PlacesData;
-
-        [SerializeField]
-        private string m_ProfesionsPathData = "Data/Vocabulary/Profesions";
-
-        [SerializeField]
-        private ProfesionsData m_ProfesionsData;
+        private List<VocabularyData> m_DataSet;
+        
 
         [SerializeField]
         private VocabularyUI m_VocabularyUI;
@@ -38,8 +53,19 @@ namespace JapaneseApp
             m_VocabularyUI.Hide();
             m_VocabularyUI.Example.Hide();
 
+            for (int i= 0; i< m_DataSet.Count; i++)
+            {
+                m_DataSet[i].WordData = new WordData();
+
+                string json = Utility.LoadJSONResource( m_DataSet[i].DataPath);
+                if (json != "")
+                {
+                    m_DataSet[i].WordData = JsonMapper.ToObject<WordData>(json);
+                }
+            }
+
             // Init vocabulary data
-            m_AnimalsData = new AnimalsData();
+           /* m_AnimalsData = new AnimalsData();
             string jsonActionsString = Utility.LoadJSONResource(m_AnimalsPathData);
             if (jsonActionsString != "")
             {
@@ -59,27 +85,19 @@ namespace JapaneseApp
             if (jsonActionsString != "")
             {
                 m_ProfesionsData = JsonMapper.ToObject<ProfesionsData>(jsonActionsString);
-            }
+            }*/
             
 
         }
 
+        private int m_CurrentDataID;
+
         private void SetRandomWord()
         {
-            int iSection = Random.Range(0,3);
-            switch (iSection)
-            {
-                case 0:
-                    m_CurrentWord = m_AnimalsData.GetRandomWord();
-                    break;
-                case 1:
-                    m_CurrentWord = m_ProfesionsData.GetRandomWord();
-                    break;
-                case 2:
-                    m_CurrentWord = m_PlacesData.GetRandomWord();
-                    break;
-            }
-
+            // Get random word from a category
+            m_CurrentDataID = Random.Range(0,(int)ECategory.NUM);
+            m_CurrentWord = m_DataSet[m_CurrentDataID].WordData.GetRandomWord();
+           
 
             if (m_CurrentWord != null)
             {
@@ -88,6 +106,16 @@ namespace JapaneseApp
                 m_VocabularyUI.English = m_CurrentWord.Meaning;
                 m_VocabularyUI.Hiragana = m_CurrentWord.Hiragana + " : " + m_CurrentWord.Romanji;
 
+                if (!string.IsNullOrEmpty(m_CurrentWord.SpriteID))
+                {
+                    m_VocabularyUI.Picture.sprite = m_DataSet[m_CurrentDataID].SpriteByKey(m_CurrentWord.SpriteID);
+                    m_VocabularyUI.Picture.preserveAspect = true;
+                    m_VocabularyUI.PictureObject.gameObject.SetActive(true);
+                }
+                else
+                {
+                    m_VocabularyUI.PictureObject.gameObject.SetActive(false);
+                }
 
                 // Set sentence
                 if ((m_CurrentWord.SentencesExamples != null) && (m_CurrentWord.SentencesExamples.Sentence.Count > 0))

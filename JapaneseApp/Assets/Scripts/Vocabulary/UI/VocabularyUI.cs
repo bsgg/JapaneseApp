@@ -36,6 +36,23 @@ namespace JapaneseApp
 
 
         [SerializeField]
+        private CanvasGroup m_PictureObject;
+        public CanvasGroup PictureObject
+        {
+            set { m_PictureObject = value; }
+            get { return m_PictureObject; }
+        }
+
+        [SerializeField]
+        private Image m_Picture;
+        public Image Picture
+        {
+            set { m_Picture = value; }
+            get { return m_Picture; }
+        }
+
+
+        [SerializeField]
         private Text m_Hiragana;
         public string Hiragana
         {

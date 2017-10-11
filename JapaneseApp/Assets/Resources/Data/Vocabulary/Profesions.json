@@ -1,11 +1,12 @@
 {
-	"Profesions":	
+	"Data":	
 	[
     {
       "Word": "学生",
       "Hiragana": "がくせい",
       "Romanji": "Gakusei",
       "Meaning": "Student",
+      "SpriteID": "",
       "SentencesExamples": {
         "Sentence": [
           "ﾏﾘｱさん学生です",
@@ -29,7 +30,8 @@
 			"Word": "先生",
 			"Hiragana": "せんせい",
 			"Romanji": "Sensei",
-			"Meaning": "Teacher, Doctor",
+      "Meaning": "Teacher, Doctor",
+      "SpriteID": "",
 			"SentencesExamples": 
 			{
 				"Sentence": 

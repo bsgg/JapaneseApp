@@ -1,11 +1,12 @@
 {
-	"Animals":	
+	"Data":	
 	[
 		{
 			"Word": "蟹",
 			"Hiragana": "かに",
 			"Romanji": "Kani",
-			"Meaning": "Crab",
+      "Meaning": "Crab",
+      "SpriteID": "Animals_Crab",
 			"SentencesExamples": 
 			{
 				"Sentence": 

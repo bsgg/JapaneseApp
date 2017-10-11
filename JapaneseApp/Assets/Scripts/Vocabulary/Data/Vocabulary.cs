@@ -70,6 +70,15 @@ namespace JapaneseApp
     public class WordVocabulary
     {
         [SerializeField]
+        private string m_Meaning;
+        public string Meaning
+        {
+            set { m_Meaning = value; }
+            get { return m_Meaning; }
+        }
+
+
+        [SerializeField]
         private string m_Word;
         public string Word
         {
@@ -94,11 +103,11 @@ namespace JapaneseApp
         }
 
         [SerializeField]
-        private string m_Meaning;
-        public string Meaning
+        private string m_SpriteID;
+        public string SpriteID
         {
-            set { m_Meaning = value; }
-            get { return m_Meaning; }
+            set { m_SpriteID = value; }
+            get { return m_SpriteID; }
         }
 
         [SerializeField]
@@ -109,6 +118,30 @@ namespace JapaneseApp
             get { return m_SentencesExamples; }
         }
     }
+
+    [System.Serializable]
+    public class WordData
+    {
+        [SerializeField]
+        private List<WordVocabulary> m_Data = new List<WordVocabulary>();
+        public List<WordVocabulary> Data
+        {
+            get { return m_Data; }
+            set { m_Data = value; }
+        }
+
+        public WordVocabulary GetRandomWord()
+        {
+            if (m_Data != null)
+            {
+                int iRand = Random.Range(0, m_Data.Count);
+                return m_Data[iRand];
+            }
+
+            return null;
+        }
+    }
+
 
     [System.Serializable]
     public class AnimalsData
