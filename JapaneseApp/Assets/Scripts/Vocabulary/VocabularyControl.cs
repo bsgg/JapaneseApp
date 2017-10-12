@@ -34,7 +34,6 @@ namespace JapaneseApp
     {
         public enum ECategory { NONE = -1, ANIMALS, PROFESIONS,  NUM };
 
-
         [SerializeField]
         private List<VocabularyData> m_DataSet;
         
@@ -46,12 +45,21 @@ namespace JapaneseApp
         private WordVocabulary m_CurrentWord;
         private int m_ICurrentExample;
 
+
+        [SerializeField]
+        CategoriesUI m_CategoriesUI;
+
+        private int m_CurrentDataID;
+
         public override void Init()
         {
             base.Init();
 
             m_VocabularyUI.Hide();
             m_VocabularyUI.Example.Hide();
+            m_CategoriesUI.Hide();
+
+            List<string> categories =  new List<string>();
 
             for (int i= 0; i< m_DataSet.Count; i++)
             {
@@ -62,35 +70,50 @@ namespace JapaneseApp
                 {
                     m_DataSet[i].WordData = JsonMapper.ToObject<WordData>(json);
                 }
+
+                categories.Add(m_DataSet[i].Name);
+
             }
 
-            // Init vocabulary data
-           /* m_AnimalsData = new AnimalsData();
-            string jsonActionsString = Utility.LoadJSONResource(m_AnimalsPathData);
-            if (jsonActionsString != "")
-            {
-                m_AnimalsData = JsonMapper.ToObject<AnimalsData>(jsonActionsString);
-            }
-
-
-            m_PlacesData = new PlacesData();
-            jsonActionsString = Utility.LoadJSONResource(m_PlacesPathData);
-            if (jsonActionsString != "")
-            {
-                m_PlacesData = JsonMapper.ToObject<PlacesData>(jsonActionsString);
-            }
-
-            m_ProfesionsData = new ProfesionsData();
-            jsonActionsString = Utility.LoadJSONResource(m_ProfesionsPathData);
-            if (jsonActionsString != "")
-            {
-                m_ProfesionsData = JsonMapper.ToObject<ProfesionsData>(jsonActionsString);
-            }*/
-            
-
+            m_CategoriesUI.ScrollMenu.InitScroll(categories);
+            m_CategoriesUI.ScrollMenu.OnItemPress += OnCategoryPress;
+        }
+       
+        public void ShowCategories()
+        {
+            Show();
+            m_VocabularyUI.Example.Hide();
+            m_VocabularyUI.Hide();
+            m_CategoriesUI.Show();
         }
 
-        private int m_CurrentDataID;
+        public void ShowRandomWord()
+        {
+            SetRandomWord();
+            Show();
+
+            m_VocabularyUI.Example.Hide();
+            m_VocabularyUI.Show();
+            m_CategoriesUI.Hide();
+        }
+
+
+        public void ShowWordDay()
+        {
+            // TODO DO LOGIC FOR DIFFERENT WORD EVERYDAY
+            SetRandomWord();
+            Show();
+
+            m_VocabularyUI.Example.Hide();
+            m_VocabularyUI.Show();
+            m_CategoriesUI.Hide();
+        }
+
+        public void OnCategoryPress(int id)
+        {
+            //Debug.Log("Categories: " + id + " " + m_Categories[id]);
+        }
+
 
         private void SetRandomWord()
         {
@@ -151,17 +174,7 @@ namespace JapaneseApp
             {
                 Debug.Log("<color=cyan> No Current Word </color>");
             }
-        }
-
-        public override void Show()
-        {
-            SetRandomWord();
-
-            base.Show();
-
-            m_VocabularyUI.Example.Hide();
-            m_VocabularyUI.Show();
-        }
+        }       
 
 
         private void SetExample(int index)
