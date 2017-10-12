@@ -35,6 +35,9 @@ namespace JapaneseApp
         [SerializeField]
         private VocabularyControl m_VocabularyControl;
 
+        [SerializeField]
+        private UIBase m_MainMenu;
+
 
        /* private HiraganaData m_HiraganaData;
 
@@ -90,7 +93,10 @@ namespace JapaneseApp
 
 
             m_VocabularyControl.Init();
-            m_VocabularyControl.Show();
+
+            m_MainMenu.Show();
+
+           // m_VocabularyControl.Show();
 
 
             /*LoadHiraganaData();
@@ -114,23 +120,48 @@ namespace JapaneseApp
 
         }
 
-       /* public void LoadHiraganaData()
-        {
-            m_HiraganaData = new HiraganaData();
-            string jsonActionsString = Utility.LoadJSONResource("Data/Hiragana");
-            if (jsonActionsString != "")
-            {
-                m_HiraganaData = JsonMapper.ToObject<HiraganaData>(jsonActionsString);
-            }
+        /* public void LoadHiraganaData()
+         {
+             m_HiraganaData = new HiraganaData();
+             string jsonActionsString = Utility.LoadJSONResource("Data/Hiragana");
+             if (jsonActionsString != "")
+             {
+                 m_HiraganaData = JsonMapper.ToObject<HiraganaData>(jsonActionsString);
+             }
 
-            List<string> lTitle = new List<string>();
-            for (int i= 0; i< m_HiraganaData.Hiragana.Count; i++)
-            {
-                HiraganaAlphabet ha = m_HiraganaData.Hiragana[i];
-                lTitle.Add(ha.Title);
-            }
-            m_LessonMenuController.InitScrollMenu(lTitle);
-        }*/
+             List<string> lTitle = new List<string>();
+             for (int i= 0; i< m_HiraganaData.Hiragana.Count; i++)
+             {
+                 HiraganaAlphabet ha = m_HiraganaData.Hiragana[i];
+                 lTitle.Add(ha.Title);
+             }
+             m_LessonMenuController.InitScrollMenu(lTitle);
+         }*/
+
+
+        #region MainMenuHandles
+
+        public void OnVocabularyPress()
+        {
+            m_MainMenu.Hide();
+            m_VocabularyControl.ShowCategories();
+
+        }
+
+        public void OnWordDayPress()
+        {
+            m_MainMenu.Hide();
+            m_VocabularyControl.ShowWordDay();
+        }
+
+        public void OnRandomWordPress()
+        {
+            m_MainMenu.Hide();
+            m_VocabularyControl.ShowRandomWord();
+        }
+
+
+        #endregion MainMenuHandles
 
     }
 }

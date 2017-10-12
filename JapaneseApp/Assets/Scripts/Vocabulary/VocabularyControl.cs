@@ -112,6 +112,13 @@ namespace JapaneseApp
         public void OnCategoryPress(int id)
         {
             //Debug.Log("Categories: " + id + " " + m_Categories[id]);
+
+
+        }
+
+        private void SetWordByCategory()
+        {
+
         }
 
 
