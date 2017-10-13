@@ -2,13 +2,11 @@
 	"Data":	
 	[
     {
-      "Title": "",
       "Word": "学生",
       "Hiragana": "がくせい",
       "Romanji": "Gakusei",
       "Meaning": "Student",
       "SpriteID": "",
-      "Description": "",
       "SentencesExamples": {
         "Sentence": [
           "ﾏﾘｱさん学生です",

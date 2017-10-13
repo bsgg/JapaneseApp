@@ -30,42 +30,27 @@ namespace JapaneseApp
         }
     }
 
-    [System.Serializable]
-    public class GrammarData
-    {
-        public string Name = "";
-        public VocabularyControl.EGramar Category;
-        public string DataPath = "";
-        public WordData WordData;
-
-       
-    }
-
     public class VocabularyControl : Base
     {
-        public enum ECategory { NONE = -1, ANIMALS, PROFESIONS, NUM };
-
-        public enum EGramar { NONE = -1, NUMBERS1};
+        public enum ECategory { NONE = -1, ANIMALS, PROFESIONS, NUMBERS, NUM };
 
         [SerializeField]
         private List<VocabularyData> m_VocabularySet;
 
-        [SerializeField]
-        private List<GrammarData> m_GramarSet;
-
 
         [SerializeField]
         private VocabularyUI m_VocabularyUI;
+        [SerializeField]
+        CategoriesUI m_CategoriesUI;
 
 
         private WordVocabulary m_CurrentWord;
         private int m_ICurrentExample;
+        private int m_CurrentWordID = 0;
+        private bool m_SelectRandomWord = false;
 
-
-        [SerializeField]
-        CategoriesUI m_CategoriesUI;
-
-        private int m_CurrentDataID;
+        private ECategory m_CurrentCategory;
+        
 
         public override void Init()
         {
@@ -92,31 +77,19 @@ namespace JapaneseApp
             }
 
             m_CategoriesUI.ScrollMenu.InitScroll(categories);
-            m_CategoriesUI.ScrollMenu.OnItemPress += OnCategoryPress;
-
-
-
-            // Grammar Set
-            for (int i = 0; i < m_GramarSet.Count; i++)
-            {
-                m_GramarSet[i].WordData = new WordData();
-
-                string json = Utility.LoadJSONResource( m_GramarSet[i].DataPath);
-                if (json != "")
-                {
-                    m_GramarSet[i].WordData = JsonMapper.ToObject<WordData>(json);
-                }
-
-            }
+            m_CategoriesUI.ScrollMenu.OnItemPress += OnCategoryPress;            
 
         }
        
         public void ShowCategories()
         {
             Show();
+
             m_VocabularyUI.Example.Hide();
             m_VocabularyUI.Hide();
             m_CategoriesUI.Show();
+
+            m_SelectRandomWord = false;
         }
 
         public void ShowRandomWord()
@@ -127,6 +100,8 @@ namespace JapaneseApp
             m_VocabularyUI.Example.Hide();
             m_VocabularyUI.Show();
             m_CategoriesUI.Hide();
+
+            m_SelectRandomWord = true;
         }
 
 
@@ -143,24 +118,32 @@ namespace JapaneseApp
 
         public void OnCategoryPress(int id)
         {
-            //Debug.Log("Categories: " + id + " " + m_Categories[id]);
+            
+            m_CurrentCategory = (ECategory)id;
+            m_CurrentWordID = 0;
 
 
+            Debug.Log("OnCategoryPress: " + id + " : " + m_CurrentCategory.ToString());
+
+            SetWordByCategory();
+
+            Show();
+
+            m_VocabularyUI.Example.Hide();
+            m_VocabularyUI.Show();
+            m_CategoriesUI.Hide();
         }
 
         private void SetWordByCategory()
         {
 
-        }
-
-
-        private void SetRandomWord()
-        {
-            // Get random word from a category
-            m_CurrentDataID = Random.Range(0,(int)ECategory.NUM);
-            m_CurrentWord = m_VocabularySet[m_CurrentDataID].WordData.GetRandomWord();
-           
-
+            if (m_SelectRandomWord)
+            {
+                m_CurrentWord = m_VocabularySet[(int)m_CurrentCategory].WordData.GetRandomWord();
+            }else
+            {
+                m_CurrentWord = m_VocabularySet[(int)m_CurrentCategory].WordData.GetWordById(m_CurrentWordID);
+            }
             if (m_CurrentWord != null)
             {
                 // Set word
@@ -170,7 +153,7 @@ namespace JapaneseApp
 
                 if (!string.IsNullOrEmpty(m_CurrentWord.SpriteID))
                 {
-                    m_VocabularyUI.Picture.sprite = m_VocabularySet[m_CurrentDataID].SpriteByKey(m_CurrentWord.SpriteID);
+                    m_VocabularyUI.Picture.sprite = m_VocabularySet[(int)m_CurrentCategory].SpriteByKey(m_CurrentWord.SpriteID);
                     m_VocabularyUI.Picture.preserveAspect = true;
                     m_VocabularyUI.PictureObject.gameObject.SetActive(true);
                 }
@@ -213,6 +196,17 @@ namespace JapaneseApp
             {
                 Debug.Log("<color=cyan> No Current Word </color>");
             }
+        }
+
+
+        private void SetRandomWord()
+        {
+            // Get random word from a category
+            int rCategory = Random.Range(0, (int)ECategory.NUM);
+            m_CurrentCategory = (ECategory)rCategory;
+            m_SelectRandomWord = true;
+
+            SetWordByCategory();
         }       
 
 
@@ -260,7 +254,19 @@ namespace JapaneseApp
 
         public void OnNextWord()
         {
-            SetRandomWord();
+            if (m_SelectRandomWord)
+            {
+                SetRandomWord();
+            }
+            else
+            {
+                // Increase current word id
+                m_CurrentWordID++;
+                m_CurrentWordID %= m_VocabularySet[(int)m_CurrentCategory].WordData.Data.Count;
+
+                SetWordByCategory();
+            }
+            
         }
 
         public void OnNextExample()

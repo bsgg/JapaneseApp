@@ -2,13 +2,11 @@
 	"Data":	
 	[
     {
-      "Title": "",
       "Word": "蟹",
       "Hiragana": "かに",
       "Romanji": "Kani",
       "Meaning": "Crab",
       "SpriteID": "Animals_Crab",
-      "Description": "",
       "SentencesExamples": {
         "Sentence": [
           "蟹がはまべをあるいている",

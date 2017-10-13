@@ -69,8 +69,6 @@ namespace JapaneseApp
     [System.Serializable]
     public class WordVocabulary
     {
-
-
         [SerializeField]
         private string m_Meaning;
         public string Meaning
@@ -78,16 +76,6 @@ namespace JapaneseApp
             set { m_Meaning = value; }
             get { return m_Meaning; }
         }
-
-        [SerializeField]
-        private string m_Title;
-        public string Title
-        {
-            set { m_Title = value; }
-            get { return m_Title; }
-        }
-
-
 
         [SerializeField]
         private string m_Word;
@@ -119,15 +107,7 @@ namespace JapaneseApp
         {
             set { m_SpriteID = value; }
             get { return m_SpriteID; }
-        }
-
-        [SerializeField]
-        private string m_Description;
-        public string Description
-        {
-            set { m_Description = value; }
-            get { return m_Description; }
-        }
+        }       
 
         [SerializeField]
         private SentencesExamples m_SentencesExamples = new SentencesExamples();
@@ -159,79 +139,69 @@ namespace JapaneseApp
 
             return null;
         }
-    }
 
-
-    [System.Serializable]
-    public class AnimalsData
-    {
-        [SerializeField]
-        private List<WordVocabulary> m_Animals = new List<WordVocabulary>();
-        public List<WordVocabulary> Animals
+        public WordVocabulary GetWordById(int id)
         {
-            get { return m_Animals; }
-            set { m_Animals = value; }
-        }
-
-
-        public WordVocabulary GetRandomWord()
-        {
-            if (m_Animals != null)
+            if ((m_Data != null) && (id >= 0) && (id < m_Data.Count))
             {
-                int iRand = Random.Range(0, m_Animals.Count);
-                return m_Animals[iRand];
+                return m_Data[id];
             }
 
             return null;
         }
     }
 
+
+    #region Grammar
     [System.Serializable]
-    public class PlacesData
+    public class GrammarSection
     {
         [SerializeField]
-        private List<WordVocabulary> m_Places = new List<WordVocabulary>();
-        public List<WordVocabulary> Places
+        private string m_Title;
+        public string Title
         {
-            get { return m_Places; }
-            set { m_Places = value; }
+            set { m_Title = value; }
+            get { return m_Title; }
         }
 
-
-        public WordVocabulary GetRandomWord()
+        [SerializeField]
+        private string m_Description;
+        public string Description
         {
-            if (m_Places != null)
-            {
-                int iRand = Random.Range(0, m_Places.Count);
-                return m_Places[iRand];
-            }
+            set { m_Description = value; }
+            get { return m_Description; }
+        }
 
-            return null;
+        [SerializeField]
+        private string m_Vocabulary;
+        public string Vocabulary
+        {
+            set { m_Vocabulary = value; }
+            get { return m_Vocabulary; }
+        }
+
+        
+        [SerializeField]
+        private SentencesExamples m_SentencesExamples = new SentencesExamples();
+        public SentencesExamples SentencesExamples
+        {
+            set { m_SentencesExamples = value; }
+            get { return m_SentencesExamples; }
         }
     }
 
     [System.Serializable]
-    public class ProfesionsData
+    public class GrammarData
     {
         [SerializeField]
-        private List<WordVocabulary> m_Profesions = new List<WordVocabulary>();
-        public List<WordVocabulary> Profesions
+        private List<GrammarSection> m_Data = new List<GrammarSection>();
+        public List<GrammarSection> Data
         {
-            get { return m_Profesions; }
-            set { m_Profesions = value; }
-        }
-
-
-        public WordVocabulary GetRandomWord()
-        {
-            if (m_Profesions != null)
-            {
-                int iRand = Random.Range(0, m_Profesions.Count);
-                return m_Profesions[iRand];
-            }
-
-            return null;
-        }
+            get { return m_Data; }
+            set { m_Data = value; }
+        }       
     }
+
+    #endregion Grammar
 
 }
