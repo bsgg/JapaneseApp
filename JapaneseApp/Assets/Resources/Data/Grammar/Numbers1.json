@@ -2,12 +2,13 @@
 	"Data":	
 	[
     {
+      "Title": "",
       "Word": "一",
       "Hiragana": "いち",
       "Romanji": "Ichi",
       "Meaning": "1",
-      "Picture": "",
-      "Explanation": "",
+      "SpriteID": "",
+      "Description": "",
       "Examples": {
         "Sentence": [
           "",
@@ -28,12 +29,13 @@
       }
     },
     {
+      "Title": "",
       "Word": "二",
       "Hiragana": "に",
       "Romanji": "Ni",
       "Meaning": "2",
-      "Picture": "",
-      "Explanation": "",
+      "SpriteID": "",
+      "Description": "",
       "Examples": {
         "Sentence": [
           "",
@@ -54,12 +56,13 @@
       }
     },
     {
+      "Title": "",
       "Word": "三",
       "Hiragana": "さん",
       "Romanji": "San",
       "Meaning": "3",
-      "Picture": "",
-      "Explanation": "",
+      "SpriteID": "",
+      "Description": "",
       "Examples": {
         "Sentence": [
           "",
@@ -80,12 +83,13 @@
       }
     },
     {
+      "Title": "",
       "Word": "四",
       "Hiragana": "よん / し",
       "Romanji": "Yon / Shi",
       "Meaning": "4",
-      "Picture": "",
-      "Explanation": "",
+      "SpriteID": "",
+      "Description": "",
       "Examples": {
         "Sentence": [
           "",
@@ -106,12 +110,13 @@
       }
     },
     {
+      "Title": "",
       "Word": "五",
       "Hiragana": "ご",
       "Romanji": "Go",
       "Meaning": "5",
-      "Picture": "",
-      "Explanation": "",
+      "SpriteID": "",
+      "Description": "",
       "Examples": {
         "Sentence": [
           "",
@@ -132,12 +137,13 @@
       }
     },
     {
+      "Title": "",
       "Word": "六",
       "Hiragana": "ろく",
       "Romanji": "Roku",
       "Meaning": "6",
-      "Picture": "",
-      "Explanation": "",
+      "SpriteID": "",
+      "Description": "",
       "Examples": {
         "Sentence": [
           "",
@@ -158,12 +164,13 @@
       }
     },
     {
+      "Title": "",
       "Word": "七",
       "Hiragana": "なな　/　しち",
       "Romanji": "Nana / Shichi",
       "Meaning": "7",
-      "Picture": "",
-      "Explanation": "",
+      "SpriteID": "",
+      "Description": "",
       "Examples": {
         "Sentence": [
           "",
@@ -184,12 +191,13 @@
       }
     },
     {
+      "Title": "",
       "Word": "八",
       "Hiragana": "はち",
       "Romanji": "Hachi",
       "Meaning": "8",
-      "Picture": "",
-      "Explanation": "",
+      "SpriteID": "",
+      "Description": "",
       "Examples": {
         "Sentence": [
           "",
@@ -210,12 +218,13 @@
       }
     },
     {
+      "Title": "",
       "Word": "九",
       "Hiragana": "きゅう　/　く",
       "Romanji": "Kuu / Ku",
       "Meaning": "9",
-      "Picture": "",
-      "Explanation": "",
+      "SpriteID": "",
+      "Description": "",
       "Examples": {
         "Sentence": [
           "",
@@ -236,36 +245,32 @@
       }
     },
     {
-			"Word": "十",
-			"Hiragana": "じゅう",
-			"Romanji": "Juu",
+      "Title": "",
+      "Word": "十",
+      "Hiragana": "じゅう",
+      "Romanji": "Juu",
       "Meaning": "10",
-      "Picture": "",
-      "Explanation": "",
-			"Examples": 
-			{
-				"Sentence": 
-				[
-					"",
-				  ""
-				],
-				"Kanjis": 
-				[
+      "SpriteID": "",
+      "Description": "",
+      "Examples": {
+        "Sentence": [
           "",
           ""
-				],
-				"Romanji": 
-				[
-				  "",
-				  ""
-				],
-				"English": 
-				[
-				  "",
-				  ""
-				]
-			}		
-		}
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romanji": [
+          "",
+          ""
+        ],
+        "English": [
+          "",
+          ""
+        ]
+      }
+    }
 
 	]
 }

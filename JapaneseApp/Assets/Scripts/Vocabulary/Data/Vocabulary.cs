@@ -69,6 +69,8 @@ namespace JapaneseApp
     [System.Serializable]
     public class WordVocabulary
     {
+
+
         [SerializeField]
         private string m_Meaning;
         public string Meaning
@@ -76,6 +78,15 @@ namespace JapaneseApp
             set { m_Meaning = value; }
             get { return m_Meaning; }
         }
+
+        [SerializeField]
+        private string m_Title;
+        public string Title
+        {
+            set { m_Title = value; }
+            get { return m_Title; }
+        }
+
 
 
         [SerializeField]
@@ -108,6 +119,14 @@ namespace JapaneseApp
         {
             set { m_SpriteID = value; }
             get { return m_SpriteID; }
+        }
+
+        [SerializeField]
+        private string m_Description;
+        public string Description
+        {
+            set { m_Description = value; }
+            get { return m_Description; }
         }
 
         [SerializeField]

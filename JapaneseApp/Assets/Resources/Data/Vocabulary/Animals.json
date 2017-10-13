@@ -1,35 +1,32 @@
 {
 	"Data":	
 	[
-		{
-			"Word": "蟹",
-			"Hiragana": "かに",
-			"Romanji": "Kani",
+    {
+      "Title": "",
+      "Word": "蟹",
+      "Hiragana": "かに",
+      "Romanji": "Kani",
       "Meaning": "Crab",
       "SpriteID": "Animals_Crab",
-			"SentencesExamples": 
-			{
-				"Sentence": 
-				[
-					"蟹がはまべをあるいている",
-				  "オレンジと赤の蟹"
-				],
-				"Kanjis": 
-				[
+      "Description": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "蟹がはまべをあるいている",
+          "オレンジと赤の蟹"
+        ],
+        "Kanjis": [
           "- 蟹 : かに - Kani",
           "- 蟹 : かに - Kani"
-				],
-				"Romanji": 
-				[
-				  "Kani ga hamabe o aruite iru.",
-				  "Orenji to aka no kani"
-				],
-				"English": 
-				[
-				  "The crab is walking on the beach.",
-				  "Orange and red crab"
-				]
-			}		
-		}
+        ],
+        "Romanji": [
+          "Kani ga hamabe o aruite iru.",
+          "Orenji to aka no kani"
+        ],
+        "English": [
+          "The crab is walking on the beach.",
+          "Orange and red crab"
+        ]
+      }
+    }
 	]
 }

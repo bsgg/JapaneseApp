@@ -2,11 +2,13 @@
 	"Data":	
 	[
     {
+      "Title": "",
       "Word": "学生",
       "Hiragana": "がくせい",
       "Romanji": "Gakusei",
       "Meaning": "Student",
       "SpriteID": "",
+      "Description": "",
       "SentencesExamples": {
         "Sentence": [
           "ﾏﾘｱさん学生です",
@@ -27,34 +29,31 @@
       }
     },
     {
-			"Word": "先生",
-			"Hiragana": "せんせい",
-			"Romanji": "Sensei",
+      "Title": "",
+      "Word": "先生",
+      "Hiragana": "せんせい",
+      "Romanji": "Sensei",
       "Meaning": "Teacher, Doctor",
       "SpriteID": "",
-			"SentencesExamples": 
-			{
-				"Sentence": 
-				[
-					"マリアは先生です",
-				  "先生ですか"
-				],
-				"Kanjis": 
-				[
+      "Description": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "マリアは先生です",
+          "先生ですか"
+        ],
+        "Kanjis": [
           "- 先生 : せんせい - Teacher, Doctor",
           "- 先生 : せんせい - Teacher, Doctor"
-				],
-				"Romanji": 
-				[
-				  "Maria wa sensei desu.",
-				  "Sensei desu ka?"
-				],
-				"English": 
-				[
-				  "Maria is a teacher.",
-				  "Are you a teacher?"
-				]
-			}		
-		}
+        ],
+        "Romanji": [
+          "Maria wa sensei desu.",
+          "Sensei desu ka?"
+        ],
+        "English": [
+          "Maria is a teacher.",
+          "Are you a teacher?"
+        ]
+      }
+    }
 	]
 }

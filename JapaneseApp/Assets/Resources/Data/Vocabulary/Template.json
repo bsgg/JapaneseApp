@@ -1,35 +1,32 @@
 {
 	"Data":	
 	[
-		{
-			"Word": "",
-			"Hiragana": "",
-			"Romanji": "",
+    {
+      "Title": "",
+      "Word": "",
+      "Hiragana": "",
+      "Romanji": "",
       "Meaning": "",
-      "Picture": "",
-			"SentencesExamples": 
-			{
-				"Sentence": 
-				[
-					"",
-				  ""
-				],
-				"Kanjis": 
-				[
+      "SpriteID": "",
+      "Description": "",
+      "SentencesExamples": {
+        "Sentence": [
           "",
           ""
-				],
-				"Romanji": 
-				[
-				  "",
-				  ""
-				],
-				"English": 
-				[
-				  "",
-				  ""
-				]
-			}		
-		}
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romanji": [
+          "",
+          ""
+        ],
+        "English": [
+          "",
+          ""
+        ]
+      }
+    }
 	]
 }

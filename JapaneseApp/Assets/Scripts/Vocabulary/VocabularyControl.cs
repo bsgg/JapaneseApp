@@ -30,13 +30,29 @@ namespace JapaneseApp
         }
     }
 
+    [System.Serializable]
+    public class GrammarData
+    {
+        public string Name = "";
+        public VocabularyControl.EGramar Category;
+        public string DataPath = "";
+        public WordData WordData;
+
+       
+    }
+
     public class VocabularyControl : Base
     {
-        public enum ECategory { NONE = -1, ANIMALS, PROFESIONS,  NUM };
+        public enum ECategory { NONE = -1, ANIMALS, PROFESIONS, NUM };
+
+        public enum EGramar { NONE = -1, NUMBERS1};
 
         [SerializeField]
-        private List<VocabularyData> m_DataSet;
-        
+        private List<VocabularyData> m_VocabularySet;
+
+        [SerializeField]
+        private List<GrammarData> m_GramarSet;
+
 
         [SerializeField]
         private VocabularyUI m_VocabularyUI;
@@ -61,22 +77,38 @@ namespace JapaneseApp
 
             List<string> categories =  new List<string>();
 
-            for (int i= 0; i< m_DataSet.Count; i++)
+            for (int i= 0; i< m_VocabularySet.Count; i++)
             {
-                m_DataSet[i].WordData = new WordData();
+                m_VocabularySet[i].WordData = new WordData();
 
-                string json = Utility.LoadJSONResource( m_DataSet[i].DataPath);
+                string json = Utility.LoadJSONResource( m_VocabularySet[i].DataPath);
                 if (json != "")
                 {
-                    m_DataSet[i].WordData = JsonMapper.ToObject<WordData>(json);
+                    m_VocabularySet[i].WordData = JsonMapper.ToObject<WordData>(json);
                 }
 
-                categories.Add(m_DataSet[i].Name);
+                categories.Add(m_VocabularySet[i].Name);
 
             }
 
             m_CategoriesUI.ScrollMenu.InitScroll(categories);
             m_CategoriesUI.ScrollMenu.OnItemPress += OnCategoryPress;
+
+
+
+            // Grammar Set
+            for (int i = 0; i < m_GramarSet.Count; i++)
+            {
+                m_GramarSet[i].WordData = new WordData();
+
+                string json = Utility.LoadJSONResource( m_GramarSet[i].DataPath);
+                if (json != "")
+                {
+                    m_GramarSet[i].WordData = JsonMapper.ToObject<WordData>(json);
+                }
+
+            }
+
         }
        
         public void ShowCategories()
@@ -126,7 +158,7 @@ namespace JapaneseApp
         {
             // Get random word from a category
             m_CurrentDataID = Random.Range(0,(int)ECategory.NUM);
-            m_CurrentWord = m_DataSet[m_CurrentDataID].WordData.GetRandomWord();
+            m_CurrentWord = m_VocabularySet[m_CurrentDataID].WordData.GetRandomWord();
            
 
             if (m_CurrentWord != null)
@@ -138,7 +170,7 @@ namespace JapaneseApp
 
                 if (!string.IsNullOrEmpty(m_CurrentWord.SpriteID))
                 {
-                    m_VocabularyUI.Picture.sprite = m_DataSet[m_CurrentDataID].SpriteByKey(m_CurrentWord.SpriteID);
+                    m_VocabularyUI.Picture.sprite = m_VocabularySet[m_CurrentDataID].SpriteByKey(m_CurrentWord.SpriteID);
                     m_VocabularyUI.Picture.preserveAspect = true;
                     m_VocabularyUI.PictureObject.gameObject.SetActive(true);
                 }
