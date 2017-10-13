@@ -84,7 +84,8 @@ namespace JapaneseApp
         {
             if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
             {
-                EasyTTSUtil.SpeechFlush(m_Word.text);
+                Debug.Log(" ON WORD PLAY " + m_Word.text);
+                EasyTTSUtil.SpeechFlush(m_Hiragana.text);
             }
         }
 
