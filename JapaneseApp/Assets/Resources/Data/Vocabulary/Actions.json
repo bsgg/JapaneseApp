@@ -1,0 +1,30 @@
+﻿{
+	"Data":	
+	[
+    {
+      "Word": "助ける",
+      "Hiragana": "たすける",
+      "Romanji": "Tasukeru",
+      "Meaning": "Help",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "助けて！",
+          "助けに来る"
+        ],
+        "Kanjis": [
+          "- 助け : たすけ - Tasuke",
+          "- 助け : たすけ - Tasuke | - 来る : くる - Kuru"
+        ],
+        "Romanji": [
+          "Tasukete!",
+          "Tasuke ni kuru"
+        ],
+        "English": [
+          "Help me!",
+          "To come to help"
+        ]
+      }
+    }
+	]
+}
