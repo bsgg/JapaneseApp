@@ -226,12 +226,312 @@
         ]
       }
     },
-    {      
+    {
       "Word": "十",
       "Hiragana": "じゅう",
       "Romanji": "Juu",
       "Meaning": "10",
-      "SpriteID": "",     
+      "SpriteID": "",
+      "Examples": {
+        "Sentence": [
+          "",
+          ""
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romanji": [
+          "",
+          ""
+        ],
+        "English": [
+          "",
+          ""
+        ]
+      }
+    },    
+    {
+      "Word": "十一",
+      "Hiragana": "じゅういち",
+      "Romanji": "Juu Ichi",
+      "Meaning": "11",
+      "SpriteID": "",
+      "Examples": {
+        "Sentence": [
+          "",
+          ""
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romanji": [
+          "",
+          ""
+        ],
+        "English": [
+          "",
+          ""
+        ]
+      }
+    },
+    {
+      "Word": "十二",
+      "Hiragana": "じゅうに",
+      "Romanji": "Juuni",
+      "Meaning": "20",
+      "SpriteID": "",
+      "Examples": {
+        "Sentence": [
+          "",
+          ""
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romanji": [
+          "",
+          ""
+        ],
+        "English": [
+          "",
+          ""
+        ]
+      }
+    },
+    {
+      "Word": "十三",
+      "Hiragana": "じゅうさん",
+      "Romanji": "Juu San",
+      "Meaning": "13",
+      "SpriteID": "",
+      "Examples": {
+        "Sentence": [
+          "",
+          ""
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romanji": [
+          "",
+          ""
+        ],
+        "English": [
+          "",
+          ""
+        ]
+      }
+    },
+    {
+      "Word": "十四",
+      "Hiragana": "じゅうよん",
+      "Romanji": "Juu Yon",
+      "Meaning": "14",
+      "SpriteID": "",
+      "Examples": {
+        "Sentence": [
+          "",
+          ""
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romanji": [
+          "",
+          ""
+        ],
+        "English": [
+          "",
+          ""
+        ]
+      }
+    },
+    {
+      "Word": "十五",
+      "Hiragana": "じゅうご",
+      "Romanji": "Juu Go",
+      "Meaning": "15",
+      "SpriteID": "",
+      "Examples": {
+        "Sentence": [
+          "",
+          ""
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romanji": [
+          "",
+          ""
+        ],
+        "English": [
+          "",
+          ""
+        ]
+      }
+    },
+    {
+      "Word": "十六",
+      "Hiragana": "じゅうろく",
+      "Romanji": "Juu Roku",
+      "Meaning": "16",
+      "SpriteID": "",
+      "Examples": {
+        "Sentence": [
+          "",
+          ""
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romanji": [
+          "",
+          ""
+        ],
+        "English": [
+          "",
+          ""
+        ]
+      }
+    },
+    {
+      "Word": "十七",
+      "Hiragana": "じゅうなな",
+      "Romanji": "Juu Nana",
+      "Meaning": "17",
+      "SpriteID": "",
+      "Examples": {
+        "Sentence": [
+          "",
+          ""
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romanji": [
+          "",
+          ""
+        ],
+        "English": [
+          "",
+          ""
+        ]
+      }
+    },
+    {
+      "Word": "十八",
+      "Hiragana": "じゅうはち",
+      "Romanji": "Juu Hachi",
+      "Meaning": "18",
+      "SpriteID": "",
+      "Examples": {
+        "Sentence": [
+          "",
+          ""
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romanji": [
+          "",
+          ""
+        ],
+        "English": [
+          "",
+          ""
+        ]
+      }
+    },
+    {
+      "Word": "十九",
+      "Hiragana": "じゅうきゆう",
+      "Romanji": "Juu Kyoo",
+      "Meaning": "19",
+      "SpriteID": "",
+      "Examples": {
+        "Sentence": [
+          "",
+          ""
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romanji": [
+          "",
+          ""
+        ],
+        "English": [
+          "",
+          ""
+        ]
+      }
+    },
+    {
+      "Word": "ニ十",
+      "Hiragana": "にじゅう",
+      "Romanji": "Ni Juu",
+      "Meaning": "20",
+      "SpriteID": "",
+      "Examples": {
+        "Sentence": [
+          "",
+          ""
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romanji": [
+          "",
+          ""
+        ],
+        "English": [
+          "",
+          ""
+        ]
+      }
+    },
+    {
+      "Word": "ニ十三 ",
+      "Hiragana": "にじゅうさん",
+      "Romanji": "Ni Juu San",
+      "Meaning": "23",
+      "SpriteID": "",
+      "Examples": {
+        "Sentence": [
+          "",
+          ""
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romanji": [
+          "",
+          ""
+        ],
+        "English": [
+          "",
+          ""
+        ]
+      }
+    },
+    {
+      "Word": "百",
+      "Hiragana": "ひゅく",
+      "Romanji": "Hyaku",
+      "Meaning": "100",
+      "SpriteID": "",
       "Examples": {
         "Sentence": [
           "",

@@ -1,0 +1,26 @@
+﻿{
+	"Data":	
+	[
+    {
+      "Word": "居間",
+      "Hiragana": "いま",
+      "Romanji": "Ima",
+      "Meaning": "Living Room",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          " 居間の家具"
+        ],
+        "Kanjis": [
+          "- 居間 : いま (Ima): Living Room |- 家具 : かぐ (Kagu): Furniture"
+        ],
+        "Romanji": [
+          "Ima no kagu"
+        ],
+        "English": [
+          "Living room furniture."
+        ]
+      }
+    }
+	]
+}

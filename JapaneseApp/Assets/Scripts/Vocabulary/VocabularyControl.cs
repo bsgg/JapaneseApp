@@ -32,7 +32,7 @@ namespace JapaneseApp
 
     public class VocabularyControl : Base
     {
-        public enum ECategory { NONE = -1, ANIMALS, PROFESIONS, NUMBERS, ACTIONS, NUM };
+        public enum ECategory { NONE = -1, ANIMALS, PROFESIONS, NUMBERS, ACTIONS, PLACES,NUM };
 
         [SerializeField]
         private List<VocabularyData> m_VocabularySet;
@@ -121,9 +121,6 @@ namespace JapaneseApp
             
             m_CurrentCategory = (ECategory)id;
             m_CurrentWordID = 0;
-
-
-            Debug.Log("OnCategoryPress: " + id + " : " + m_CurrentCategory.ToString());
 
             SetWordByCategory();
 
