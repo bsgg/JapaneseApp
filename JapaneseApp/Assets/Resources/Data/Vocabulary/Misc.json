@@ -1,0 +1,47 @@
+﻿{
+	"Data":	
+	[
+    {
+      "Word": "何",
+      "Hiragana": "なん",
+      "Romanji": "Nan",
+      "Meaning": "Que",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "それ　は　何　です　か"
+        ],
+        "Kanjis": [
+          "何 : なん(Nan) : What"
+        ],
+        "Romanji": [
+          "Sore ha(wa) nan desu ka"
+        ],
+        "English": [
+          "What is this?"
+        ]
+      }
+    },
+    {
+      "Word": "名前",
+      "Hiragana": "なまえ",
+      "Romanji": "Namae",
+      "Meaning": "Name",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "お　名前　は　何　です　か"
+        ],
+        "Kanjis": [
+          " - 名前： なまえ(Namae) : Name |- 何: なん(Nan) : Que"
+        ],
+        "Romanji": [
+          "O-namae wa nan desu ka"
+        ],
+        "English": [
+          "What's your name?"
+        ]
+      }
+    }
+	]
+}

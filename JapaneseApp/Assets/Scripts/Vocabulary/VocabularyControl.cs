@@ -32,7 +32,7 @@ namespace JapaneseApp
 
     public class VocabularyControl : Base
     {
-        public enum ECategory { NONE = -1, ANIMALS, PROFESIONS, NUMBERS, ACTIONS, PLACES,NUM };
+        public enum ECategory { NONE = -1, ANIMALS, PROFESIONS, NUMBERS, ACTIONS, PLACES,MISC, NUM };
 
         [SerializeField]
         private List<VocabularyData> m_VocabularySet;
