@@ -8,9 +8,9 @@ namespace JapaneseApp
     [System.Serializable]
     public class VocabularyData
     {
-        public string Name = "";
+       // public string Name = "";
         public VocabularyControl.ECategory Category;
-        public string DataPath = "";
+        //public string DataPath = "";
         public WordData WordData;
 
         [SerializeField]  public List<Sprite> Sprites;
@@ -32,7 +32,10 @@ namespace JapaneseApp
 
     public class VocabularyControl : Base
     {
-        public enum ECategory { NONE = -1, ANIMALS, PROFESIONS, NUMBERS, ACTIONS, PLACES,MISC, NUM };
+        public enum ECategory { NONE = -1, ANIMALS,  PLACES, TECHNOLOGY, PROFESIONS, ACTIONS, NUMBERS, MISC, NUM };
+        private string[] m_NameCategories = {"Animals", "Places", "Technology", "Profesions", "Actions", "Numbers", "Misc" };
+
+        [SerializeField] private string m_DataPath = "Data/Vocabulary/";
 
         [SerializeField]
         private List<VocabularyData> m_VocabularySet;
@@ -66,13 +69,16 @@ namespace JapaneseApp
             {
                 m_VocabularySet[i].WordData = new WordData();
 
-                string json = Utility.LoadJSONResource( m_VocabularySet[i].DataPath);
+                int index = (int)m_VocabularySet[i].Category;
+
+                string path = m_DataPath + m_NameCategories[index];
+                string json = Utility.LoadJSONResource(path);
                 if (json != "")
                 {
                     m_VocabularySet[i].WordData = JsonMapper.ToObject<WordData>(json);
                 }
 
-                categories.Add(m_VocabularySet[i].Name);
+                categories.Add(m_NameCategories[index]);
 
             }
 

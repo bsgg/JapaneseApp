@@ -1,0 +1,30 @@
+﻿{
+	"Data":	
+	[
+    {
+      "Word": "電話",
+      "Hiragana": "でんわ",
+      "Romanji": "Denwa",
+      "Meaning": "Telephone",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "あれはわたしの携帯電話です。",
+          "電話番号は何ですか。"
+        ],
+        "Kanjis": [
+          "- 携帯 = Portable (けいたい - keitai)|- 電話 = Phone (でんわ - Denwa)",
+          "- 電話 = Phone (でんわ - Denwa)|- 番号 = Phone (でんわ - Denwa)|- 何 = Que (なに - Nani)"
+        ],
+        "Romanji": [
+          "Are wa watashi no keitai denwa desu.",
+          "Denwa bangō wa nan desu ka?"
+        ],
+        "English": [
+          "That's my mobile phone.",
+          "What is the phone number?"
+        ]
+      }
+    }
+	]
+}

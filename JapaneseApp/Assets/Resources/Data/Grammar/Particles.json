@@ -1,0 +1,28 @@
+﻿{
+	"Data":	
+	[
+    {
+      "Title": "Particle の (No)",
+      "Description": "No（の）is a possessive particle which indicates ownership or attribution.\n No （の）comes after the noun it modifies, like \"___'s\" in English.",
+      "Vocabulary": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "コンピューターのパスワード",
+          "私の会社"
+        ],
+        "Kanjis": [
+          "",
+          "- 私 = Me/I (けいたい - Watashi)|- 会社 = Company (1.Meeting 2.Company) (かい しゃ - kai sha)"
+        ],
+        "Romanji": [
+          "konpyūtā no pasuwādo",
+          "watashi no kaisha"
+        ],
+        "English": [
+          "Computer's password, Password for the computer",
+          "My company"
+        ]
+      }
+    }
+	]
+}
