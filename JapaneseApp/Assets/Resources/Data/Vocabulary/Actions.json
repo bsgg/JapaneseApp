@@ -13,8 +13,8 @@
           "助けに来る"
         ],
         "Kanjis": [
-          "- 助け : たすけ - Tasuke",
-          "- 助け : たすけ - Tasuke | - 来る : くる - Kuru"
+          "- 助け = Help (たすけ - Tasuke)",
+          "- 助け = Help (たすけ - Tasuke) |- 来る = Come (くる - Kuru)"
         ],
         "Romanji": [
           "Tasukete!",
@@ -23,6 +23,31 @@
         "English": [
           "Help me!",
           "To come to help"
+        ]
+      }
+    },
+    {
+      "Word": "洗う",
+      "Hiragana": "あらう",
+      "Romanji": "Arau",
+      "Meaning": "Wash",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "男の子が皿を洗う。",
+          "女の子が顔を洗った。"
+        ],
+        "Kanjis": [
+          "- 男 = Boy (おとこ - Otoko)|- 子 = Child (こ - Ko)|- 皿 = Dishes (さら - Sara)|- 洗う = Wash (あらう - Arau)",
+          "- 女 = Girl (おんな - Onna)|- 子 = Child (こ - Ko)|- 顔 = Face (かお - kao)|- 洗う = Wash (あらう - Arau)"
+        ],
+        "Romanji": [
+          "Otoko no ko ga sara o arau.",
+          "Onna no ko ga kao o aratta."
+        ],
+        "English": [
+          "The boy washes the dishes.",
+          "The girl washed her face."
         ]
       }
     }
