@@ -36,21 +36,13 @@ namespace JapaneseApp
 
 
         [SerializeField]
-        private CanvasGroup m_PictureObject;
-        public CanvasGroup PictureObject
+        private SpriteUI m_Sprite;
+        public SpriteUI Sprite
         {
-            set { m_PictureObject = value; }
-            get { return m_PictureObject; }
+            set { m_Sprite = value; }
+            get { return m_Sprite; }
         }
-
-        [SerializeField]
-        private Image m_Picture;
-        public Image Picture
-        {
-            set { m_Picture = value; }
-            get { return m_Picture; }
-        }
-
+        
 
         [SerializeField]
         private Text m_Hiragana;
@@ -75,24 +67,5 @@ namespace JapaneseApp
             m_Example.Hide();
 
         }
-
-        #region Handles
-
-
-
-        public void OnWordPlay()
-        {
-            if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
-            {
-                Debug.Log(" ON WORD PLAY " + m_Word.text);
-                EasyTTSUtil.SpeechFlush(m_Hiragana.text);
-            }
-        }
-
-        #endregion  Handles
-
-
-
-
     }
 }

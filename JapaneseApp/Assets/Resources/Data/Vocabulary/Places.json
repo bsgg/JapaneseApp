@@ -1,6 +1,30 @@
 ﻿{
-	"Data":	
-	[
+  "Data": [
+    {
+      "Word": "家",
+      "Hiragana": "いえ",
+      "Romanji": "Ie",
+      "Meaning": "House/Home",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "家です",
+          "家はどこですか"
+        ],
+        "Kanjis": [
+          "- 家 = House (いえ - Ie)",
+          "- 家 = House (いえ - Ie)"
+        ],
+        "Romanji": [
+          "Ie desu",
+          "Ie ha(wa) doko desu ka?"
+        ],
+        "English": [
+          "It's a house",
+          "Where is the house?"
+        ]
+      }
+    },
     {
       "Word": "居間",
       "Hiragana": "いま",
@@ -12,7 +36,7 @@
           " 居間の家具"
         ],
         "Kanjis": [
-          "- 居間 : いま (Ima): Living Room |- 家具 : かぐ (Kagu): Furniture"
+          "- 居間 = Living Room (いま - Ima)|- 家具 = Furniture (かぐ - Kagu): "
         ],
         "Romanji": [
           "Ima no kagu"
@@ -22,5 +46,5 @@
         ]
       }
     }
-	]
+  ]
 }

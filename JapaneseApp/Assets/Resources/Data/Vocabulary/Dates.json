@@ -1,0 +1,84 @@
+﻿{
+  "Data": [
+    {
+      "Word": "誕生日",
+      "Hiragana": "たん じょう び",
+      "Romanji": "Tanjōbi",
+      "Meaning": "Birtday",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "私の誕生日は 七月です。",
+          "東さんの 誕生日"
+        ],
+        "Kanjis": [
+          "- 私 = I/Me (わたし - Watashi)|- 誕生日 = Birthday (たん じょう び - Tanjōbi)|- 七 = 7 (しち - Shichi)|- 月 = Month (がつ - Gatsu)",
+          "- 東 = Higashi-San (Name) (ひがし)|- 誕生日 = Birthday (たん じょう び - Tanjōbi)"
+        ],
+        "Romanji": [
+          "Watashi no tanjōbi wa shichigatsu desu.",
+          "Higashi san no Tanjōbi"
+        ],
+        "English": [
+          "My birthday is in July.",
+          "Higashi's birthday."
+        ]
+      }
+    },
+    {
+      "Word": "出る",
+      "Hiragana": "でる",
+      "Romanji": "Deru",
+      "Meaning": "Leave",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "私は、毎日8時に家を出ます。",
+          "家を出る",
+          "会社を出る"
+        ],
+        "Kanjis": [
+          "- 私 = I/Me (わたし - Watashi)|- 毎日: Every day (まいにち - Mainichi)|- 時 = Time (じ - Ji)|- 出ます = Leave (でます - Demasu)",
+          "- 家 = Home (いえ - Ie)|- 出ます = Leave (でる - Deru)",
+          "- 会社 = Company (かいしゃ - Kaishya)|- 出 = Leave (でる - Deru)"
+        ],
+        "Romanji": [
+          "Watashi wa, mainichi hachi-ji ni ie o demasu.",
+          "Ie o deru",
+          "Kaisha o deru"
+        ],
+        "English": [
+          "I leave home at 8:00 every day.",
+          "Leave home",
+          "Leave a company"
+
+        ]
+      }
+    },
+    {
+      "Word": "助ける",
+      "Hiragana": "たすける",
+      "Romanji": "Tasukeru",
+      "Meaning": "Help",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "助けて！",
+          "助けに来る"
+        ],
+        "Kanjis": [
+          "- 助け = Help (たすけ - Tasuke)",
+          "- 助け = Help (たすけ - Tasuke) |- 来る = Come (くる - Kuru)"
+        ],
+        "Romanji": [
+          "Tasukete!",
+          "Tasuke ni kuru"
+        ],
+        "English": [
+          "Help me!",
+          "To come to help"
+        ]
+      }
+    }
+  ]
+}

@@ -32,8 +32,8 @@ namespace JapaneseApp
 
     public class VocabularyControl : Base
     {
-        public enum ECategory { NONE = -1, ANIMALS,  PLACES, TECHNOLOGY, PROFESIONS, ACTIONS, NUMBERS, MISC, NUM };
-        private string[] m_NameCategories = {"Animals", "Places", "Technology", "Profesions", "Actions", "Numbers", "Misc" };
+        public enum ECategory { NONE = -1, ANIMALS,  PLACES, TECHNOLOGY, PROFESIONS, ACTIONS, NUMBERS,Dates ,  MISC, NUM };
+        private string[] m_NameCategories = {"Animals", "Places", "Technology", "Profesions", "Actions", "Numbers","Dates", "Misc" };
 
         [SerializeField] private string m_DataPath = "Data/Vocabulary/";
 
@@ -154,16 +154,14 @@ namespace JapaneseApp
                 m_VocabularyUI.English = m_CurrentWord.Meaning;
                 m_VocabularyUI.Hiragana = m_CurrentWord.Hiragana + " : " + m_CurrentWord.Romanji;
 
+                Debug.Log("SPRITE ID: " + m_CurrentWord.SpriteID);
                 if (!string.IsNullOrEmpty(m_CurrentWord.SpriteID))
                 {
-                    m_VocabularyUI.Picture.sprite = m_VocabularySet[(int)m_CurrentCategory].SpriteByKey(m_CurrentWord.SpriteID);
-                    m_VocabularyUI.Picture.preserveAspect = true;
-                    m_VocabularyUI.PictureObject.gameObject.SetActive(true);
+                    m_VocabularyUI.Sprite.SpriteObject = m_VocabularySet[(int)m_CurrentCategory].SpriteByKey(m_CurrentWord.SpriteID);
+
                 }
-                else
-                {
-                    m_VocabularyUI.PictureObject.gameObject.SetActive(false);
-                }
+                
+                m_VocabularyUI.Sprite.Hide();
 
                 // Set sentence
                 if ((m_CurrentWord.SentencesExamples != null) && (m_CurrentWord.SentencesExamples.Sentence.Count > 0))
@@ -253,6 +251,11 @@ namespace JapaneseApp
             {
                 m_VocabularyUI.Example.Hide();
             }
+
+            if (m_VocabularyUI.Sprite.Visible)
+            {
+                m_VocabularyUI.Sprite.Hide();
+            }
         }
 
         public void OnNextWord()
@@ -288,6 +291,16 @@ namespace JapaneseApp
             SetExample(m_ICurrentExample);
 
         }
+
+        public void OnSoundPlay()
+        {
+            if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+            {
+                EasyTTSUtil.SpeechFlush(m_CurrentWord.Hiragana);
+            }
+        }
+
+
 
         #endregion Handles
     }
