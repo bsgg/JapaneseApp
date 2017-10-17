@@ -36,6 +36,9 @@ namespace JapaneseApp
         private VocabularyControl m_VocabularyControl;
 
         [SerializeField]
+        private GrammarControl m_GrammarControl;
+
+        [SerializeField]
         private UIBase m_MainMenu;
 
 
@@ -93,6 +96,8 @@ namespace JapaneseApp
 
 
             m_VocabularyControl.Init();
+
+            m_GrammarControl.Init();
 
             m_MainMenu.Show();
 
@@ -158,6 +163,12 @@ namespace JapaneseApp
         {
             m_MainMenu.Hide();
             m_VocabularyControl.ShowRandomWord();
+        }
+
+        public void OnGrammarPress()
+        {
+            m_MainMenu.Hide();
+            m_GrammarControl.ShowCategories();
         }
 
 

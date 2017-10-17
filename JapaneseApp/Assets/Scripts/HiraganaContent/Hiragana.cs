@@ -1,7 +1,35 @@
 ﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace JapaneseApp
 {
+    [System.Serializable]
+    public class Vocabulary
+    {
+        [SerializeField]
+        private List<string> m_Hiragana;
+        public List<string> Hiragana
+        {
+            set { m_Hiragana = value; }
+            get { return m_Hiragana; }
+        }
+
+        [SerializeField]
+        private List<string> m_Romanji;
+        public List<string> Romanji
+        {
+            set { m_Romanji = value; }
+            get { return m_Romanji; }
+        }
+
+        [SerializeField]
+        private List<string> m_Meaning;
+        public List<string> Meaning
+        {
+            set { m_Meaning = value; }
+            get { return m_Meaning; }
+        }
+    }
 
     public class HiraganaAlphabet
 	{
@@ -33,9 +61,6 @@ namespace JapaneseApp
             get { return m_Vocabulary; }
         }
     }
-
-
-   
 
 
     public class HiraganaData
