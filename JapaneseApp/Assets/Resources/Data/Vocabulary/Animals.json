@@ -1,6 +1,55 @@
 {
-	"Data":	
-	[
+  "Data": [
+    {
+      "Word": "鳥",
+      "Hiragana": "とり",
+      "Romanji": "Tori",
+      "Meaning": "Bird",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "鳥がニわいます",
+          "鳥が七わいます"
+        ],
+        "Kanjis": [
+          "- 鳥 = Bird (とり - Tori)|- ニ = 2 (に - Ni)",
+          "- 鳥 = Bird (とり - Tori)|- 七 = 7 (なな - Nana)"
+        ],
+        "Romanji": [
+          "Tori ga ni wa imadesu",
+          "Tori ga nana ga imasu."
+        ],
+        "English": [
+          "There are two birds",
+          "There are seven birds"
+        ]
+      }
+    },
+    {
+      "Word": "猫",
+      "Hiragana": "ねこ",
+      "Romanji": "Neko",
+      "Meaning": "Cat",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "猫です",
+          "猫がいます"
+        ],
+        "Kanjis": [
+          "- 猫 = Cat (ねこ - Neko)",
+          "- 猫 = Cat (ねこ - Neko)"
+        ],
+        "Romanji": [
+          "Neko desu",
+          "Neko ga imasu"
+        ],
+        "English": [
+          "It's a cat",
+          "There is a cat"
+        ]
+      }
+    },
     {
       "Word": "蟹",
       "Hiragana": "かに",
@@ -25,6 +74,31 @@
           "Orange and red crab"
         ]
       }
+    },
+    {
+      "Word": "犬",
+      "Hiragana": "いぬ",
+      "Romanji": "Inu",
+      "Meaning": "Dog",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "犬です",
+          "犬と猫がいます"
+        ],
+        "Kanjis": [
+          "- 犬 = Dog (いぬ - Inu)",
+          "- 犬 = Dog (いぬ - Inu)|- 猫 = Cat (ねこ - Neko)"
+        ],
+        "Romanji": [
+          "Inu desu",
+          "Inu to neko ga imasu"
+        ],
+        "English": [
+          "It's a cat",
+          "There is a cat and a dog."
+        ]
+      }
     }
-	]
+  ]
 }
