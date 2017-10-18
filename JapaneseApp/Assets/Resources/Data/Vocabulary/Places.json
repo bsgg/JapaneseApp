@@ -9,19 +9,23 @@
       "SentencesExamples": {
         "Sentence": [
           "家です",
-          "家はどこですか"
+          "家はどこですか",
+          "暖かい家"
         ],
         "Kanjis": [
           "- 家 = House (いえ - Ie)",
-          "- 家 = House (いえ - Ie)"
+          "- 家 = House (いえ - Ie)",
+          "- 家 = House (いえ - Ie)|- 家 = Warm (あたたかい - atatakai)"
         ],
         "Romanji": [
           "Ie desu",
-          "Ie ha(wa) doko desu ka?"
+          "Ie ha(wa) doko desu ka?",
+          "Atatakai ie"
         ],
         "English": [
           "It's a house",
-          "Where is the house?"
+          "Where is the house?",
+          "Warm house"
         ]
       }
     },
