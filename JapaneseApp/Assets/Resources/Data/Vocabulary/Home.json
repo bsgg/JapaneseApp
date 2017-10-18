@@ -1,0 +1,79 @@
+﻿{
+  "Data": [
+    {
+      "Word": "家",
+      "Hiragana": "いえ",
+      "Romanji": "Ie",
+      "Meaning": "House/Home",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "家です",
+          "家はどこですか",
+          "暖かい家"
+        ],
+        "Kanjis": [
+          "- 家 = House (いえ - Ie)",
+          "- 家 = House (いえ - Ie)",
+          "- 家 = House (いえ - Ie)|- 家 = Warm (あたたかい - atatakai)"
+        ],
+        "Romanji": [
+          "Ie desu",
+          "Ie ha(wa) doko desu ka?",
+          "Atatakai ie"
+        ],
+        "English": [
+          "It's a house",
+          "Where is the house?",
+          "Warm house"
+        ]
+      }
+    },
+    {
+      "Word": "居間",
+      "Hiragana": "いま",
+      "Romanji": "Ima",
+      "Meaning": "Living Room",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          " 居間の家具"
+        ],
+        "Kanjis": [
+          "- 居間 = Living Room (いま - Ima)|- 家具 = Furniture (かぐ - Kagu): "
+        ],
+        "Romanji": [
+          "Ima no kagu"
+        ],
+        "English": [
+          "Living room furniture."
+        ]
+      }
+    },
+    {
+      "Word": "椅子",
+      "Hiragana": "いす",
+      "Romanji": "Isu",
+      "Meaning": "Chair",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "部屋　に　三つ　椅子　が　あります",
+          "部屋　に　椅子　は　いくつ　あります　か"
+        ],
+        "Kanjis": [
+          "- 部屋 = Room (へや - Heya)|- 三つ = 3 (みっ - Mittsu)|- 三 = 3 (さん - San)|- 椅子 = Chair (いす - isu)",
+          "- 部屋 = Room (へや - Heya)|- 椅子 = Chair (いす - isu)"
+        ],
+        "Romanji": [
+          "Heya ni mittsu isu ga arimasu",
+          "Heya ni isu wa ikutsu arimasu ka"
+        ],
+        "English": [
+          "There are three chairs in the room",
+          "How many chairs are there in the room?"
+        ]
+      }
+    }
+  ]
+}

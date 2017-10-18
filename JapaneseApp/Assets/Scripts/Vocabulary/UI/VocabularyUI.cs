@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Utility;
 
 namespace JapaneseApp
 {
@@ -52,20 +53,43 @@ namespace JapaneseApp
             get { return m_Hiragana.text; }
         }
 
+        [Header("Buttons")]
+        
+
         [SerializeField]
-        private GameObject m_ExampleButton;
-        public GameObject ExampleButton
+        private IconBtn m_ExampleBtn;
+        public IconBtn ExampleBtn
         {
-            set { m_ExampleButton = value; }
-            get { return m_ExampleButton; }
+            get { return m_ExampleBtn; }
         }
 
+
+        [SerializeField]
+        private IconBtn m_SpriteBtn;
+        public IconBtn SpriteBtn
+        {
+            get { return m_SpriteBtn; }
+        }
+
+        [SerializeField]
+        private IconBtn m_NextWordBtn;
+        public IconBtn NextWordBtn
+        {
+            get { return m_NextWordBtn; }
+        }
+
+        [SerializeField]
+        private IconBtn m_SoundBtn;
+        public IconBtn SoundBtn
+        {
+            get { return m_SoundBtn; }
+        }
+        
         public override void Show()
         {
             base.Show();
 
             m_Example.Hide();
-
         }
     }
 }

@@ -116,11 +116,24 @@ namespace JapaneseApp
 
         }
 
+        public void ShowMainMenu()
+        {
+            m_MainMenu.Show();
+        }
+
+        public void OnBack()
+        {
+            if (m_VocabularyControl.Visible)
+            {
+                m_VocabularyControl.Back();
+            }
+        }
+
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                m_HiraganaContent.Back();
+                //m_HiraganaContent.Back();
             }
 
         }
@@ -149,20 +162,20 @@ namespace JapaneseApp
         public void OnVocabularyPress()
         {
             m_MainMenu.Hide();
-            m_VocabularyControl.ShowCategories();
+            m_VocabularyControl.SelectMenu(VocabularyControl.EMenu.Category);
 
         }
 
         public void OnWordDayPress()
         {
             m_MainMenu.Hide();
-            m_VocabularyControl.ShowWordDay();
+            m_VocabularyControl.SelectMenu(VocabularyControl.EMenu.WordDay);
         }
 
         public void OnRandomWordPress()
         {
             m_MainMenu.Hide();
-            m_VocabularyControl.ShowRandomWord();
+            m_VocabularyControl.SelectMenu(VocabularyControl.EMenu.RandomWord);
         }
 
         public void OnGrammarPress()

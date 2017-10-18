@@ -1,55 +1,5 @@
 ﻿{
-  "Data": [
-    {
-      "Word": "家",
-      "Hiragana": "いえ",
-      "Romanji": "Ie",
-      "Meaning": "House/Home",
-      "SpriteID": "",
-      "SentencesExamples": {
-        "Sentence": [
-          "家です",
-          "家はどこですか",
-          "暖かい家"
-        ],
-        "Kanjis": [
-          "- 家 = House (いえ - Ie)",
-          "- 家 = House (いえ - Ie)",
-          "- 家 = House (いえ - Ie)|- 家 = Warm (あたたかい - atatakai)"
-        ],
-        "Romanji": [
-          "Ie desu",
-          "Ie ha(wa) doko desu ka?",
-          "Atatakai ie"
-        ],
-        "English": [
-          "It's a house",
-          "Where is the house?",
-          "Warm house"
-        ]
-      }
-    },
-    {
-      "Word": "居間",
-      "Hiragana": "いま",
-      "Romanji": "Ima",
-      "Meaning": "Living Room",
-      "SpriteID": "",
-      "SentencesExamples": {
-        "Sentence": [
-          " 居間の家具"
-        ],
-        "Kanjis": [
-          "- 居間 = Living Room (いま - Ima)|- 家具 = Furniture (かぐ - Kagu): "
-        ],
-        "Romanji": [
-          "Ima no kagu"
-        ],
-        "English": [
-          "Living room furniture."
-        ]
-      }
-    },
+  "Data": [    
     {
       "Word": "学校",
       "Hiragana": "がっこう",

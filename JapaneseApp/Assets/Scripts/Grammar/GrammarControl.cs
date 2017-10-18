@@ -173,11 +173,11 @@ namespace JapaneseApp
 
                 if (grammar.SentencesExamples.Sentence.Count > 1)
                 {
-                    m_GrammarUI.Example.NextSentenceButton.SetActive(true);
+                    m_GrammarUI.Example.ActiveNextSentenceBtn(true);
                 }
                 else
                 {
-                    m_GrammarUI.Example.NextSentenceButton.SetActive(false);
+                    m_GrammarUI.Example.ActiveNextSentenceBtn(false);
                 }
 
                 m_GrammarUI.ExampleButton.SetActive(true);
@@ -191,7 +191,7 @@ namespace JapaneseApp
             else
             {
                 m_GrammarUI.ExampleButton.SetActive(false);
-                m_GrammarUI.Example.NextSentenceButton.SetActive(false);
+                m_GrammarUI.Example.ActiveNextSentenceBtn(false);
             }
         }
 

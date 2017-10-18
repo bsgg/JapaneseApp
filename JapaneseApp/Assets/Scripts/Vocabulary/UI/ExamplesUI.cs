@@ -43,11 +43,16 @@ namespace JapaneseApp
 
 
         [SerializeField]
-        private GameObject m_NextSentenceButton;
-        public GameObject NextSentenceButton
+        private Button m_NextSentenceBtn;
+        public Button NextSentenceBtn
         {
-            set { m_NextSentenceButton = value; }
-            get { return m_NextSentenceButton; }
+            set { m_NextSentenceBtn = value; }
+            get { return m_NextSentenceBtn; }
+        }
+
+        public void ActiveNextSentenceBtn(bool active)
+        {
+            m_NextSentenceBtn.gameObject.SetActive(active);
         }
 
 
