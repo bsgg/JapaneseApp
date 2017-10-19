@@ -488,9 +488,33 @@ namespace JapaneseApp
         }
         #endregion SetData
 
-        #region Handles
+        #region MenuButtons
 
-        public void OnNextWord()
+        public void OnSoundBtn()
+        {
+            if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+            {
+                EasyTTSUtil.SpeechFlush(m_CurrentWord.Hiragana);
+            }
+        }
+
+        public void OnExamplesBtn()
+        {
+            m_VocabularyUI.Example.Show();
+        }
+
+        public void OnSpriteBtn()
+        {
+            if (m_VocabularyUI.Sprite.Visible)
+            {
+                m_VocabularyUI.Sprite.Hide();
+            }else
+            {
+                m_VocabularyUI.Sprite.Show();
+            }            
+        }
+
+        public void OnNextWordBtn()
         {
             if (m_Menu == EMenu.RandomWord)
             {
@@ -500,11 +524,10 @@ namespace JapaneseApp
             {
                 // Increase current word id
                 m_CurrentWordID++;
-                m_CurrentWordID %= m_VocabularySet[(int)m_CurrentCategory].Data.Count;
+                m_CurrentWordID %= m_VocabularySet[(int) m_CurrentCategory].Data.Count;
 
                 SetWordByCategory();
             }
-            
         }
 
         public void OnNextExample()
@@ -524,15 +547,7 @@ namespace JapaneseApp
 
         }
 
-        public void OnSoundPlay()
-        {
-            if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
-            {
-                EasyTTSUtil.SpeechFlush(m_CurrentWord.Hiragana);
-            }
-        }
-
-        #endregion Handles
+        #endregion MenuButtons
     }
 
 }

@@ -127,13 +127,17 @@ namespace JapaneseApp
             {
                 m_VocabularyControl.Back();
             }
+            if (m_GrammarControl.Visible)
+            {
+                m_GrammarControl.Back();
+            }
         }
 
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                //m_HiraganaContent.Back();
+                OnBack();
             }
 
         }

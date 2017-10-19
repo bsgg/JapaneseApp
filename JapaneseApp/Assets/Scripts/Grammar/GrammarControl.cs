@@ -113,6 +113,27 @@ namespace JapaneseApp
             m_SelectedGrammar = 0;
         }
 
+        public override void Back()
+        {
+            base.Back();
+
+            // If example is visible, hide it, otherwise check type menu
+            if (m_GrammarUI.Example.Visible)
+            {
+                m_GrammarUI.Example.Hide();
+            }
+            else if (m_CategoriesUI.Visible)
+            {
+                m_CategoriesUI.Hide();
+                Hide();
+                AppController.Instance.ShowMainMenu();
+            }
+            else
+            {
+                m_CategoriesUI.Show();
+            }
+        }
+
         private void SetCategories()
         {
             List<string> categories =  new List<string>();
@@ -228,6 +249,21 @@ namespace JapaneseApp
 
         }
 
+        #region MenuButtons
+
+        public void OnExamplesBtn()
+        {
+            m_GrammarUI.Example.Show();
+        }
+
+        public void OnNextGrammarBtn()
+        {
+            // Increase grammar ID
+            m_SelectedGrammar++;
+            m_SelectedGrammar %=  m_GrammarSet[(int) m_SelectedCategory].Data.Count;
+
+            SetGrammarByCategory();
+        }
 
         public void OnNextExample()
         {
@@ -238,5 +274,6 @@ namespace JapaneseApp
             SetExample(m_SelectedExample);
         }
 
+        #endregion MenuButtons
     }
 }
