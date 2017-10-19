@@ -28,9 +28,8 @@ namespace JapaneseApp
         }
         #endregion Instance
 
-        [SerializeField]
-        private HiraganaContent m_HiraganaContent;
-
+        //[SerializeField]
+        //private HiraganaContent m_HiraganaContent;
 
         [SerializeField]
         private VocabularyControl m_VocabularyControl;
@@ -39,47 +38,12 @@ namespace JapaneseApp
         private GrammarControl m_GrammarControl;
 
         [SerializeField]
-        private UIBase m_MainMenu;
-
-
-       /* private HiraganaData m_HiraganaData;
-
-        public HiraganaData HiraganaData
-        {
-            get { return m_HiraganaData;  }
-            set { m_HiraganaData = value; }
-        }
-
-        public HiraganaAlphabet GetHiraganaAlphabetById(int id)
-        {
-            if ((m_HiraganaData != null) && (m_HiraganaData.Hiragana != null) && (id < m_HiraganaData.Hiragana.Count))
-            {
-               return m_HiraganaData.Hiragana[id];
-            }
-            return null;
-        }
-
-        public void HandleMenu()
-        {
-
-        }*/
-
-
-       /* public void ShowHiraganaTable(int id)
-        {
-
-            m_HiraganaTableController.Initialize(GetHiraganaAlphabetById(id));
-            m_LessonMenuController.Hide();
-            m_HiraganaTableController.Show();
-        }
-        */
-
-      /*  [SerializeField]
-        private LessonMenuController m_LessonMenuController;
+        private MainMenuController m_MainMenuController;
 
         [SerializeField]
-        private HiraganaTable m_HiraganaTableController;*/
-
+        private TopBar m_TopBar;
+        private Base m_CurrentControl;
+        
         void Start ()
         {
             // Initialize EasyTTUTIL
@@ -89,48 +53,27 @@ namespace JapaneseApp
                 EasyTTSUtil.Initialize(EasyTTSUtil.Japan);
             }
 
-
-
-            m_HiraganaContent.Init();
-            //m_HiraganaContent.Show();
-
-
             m_VocabularyControl.Init();
 
             m_GrammarControl.Init();
 
-            m_MainMenu.Show();
+            m_MainMenuController.Init();
 
-           // m_VocabularyControl.Show();
-
-
-            /*LoadHiraganaData();
-
-           
-            m_LessonMenuController.Init();
-
-            m_HiraganaTableController.Init();
-
-            m_LessonMenuController.Show();
-            m_HiraganaTableController.Hide();*/
+            ShowMainMenu();
 
         }
 
         public void ShowMainMenu()
         {
-            m_MainMenu.Show();
+            m_TopBar.Title = "JPWorld";
+            m_TopBar.CloseBtn.SetActive(false);
+            m_MainMenuController.Show();
+            m_CurrentControl = m_MainMenuController;
         }
 
         public void OnBack()
         {
-            if (m_VocabularyControl.Visible)
-            {
-                m_VocabularyControl.Back();
-            }
-            if (m_GrammarControl.Visible)
-            {
-                m_GrammarControl.Back();
-            }
+            m_CurrentControl.Back();
         }
 
         private void Update()
@@ -139,55 +82,46 @@ namespace JapaneseApp
             {
                 OnBack();
             }
-
-        }
-
-        /* public void LoadHiraganaData()
-         {
-             m_HiraganaData = new HiraganaData();
-             string jsonActionsString = Utility.LoadJSONResource("Data/Hiragana");
-             if (jsonActionsString != "")
-             {
-                 m_HiraganaData = JsonMapper.ToObject<HiraganaData>(jsonActionsString);
-             }
-
-             List<string> lTitle = new List<string>();
-             for (int i= 0; i< m_HiraganaData.Hiragana.Count; i++)
-             {
-                 HiraganaAlphabet ha = m_HiraganaData.Hiragana[i];
-                 lTitle.Add(ha.Title);
-             }
-             m_LessonMenuController.InitScrollMenu(lTitle);
-         }*/
-
+        }       
 
         #region MainMenuHandles
 
         public void OnVocabularyPress()
         {
-            m_MainMenu.Hide();
+            m_TopBar.Title = "Vocabulary";
+            m_TopBar.CloseBtn.SetActive(true);
+            m_MainMenuController.Hide();
+            m_CurrentControl = m_VocabularyControl;
             m_VocabularyControl.SelectMenu(VocabularyControl.EMenu.Category);
 
         }
 
         public void OnWordDayPress()
         {
-            m_MainMenu.Hide();
+            m_TopBar.Title = "Vocabulary";
+            m_TopBar.CloseBtn.SetActive(true);
+            m_MainMenuController.Hide();
+            m_CurrentControl = m_VocabularyControl;
             m_VocabularyControl.SelectMenu(VocabularyControl.EMenu.WordDay);
         }
 
         public void OnRandomWordPress()
         {
-            m_MainMenu.Hide();
+            m_TopBar.Title = "Vocabulary";
+            m_TopBar.CloseBtn.SetActive(true);
+            m_MainMenuController.Hide();
+            m_CurrentControl = m_VocabularyControl;
             m_VocabularyControl.SelectMenu(VocabularyControl.EMenu.RandomWord);
         }
 
         public void OnGrammarPress()
         {
-            m_MainMenu.Hide();
+            m_TopBar.Title = "Grammar";
+            m_TopBar.CloseBtn.SetActive(true);
+            m_MainMenuController.Hide();
+            m_CurrentControl = m_GrammarControl;
             m_GrammarControl.ShowCategories();
         }
-
 
         #endregion MainMenuHandles
 
