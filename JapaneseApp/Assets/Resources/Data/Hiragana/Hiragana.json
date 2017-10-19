@@ -1,9 +1,8 @@
 {
-	"Hiragana":	
+	"Data":	
 	[
 		{
-			"Title": "Hiragana 1: Vowels",
-			"HiraganaChar": 
+			"Hiragana": 
 			[
 				"あ",
 				"い",
@@ -11,56 +10,57 @@
 				"え",
 				"お"
 			],
-      "RomanjiChar": [
+      "Romanji": [
         "A",
         "I",
         "U",
         "E",
         "O"
       ],
-      "Vocabulary": {
-            "Hiragana": 
-			    [
-				    "あう",
-				    "いう",
-				    "いえ",
-				    "うえ",
-				    "あおい"
-			    ],
-            "Romanji": [
-              "Au",
-              "Iu",
-              "Ie",
-              "Ue",
-              "Aoi"
-            ],
-            "Meaning": [
-              "To meet",
-              "To say",
-              "House",
-              "Above",
-              "Blue"
-            ]
-      }		
+      "SentencesExamples": 
+      {
+        "Sentence": [
+          "あう",
+          "いう",
+          "いえ",
+          "うえ",
+          "あおい"
+        ],
+
+        "Romanji": [
+          "Au",
+          "Iu",
+          "Ie",
+          "Ue",
+          "Aoi"
+        ],
+        "English": [
+          "To meet",
+          "To say",
+          "House",
+          "Above",
+          "Blue"
+        ]
+      }
+	
 		},
     {
-      "Title": "Hiragana 2: Consonants and Vowels",
-      "HiraganaChar": [
+      "Hiragana": [
         "か",
         "き",
         "く",
         "け",
         "こ"
       ],
-      "RomanjiChar": [
+      "Romanji": [
         "Ka",
         "Ki",
         "Ku",
         "Ke",
         "Ko"
       ],
-      "Vocabulary": {
-        "Hiragana": [
+      "SentencesExamples": {
+        "Sentence": [
           "かお",
           "あかい",
           "かう",
@@ -74,7 +74,7 @@
           "Aki",
           "Eki"
         ],
-        "Meaning": [
+        "English": [
           "Face",
           "Red",
           "To Buy",
@@ -84,63 +84,49 @@
       }
     },
     {
-      "Title": "Hiragana 3: Dakuten",
-      "HiraganaChar": [
+      "Hiragana": [
         "が",
         "ぎ",
         "ぐ",
         "げ",
         "ご"
       ],
-      "RomanjiChar": [
+      "Romanji": [
         "Ga",
         "Gi",
         "Gu",
         "Ge",
         "Go"
       ],
-      "Vocabulary": {
-        "Hiragana": [
-          "えいが",
-          "",
-          "",
-          "",
-          ""
+      "SentencesExamples": {
+        "Sentence": [
+          "えいが"
         ],
         "Romanji": [
-          "Eiga",
-          "",
-          "",
-          "",
-          ""
+          "Eiga"
         ],
-        "Meaning": [
-          "Movie",
-          "",
-          "",
-          "",
-          ""
+        "English": [
+          "Movie"
         ]
       }
     },
     {
-      "Title": "Hiragana 4: Consonants",
-      "HiraganaChar": [
+      "Hiragana": [
         "さ",
         "し",
         "す",
         "せ",
         "そ"
       ],
-      "RomanjiChar": [
+      "Romanji": [
         "Sa",
         "Shi",
         "Su",
         "Se",
         "So"
       ],
-      "Vocabulary": {
-        "Hiragana": [
+      "SentencesExamples": {
+        "Sentence": [
           "あさ",
           "すし",
           "すえいえ",
@@ -154,7 +140,7 @@
           "Asoko",
           ""
         ],
-        "Meaning": [
+        "English": [
           "Morning",
           "Sushi",
           "Swimming",
@@ -164,23 +150,22 @@
       }
     },
     {
-      "Title": "Hiragana 5: Consonants",
-      "HiraganaChar": [
+      "Hiragana": [
         "ざ",
         "じ",
         "ず",
         "ぜ",
         "ぞ"
       ],
-      "RomanjiChar": [
+      "Romanji": [
         "Za",
         "Zi - /ji/",
         "Zu",
         "Ze",
         "Zo"
       ],
-      "Vocabulary": {
-        "Hiragana": [
+      "SentencesExamples": {
+        "Sentence": [
           "かぜ",
           "ざせき",
           "くじ",
@@ -194,7 +179,7 @@
           "Kasoku",
           ""
         ],
-        "Meaning": [
+        "English": [
           "Wind",
           "Seat",
           "Lottery",
@@ -204,23 +189,22 @@
       }
     },
     {
-      "Title": "Hiragana 6: Consonants",
-      "HiraganaChar": [
+      "Sentence": [
         "た",
         "ち",
         "つ",
         "て",
         "と"
       ],
-      "RomanjiChar": [
+      "Romanji": [
         "Ta",
         "Chi",
         "Tsu",
         "Te",
         "To"
       ],
-      "Vocabulary": {
-        "Hiragana": [
+      "SentencesExamples": {
+        "Sentence": [
           "たかい",
           "ちいさい",
           "て",
@@ -234,7 +218,7 @@
           "",
           ""
         ],
-        "Meaning": [
+        "English": [
           "High, Tall, Expensive",
           "Small",
           "Hand",

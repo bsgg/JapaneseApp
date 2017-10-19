@@ -128,6 +128,15 @@ namespace JapaneseApp
             m_GrammarControl.ShowCategories();
         }
 
+        public void OnHiraganaPress()
+        {
+            m_TopBar.Title = "Hiragana";
+            m_TopBar.CloseBtn.SetActive(true);
+            m_MainMenuController.Hide();
+            m_CurrentControl = m_HiraganaController;
+            m_HiraganaController.Show();
+        }
+
         #endregion MainMenuHandles
 
     }

@@ -12,9 +12,9 @@ namespace JapaneseApp
 
         private string m_PathData = "Data/Hiragana";
 
-        private HiraganaData m_HiraganaData;
+        private HiraganaData2 m_HiraganaData;
 
-        public HiraganaData HiraganaData
+        public HiraganaData2 HiraganaData
         {
             get { return m_HiraganaData; }
             set { m_HiraganaData = value; }
@@ -40,11 +40,11 @@ namespace JapaneseApp
             m_MainScrollMenu.Hide();
 
             // Init Hiragana data an menu
-            m_HiraganaData = new HiraganaData();
+            m_HiraganaData = new HiraganaData2();
             string jsonActionsString = Utility.LoadJSONResource(m_PathData);
             if (jsonActionsString != "")
             {
-                m_HiraganaData = JsonMapper.ToObject<HiraganaData>(jsonActionsString);
+                m_HiraganaData = JsonMapper.ToObject<HiraganaData2>(jsonActionsString);
             }
 
             List<string> lTitle = new List<string>();

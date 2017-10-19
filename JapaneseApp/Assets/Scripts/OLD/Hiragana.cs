@@ -63,7 +63,7 @@ namespace JapaneseApp
     }
 
 
-    public class HiraganaData
+    public class HiraganaData2
 	{
         private List<HiraganaAlphabet> m_Hiragana;
 		public List<HiraganaAlphabet> Hiragana
@@ -72,7 +72,7 @@ namespace JapaneseApp
 			set { m_Hiragana = value; }
 		}
 
-		public HiraganaData()
+		public HiraganaData2()
 		{
             m_Hiragana = new List<HiraganaAlphabet>();
 		}

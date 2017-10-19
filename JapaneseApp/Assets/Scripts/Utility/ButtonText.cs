@@ -37,5 +37,11 @@ namespace Utility
             m_ButtonComponent.onClick.AddListener(() => { callback(m_ID); });
         }
 
+        public void Initialize(int id, OnButtonPress callback)
+        {
+            m_ID = id;
+            m_ButtonComponent.onClick.AddListener(() => { callback(m_ID); });
+        }
+
     }
 }

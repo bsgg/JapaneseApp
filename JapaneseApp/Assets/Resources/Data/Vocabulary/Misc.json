@@ -1,6 +1,26 @@
 ﻿{
-	"Data":	
-	[
+  "Data": [
+    {
+      "Word": "男の人",
+      "Hiragana": "おとこのひと",
+      "Romanji": "Otokonohito",
+      "Meaning": "Man (Male Person)",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "サラは男の人がきらいです"
+        ],
+        "Kanjis": [
+          "- 男の人 = Man (おとこのひと - Otokonohito)|- 男 = Male (おとこ - Otoko)|- 人 = Person (ひと - Hito)"
+        ],
+        "Romanji": [
+          "Sore ha(wa) nan desu ka"
+        ],
+        "English": [
+          "What is this?"
+        ]
+      }
+    },
     {
       "Word": "何",
       "Hiragana": "なん",
@@ -12,7 +32,7 @@
           "それ　は　何　です　か"
         ],
         "Kanjis": [
-          "何 : なん(Nan) : What"
+          "何 = What (なん - Nan)"
         ],
         "Romanji": [
           "Sore ha(wa) nan desu ka"
@@ -33,7 +53,7 @@
           "お　名前　は　何　です　か"
         ],
         "Kanjis": [
-          " - 名前： なまえ(Namae) : Name |- 何: なん(Nan) : Que"
+          " - 名前 = Name (なまえ - Namae) |- 何 = What (なん - Nan)"
         ],
         "Romanji": [
           "O-namae wa nan desu ka"
@@ -43,5 +63,5 @@
         ]
       }
     }
-	]
+  ]
 }

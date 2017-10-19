@@ -10,15 +10,19 @@ namespace JapaneseApp
     {
         [SerializeField]
         private GameObject m_ScrollContent;
+        public GameObject ScrollContent
+        {
+            get { return m_ScrollContent; }
+            set { m_ScrollContent = value; }
+        }
 
-        [SerializeField]
-        private ButtonText[] m_ListButtonText;
+       
 
         public override void Init()
         {
             base.Init();
 
-            m_ListButtonText = m_ScrollContent.GetComponents<ButtonText>();
+            
 
         }
 

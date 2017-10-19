@@ -28,7 +28,7 @@ namespace JapaneseApp
             set { m_Drills = value; }
         }
 
-        public HiraganaDrill(HiraganaData data, int idData)
+        public HiraganaDrill(HiraganaData2 data, int idData)
         {
             List<DrillUnit> listDrills = new List<DrillUnit>();
             int nUnits = m_NumberDrills / m_NumberSections;
