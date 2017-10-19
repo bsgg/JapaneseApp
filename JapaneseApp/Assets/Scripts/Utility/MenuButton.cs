@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-namespace JapaneseApp
+namespace Utility
 {
     public class MenuButton : MonoBehaviour
     {

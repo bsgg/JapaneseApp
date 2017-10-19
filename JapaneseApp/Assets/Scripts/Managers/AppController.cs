@@ -41,6 +41,9 @@ namespace JapaneseApp
         private MainMenuController m_MainMenuController;
 
         [SerializeField]
+        private HiraganaControl m_HiraganaController;
+
+        [SerializeField]
         private TopBar m_TopBar;
         private Base m_CurrentControl;
         
@@ -56,6 +59,8 @@ namespace JapaneseApp
             m_VocabularyControl.Init();
 
             m_GrammarControl.Init();
+
+            m_HiraganaController.Init();
 
             m_MainMenuController.Init();
 
