@@ -18,6 +18,25 @@ namespace JapaneseApp
         }
 
         [SerializeField]
+        private string m_KanjiExample;
+        public string KanjiExample
+        {
+            set { m_KanjiExample = value; }
+            get { return m_KanjiExample; }
+        }
+
+        [SerializeField]
+        private string m_HiraganaExample;
+        public string HiraganaExample
+        {
+            set { m_HiraganaExample = value; }
+            get { return m_HiraganaExample; }
+        }
+
+        private bool m_ToggleToKanjiExample = true;
+
+
+        [SerializeField]
         private Text m_Romanji;
         public string Romanji
         {
@@ -55,8 +74,36 @@ namespace JapaneseApp
             m_NextSentenceBtn.gameObject.SetActive(active);
         }
 
+        public override void Show()
+        {
+            base.Show();
+
+            m_Sentence.text = m_KanjiExample;
+            m_ToggleToKanjiExample = false;
+        }
+
+        public override void Hide()
+        {
+            base.Hide();
+            m_Sentence.text = m_KanjiExample;
+            m_ToggleToKanjiExample = false;
+        }
 
         #region Handles
+
+        public void OnSentencePress()
+        {
+            if (m_ToggleToKanjiExample)
+            {
+                m_Sentence.text = m_KanjiExample;
+                m_ToggleToKanjiExample = false;
+
+            } else
+            {
+                m_Sentence.text = m_HiraganaExample;
+                m_ToggleToKanjiExample = true;
+            }
+        }
 
         public void OnJapanesePlay()
         {

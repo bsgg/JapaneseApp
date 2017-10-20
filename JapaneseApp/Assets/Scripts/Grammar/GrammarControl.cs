@@ -226,8 +226,13 @@ namespace JapaneseApp
                 return;
             }
 
-            // Set sentence
+            // Set examples
             m_GrammarUI.Example.Sentence = grammar.SentencesExamples.Sentence[index];
+            m_GrammarUI.Example.KanjiExample = grammar.SentencesExamples.Sentence[index];
+            if (grammar.SentencesExamples.Hiragana != null)
+            {
+                m_GrammarUI.Example.HiraganaExample = grammar.SentencesExamples.Hiragana[index];
+            }
             m_GrammarUI.Example.Romanji = grammar.SentencesExamples.Romanji[index];
             m_GrammarUI.Example.English = grammar.SentencesExamples.English[index];
 

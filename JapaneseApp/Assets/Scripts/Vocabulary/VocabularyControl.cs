@@ -474,6 +474,11 @@ namespace JapaneseApp
            
             // Set sentence
             m_VocabularyUI.Example.Sentence = m_CurrentWord.SentencesExamples.Sentence[index];
+            m_VocabularyUI.Example.KanjiExample = m_CurrentWord.SentencesExamples.Sentence[index];
+            if (m_CurrentWord.SentencesExamples.Hiragana != null)
+            {
+                m_VocabularyUI.Example.HiraganaExample = m_CurrentWord.SentencesExamples.Hiragana[index];
+            }
             m_VocabularyUI.Example.Romanji = m_CurrentWord.SentencesExamples.Romanji[index];
             m_VocabularyUI.Example.English = m_CurrentWord.SentencesExamples.English[index];
 
