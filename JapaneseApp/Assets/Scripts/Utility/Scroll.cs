@@ -7,7 +7,7 @@ namespace Utility
 {
     public class Scroll : MonoBehaviour
     {
-        public delegate void ItemAction(int buttonID);
+        public delegate void ItemAction(int buttonID, int x, int y);
         public ItemAction OnItemPress;
 
         [Header("Prefab Item")]
@@ -78,11 +78,11 @@ namespace Utility
             m_ScrollObject.verticalNormalizedPosition = 1.0f;
         }
        
-        public void OnItemButtonPress(int id)
+        public void OnItemButtonPress(int id, int x, int y)
         {
             if (OnItemPress != null)
             {
-                OnItemPress(id);
+                OnItemPress(id, x, y);
             }
         }
     }

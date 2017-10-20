@@ -52,7 +52,20 @@ namespace JapaneseApp
         {
             get { return m_Data; }
             set { m_Data = value; }
-        }        
+        }
+
+        private string[,] m_HiraganaChar;
+        public string[,] HiraganaChar
+        {
+            get { return m_HiraganaChar; }
+            set { m_HiraganaChar = value; }
+        }
+        private string[,] m_RomanjiChar;
+        public string[,] RomanjiChar
+        {
+            get { return m_RomanjiChar; }
+            set { m_RomanjiChar = value; }
+        }
     }
 
     #endregion DataModel
@@ -71,6 +84,9 @@ namespace JapaneseApp
         [SerializeField]
         private HiraganaData m_HiraganaSet;
 
+        // Array (Row, Col) Hiragana Char        
+        //private string[,] m_HiraganaChar;
+        //private string[,] m_RomanjiChar;
 
         public override void Init()
         {
@@ -87,21 +103,54 @@ namespace JapaneseApp
                 m_HiraganaSet = JsonMapper.ToObject<HiraganaData>(json);
 
             }
-         
-
-
-
-
 
             m_ListButtonText = m_HiraganaUI.ScrollContent.GetComponentsInChildren<ButtonText>();
-
-            if (m_ListButtonText != null)
+            for (int i = 0; i < m_ListButtonText.Length; i++)
             {
-                for (int i = 0; i< m_ListButtonText.Length; i++)
+                m_ListButtonText[i].TextButton = "";
+            }
+            
+
+            m_HiraganaSet.HiraganaChar = new string[m_HiraganaSet.Data.Count, 5];
+            m_HiraganaSet.RomanjiChar = new string[m_HiraganaSet.Data.Count, 5];
+
+            for (int i=0; i<m_HiraganaSet.Data.Count; i++)
+            {
+                string h = m_HiraganaSet.Data[i].Hiragana;
+                string e = m_HiraganaSet.Data[i].Romanji;
+
+                string[] splitH = h.Split('_');
+                string[] splitE = e.Split('_');
+
+                // Both must have 5 elements
+                if ((splitH != null) && (splitE != null) && (splitH.Length >= 5) && (splitE.Length >= 5))
                 {
-                    m_ListButtonText[i].Initialize(i, OnItemButtonPress);
+                    for (int j= 0; j< 5; j++)
+                    {
+                        m_HiraganaSet.HiraganaChar[i, j] = splitH[j];
+                        m_HiraganaSet.RomanjiChar[i, j] = splitE[j];
+
+                        int id = 5 * i + j;
+                        string text = m_HiraganaSet.RomanjiChar[i, j]+ " : " + m_HiraganaSet.HiraganaChar[i, j];
+                        m_ListButtonText[id].Initialize(text, id, i, j, OnItemButtonPress);
+                    }
+                }
+                else
+                {
+                    Debug.Log("<color=cyan>" + "Wrong Format: " + h + " - " + e +"</color>");
                 }
             }
+
+           
+
+            // Set table
+
+
+
+
+
+
+
 
             m_HiraganaUI.Init();
 
@@ -126,10 +175,11 @@ namespace JapaneseApp
             m_HiraganaUI.Hide();
         }
 
-        public void OnItemButtonPress(int id)
+        public void OnItemButtonPress(int id, int x, int y)
         {
-            Debug.Log("Item: " + id + "  m_ListButtonText[id].TextButton" + m_ListButtonText[id].TextButton);
+            Debug.Log("Item: " + id + " (" + x + "," + y + ") m_ListButtonText[id].TextButton" + m_ListButtonText[id].TextButton);
 
+            Debug.Log("H:" + m_HiraganaSet.HiraganaChar[x, y]  + ", R: " + m_HiraganaSet.RomanjiChar[x, y]);            
 
         }
 

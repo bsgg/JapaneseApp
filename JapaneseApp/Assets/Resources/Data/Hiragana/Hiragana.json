@@ -1,24 +1,10 @@
 {
 	"Data":	
 	[
-		{
-			"Hiragana": 
-			[
-				"あ",
-				"い",
-				"う",
-				"え",
-				"お"
-			],
-      "Romanji": [
-        "A",
-        "I",
-        "U",
-        "E",
-        "O"
-      ],
-      "SentencesExamples": 
-      {
+    {
+      "Hiragana": "あ_い_う_え_お",
+      "Romanji": "A_I_U_E_O",
+      "SentencesExamples": {
         "Sentence": [
           "あう",
           "いう",
@@ -42,23 +28,10 @@
           "Blue"
         ]
       }
-	
-		},
+    },
     {
-      "Hiragana": [
-        "か",
-        "き",
-        "く",
-        "け",
-        "こ"
-      ],
-      "Romanji": [
-        "Ka",
-        "Ki",
-        "Ku",
-        "Ke",
-        "Ko"
-      ],
+      "Hiragana": "か_き_く_け_こ",
+      "Romanji": "Ka_Ki_Ku_Ke_Ko",
       "SentencesExamples": {
         "Sentence": [
           "かお",
@@ -84,146 +57,101 @@
       }
     },
     {
-      "Hiragana": [
-        "が",
-        "ぎ",
-        "ぐ",
-        "げ",
-        "ご"
-      ],
-      "Romanji": [
-        "Ga",
-        "Gi",
-        "Gu",
-        "Ge",
-        "Go"
-      ],
-      "SentencesExamples": {
-        "Sentence": [
-          "えいが"
-        ],
-        "Romanji": [
-          "Eiga"
-        ],
-        "English": [
-          "Movie"
-        ]
-      }
-    },
-    {
-      "Hiragana": [
-        "さ",
-        "し",
-        "す",
-        "せ",
-        "そ"
-      ],
-      "Romanji": [
-        "Sa",
-        "Shi",
-        "Su",
-        "Se",
-        "So"
-      ],
+      "Hiragana": "さ_し_す_せ_そ",
+      "Romanji": "Sa_Shi_Su_Se_So",
       "SentencesExamples": {
         "Sentence": [
           "あさ",
           "すし",
           "すえいえ",
-          "あそこ",
-          ""
+          "あそこ"
         ],
         "Romanji": [
           "Asa",
           "Sushi",
           "Sueie",
-          "Asoko",
-          ""
+          "Asoko"
         ],
         "English": [
           "Morning",
           "Sushi",
           "Swimming",
-          "Over there",
-          ""
+          "Over there"
         ]
       }
     },
     {
-      "Hiragana": [
-        "ざ",
-        "じ",
-        "ず",
-        "ぜ",
-        "ぞ"
-      ],
-      "Romanji": [
-        "Za",
-        "Zi - /ji/",
-        "Zu",
-        "Ze",
-        "Zo"
-      ],
-      "SentencesExamples": {
-        "Sentence": [
-          "かぜ",
-          "ざせき",
-          "くじ",
-          "かぞく",
-          ""
-        ],
-        "Romanji": [
-          "Kaze",
-          "Zaseki",
-          "Kuzi",
-          "Kasoku",
-          ""
-        ],
-        "English": [
-          "Wind",
-          "Seat",
-          "Lottery",
-          "Family",
-          ""
-        ]
-      }
-    },
-    {
-      "Sentence": [
-        "た",
-        "ち",
-        "つ",
-        "て",
-        "と"
-      ],
-      "Romanji": [
-        "Ta",
-        "Chi",
-        "Tsu",
-        "Te",
-        "To"
-      ],
+      "Hiragana": "た_ち_つ_て_と",
+      "Romanji": "Ta_Chi_Tsu_Te_To",
       "SentencesExamples": {
         "Sentence": [
           "たかい",
           "ちいさい",
-          "て",
-          "",
-          ""
+          "て"
         ],
         "Romanji": [
           "Takai",
           "Chiisai",
-          "Te",
-          "",
-          ""
+          "Te"
         ],
         "English": [
           "High, Tall, Expensive",
           "Small",
-          "Hand",
-          "",          
-          ""
+          "Hand"
+        ]
+      }
+    },
+    {
+      "Hiragana": "な_に_ぬ_ね_の",
+      "Romanji": "Na_Ni_Nu_Ne_No",
+      "SentencesExamples": {
+        "Sentence": [
+          "なか",
+          "にし",
+          "いぬ",
+          "おかね",
+          "ねこ"
+        ],
+        "Romanji": [
+          "Naka",
+          "Nishi",
+          "Inu",
+          "Omane",
+          "Neko"
+        ],
+        "English": [
+          "Inside",
+          "West",
+          "Dog",
+          "Money",
+          "Cat"
+        ]
+      }
+    },
+    {
+      "Hiragana": "は_ひ_ふ_へ_ほ",
+      "Romanji": "Ha_Hi_Fu_He_Ho",
+      "SentencesExamples": {
+        "Sentence": [
+          "はは",
+          "ひと",
+          "るね",
+          "へた",
+          "ほね"
+        ],
+        "Romanji": [
+          "Haha",
+          "Hito",
+          "Fune",
+          "Heta",
+          "Hane"
+        ],
+        "English": [
+          "Mother",
+          "Person",
+          "Ship",
+          "Unskilled",
+          "Bone"
         ]
       }
     }

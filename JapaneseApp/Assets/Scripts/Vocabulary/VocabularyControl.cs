@@ -319,7 +319,7 @@ namespace JapaneseApp
             Show();
         }        
 
-        public void OnCategoryPress(int id)
+        public void OnCategoryPress(int id, int x, int y)
         {
             
             m_CurrentCategory = (ECategory)id;
