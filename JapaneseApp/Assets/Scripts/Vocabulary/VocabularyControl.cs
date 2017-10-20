@@ -17,6 +17,13 @@ namespace JapaneseApp
             set { m_Sentence = value; }
             get { return m_Sentence; }
         }
+        [SerializeField]
+        private List<string> m_Hiragana = new List<string>();
+        public List<string> Hiragana
+        {
+            set { m_Hiragana = value; }
+            get { return m_Hiragana; }
+        }
 
         [SerializeField]
         private List<string> m_Kanjis= new List<string>();

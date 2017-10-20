@@ -1,6 +1,6 @@
 ﻿{
   "Data": [
-    
+
     {
       "Word": "出る",
       "Hiragana": "でる",
@@ -12,6 +12,11 @@
           "私は、毎日8時に家を出ます。",
           "家を出る",
           "会社を出る"
+        ],
+        "Hiragana": [
+          "わたし は、まいにち はち じ に いえ　を でます",
+          "いえ　を　でる。",
+          "かいしゃ　を　でる。"
         ],
         "Kanjis": [
           "- 私 = I/Me (わたし - Watashi)|- 毎日: Every day (まいにち - Mainichi)|- 時 = Time (じ - Ji)|- 出ます = Leave (でます - Demasu)",
@@ -31,6 +36,31 @@
         ]
       }
     },
+     {
+      "Word": "跳ぶ",
+      "Hiragana": "とぶ",
+      "Romanji": "Tobu",
+      "Meaning": "Jump",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "女の人が空中に跳びあがっている。"
+        ],
+        "Hiragana": [
+          "おんなのひとがくうちゅうにとびあがっている"
+        ],
+        "Kanjis": [
+          "- 女の人 = Woman (おんなのひと - Onna no hito)|- 空中 = Air (くうちゅう - Kūchū)|- 跳 = Jump (とぶ - Tobu)"
+        ],
+        "Romanji": [
+          "Onna no hito ga kūchū ni tobiagatte iru."
+        ],
+        "English": [
+          "The woman is jumping in the air."
+
+        ]
+      }
+    },
     {
       "Word": "助ける",
       "Hiragana": "たすける",
@@ -41,6 +71,10 @@
         "Sentence": [
           "助けて！",
           "助けに来る"
+        ],
+         "Hiragana": [
+          "たすけて",
+          "たすけにくる"
         ],
         "Kanjis": [
           "- 助け = Help (たすけ - Tasuke)",
@@ -87,6 +121,10 @@
         "Sentence": [
           "男の子が皿を洗う。",
           "女の子が顔を洗った。"
+        ],
+         "Hiragana": [
+          "おとこ　の　こ　が　さら　を　あらう",
+          "おんあ　の　こ　が　かお　を　あらった"
         ],
         "Kanjis": [
           "- 男 = Boy (おとこ - Otoko)|- 子 = Child (こ - Ko)|- 皿 = Dishes (さら - Sara)|- 洗う = Wash (あらう - Arau)",
