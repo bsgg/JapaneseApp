@@ -57,6 +57,21 @@
       }
     },
     {
+      "Hiragana": "が_ぎ_ぐ_げ_ご",
+      "Romanji": "Ga_Gi_Gu_Ge_Go",
+      "SentencesExamples": {
+        "Sentence": [
+          "えいが"
+        ],
+        "Romanji": [
+          "Eiga"
+        ],
+        "English": [
+          "Movie"
+        ]
+      }
+    },
+    {
       "Hiragana": "さ_し_す_せ_そ",
       "Romanji": "Sa_Shi_Su_Se_So",
       "SentencesExamples": {
@@ -81,6 +96,30 @@
       }
     },
     {
+      "Hiragana": "ざ_じ_ず_ぜ_ぞ",
+      "Romanji": "Za_Ji_Zu_Ze_Zo",
+      "SentencesExamples": {
+        "Sentence": [
+          "かぜ",
+          "ざせき",
+          "くじ",
+          "かぞく"
+        ],
+        "Romanji": [
+          "Kaze",
+          "Zaseki",
+          "Kuzi",
+          "Kazoku"
+        ],
+        "English": [
+          "Wind",
+          "Seat",
+          "Lotter",
+          "Family"
+        ]
+      }
+    },
+    {
       "Hiragana": "た_ち_つ_て_と",
       "Romanji": "Ta_Chi_Tsu_Te_To",
       "SentencesExamples": {
@@ -98,6 +137,30 @@
           "High, Tall, Expensive",
           "Small",
           "Hand"
+        ]
+      }
+    },
+    {
+      "Hiragana": "だ_ぢ_づ_で_ど",
+      "Romanji": "Da_Ji(di)_Zu(du)_De_Do",
+      "SentencesExamples": {
+        "Sentence": [
+          "どうぞ",
+          "つづく",
+          "いちど",
+          "ただしい"
+        ],
+        "Romanji": [
+          "Douzo",
+          "Tsuduku",
+          "Ichido",
+          "Tadashi"
+        ],
+        "English": [
+          "Please, Kind",
+          "To Continue",
+          "One time",
+          "Correct"
         ]
       }
     },
@@ -183,8 +246,8 @@
       }
     },
     {
-      "Hiragana": "や_　_ゆ_　_よ",
-      "Romanji": "Ya_ _Yu_ _Yo",
+      "Hiragana": "や_-_ゆ_-_よ",
+      "Romanji": "Ya_-_Yu_-_Yo",
       "SentencesExamples": {
         "Sentence": [
           "やさしい",
@@ -231,8 +294,8 @@
       }
     },
     {
-      "Hiragana": "わ_　_を_　_ん",
-      "Romanji": "Wa_ _Wo_ _N",
+      "Hiragana": "わ_-_を_-_ん",
+      "Romanji": "Wa_-_Wo_-_N",
       "SentencesExamples": {
         "Sentence": [
           "わたし",

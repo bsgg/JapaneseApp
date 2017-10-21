@@ -16,13 +16,9 @@ namespace JapaneseApp
             set { m_ScrollContent = value; }
         }
 
-       
-
         public override void Init()
         {
-            base.Init();
-
-            
+            base.Init();            
 
         }
 

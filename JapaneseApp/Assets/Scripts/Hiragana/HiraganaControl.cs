@@ -7,33 +7,6 @@ using Utility;
 namespace JapaneseApp
 {
     #region DataModel
-    /*[System.Serializable]
-    public class ABC
-    {
-        [SerializeField]
-        private List<string> m_Hiragana;
-        public List<string> Hiragana
-        {
-            get { return m_Hiragana; }
-            set { m_Hiragana = value; }
-        }
-
-        [SerializeField]
-        private List<string> m_Romanji;
-        public List<string> Romanji
-        {
-            get { return m_Romanji; }
-            set { m_Romanji = value; }
-        }
-
-        [SerializeField]
-        private SentencesExamples m_SentencesExamples = new SentencesExamples();
-        public SentencesExamples SentencesExamples
-        {
-            set { m_SentencesExamples = value; }
-            get { return m_SentencesExamples; }
-        }
-    }*/
 
     [System.Serializable]
     public class HiraganaData
@@ -116,28 +89,38 @@ namespace JapaneseApp
 
             for (int i=0; i<m_HiraganaSet.Data.Count; i++)
             {
-                string h = m_HiraganaSet.Data[i].Hiragana;
-                string e = m_HiraganaSet.Data[i].Romanji;
 
-                string[] splitH = h.Split('_');
-                string[] splitE = e.Split('_');
+                string[] splitH = m_HiraganaSet.Data[i].Hiragana.Split('_');
+                string[] splitE = m_HiraganaSet.Data[i].Romanji.Split('_');
 
                 // Both must have 5 elements
                 if ((splitH != null) && (splitE != null) && (splitH.Length >= 5) && (splitE.Length >= 5))
                 {
                     for (int j= 0; j< 5; j++)
                     {
-                        m_HiraganaSet.HiraganaChar[i, j] = splitH[j];
-                        m_HiraganaSet.RomanjiChar[i, j] = splitE[j];
+                        string h = splitH[j];
+                        string r = splitE[j];
+
+                        m_HiraganaSet.HiraganaChar[i, j] = h;
+                        m_HiraganaSet.RomanjiChar[i, j] = r;
 
                         int id = 5 * i + j;
-                        string text = m_HiraganaSet.RomanjiChar[i, j]+ " : " + m_HiraganaSet.HiraganaChar[i, j];
-                        m_ListButtonText[id].Initialize(text, id, i, j, OnItemButtonPress);
+                        if ((h != "-") && (r != "-"))
+                        {
+                            m_ListButtonText[id].ButtonComponent.enabled = true;
+
+                            string text = r + " : " + h;
+                            m_ListButtonText[id].Initialize(text, id, i, j, OnItemButtonPress);
+
+                        }else
+                        {
+                            m_ListButtonText[id].ButtonComponent.enabled = false;
+                        }
                     }
                 }
                 else
                 {
-                    Debug.Log("<color=cyan>" + "Wrong Format: " + h + " - " + e +"</color>");
+                    Debug.Log("<color=cyan>" + "Wrong Format: " + m_HiraganaSet.Data[i].Hiragana + " - " + m_HiraganaSet.Data[i].Romanji + "</color>");
                 }
             }
 
