@@ -79,7 +79,7 @@ namespace JapaneseApp
         [Header("UI")]
         [SerializeField] private GrammarUI m_GrammarUI;
         [SerializeField] private CategoriesUI m_CategoriesUI;
-
+        [SerializeField] private ExamplesUI m_ExampleUI;
 
         private int m_SelectedGrammar;
         private ECategory m_SelectedCategory;
@@ -90,7 +90,7 @@ namespace JapaneseApp
             base.Init();
 
             m_GrammarUI.Hide();
-            m_GrammarUI.Example.Hide();
+            m_ExampleUI.Hide();
             m_CategoriesUI.Hide();
 
 
@@ -118,9 +118,10 @@ namespace JapaneseApp
             base.Back();
 
             // If example is visible, hide it, otherwise check type menu
-            if (m_GrammarUI.Example.Visible)
+            if (m_ExampleUI.Visible)
             {
-                m_GrammarUI.Example.Hide();
+                m_ExampleUI.OnNextExampleEvent -= OnNextExample;
+                m_ExampleUI.Hide();
             }
             else if (m_CategoriesUI.Visible)
             {
@@ -143,7 +144,6 @@ namespace JapaneseApp
                 categories.Add(((ECategory) i).ToString());
             }
 
-
             m_CategoriesUI.ScrollMenu.InitScroll(categories);
             m_CategoriesUI.ScrollMenu.OnItemPress += OnCategoryPress;
         }
@@ -151,7 +151,20 @@ namespace JapaneseApp
         public override void Hide()
         {
             m_CategoriesUI.ScrollMenu.OnItemPress -= OnCategoryPress;
+            m_ExampleUI.Hide();
+           
+            //m_ExampleUI.NextSentenceBtn.onClick.RemoveListener(() => OnNextExample());
+
             base.Hide();
+        }
+
+        public override void Show()
+        {
+            
+            //m_ExampleUI.NextSentenceBtn.onClick.AddListener(() => OnNextExample());
+            m_ExampleUI.Hide();
+
+            base.Show();
         }
 
         public void ShowCategories()
@@ -160,7 +173,7 @@ namespace JapaneseApp
 
             SetCategories();
 
-            m_GrammarUI.Example.Hide();
+            m_ExampleUI.Hide();
             m_GrammarUI.Hide();
             m_CategoriesUI.Show();
         }
@@ -175,7 +188,7 @@ namespace JapaneseApp
 
             Show();
 
-            m_GrammarUI.Example.Hide();
+            m_ExampleUI.Hide();
             m_GrammarUI.Show();
             m_CategoriesUI.Hide();
         }
@@ -191,14 +204,13 @@ namespace JapaneseApp
             // Set examples
             if ((grammar.SentencesExamples != null) && (grammar.SentencesExamples.Sentence.Count > 0))
             {
-
                 if (grammar.SentencesExamples.Sentence.Count > 1)
                 {
-                    m_GrammarUI.Example.ActiveNextSentenceBtn(true);
+                    m_ExampleUI.ActiveNextSentenceBtn(true);
                 }
                 else
                 {
-                    m_GrammarUI.Example.ActiveNextSentenceBtn(false);
+                    m_ExampleUI.ActiveNextSentenceBtn(false);
                 }
 
                 m_GrammarUI.ExampleButton.SetActive(true);
@@ -206,13 +218,13 @@ namespace JapaneseApp
                 // Set sentence
                 m_SelectedExample = 0;
                     
-                //SetExample(m_SelectedExample);
+                SetExample(m_SelectedExample);
 
             }
             else
             {
                 m_GrammarUI.ExampleButton.SetActive(false);
-                m_GrammarUI.Example.ActiveNextSentenceBtn(false);
+                m_ExampleUI.ActiveNextSentenceBtn(false);
             }
         }
 
@@ -220,45 +232,22 @@ namespace JapaneseApp
         {
             GrammarSection grammar = m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar];
 
-            if ((index < 0) || (index >= grammar.SentencesExamples.Sentence.Count))
-            {
-                Debug.Log("<color=cyan> SetExample, Index out of boundaries </color>");
-                return;
-            }
+            // Set sentence
+            m_ExampleUI.Sentence = grammar.SentencesExamples.GetSentence(index);            
+            m_ExampleUI.Romanji = grammar.SentencesExamples.GetRomanji(index);
+            m_ExampleUI.English = grammar.SentencesExamples.GetEnglish(index);
+            m_ExampleUI.Kanji = grammar.SentencesExamples.GetKanjis(index);
 
-            // Set examples
-            m_GrammarUI.Example.Sentence = grammar.SentencesExamples.Sentence[index];
-            m_GrammarUI.Example.KanjiExample = grammar.SentencesExamples.Sentence[index];
-            if ((grammar.SentencesExamples.Hiragana != null) && ((grammar.SentencesExamples.Hiragana.Count > 0)))
-            {
-                m_GrammarUI.Example.HiraganaExample = grammar.SentencesExamples.Hiragana[index];
-            }
-            m_GrammarUI.Example.Romanji = grammar.SentencesExamples.Romanji[index];
-            m_GrammarUI.Example.English = grammar.SentencesExamples.English[index];
-
-
-            string[] aKanjis = grammar.SentencesExamples.Kanjis[index].Split('|');
-            if (aKanjis.Length >= 1)
-            {
-                string kanjis = "";
-                for (int i = 0; i < aKanjis.Length; i++)
-                {
-                    kanjis += aKanjis[i];
-                    if (i < (aKanjis.Length - 1))
-                    {
-                        kanjis += "\n";
-                    }
-                }
-                m_GrammarUI.Example.Kanji = kanjis;
-            }
-
+            m_ExampleUI.KanjiExample = grammar.SentencesExamples.GetSentence(index);
+            m_ExampleUI.HiraganaExample = grammar.SentencesExamples.GetHiragana(index);
         }
 
         #region MenuButtons
 
         public void OnExamplesBtn()
         {
-            m_GrammarUI.Example.Show();
+            m_ExampleUI.OnNextExampleEvent += OnNextExample;
+            m_ExampleUI.Show();
         }
 
         public void OnNextGrammarBtn()
@@ -272,6 +261,7 @@ namespace JapaneseApp
 
         public void OnNextExample()
         {
+            Debug.Log("<color=cyan> grammar CONTROL OnNextExample </color>");
             // Set next sentence
             m_SelectedExample ++;
             m_SelectedExample %= m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar].SentencesExamples.Sentence.Count;

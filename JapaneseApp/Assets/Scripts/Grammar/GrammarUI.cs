@@ -10,14 +10,6 @@ namespace JapaneseApp
         [Header("GrammarUI")]
 
         [SerializeField]
-        private ExamplesUI m_Example;
-        public ExamplesUI Example
-        {
-            set { m_Example = value; }
-            get { return m_Example; }
-        }
-
-        [SerializeField]
         private Text m_Title;
         public string Title
         {
@@ -42,12 +34,5 @@ namespace JapaneseApp
             get { return m_ExampleButton; }
         }
 
-        public override void Show()
-        {
-            base.Show();
-
-            m_Example.Hide();
-
-        }
     }
 }

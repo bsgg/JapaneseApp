@@ -42,6 +42,9 @@ namespace JapaneseApp
         private HiraganaUI m_HiraganaUI;
 
         [SerializeField]
+        private ExamplesUI m_ExampleUI;
+
+        [SerializeField]
         private ButtonText[] m_ListButtonText;
 
         [SerializeField]
@@ -56,7 +59,6 @@ namespace JapaneseApp
         public override void Init()
         {
             base.Init();
-
 
             // Load the data
             m_HiraganaSet = new HiraganaData();
@@ -134,9 +136,10 @@ namespace JapaneseApp
         {
             base.Back();
 
-            if (m_HiraganaUI.Example.Visible)
+            if (m_ExampleUI.Visible)
             {
-                m_HiraganaUI.Example.Hide();
+                m_ExampleUI.OnNextExampleEvent -= OnNextExample;
+                m_ExampleUI.Hide();
             }else
             {
                 Hide();
@@ -148,8 +151,6 @@ namespace JapaneseApp
         {
             base.Show();
 
-            m_HiraganaUI.Example.NextSentenceBtn.onClick.AddListener(() => OnNextExample());
-
             m_HiraganaUI.Show();
         }
 
@@ -157,7 +158,7 @@ namespace JapaneseApp
         {
             base.Hide();
 
-            m_HiraganaUI.Example.NextSentenceBtn.onClick.RemoveAllListeners();
+            
 
             m_HiraganaUI.Hide();
         }
@@ -184,8 +185,8 @@ namespace JapaneseApp
 
             m_SelectedHiragana = m_HiraganaSet.Data[x];
             SetExample(0);
-
-            m_HiraganaUI.Example.Show();
+            m_ExampleUI.OnNextExampleEvent += OnNextExample;
+            m_ExampleUI.Show();
         }
                
 
@@ -206,35 +207,19 @@ namespace JapaneseApp
             m_SelectedExample = index;
 
             // Set sentence
-            m_HiraganaUI.Example.Sentence = m_SelectedHiragana.SentencesExamples.Sentence[index];
-            m_HiraganaUI.Example.KanjiExample = m_SelectedHiragana.SentencesExamples.Sentence[index];
-            if ((m_SelectedHiragana.SentencesExamples.Hiragana != null) && ((m_SelectedHiragana.SentencesExamples.Hiragana.Count > 0)))
-            {
-                m_HiraganaUI.Example.HiraganaExample = m_SelectedHiragana.SentencesExamples.Hiragana[index];
-            }
-            m_HiraganaUI.Example.Romanji = m_SelectedHiragana.SentencesExamples.Romanji[index];
-            m_HiraganaUI.Example.English = m_SelectedHiragana.SentencesExamples.English[index];
-
-
-            string[] aKanjis = m_SelectedHiragana.SentencesExamples.Kanjis[index].Split('|');
-            if (aKanjis.Length >= 1)
-            {
-                string kanjis = "";
-                for (int i = 0; i < aKanjis.Length; i++)
-                {
-                    kanjis += aKanjis[i];
-                    if (i < (aKanjis.Length - 1))
-                    {
-                        kanjis += "\n";
-                    }
-                }
-                m_HiraganaUI.Example.Kanji = kanjis;
-            }
+            m_ExampleUI.Sentence = m_SelectedHiragana.SentencesExamples.GetSentence(index);
+            m_ExampleUI.KanjiExample = m_SelectedHiragana.SentencesExamples.GetSentence(index);
+            m_ExampleUI.HiraganaExample = m_SelectedHiragana.SentencesExamples.GetHiragana(index);
+            m_ExampleUI.Romanji = m_SelectedHiragana.SentencesExamples.GetRomanji(index);
+            m_ExampleUI.English = m_SelectedHiragana.SentencesExamples.GetEnglish(index);
+            m_ExampleUI.Kanji = m_SelectedHiragana.SentencesExamples.GetKanjis(index);            
         }
 
 
         public void OnNextExample()
         {
+            Debug.Log("<color=cyan> HIRAGANA CONTROL OnNextExample </color>");
+
             if (m_SelectedHiragana == null)
             {
                 Debug.Log("<color=cyan> No Current Word </color>");

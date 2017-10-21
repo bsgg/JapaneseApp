@@ -17,12 +17,29 @@ namespace JapaneseApp
             set { m_Sentence = value; }
             get { return m_Sentence; }
         }
+        public string GetSentence(int index)
+        {
+            if ((m_Sentence != null) && (index >= 0) && (index < m_Sentence.Count))
+            {
+                return m_Sentence[index];
+            }
+            return string.Empty;
+        }
+
         [SerializeField]
         private List<string> m_Hiragana = new List<string>();
         public List<string> Hiragana
         {
             set { m_Hiragana = value; }
             get { return m_Hiragana; }
+        }
+        public string GetHiragana(int index)
+        {
+            if ((m_Hiragana != null) && (index >= 0) && (index < m_Hiragana.Count))
+            {
+                return m_Hiragana[index];
+            }
+            return string.Empty;
         }
 
         [SerializeField]
@@ -33,6 +50,28 @@ namespace JapaneseApp
             get { return m_Kanjis; }
         }
 
+        public string GetKanjis(int index)
+        {
+            if ((m_Kanjis != null) && (index >=0 ) && (index < m_Kanjis.Count))
+            {
+                string[] aKanjis = m_Kanjis[index].Split('|');
+                if (aKanjis.Length >= 1)
+                {
+                    string kanjis = "";
+                    for (int i = 0; i < aKanjis.Length; i++)
+                    {
+                        kanjis += aKanjis[i];
+                        if (i < (aKanjis.Length - 1))
+                        {
+                            kanjis += "\n";
+                        }
+                    }
+                    return kanjis;
+                }
+            }
+            return string.Empty;            
+        }
+
         [SerializeField]
         private List<string> m_Romanji= new List<string>();
         public List<string> Romanji
@@ -41,12 +80,30 @@ namespace JapaneseApp
             get { return m_Romanji; }
         }
 
+        public string GetRomanji(int index)
+        {
+            if ((m_Romanji != null) && (index >= 0) && (index < m_Romanji.Count))
+            {
+                return m_Romanji[index];
+            }
+            return string.Empty;
+        }
+
         [SerializeField]
         private List<string> m_English = new List<string>();
         public List<string> English
         {
             set { m_English = value; }
             get { return m_English; }
+        }
+
+        public string GetEnglish(int index)
+        {
+            if ((m_English != null) && (index >= 0) && (index < m_English.Count))
+            {
+                return m_English[index];
+            }
+            return string.Empty;
         }
     }
 
@@ -184,9 +241,10 @@ namespace JapaneseApp
         [Header("UI")]
         [SerializeField] private VocabularyUI m_VocabularyUI;
         [SerializeField] private CategoriesUI m_CategoriesUI;
+        [SerializeField] private ExamplesUI m_ExamplesUI;
 
 
-        private VWord m_CurrentWord;
+        private VWord m_SelectedWord;
         private int m_ICurrentExample;
         private int m_CurrentWordID = 0;
         //private bool m_SelectRandomWord = false;
@@ -206,7 +264,7 @@ namespace JapaneseApp
             base.Init();
            
             m_VocabularyUI.Hide();
-            m_VocabularyUI.Example.Hide();
+            m_ExamplesUI.Hide();
             m_CategoriesUI.Hide();
 
             // Load the data
@@ -232,7 +290,6 @@ namespace JapaneseApp
         public override void Show()
         {
             m_CategoriesUI.ScrollMenu.OnItemPress += OnCategoryPress;
-            m_VocabularyUI.Example.NextSentenceBtn.onClick.AddListener(() => OnNextExample());
             base.Show();           
 
         }
@@ -240,8 +297,6 @@ namespace JapaneseApp
         public override void Hide()
         {
             m_CategoriesUI.ScrollMenu.OnItemPress -= OnCategoryPress;
-            m_VocabularyUI.Example.NextSentenceBtn.onClick.RemoveAllListeners();
-
             base.Hide();
         }
 
@@ -256,9 +311,10 @@ namespace JapaneseApp
             }
 
             // If example is visible, hide it, otherwise check type menu
-            if (m_VocabularyUI.Example.Visible)
+            if (m_ExamplesUI.Visible)
             {
-                m_VocabularyUI.Example.Hide();
+                m_ExamplesUI.OnNextExampleEvent -= OnNextExample;
+                m_ExamplesUI.Hide();
             }else
             {
                 switch (m_Menu)
@@ -286,9 +342,9 @@ namespace JapaneseApp
                         break;
                 }
 
-                if (m_VocabularyUI.Example.Visible)
+                if (m_ExamplesUI.Visible)
                 {
-                    m_VocabularyUI.Example.Hide();
+                    m_ExamplesUI.Hide();
                 }
             }
         }
@@ -296,8 +352,8 @@ namespace JapaneseApp
         public void SelectMenu(EMenu menu)
         {
             m_Menu = menu;
-                        
-            m_VocabularyUI.Example.Hide();
+
+            m_ExamplesUI.Hide();
             m_VocabularyUI.Hide();
             m_CategoriesUI.Hide();
 
@@ -335,7 +391,7 @@ namespace JapaneseApp
 
             Show();
 
-            m_VocabularyUI.Example.Hide();
+            m_ExamplesUI.Hide();
             m_VocabularyUI.Show();
             m_CategoriesUI.Hide();
         }
@@ -385,27 +441,27 @@ namespace JapaneseApp
 
             if (m_Menu == EMenu.RandomWord)
             {
-                m_CurrentWord = m_VocabularySet[(int)m_CurrentCategory].GetRandomWord();
+                m_SelectedWord = m_VocabularySet[(int)m_CurrentCategory].GetRandomWord();
             }else
             {
-                m_CurrentWord = m_VocabularySet[(int)m_CurrentCategory].GetWordById(m_CurrentWordID);
+                m_SelectedWord = m_VocabularySet[(int)m_CurrentCategory].GetWordById(m_CurrentWordID);
             }
 
 
-            if (m_CurrentWord != null)
+            if (m_SelectedWord != null)
             {
                 // Set word
-                m_VocabularyUI.Word = m_CurrentWord.Word;
-                m_VocabularyUI.English = m_CurrentWord.Meaning;
-                m_VocabularyUI.Hiragana = m_CurrentWord.Hiragana + " : " + m_CurrentWord.Romanji;
+                m_VocabularyUI.Word = m_SelectedWord.Word;
+                m_VocabularyUI.English = m_SelectedWord.Meaning;
+                m_VocabularyUI.Hiragana = m_SelectedWord.Hiragana + " : " + m_SelectedWord.Romanji;
 
 
                 // Set sprite
                 m_VocabularyUI.SpriteBtn.Enable(false);
                 m_VocabularyUI.SpriteBtn.SetColor(m_DisableBtnColor);
-                if (!string.IsNullOrEmpty(m_CurrentWord.SpriteID))
+                if (!string.IsNullOrEmpty(m_SelectedWord.SpriteID))
                 {
-                    Sprite sprite = GetSprite(m_CurrentCategory,m_CurrentWord.SpriteID);
+                    Sprite sprite = GetSprite(m_CurrentCategory,m_SelectedWord.SpriteID);
                     if (sprite != null)
                     {
                         m_VocabularyUI.Sprite.SpriteObject = sprite;
@@ -419,15 +475,15 @@ namespace JapaneseApp
 
 
                 // Set sentence
-                if ((m_CurrentWord.SentencesExamples != null) && (m_CurrentWord.SentencesExamples.Sentence.Count > 0))
+                if ((m_SelectedWord.SentencesExamples != null) && (m_SelectedWord.SentencesExamples.Sentence.Count > 0))
                 {
-                    if (m_CurrentWord.SentencesExamples.Sentence.Count > 1)
+                    if (m_SelectedWord.SentencesExamples.Sentence.Count > 1)
                     {
-                        m_VocabularyUI.Example.ActiveNextSentenceBtn(true);
+                        m_ExamplesUI.ActiveNextSentenceBtn(true);
                     }
                     else
                     {
-                        m_VocabularyUI.Example.ActiveNextSentenceBtn(false);
+                        m_ExamplesUI.ActiveNextSentenceBtn(false);
                     }
 
 
@@ -440,7 +496,7 @@ namespace JapaneseApp
                 }
                 else
                 {
-                    m_VocabularyUI.Example.ActiveNextSentenceBtn(false);
+                    m_ExamplesUI.ActiveNextSentenceBtn(false);
                     m_VocabularyUI.ExampleBtn.Enable(false);
                     m_VocabularyUI.ExampleBtn.SetColor(m_DisableBtnColor);
 
@@ -465,37 +521,13 @@ namespace JapaneseApp
 
         private void SetExample(int index)
         {
-            if ((index < 0) || (index >= m_CurrentWord.SentencesExamples.Sentence.Count))
-            {
-                Debug.Log("<color=cyan> SetExample, Index out of boundaries </color>");
-                return;
-            }
-           
             // Set sentence
-            m_VocabularyUI.Example.Sentence = m_CurrentWord.SentencesExamples.Sentence[index];
-            m_VocabularyUI.Example.KanjiExample = m_CurrentWord.SentencesExamples.Sentence[index];
-            if ((m_CurrentWord.SentencesExamples.Hiragana != null) && ((m_CurrentWord.SentencesExamples.Hiragana.Count > 0)))
-            {
-                m_VocabularyUI.Example.HiraganaExample = m_CurrentWord.SentencesExamples.Hiragana[index];
-            }
-            m_VocabularyUI.Example.Romanji = m_CurrentWord.SentencesExamples.Romanji[index];
-            m_VocabularyUI.Example.English = m_CurrentWord.SentencesExamples.English[index];
-
-
-            string[] aKanjis = m_CurrentWord.SentencesExamples.Kanjis[index].Split('|');
-            if (aKanjis.Length >= 1)
-            {
-                string kanjis = "";
-                for (int i = 0; i < aKanjis.Length; i++)
-                {
-                    kanjis += aKanjis[i];
-                    if (i < (aKanjis.Length - 1))
-                    {
-                        kanjis += "\n";
-                    }
-                }
-                m_VocabularyUI.Example.Kanji = kanjis;
-            }            
+            m_ExamplesUI.Sentence = m_SelectedWord.SentencesExamples.GetSentence(index);
+            m_ExamplesUI.KanjiExample = m_SelectedWord.SentencesExamples.GetSentence(index);
+            m_ExamplesUI.HiraganaExample = m_SelectedWord.SentencesExamples.GetHiragana(index);
+            m_ExamplesUI.Romanji = m_SelectedWord.SentencesExamples.GetRomanji(index);
+            m_ExamplesUI.English = m_SelectedWord.SentencesExamples.GetEnglish(index);
+            m_ExamplesUI.Kanji = m_SelectedWord.SentencesExamples.GetKanjis(index);            
         }
         #endregion SetData
 
@@ -505,13 +537,14 @@ namespace JapaneseApp
         {
             if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
             {
-                EasyTTSUtil.SpeechFlush(m_CurrentWord.Hiragana);
+                EasyTTSUtil.SpeechFlush(m_SelectedWord.Hiragana);
             }
         }
 
         public void OnExamplesBtn()
         {
-            m_VocabularyUI.Example.Show();
+            m_ExamplesUI.OnNextExampleEvent += OnNextExample;
+            m_ExamplesUI.Show();
         }
 
         public void OnSpriteBtn()
@@ -543,7 +576,9 @@ namespace JapaneseApp
 
         public void OnNextExample()
         {
-            if (m_CurrentWord == null)
+            Debug.Log("<color=cyan> VOCABULARY CONTROL OnNextExample </color>");
+
+            if (m_SelectedWord == null)
             {
                 Debug.Log("<color=cyan> No Current Word </color>");
                 return;
@@ -552,7 +587,7 @@ namespace JapaneseApp
 
             // Set next sentence
             m_ICurrentExample++;
-            m_ICurrentExample %= m_CurrentWord.SentencesExamples.Sentence.Count;
+            m_ICurrentExample %= m_SelectedWord.SentencesExamples.Sentence.Count;
 
             SetExample(m_ICurrentExample);
 

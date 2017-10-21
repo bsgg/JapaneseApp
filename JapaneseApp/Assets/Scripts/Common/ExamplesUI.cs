@@ -7,6 +7,9 @@ namespace JapaneseApp
 {
     public class ExamplesUI : UIBase
     {
+        public delegate void ExampleAction();
+        public ExampleAction OnNextExampleEvent;
+
         [Header("ExamplesUI")]
 
         [SerializeField]
@@ -104,6 +107,14 @@ namespace JapaneseApp
             {
                 m_Sentence.text = m_HiraganaExample;
                 m_ToggleToKanjiExample = true;
+            }
+        }
+
+        public void OnNextExamplePress()
+        {
+            if (OnNextExampleEvent != null)
+            {
+                OnNextExampleEvent();
             }
         }
 

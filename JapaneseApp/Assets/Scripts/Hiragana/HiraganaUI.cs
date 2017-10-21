@@ -16,27 +16,7 @@ namespace JapaneseApp
             set { m_ScrollContent = value; }
         }
 
-        [SerializeField]
-        private ExamplesUI m_Example;
-        public ExamplesUI Example
-        {
-            set { m_Example = value; }
-            get { return m_Example; }
-        }
-
-
-        public override void Show()
-        {
-            m_Example.Hide();
-            base.Show();
-
-        }
-
-        public override void Hide()
-        {
-            m_Example.Hide();
-            base.Hide();
-        }
+       
 
     }
 }
