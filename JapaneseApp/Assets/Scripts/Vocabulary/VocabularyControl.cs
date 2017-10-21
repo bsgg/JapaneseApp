@@ -247,9 +247,7 @@ namespace JapaneseApp
         private VWord m_SelectedWord;
         private int m_ICurrentExample;
         private int m_CurrentWordID = 0;
-        //private bool m_SelectRandomWord = false;
         private ECategory m_CurrentCategory;
-
 
         private EMenu m_Menu;
 
@@ -282,24 +280,10 @@ namespace JapaneseApp
 
                 }
             }
-        }
-        
+        }        
 
         #region Navigation
-
-        public override void Show()
-        {
-            m_CategoriesUI.ScrollMenu.OnItemPress += OnCategoryPress;
-            base.Show();           
-
-        }
-
-        public override void Hide()
-        {
-            m_CategoriesUI.ScrollMenu.OnItemPress -= OnCategoryPress;
-            base.Hide();
-        }
-
+       
         public override void Back()
         {
             base.Back();
@@ -323,9 +307,10 @@ namespace JapaneseApp
                         // If category visible, back to main menu app controller, otherwise, hide vocabulary and show categories menu
                         if (m_CategoriesUI.Visible)
                         {
-                            // Back to main menu (App Controller)
-                            Hide();
                             AppController.Instance.ShowMainMenu();
+                            m_CategoriesUI.ScrollMenu.OnItemPress -= OnCategoryPress;
+                            m_CategoriesUI.Hide();
+                            // Back to main menu (App Controller)
                         }
                         else
                         {
@@ -363,6 +348,7 @@ namespace JapaneseApp
                 case EMenu.Category:
 
                     SetCategories();
+                    m_CategoriesUI.ScrollMenu.OnItemPress += OnCategoryPress;
                     m_CategoriesUI.Show();
 
                 break;
@@ -383,7 +369,8 @@ namespace JapaneseApp
 
         public void OnCategoryPress(int id, int x, int y)
         {
-            
+            m_CategoriesUI.ScrollMenu.OnItemPress -= OnCategoryPress;
+            Debug.Log("Vocabulary OnCategoryPress");
             m_CurrentCategory = (ECategory)id;
             m_CurrentWordID = 0;
 

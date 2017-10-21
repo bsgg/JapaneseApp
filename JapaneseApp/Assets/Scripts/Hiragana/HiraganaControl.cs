@@ -40,9 +40,7 @@ namespace JapaneseApp
     {
         [SerializeField]
         private HiraganaUI m_HiraganaUI;
-
-        [SerializeField]
-        private ExamplesUI m_ExampleUI;
+        
 
         [SerializeField]
         private ButtonText[] m_ListButtonText;
@@ -136,10 +134,9 @@ namespace JapaneseApp
         {
             base.Back();
 
-            if (m_ExampleUI.Visible)
+            if (m_HiraganaUI.ExampleUI.Visible)
             {
-                m_ExampleUI.OnNextExampleEvent -= OnNextExample;
-                m_ExampleUI.Hide();
+                m_HiraganaUI.ExampleUI.Hide();
             }else
             {
                 Hide();
@@ -185,8 +182,7 @@ namespace JapaneseApp
 
             m_SelectedHiragana = m_HiraganaSet.Data[x];
             SetExample(0);
-            m_ExampleUI.OnNextExampleEvent += OnNextExample;
-            m_ExampleUI.Show();
+            m_HiraganaUI.ExampleUI.Show();
         }
                
 
@@ -207,12 +203,17 @@ namespace JapaneseApp
             m_SelectedExample = index;
 
             // Set sentence
-            m_ExampleUI.Sentence = m_SelectedHiragana.SentencesExamples.GetSentence(index);
-            m_ExampleUI.KanjiExample = m_SelectedHiragana.SentencesExamples.GetSentence(index);
-            m_ExampleUI.HiraganaExample = m_SelectedHiragana.SentencesExamples.GetHiragana(index);
-            m_ExampleUI.Romanji = m_SelectedHiragana.SentencesExamples.GetRomanji(index);
-            m_ExampleUI.English = m_SelectedHiragana.SentencesExamples.GetEnglish(index);
-            m_ExampleUI.Kanji = m_SelectedHiragana.SentencesExamples.GetKanjis(index);            
+            string examples = string.Empty;
+            for (int i= 0; i< m_SelectedHiragana.SentencesExamples.Sentence.Count; i++ )
+            {
+                examples += " - " + m_SelectedHiragana.SentencesExamples.Sentence[i] + " (" + m_SelectedHiragana.SentencesExamples.Romanji[i] + ") = " + m_SelectedHiragana.SentencesExamples.English[i];
+                m_HiraganaUI.ExampleUI.HiraganaExample += m_SelectedHiragana.SentencesExamples.Romanji[i] + " ";
+                if (i < (m_SelectedHiragana.SentencesExamples.Sentence.Count -1))
+                {
+                    examples += "\n";
+                }
+            }
+            m_HiraganaUI.ExampleUI.Example = examples;         
         }
 
 

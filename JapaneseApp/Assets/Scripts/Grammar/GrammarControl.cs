@@ -113,6 +113,21 @@ namespace JapaneseApp
             m_SelectedGrammar = 0;
         }
 
+        public override void Hide()
+        {
+            m_CategoriesUI.Hide();
+            m_ExampleUI.Hide();
+            base.Hide();
+        }
+
+        public override void Show()
+        {
+            m_CategoriesUI.Hide();
+            m_ExampleUI.Hide();
+            base.Show();
+        }
+
+
         public override void Back()
         {
             base.Back();
@@ -125,18 +140,23 @@ namespace JapaneseApp
             }
             else if (m_CategoriesUI.Visible)
             {
+                m_CategoriesUI.ScrollMenu.OnItemPress -= OnCategoryPress;
                 m_CategoriesUI.Hide();
                 Hide();
                 AppController.Instance.ShowMainMenu();
             }
             else
             {
+                m_CategoriesUI.ScrollMenu.OnItemPress += OnCategoryPress;
                 m_CategoriesUI.Show();
             }
-        }
+        }       
 
-        private void SetCategories()
+       
+        public void ShowCategories()
         {
+            Show();
+
             List<string> categories =  new List<string>();
 
             for (int i = 0; i < (int) ECategory.NUM; i++)
@@ -145,42 +165,20 @@ namespace JapaneseApp
             }
 
             m_CategoriesUI.ScrollMenu.InitScroll(categories);
-            m_CategoriesUI.ScrollMenu.OnItemPress += OnCategoryPress;
-        }
-
-        public override void Hide()
-        {
-            m_CategoriesUI.ScrollMenu.OnItemPress -= OnCategoryPress;
-            m_ExampleUI.Hide();
-           
-            //m_ExampleUI.NextSentenceBtn.onClick.RemoveListener(() => OnNextExample());
-
-            base.Hide();
-        }
-
-        public override void Show()
-        {
-            
-            //m_ExampleUI.NextSentenceBtn.onClick.AddListener(() => OnNextExample());
-            m_ExampleUI.Hide();
-
-            base.Show();
-        }
-
-        public void ShowCategories()
-        {
-            Show();
-
-            SetCategories();
 
             m_ExampleUI.Hide();
             m_GrammarUI.Hide();
+
+            m_CategoriesUI.ScrollMenu.OnItemPress += OnCategoryPress;
             m_CategoriesUI.Show();
         }
 
 
         public void OnCategoryPress(int id, int x, int y)
         {
+            m_CategoriesUI.ScrollMenu.OnItemPress -= OnCategoryPress;
+
+            Debug.Log("Grammar OnCategoryPress");
             m_SelectedCategory = (ECategory) id;
             m_SelectedGrammar = 0;
 
