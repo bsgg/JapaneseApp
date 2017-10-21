@@ -229,7 +229,7 @@ namespace JapaneseApp
             // Set examples
             m_GrammarUI.Example.Sentence = grammar.SentencesExamples.Sentence[index];
             m_GrammarUI.Example.KanjiExample = grammar.SentencesExamples.Sentence[index];
-            if (grammar.SentencesExamples.Hiragana != null)
+            if ((grammar.SentencesExamples.Hiragana != null) && ((grammar.SentencesExamples.Hiragana.Count > 0)))
             {
                 m_GrammarUI.Example.HiraganaExample = grammar.SentencesExamples.Hiragana[index];
             }

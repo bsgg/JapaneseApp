@@ -17,7 +17,7 @@ namespace JapaneseApp
             get { return m_Sentence.text; }
         }
 
-        [SerializeField]
+        // Sentence with kanji symbols
         private string m_KanjiExample;
         public string KanjiExample
         {
@@ -25,7 +25,7 @@ namespace JapaneseApp
             get { return m_KanjiExample; }
         }
 
-        [SerializeField]
+        // Sentence with only hiragana symbols
         private string m_HiraganaExample;
         public string HiraganaExample
         {
@@ -93,6 +93,8 @@ namespace JapaneseApp
 
         public void OnSentencePress()
         {
+            if (string.IsNullOrEmpty(m_HiraganaExample) || string.IsNullOrEmpty(m_KanjiExample)) return;
+
             if (m_ToggleToKanjiExample)
             {
                 m_Sentence.text = m_KanjiExample;
@@ -105,14 +107,12 @@ namespace JapaneseApp
             }
         }
 
-        public void OnJapanesePlay()
+        public void OnSoundPlay()
         {
-
-        }
-
-        public void OnEnglishPlay()
-        {
-
+            if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+            {
+                EasyTTSUtil.SpeechFlush(m_Romanji.text);
+            }
         }
 
         #endregion Handles

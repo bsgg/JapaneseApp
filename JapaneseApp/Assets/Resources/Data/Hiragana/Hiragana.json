@@ -154,6 +154,104 @@
           "Bone"
         ]
       }
+    },
+    {
+      "Hiragana": "ま_み_む_め_も",
+      "Romanji": "Ma_Mi_Mu_Me_Mo",
+      "SentencesExamples": {
+        "Sentence": [
+          "しま",
+          "なまえ",
+          "みなみ",
+          "みみ",
+          "あめ"
+        ],
+        "Romanji": [
+          "Shima",
+          "Namae",
+          "Minami",
+          "Mimi",
+          "Ame"
+        ],
+        "English": [
+          "Island",
+          "Namae",
+          "South",
+          "Ear",
+          "Rain"
+        ]
+      }
+    },
+    {
+      "Hiragana": "や_　_ゆ_　_よ",
+      "Romanji": "Ya_ _Yu_ _Yo",
+      "SentencesExamples": {
+        "Sentence": [
+          "やさしい",
+          "ゆき",
+          "よむ"
+        ],
+        "Romanji": [
+          "Yasashii",
+          "Yuki",
+          "Yomu"
+        ],
+        "English": [
+          "Simple, Gentle",
+          "Snow",
+          "Read"
+        ]
+      }
+    },
+    {
+      "Hiragana": "ら_り_る_れ_ろ",
+      "Romanji": "Ra_Ri_Ru_Re_Ro",
+      "SentencesExamples": {
+        "Sentence": [
+          "ひらがな",
+          "ふるい",
+          "きれい",
+          "これ",
+          "いろ"
+        ],
+        "Romanji": [
+          "Hiragana",
+          "Furui",
+          "Kirei",
+          "Kore",
+          "Iro"
+        ],
+        "English": [
+          "Hiragana",
+          "Old (Thing)",
+          "Pretty, Clean",
+          "This",
+          "Color"
+        ]
+      }
+    },
+    {
+      "Hiragana": "わ_　_を_　_ん",
+      "Romanji": "Wa_ _Wo_ _N",
+      "SentencesExamples": {
+        "Sentence": [
+          "わたし",
+          "わるい",
+          "すしをたべる",
+          "おんな"
+        ],
+        "Romanji": [
+          "Watashi",
+          "Warui",
+          "Sushi o taberu",
+          "Onna"
+        ],
+        "English": [
+          "Me,I",
+          "Bad, Poor quality",
+          "Eat Sushi",
+          "Woman"        ]
+      }
     }
 	]
 }
