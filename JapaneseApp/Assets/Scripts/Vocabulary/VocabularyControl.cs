@@ -201,7 +201,6 @@ namespace JapaneseApp
         [SerializeField]
         private Color m_DisableBtnColor;
 
-
         public override void Init()
         {
             base.Init();
@@ -297,7 +296,7 @@ namespace JapaneseApp
         public void SelectMenu(EMenu menu)
         {
             m_Menu = menu;
-
+                        
             m_VocabularyUI.Example.Hide();
             m_VocabularyUI.Hide();
             m_CategoriesUI.Hide();

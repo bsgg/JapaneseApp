@@ -219,6 +219,48 @@
       }
     },
     {
+      "Hiragana": "ば_び_ぶ_べ_ぼ",
+      "Romanji": "Ba_Bi_Bu_Be_Bo",
+      "SentencesExamples": {
+        "Sentence": [
+          "くび",
+          "どうぶつ",
+          "かべ",
+          "ぼうし"
+        ],
+        "Romanji": [
+          "Kubi",
+          "Doubutsu",
+          "Kabe",
+          "Boushi"
+        ],
+        "English": [
+          "Neck",
+          "Animal",
+          "Wall",
+          "Hat"
+        ]
+      }
+    },
+    {
+      "Hiragana": "ぱ_ぴ_ぷ_ぺ_ぽ",
+      "Romanji": "Pa_Pi_Pu_Pe_Po",
+      "SentencesExamples": {
+        "Sentence": [
+          "ぴかぴか",
+          "ぺらぺら"
+        ],
+        "Romanji": [
+          "PikaPika",
+          "PeraPera"
+        ],
+        "English": [
+          "Sparkle",
+          "Fluent"
+        ]
+      }
+    },
+    {
       "Hiragana": "ま_み_む_め_も",
       "Romanji": "Ma_Mi_Mu_Me_Mo",
       "SentencesExamples": {

@@ -87,9 +87,16 @@ namespace JapaneseApp
         
         public override void Show()
         {
-            base.Show();
-
             m_Example.Hide();
+            base.Show();
+           
         }
+
+        public override void Hide()
+        {
+            m_Example.Hide();
+            base.Hide();
+        }
+        
     }
 }

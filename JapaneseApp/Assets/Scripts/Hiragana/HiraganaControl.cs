@@ -10,14 +10,7 @@ namespace JapaneseApp
 
     [System.Serializable]
     public class HiraganaData
-    {
-        /*[SerializeField]
-        private string m_Name;
-        public string Name
-        {
-            get { return m_Name; }
-            set { m_Name = value; }
-        }*/
+    {        
 
         [SerializeField]
         private List<VWord> m_Data = new List<VWord>();
@@ -57,9 +50,8 @@ namespace JapaneseApp
         [SerializeField]
         private HiraganaData m_HiraganaSet;
 
-        // Array (Row, Col) Hiragana Char        
-        //private string[,] m_HiraganaChar;
-        //private string[,] m_RomanjiChar;
+        private VWord m_SelectedHiragana;
+        private int m_SelectedExample;
 
         public override void Init()
         {
@@ -108,6 +100,9 @@ namespace JapaneseApp
                         if ((h != "-") && (r != "-"))
                         {
                             m_ListButtonText[id].ButtonComponent.enabled = true;
+                            Color32 cButton = m_ListButtonText[id].ButtonComponent.targetGraphic.color;
+                            cButton.a = 255;
+                            m_ListButtonText[id].ButtonComponent.targetGraphic.color = cButton;
 
                             string text = r + " : " + h;
                             m_ListButtonText[id].Initialize(text, id, i, j, OnItemButtonPress);
@@ -115,6 +110,10 @@ namespace JapaneseApp
                         }else
                         {
                             m_ListButtonText[id].ButtonComponent.enabled = false;
+                            Color32 cButton = m_ListButtonText[id].ButtonComponent.targetGraphic.color;
+                            cButton.a = 0;
+                            m_ListButtonText[id].ButtonComponent.targetGraphic.color = cButton;
+
                         }
                     }
                 }
@@ -124,19 +123,9 @@ namespace JapaneseApp
                 }
             }
 
-           
-
             // Set table
 
-
-
-
-
-
-
-
             m_HiraganaUI.Init();
-
 
             m_HiraganaUI.Hide();
         }
@@ -144,17 +133,32 @@ namespace JapaneseApp
         public override void Back()
         {
             base.Back();
+
+            if (m_HiraganaUI.Example.Visible)
+            {
+                m_HiraganaUI.Example.Hide();
+            }else
+            {
+                Hide();
+                AppController.Instance.ShowMainMenu();
+            }
         }
 
         public override void Show()
         {
             base.Show();
+
+            m_HiraganaUI.Example.NextSentenceBtn.onClick.AddListener(() => OnNextExample());
+
             m_HiraganaUI.Show();
         }
 
         public override void Hide()
         {
             base.Hide();
+
+            m_HiraganaUI.Example.NextSentenceBtn.onClick.RemoveAllListeners();
+
             m_HiraganaUI.Hide();
         }
 
@@ -162,9 +166,89 @@ namespace JapaneseApp
         {
             Debug.Log("Item: " + id + " (" + x + "," + y + ") m_ListButtonText[id].TextButton" + m_ListButtonText[id].TextButton);
 
-            Debug.Log("H:" + m_HiraganaSet.HiraganaChar[x, y]  + ", R: " + m_HiraganaSet.RomanjiChar[x, y]);            
+            Debug.Log("H:" + m_HiraganaSet.HiraganaChar[x, y]  + ", R: " + m_HiraganaSet.RomanjiChar[x, y]);
 
+            if (m_HiraganaSet == null)
+            {
+                Debug.Log("<color=cyan> SetExample,  m_CurrentHiragana null </color>");
+                return;
+            }
+
+            // X has the current hiragana (ROW in the json)
+            if ((x >= m_HiraganaSet.Data.Count) || (x < 0))
+            {
+                Debug.Log("<color=cyan> SetExample, Index out of boundaries </color>");
+                return;
+            }
+
+
+            m_SelectedHiragana = m_HiraganaSet.Data[x];
+            SetExample(0);
+
+            m_HiraganaUI.Example.Show();
         }
+               
+
+        private void SetExample(int index)
+        {
+            if (m_SelectedHiragana == null)
+            {
+                Debug.Log("<color=cyan> SetExample,  m_CurrentHiragana null </color>");
+                return;
+            }
+
+            if ((index >= m_SelectedHiragana.SentencesExamples.Sentence.Count) || (index < 0))
+            {
+                Debug.Log("<color=cyan> SetExample, Index out of boundaries </color>");
+                return;
+            }
+
+            m_SelectedExample = index;
+
+            // Set sentence
+            m_HiraganaUI.Example.Sentence = m_SelectedHiragana.SentencesExamples.Sentence[index];
+            m_HiraganaUI.Example.KanjiExample = m_SelectedHiragana.SentencesExamples.Sentence[index];
+            if ((m_SelectedHiragana.SentencesExamples.Hiragana != null) && ((m_SelectedHiragana.SentencesExamples.Hiragana.Count > 0)))
+            {
+                m_HiraganaUI.Example.HiraganaExample = m_SelectedHiragana.SentencesExamples.Hiragana[index];
+            }
+            m_HiraganaUI.Example.Romanji = m_SelectedHiragana.SentencesExamples.Romanji[index];
+            m_HiraganaUI.Example.English = m_SelectedHiragana.SentencesExamples.English[index];
+
+
+            string[] aKanjis = m_SelectedHiragana.SentencesExamples.Kanjis[index].Split('|');
+            if (aKanjis.Length >= 1)
+            {
+                string kanjis = "";
+                for (int i = 0; i < aKanjis.Length; i++)
+                {
+                    kanjis += aKanjis[i];
+                    if (i < (aKanjis.Length - 1))
+                    {
+                        kanjis += "\n";
+                    }
+                }
+                m_HiraganaUI.Example.Kanji = kanjis;
+            }
+        }
+
+
+        public void OnNextExample()
+        {
+            if (m_SelectedHiragana == null)
+            {
+                Debug.Log("<color=cyan> No Current Word </color>");
+                return;
+            }
+
+
+            // Set next sentence
+            m_SelectedExample++;
+            m_SelectedExample %= m_SelectedHiragana.SentencesExamples.Sentence.Count;
+
+            SetExample(m_SelectedExample);
+        }
+
 
     }
 }
