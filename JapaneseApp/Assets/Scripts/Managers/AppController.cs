@@ -41,7 +41,7 @@ namespace JapaneseApp
         private MainMenuController m_MainMenuController;
 
         [SerializeField]
-        private HiraganaControl m_HiraganaController;
+        private ABCControl m_HiraganaController;
 
         [SerializeField]
         private TopBar m_TopBar;
@@ -80,16 +80,21 @@ namespace JapaneseApp
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                if (m_CurrentControl == m_MainMenuController)
-                {
-                    Application.Quit();
-                }
-                else
-                {
-                    m_CurrentControl.Back();
-                }
+                Back();
             }
-        }       
+        }  
+        
+        public void Back()
+        {
+            if (m_CurrentControl == m_MainMenuController)
+            {
+                Application.Quit();
+            }
+            else
+            {
+                m_CurrentControl.Back();
+            }
+        }     
 
         #region MainMenuHandles
 

@@ -6,7 +6,7 @@ using Utility;
 
 namespace JapaneseApp
 {
-    public class HiraganaUI : UIBase
+    public class ABCUI : UIBase
     {
         [SerializeField]
         private GameObject m_ScrollContent;

@@ -16,7 +16,7 @@ namespace JapaneseApp
     {
         public enum ETYPEEDRILL { H_SYMBOL, H_ROMANJI, H_WORD, H_WORDROMANJI, H_WORDMEANING };
 
-        private HiraganaData m_HiraganaData;
+        private ABCData m_HiraganaData;
 
         private int m_NumberDrills = 20;
         private int m_NumberSections = 5;

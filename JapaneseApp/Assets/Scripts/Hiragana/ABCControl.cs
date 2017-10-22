@@ -9,9 +9,8 @@ namespace JapaneseApp
     #region DataModel
 
     [System.Serializable]
-    public class HiraganaData
-    {        
-
+    public class ABCData
+    {
         [SerializeField]
         private List<VWord> m_Data = new List<VWord>();
         public List<VWord> Data
@@ -20,11 +19,11 @@ namespace JapaneseApp
             set { m_Data = value; }
         }
 
-        private string[,] m_HiraganaChar;
-        public string[,] HiraganaChar
+        private string[,] m_SymbolChar;
+        public string[,] SymbolChar
         {
-            get { return m_HiraganaChar; }
-            set { m_HiraganaChar = value; }
+            get { return m_SymbolChar; }
+            set { m_SymbolChar = value; }
         }
         private string[,] m_RomanjiChar;
         public string[,] RomanjiChar
@@ -36,69 +35,55 @@ namespace JapaneseApp
 
     #endregion DataModel
 
-    public class HiraganaControl : Base
+    public class ABCControl : Base
     {
         [SerializeField]
-        private HiraganaUI m_HiraganaUI;
-        
+        private ABCUI m_ABCCharUI;        
 
         [SerializeField]
         private ButtonText[] m_ListButtonText;
 
         [SerializeField]
-        private string m_DataPath = "Data/Hiragana/Hiragana1";
+        private string m_DataPath = "Data/Hiragana/";
 
         [SerializeField]
-        private HiraganaData m_HiraganaSet;
+        private ABCData m_ABCSet;
+        
 
-        private string m_DataPathKat = "Data/Hiragana/Katakana";
-        [SerializeField]
-        private HiraganaData m_KatakanaSet;
-
-        private VWord m_SelectedHiragana;
+        private VWord m_SelectedABC;
         private int m_SelectedExample;
 
         public override void Init()
         {
             base.Init();
-
-            // Test Katakana
-            m_KatakanaSet = new HiraganaData();
-            string path1 = m_DataPathKat;
-            string json1 = Utility.LoadJSONResource(path1);
-            if (json1 != "")
-            {
-                m_KatakanaSet = JsonMapper.ToObject<HiraganaData>(json1);
-
-            }
-
+            
 
             // Load the data
-            m_HiraganaSet = new HiraganaData();
+            m_ABCSet = new ABCData();
            
             string path = m_DataPath;
             string json = Utility.LoadJSONResource(path);
             if (json != "")
             {
-                m_HiraganaSet = JsonMapper.ToObject<HiraganaData>(json);
+                m_ABCSet = JsonMapper.ToObject<ABCData>(json);
 
             }
 
-            m_ListButtonText = m_HiraganaUI.ScrollContent.GetComponentsInChildren<ButtonText>();
+            m_ListButtonText = m_ABCCharUI.ScrollContent.GetComponentsInChildren<ButtonText>();
             for (int i = 0; i < m_ListButtonText.Length; i++)
             {
                 m_ListButtonText[i].TextButton = "";
             }
-            
 
-            m_HiraganaSet.HiraganaChar = new string[m_HiraganaSet.Data.Count, 5];
-            m_HiraganaSet.RomanjiChar = new string[m_HiraganaSet.Data.Count, 5];
 
-            for (int i=0; i<m_HiraganaSet.Data.Count; i++)
+            m_ABCSet.SymbolChar = new string[m_ABCSet.Data.Count, 5];
+            m_ABCSet.RomanjiChar = new string[m_ABCSet.Data.Count, 5];
+
+            for (int i=0; i< m_ABCSet.Data.Count; i++)
             {
 
-                string[] splitH = m_HiraganaSet.Data[i].Hiragana.Split('_');
-                string[] splitE = m_HiraganaSet.Data[i].Romanji.Split('_');
+                string[] splitH = m_ABCSet.Data[i].Hiragana.Split('_');
+                string[] splitE = m_ABCSet.Data[i].Romanji.Split('_');
 
                 // Both must have 5 elements
                 if ((splitH != null) && (splitE != null) && (splitH.Length >= 5) && (splitE.Length >= 5))
@@ -108,8 +93,8 @@ namespace JapaneseApp
                         string h = splitH[j];
                         string r = splitE[j];
 
-                        m_HiraganaSet.HiraganaChar[i, j] = h;
-                        m_HiraganaSet.RomanjiChar[i, j] = r;
+                        m_ABCSet.SymbolChar[i, j] = h;
+                        m_ABCSet.RomanjiChar[i, j] = r;
 
                         int id = 5 * i + j;
                         if ((h != "-") && (r != "-"))
@@ -139,24 +124,24 @@ namespace JapaneseApp
                 }
                 else
                 {
-                    Debug.Log("<color=cyan>" + "Wrong Format: " + m_HiraganaSet.Data[i].Hiragana + " - " + m_HiraganaSet.Data[i].Romanji + "</color>");
+                    Debug.Log("<color=cyan>" + "Wrong Format: " + m_ABCSet.Data[i].Hiragana + " - " + m_ABCSet.Data[i].Romanji + "</color>");
                 }
             }
 
             // Set table
 
-            m_HiraganaUI.Init();
+            m_ABCCharUI.Init();
 
-            m_HiraganaUI.Hide();
+            m_ABCCharUI.Hide();
         }
 
         public override void Back()
         {
             base.Back();
 
-            if (m_HiraganaUI.ExampleUI.Visible)
+            if (m_ABCCharUI.ExampleUI.Visible)
             {
-                m_HiraganaUI.ExampleUI.Hide();
+                m_ABCCharUI.ExampleUI.Hide();
             }else
             {
                 Hide();
@@ -168,53 +153,50 @@ namespace JapaneseApp
         {
             base.Show();
 
-            m_HiraganaUI.Show();
+            m_ABCCharUI.Show();
         }
 
         public override void Hide()
         {
             base.Hide();
-
-            
-
-            m_HiraganaUI.Hide();
+            m_ABCCharUI.Hide();
         }
 
         public void OnItemButtonPress(int id, int x, int y)
         {
             Debug.Log("Item: " + id + " (" + x + "," + y + ") m_ListButtonText[id].TextButton" + m_ListButtonText[id].TextButton);
 
-            Debug.Log("H:" + m_HiraganaSet.HiraganaChar[x, y]  + ", R: " + m_HiraganaSet.RomanjiChar[x, y]);
+            Debug.Log("H:" + m_ABCSet.SymbolChar[x, y]  + ", R: " + m_ABCSet.RomanjiChar[x, y]);
 
-            if (m_HiraganaSet == null)
+            if (m_ABCSet == null)
             {
                 Debug.Log("<color=cyan> SetExample,  m_CurrentHiragana null </color>");
                 return;
             }
 
             // X has the current hiragana (ROW in the json)
-            if ((x >= m_HiraganaSet.Data.Count) || (x < 0))
+            if ((x >= m_ABCSet.Data.Count) || (x < 0))
             {
                 Debug.Log("<color=cyan> SetExample, Index out of boundaries </color>");
                 return;
             }
 
 
-            m_SelectedHiragana = m_HiraganaSet.Data[x];
+            m_SelectedABC = m_ABCSet.Data[x];
             SetExample(0);
-            m_HiraganaUI.ExampleUI.Show();
+            m_ABCCharUI.ExampleUI.Show();
         }
                
 
         private void SetExample(int index)
         {
-            if (m_SelectedHiragana == null)
+            if (m_SelectedABC == null)
             {
                 Debug.Log("<color=cyan> SetExample,  m_CurrentHiragana null </color>");
                 return;
             }
 
-            if ((index >= m_SelectedHiragana.SentencesExamples.Sentence.Count) || (index < 0))
+            if ((index >= m_SelectedABC.SentencesExamples.Sentence.Count) || (index < 0))
             {
                 Debug.Log("<color=cyan> SetExample, Index out of boundaries </color>");
                 return;
@@ -224,16 +206,16 @@ namespace JapaneseApp
 
             // Set sentence
             string examples = string.Empty;
-            for (int i= 0; i< m_SelectedHiragana.SentencesExamples.Sentence.Count; i++ )
+            for (int i= 0; i< m_SelectedABC.SentencesExamples.Sentence.Count; i++ )
             {
-                examples += " - " + m_SelectedHiragana.SentencesExamples.Sentence[i] + " (" + m_SelectedHiragana.SentencesExamples.Romanji[i] + ") = " + m_SelectedHiragana.SentencesExamples.English[i];
-                m_HiraganaUI.ExampleUI.HiraganaExample += m_SelectedHiragana.SentencesExamples.Romanji[i] + " ";
-                if (i < (m_SelectedHiragana.SentencesExamples.Sentence.Count -1))
+                examples += " - " + m_SelectedABC.SentencesExamples.Sentence[i] + " (" + m_SelectedABC.SentencesExamples.Romanji[i] + ") = " + m_SelectedABC.SentencesExamples.English[i];
+                m_ABCCharUI.ExampleUI.HiraganaExample += m_SelectedABC.SentencesExamples.Romanji[i] + " ";
+                if (i < (m_SelectedABC.SentencesExamples.Sentence.Count -1))
                 {
                     examples += "\n";
                 }
             }
-            m_HiraganaUI.ExampleUI.Example = examples;         
+            m_ABCCharUI.ExampleUI.Example = examples;         
         }
 
 
@@ -241,7 +223,7 @@ namespace JapaneseApp
         {
             Debug.Log("<color=cyan> HIRAGANA CONTROL OnNextExample </color>");
 
-            if (m_SelectedHiragana == null)
+            if (m_SelectedABC == null)
             {
                 Debug.Log("<color=cyan> No Current Word </color>");
                 return;
@@ -250,7 +232,7 @@ namespace JapaneseApp
 
             // Set next sentence
             m_SelectedExample++;
-            m_SelectedExample %= m_SelectedHiragana.SentencesExamples.Sentence.Count;
+            m_SelectedExample %= m_SelectedABC.SentencesExamples.Sentence.Count;
 
             SetExample(m_SelectedExample);
         }
