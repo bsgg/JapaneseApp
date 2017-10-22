@@ -75,17 +75,19 @@ namespace JapaneseApp
             m_MainMenuController.Show();
             m_CurrentControl = m_MainMenuController;
         }
-
-        public void OnBack()
-        {
-            m_CurrentControl.Back();
-        }
-
+        
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                OnBack();
+                if (m_CurrentControl == m_MainMenuController)
+                {
+                    Application.Quit();
+                }
+                else
+                {
+                    m_CurrentControl.Back();
+                }
             }
         }       
 
@@ -135,6 +137,15 @@ namespace JapaneseApp
             m_MainMenuController.Hide();
             m_CurrentControl = m_HiraganaController;
             m_HiraganaController.Show();
+        }
+
+        public void OnKatakanaPress()
+        {
+            /*m_TopBar.Title = "Katakana";
+            m_TopBar.CloseBtn.SetActive(true);
+            m_MainMenuController.Hide();
+            m_CurrentControl = m_HiraganaController;
+            m_HiraganaController.Show();*/
         }
 
         #endregion MainMenuHandles

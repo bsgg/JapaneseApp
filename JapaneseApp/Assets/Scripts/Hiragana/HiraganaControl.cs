@@ -51,12 +51,27 @@ namespace JapaneseApp
         [SerializeField]
         private HiraganaData m_HiraganaSet;
 
+        private string m_DataPathKat = "Data/Hiragana/Katakana";
+        [SerializeField]
+        private HiraganaData m_KatakanaSet;
+
         private VWord m_SelectedHiragana;
         private int m_SelectedExample;
 
         public override void Init()
         {
             base.Init();
+
+            // Test Katakana
+            m_KatakanaSet = new HiraganaData();
+            string path1 = m_DataPathKat;
+            string json1 = Utility.LoadJSONResource(path1);
+            if (json1 != "")
+            {
+                m_KatakanaSet = JsonMapper.ToObject<HiraganaData>(json1);
+
+            }
+
 
             // Load the data
             m_HiraganaSet = new HiraganaData();
@@ -105,9 +120,14 @@ namespace JapaneseApp
                             m_ListButtonText[id].ButtonComponent.targetGraphic.color = cButton;
 
                             string text = r + " : " + h;
-                            m_ListButtonText[id].Initialize(text, id, i, j, OnItemButtonPress);
+                            m_ListButtonText[id].TextButton = text;
+                            m_ListButtonText[id].ID = id;
+                            m_ListButtonText[id].X = i;
+                            m_ListButtonText[id].Y = j;
+                            m_ListButtonText[id].OnButtonPress += OnItemButtonPress;
 
-                        }else
+                        }
+                        else
                         {
                             m_ListButtonText[id].ButtonComponent.enabled = false;
                             Color32 cButton = m_ListButtonText[id].ButtonComponent.targetGraphic.color;

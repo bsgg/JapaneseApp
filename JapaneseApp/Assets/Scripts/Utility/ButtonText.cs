@@ -7,7 +7,9 @@ namespace Utility
 {
     public class ButtonText : MonoBehaviour
     {
-        public delegate void OnButtonPress(int index, int x, int y);
+        public delegate void ButtonAction(int index, int x, int y);
+        public ButtonAction OnButtonPress;
+
 
         [SerializeField]  private Text       m_TextButton;
         public string TextButton
@@ -41,28 +43,14 @@ namespace Utility
         {
             get { return m_ButtonComponent; }
             set { m_ButtonComponent = value; }
-        }
+        } 
 
-        public void Initialize(string text, int id, OnButtonPress callback)
+        public void OnPress()
         {
-            m_TextButton.text = text;
-            m_ID = id;
-            m_ButtonComponent.onClick.AddListener(() => { callback(m_ID, -1,-1); });
-        }
-
-        public void Initialize(string text, int id, int x, int y, OnButtonPress callback)
-        {
-            m_TextButton.text = text;
-            m_ID = id;
-            m_X = x;
-            m_Y = y;
-            m_ButtonComponent.onClick.AddListener(() => { callback(m_ID, m_X, m_Y); });
-        }
-
-        public void Initialize(int id, OnButtonPress callback)
-        {
-            m_ID = id;
-            m_ButtonComponent.onClick.AddListener(() => { callback(m_ID, -1,-1); });
+            if (OnButtonPress != null)
+            {
+                OnButtonPress(m_ID,m_X,m_Y);
+            }
         }
 
     }

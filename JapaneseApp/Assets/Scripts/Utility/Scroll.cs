@@ -50,7 +50,9 @@ namespace Utility
                 ButtonText buttonText = element.GetComponent<ButtonText>();
                 if (buttonText != null)
                 {
-                    buttonText.Initialize(data[i], i, OnItemButtonPress);
+                    buttonText.TextButton = data[i];
+                    buttonText.ID = i;
+                    buttonText.OnButtonPress += OnItemButtonPress;
                 }              
             }
         }
