@@ -47,16 +47,14 @@ namespace JapaneseApp
         private string m_DataPath = "Data/Hiragana/";
 
         [SerializeField]
-        private ABCData m_ABCSet;
-        
+        private ABCData m_ABCSet;        
 
         private VWord m_SelectedABC;
         private int m_SelectedExample;
 
         public override void Init()
         {
-            base.Init();
-            
+            base.Init();            
 
             // Load the data
             m_ABCSet = new ABCData();
@@ -75,13 +73,12 @@ namespace JapaneseApp
                 m_ListButtonText[i].TextButton = "";
             }
 
-
             m_ABCSet.SymbolChar = new string[m_ABCSet.Data.Count, 5];
             m_ABCSet.RomanjiChar = new string[m_ABCSet.Data.Count, 5];
 
+            int lastButtonId = -1;
             for (int i=0; i< m_ABCSet.Data.Count; i++)
             {
-
                 string[] splitH = m_ABCSet.Data[i].Hiragana.Split('_');
                 string[] splitE = m_ABCSet.Data[i].Romanji.Split('_');
 
@@ -97,6 +94,7 @@ namespace JapaneseApp
                         m_ABCSet.RomanjiChar[i, j] = r;
 
                         int id = 5 * i + j;
+                        lastButtonId = id;
                         if ((h != "-") && (r != "-"))
                         {
                             m_ListButtonText[id].ButtonComponent.enabled = true;
@@ -127,6 +125,17 @@ namespace JapaneseApp
                     Debug.Log("<color=cyan>" + "Wrong Format: " + m_ABCSet.Data[i].Hiragana + " - " + m_ABCSet.Data[i].Romanji + "</color>");
                 }
             }
+
+            // Disable rest of the buttons
+            for (int i = (lastButtonId+1); i < m_ListButtonText.Length; i++)
+            {
+                m_ListButtonText[i].TextButton = "";
+                m_ListButtonText[i].ButtonComponent.enabled = false;
+                Color32 cButton = m_ListButtonText[i].ButtonComponent.targetGraphic.color;
+                cButton.a = 0;
+                m_ListButtonText[i].ButtonComponent.targetGraphic.color = cButton;
+            }
+
 
             // Set table
 
@@ -168,6 +177,9 @@ namespace JapaneseApp
 
             Debug.Log("H:" + m_ABCSet.SymbolChar[x, y]  + ", R: " + m_ABCSet.RomanjiChar[x, y]);
 
+            
+
+
             if (m_ABCSet == null)
             {
                 Debug.Log("<color=cyan> SetExample,  m_CurrentHiragana null </color>");
@@ -181,10 +193,18 @@ namespace JapaneseApp
                 return;
             }
 
-
             m_SelectedABC = m_ABCSet.Data[x];
-            SetExample(0);
-            m_ABCCharUI.ExampleUI.Show();
+
+            if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+            {
+                EasyTTSUtil.SpeechFlush(m_ABCSet.RomanjiChar[x, y]);
+            }
+
+
+
+            
+            //SetExample(0);
+            //m_ABCCharUI.ExampleUI.Show();
         }
                
 

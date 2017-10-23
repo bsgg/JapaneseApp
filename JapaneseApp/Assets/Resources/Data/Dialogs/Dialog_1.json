@@ -1,0 +1,43 @@
+﻿{
+  "Title": "Dialog 1. Are you Ms. Cole?",
+  "Audio": "Dialog_1",
+
+  "Kanji": [
+    "あの、すみません",
+    "はい",
+    "コル　さん　です　か",
+    "いいえ、ちがいます",
+    "あ、すみません"
+  ],
+
+  "Hiragana": [
+    "あの、すみません",
+    "はい",
+    "コール　さん　です　か",
+    "いいえ、ちがいます",
+    "あ、すみません"
+  ],
+
+  "Romanji": [
+    "Ano, sumimasen",
+    "Hai",
+    "Kōru san desu ka",
+    "Iie, chigaimasu",
+    "A, sumimasen"
+  ],
+
+  "English": [
+    "Excuse Me",
+    "Yes",
+    "Are you Ms. Cole?",
+    "No, I'm not, that's wrong",
+    "Oh, sorry."
+  ],
+
+  "Vocabulary": [
+    "- すみません (Sumimasen): Excuse me",
+    "- ちがいます (Chigaimasu): That's wrong"
+  ],
+
+  "Description": "- か (Ka) Particle to form questions at the end of a sentence.\n- はい (Hai) Yes / いいえ (Iie) No: Basic answers. To make the answer more sophisticated you could add:\n- はい、そう　です。(Hai, sō desu): Yes, that's right.\n- いいえ、ちがいます。(Iie, Chigaimasu): No, that's not right."
+}

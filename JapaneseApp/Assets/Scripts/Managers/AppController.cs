@@ -28,9 +28,6 @@ namespace JapaneseApp
         }
         #endregion Instance
 
-        //[SerializeField]
-        //private HiraganaContent m_HiraganaContent;
-
         [SerializeField]
         private VocabularyControl m_VocabularyControl;
 
@@ -42,6 +39,12 @@ namespace JapaneseApp
 
         [SerializeField]
         private ABCControl m_HiraganaController;
+
+        [SerializeField]
+        private ABCControl m_KatakanaController;
+
+        [SerializeField]
+        private DialogControl m_DialogControl;
 
         [SerializeField]
         private TopBar m_TopBar;
@@ -61,8 +64,11 @@ namespace JapaneseApp
             m_GrammarControl.Init();
 
             m_HiraganaController.Init();
+            m_KatakanaController.Init();
 
             m_MainMenuController.Init();
+            m_DialogControl.Init();
+
 
             ShowMainMenu();
 
@@ -146,11 +152,11 @@ namespace JapaneseApp
 
         public void OnKatakanaPress()
         {
-            /*m_TopBar.Title = "Katakana";
+            m_TopBar.Title = "Katakana";
             m_TopBar.CloseBtn.SetActive(true);
             m_MainMenuController.Hide();
-            m_CurrentControl = m_HiraganaController;
-            m_HiraganaController.Show();*/
+            m_CurrentControl = m_KatakanaController;
+            m_KatakanaController.Show();
         }
 
         #endregion MainMenuHandles
