@@ -161,7 +161,13 @@ namespace JapaneseApp
             }
 
             m_DialogUI.Title = m_DialogSet[m_SelectedDialogID].Title;
-            //m_DialogUI.Dialog = m_DialogSet[m_SelectedDialogID].Kanji;
+
+            string dialog = "";
+            for (int i = 0; i< m_DialogSet[m_SelectedDialogID].Kanji.Count; i++)
+            {
+                dialog += " - " + m_DialogSet[m_SelectedDialogID].Kanji[i] + "\n";
+            }
+            m_DialogUI.Dialog = dialog;
         }
 
         public override void Back()
@@ -189,6 +195,7 @@ namespace JapaneseApp
             base.Show();
 
             SetCategories();
+            m_CategoriesUI.Show();
 
             m_CategoriesUI.ScrollMenu.OnItemPress += OnCategoryPress;
         }
@@ -217,6 +224,7 @@ namespace JapaneseApp
 
             // Set dialog
             SetDialog(id);
+            m_DialogUI.Show();
         }
 
         public void PlayDialog()

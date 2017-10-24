@@ -17,12 +17,12 @@ namespace JapaneseApp
             get { return m_Title.text; }
         }
 
-        // Sentence with kanji symbols
-        private string m_Dialog;
+        [SerializeField]
+        private Text m_Dialog;
         public string Dialog
         {
-            set { m_Dialog = value; }
-            get { return m_Dialog; }
+            set { m_Dialog.text = value; }
+            get { return m_Dialog.text; }
         }
     }
 }

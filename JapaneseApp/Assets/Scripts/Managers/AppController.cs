@@ -159,6 +159,15 @@ namespace JapaneseApp
             m_KatakanaController.Show();
         }
 
+        public void OnDialogPress()
+        {
+            m_TopBar.Title = "Dialogs";
+            m_TopBar.CloseBtn.SetActive(true);
+            m_MainMenuController.Hide();
+            m_CurrentControl = m_DialogControl;
+            m_DialogControl.Show();
+        }
+
         #endregion MainMenuHandles
 
     }
