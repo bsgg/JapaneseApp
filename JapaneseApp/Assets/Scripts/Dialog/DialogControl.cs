@@ -77,6 +77,32 @@ namespace JapaneseApp
 
     #endregion DataModel
 
+    [System.Serializable]
+    public class AudioData
+    {
+        [SerializeField]
+        public List<AudioClip> AudioClips;
+        public AudioClip GetAudio(string name)
+        {
+            for (int i = 0; i < AudioClips.Count; i++)
+            {
+                Debug.Log("Clip: " + AudioClips[i].name);
+                if (AudioClips[i].name.Equals(name))
+                {
+                    return AudioClips[i];
+                }
+            }
+
+            return null;
+        }
+
+        public AudioClip GetAudio(int id)
+        {
+            if ((id < 0) || (id >= AudioClips.Count)) return null;
+            return AudioClips[id];
+        }
+    }
+
     public class DialogControl : Base
     {
         [SerializeField]
@@ -85,12 +111,26 @@ namespace JapaneseApp
         private List<string> m_ListDialogs= new List<string>();
 
         [SerializeField]
+        private AudioData m_AudioDataSet;
+        private int m_SelectedAudioClipID;
+
+        [SerializeField]
         private List<Dialog>  m_DialogSet;
+        private int m_SelectedDialogID;
+
+        [SerializeField]
+        private AudioSource m_AudioSource;
+
+        [Header("UI")]
+        [SerializeField] private CategoriesUI m_CategoriesUI;
+        [SerializeField] private DialogUI m_DialogUI;
 
         public override void Init()
         {
             base.Init();
 
+            m_CategoriesUI.Hide();
+            m_DialogUI.Hide();
 
             // Load the data
             m_DialogSet = new List<Dialog>();
@@ -105,6 +145,84 @@ namespace JapaneseApp
 
                 }
             }
+                 
+        }
+
+        private void SetDialog(int id)
+        {
+            if ((id < 0) || (id >= m_DialogSet.Count)) return;
+            m_SelectedDialogID = id;
+
+            // Set clip            
+            AudioClip clip = m_AudioDataSet.GetAudio(m_DialogSet[m_SelectedDialogID].Audio);
+            if (clip != null)
+            {
+                m_AudioSource.clip = clip;
+            }
+
+            m_DialogUI.Title = m_DialogSet[m_SelectedDialogID].Title;
+            //m_DialogUI.Dialog = m_DialogSet[m_SelectedDialogID].Kanji;
+        }
+
+        public override void Back()
+        {
+            base.Back();
+
+            m_AudioSource.Stop();
+
+            // Check if category is visible
+            if (m_CategoriesUI.Visible)
+            {
+                AppController.Instance.ShowMainMenu();
+                m_CategoriesUI.ScrollMenu.OnItemPress -= OnCategoryPress;
+                m_CategoriesUI.Hide();
+                // Back to main menu (App Controller)
+            }else
+            {
+                SetCategories();
+                m_CategoriesUI.ScrollMenu.OnItemPress += OnCategoryPress;
+            }
+        }
+
+        public override void Show()
+        {
+            base.Show();
+
+            SetCategories();
+
+            m_CategoriesUI.ScrollMenu.OnItemPress += OnCategoryPress;
+        }
+
+        private void SetCategories()
+        {
+            List<string> categories = new List<string>();
+
+            for (int i = 0; i < m_DialogSet.Count; i++)
+            {
+                categories.Add(m_DialogSet[i].Title);
+            }
+
+            m_CategoriesUI.ScrollMenu.InitScroll(categories);
+        }
+
+
+        public void OnCategoryPress(int id, int x, int y)
+        {
+            m_CategoriesUI.ScrollMenu.OnItemPress -= OnCategoryPress;
+            Debug.Log("Dialog OnCategoryPress");
+
+            Show();
+
+            m_CategoriesUI.Hide();
+
+            // Set dialog
+            SetDialog(id);
+        }
+
+        public void PlayDialog()
+        {
+            m_AudioSource.Stop();
+            m_AudioSource.Play();
         }
     }
 }
