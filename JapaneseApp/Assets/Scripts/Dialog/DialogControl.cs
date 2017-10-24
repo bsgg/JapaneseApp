@@ -41,11 +41,11 @@ namespace JapaneseApp
             get { return m_Hiragana; }
         }
         [SerializeField]
-        private List<string> m_Romanji= new List<string>();
-        public List<string> Romanji
+        private List<string> m_Romaji= new List<string>();
+        public List<string> Romaji
         {
-            set { m_Romanji = value; }
-            get { return m_Romanji; }
+            set { m_Romaji = value; }
+            get { return m_Romaji; }
         }
         [SerializeField]
         private List<string> m_English= new List<string>();
@@ -162,12 +162,7 @@ namespace JapaneseApp
 
             m_DialogUI.Title = m_DialogSet[m_SelectedDialogID].Title;
 
-            string dialog = "";
-            for (int i = 0; i< m_DialogSet[m_SelectedDialogID].Kanji.Count; i++)
-            {
-                dialog += " - " + m_DialogSet[m_SelectedDialogID].Kanji[i] + "\n";
-            }
-            m_DialogUI.Dialog = dialog;
+            OnChangeToKanji();
         }
 
         public override void Back()
@@ -186,6 +181,7 @@ namespace JapaneseApp
             }else
             {
                 SetCategories();
+                m_CategoriesUI.Show();
                 m_CategoriesUI.ScrollMenu.OnItemPress += OnCategoryPress;
             }
         }
@@ -227,7 +223,93 @@ namespace JapaneseApp
             m_DialogUI.Show();
         }
 
-        public void PlayDialog()
+
+        public void OnChangeToKanji()
+        {
+            m_DialogUI.Subtitle = "Hiragana-Kanji";
+
+            string dialog = "\n\n";
+            int nElements = m_DialogSet[m_SelectedDialogID].Kanji.Count;
+            for (int i = 0; i < nElements; i++)
+            {
+                dialog += m_DialogSet[m_SelectedDialogID].Kanji[i];
+
+                if (i < (nElements - 1))
+                {
+                    dialog += "\n\n";
+                }
+            }
+
+            m_DialogUI.SetScrollDialog(dialog);
+        }
+
+
+        public void OnChangeToHiragana()
+        {
+            m_DialogUI.Subtitle = "Hiragana";
+
+            string dialog = "\n\n";
+            int nElements = m_DialogSet[m_SelectedDialogID].Hiragana.Count;
+            for (int i = 0; i < nElements; i++)
+            {
+                dialog += m_DialogSet[m_SelectedDialogID].Hiragana[i];
+
+                if (i < (nElements - 1))
+                {
+                    dialog += "\n\n";
+                }
+            }
+
+            m_DialogUI.SetScrollDialog(dialog);
+        }
+
+        public void OnChangeToRomaji()
+        {
+            m_DialogUI.Subtitle = "Romaji";
+
+            string dialog = "\n\n";
+            int nElements = m_DialogSet[m_SelectedDialogID].Romaji.Count;
+            for (int i = 0; i < nElements; i++)
+            {
+                dialog += m_DialogSet[m_SelectedDialogID].Romaji[i];
+
+                if (i < (nElements - 1))
+                {
+                    dialog += "\n\n";
+                }
+            }
+
+            m_DialogUI.SetScrollDialog(dialog);
+        }
+
+        public void OnVocabulary()
+        {
+            m_DialogUI.Subtitle = "Vocabulary";
+            string dialog = "\n\n";
+            int nElements = m_DialogSet[m_SelectedDialogID].Vocabulary.Count;
+            for (int i = 0; i < nElements; i++)
+            {
+                dialog += m_DialogSet[m_SelectedDialogID].Vocabulary[i];
+
+                if (i < (nElements - 1))
+                {
+                    dialog += "\n\n";
+                }
+            }
+
+            m_DialogUI.SetScrollDialog(dialog);
+        }
+
+        public void OnDescription()
+        {
+            m_DialogUI.Subtitle = "Description";
+
+            string dialog = "\n\n" + m_DialogSet[m_SelectedDialogID].Description;
+
+            m_DialogUI.SetScrollDialog(dialog);
+        }
+
+        public void OnSound()
         {
             m_AudioSource.Stop();
             m_AudioSource.Play();

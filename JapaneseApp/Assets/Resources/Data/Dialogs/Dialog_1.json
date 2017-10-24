@@ -3,35 +3,35 @@
   "Audio": "Dialog_1",
 
   "Kanji": [
-    "あの、すみません",
-    "はい",
-    "コル　さん　です　か",
-    "いいえ、ちがいます",
-    "あ、すみません"
+    "- A: あの、すみません",
+    "- B: はい",
+    "- A: コール　さん　です　か",
+    "- B: いいえ、ちがいます",
+    "- A: あ、すみません"
   ],
 
   "Hiragana": [
-    "あの、すみません",
-    "はい",
-    "コール　さん　です　か",
-    "いいえ、ちがいます",
-    "あ、すみません"
+    "- A: あの、すみません",
+    "- B: はい",
+    "- A: コール　さん　です　か",
+    "- B: いいえ、ちがいます",
+    "- A: あ、すみません"
   ],
 
-  "Romanji": [
-    "Ano, sumimasen",
-    "Hai",
-    "Kōru san desu ka",
-    "Iie, chigaimasu",
-    "A, sumimasen"
+  "Romaji": [
+    "- A: Ano, sumimasen",
+    "- B: Hai",
+    "- A: Kōru san desu ka",
+    "- B: Iie, chigaimasu",
+    "- A: A, sumimasen"
   ],
 
   "English": [
-    "Excuse Me",
-    "Yes",
-    "Are you Ms. Cole?",
-    "No, I'm not, that's wrong",
-    "Oh, sorry."
+    "- A: Excuse Me",
+    "- B: Yes",
+    "- A: Are you Ms. Cole?",
+    "- B: No, I'm not, that's wrong",
+    "- A: Oh, sorry."
   ],
 
   "Vocabulary": [
@@ -39,5 +39,5 @@
     "- ちがいます (Chigaimasu): That's wrong"
   ],
 
-  "Description": "- か (Ka) Particle to form questions at the end of a sentence.\n- はい (Hai) Yes / いいえ (Iie) No: Basic answers. To make the answer more sophisticated you could add:\n- はい、そう　です。(Hai, sō desu): Yes, that's right.\n- いいえ、ちがいます。(Iie, Chigaimasu): No, that's not right."
+  "Description": "\n- か (Ka) Particle to form questions at the end of a sentence.\n\n- はい (Hai) Yes / いいえ (Iie) No: Basic answers. To make the answer more sophisticated you could add:\n\n- はい、そう　です。(Hai, sō desu): Yes, that's right.\n\n- いいえ、ちがいます。(Iie, Chigaimasu): No, that's not right."
 }

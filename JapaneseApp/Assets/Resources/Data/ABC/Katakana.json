@@ -5,12 +5,28 @@
       "Hiragana": "ア_イ_ウ_エ_オ",
       "Romanji": "A_I_U_E_O",
       "SentencesExamples": {
-        "Sentence": [          
+        "Sentence": [
         ],
 
         "Romanji": [
         ],
         "English": [
+        ]
+      }
+    },
+    {
+      "Hiragana": "カ_キ_ク_ケ_コ",
+      "Romanji": "Ka_Ki_Ku_Ke_Ko",
+      "SentencesExamples": {
+        "Sentence": [
+          "ケーキ"
+        ],
+
+        "Romanji": [
+          "kēki"
+        ],
+        "English": [
+          "Cake"
         ]
       }    
     }

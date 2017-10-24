@@ -18,11 +18,33 @@ namespace JapaneseApp
         }
 
         [SerializeField]
-        private Text m_Dialog;
-        public string Dialog
+        private Text m_Subtitle;
+        public string Subtitle
         {
-            set { m_Dialog.text = value; }
-            get { return m_Dialog.text; }
+            set { m_Subtitle.text = value; }
+            get { return m_Subtitle.text; }
+        }
+
+
+        [Header("Scroll Dialog")]
+        [SerializeField]
+        private Text m_ScrollText;
+        public string ScrollText
+        {
+            set { m_ScrollText.text = value; }
+            get { return m_ScrollText.text; }
+        }
+
+        [SerializeField] private ScrollRect m_DialogScrollRect;
+        [SerializeField] private RectTransform  m_ContentDialogScroll;
+
+        public void SetScrollDialog(string text)
+        {
+            m_ScrollText.text = text;
+
+            m_ContentDialogScroll.sizeDelta = new Vector2(m_ContentDialogScroll.sizeDelta.x, m_ScrollText.preferredHeight);
+
+            m_DialogScrollRect.verticalNormalizedPosition = 1.0f;
         }
     }
 }
