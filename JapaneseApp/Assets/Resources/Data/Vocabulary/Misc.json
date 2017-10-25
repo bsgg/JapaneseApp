@@ -31,6 +31,9 @@
         "Sentence": [
           "それ　は　何　です　か"
         ],
+        "Hiragana": [
+          "それ　は　なん　です　か"
+        ],
         "Kanjis": [
           "何 = What (なん - Nan)"
         ],
@@ -39,6 +42,36 @@
         ],
         "English": [
           "What is this?"
+        ]
+      }
+    },
+    {
+      "Word": "誰",
+      "Hiragana": "だれ",
+      "Romaji": "Dare",
+      "Meaning": "Who",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "誰 です　か",
+          "彼女 は　誰　です　か"
+        ],
+        "Hiragana": [
+          "だれ です　か",
+          "かのじょ は　だれ　です　か"
+        ],
+        "Kanjis": [
+          "- 誰 = Who (だれ - Dare)",
+          "- 彼女 = She (かのじょ - Kanojyo) |- 誰 = Who (だれ - Dare)"
+        ],
+        "Romaji": [
+          "Dare desu ka",
+          "Kanojo wa dare desu ka"
+        ],
+        "English": [
+          "Who are you?",
+          "Who is she?"
+           
         ]
       }
     },
