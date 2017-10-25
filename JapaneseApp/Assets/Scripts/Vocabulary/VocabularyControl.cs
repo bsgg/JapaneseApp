@@ -369,14 +369,13 @@ namespace JapaneseApp
 
         public void OnCategoryPress(int id, int x, int y)
         {
+            Debug.Log("[VocabularyControl] OnCategoryPress");
             m_CategoriesUI.ScrollMenu.OnItemPress -= OnCategoryPress;
-            Debug.Log("Vocabulary OnCategoryPress");
+
             m_CurrentCategory = (ECategory)id;
             m_CurrentWordID = 0;
 
             SetWordByCategory();
-
-            Show();
 
             m_ExamplesUI.Hide();
             m_VocabularyUI.Show();

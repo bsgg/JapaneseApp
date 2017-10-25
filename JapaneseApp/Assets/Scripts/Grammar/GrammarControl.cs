@@ -178,13 +178,12 @@ namespace JapaneseApp
         {
             m_CategoriesUI.ScrollMenu.OnItemPress -= OnCategoryPress;
 
-            Debug.Log("Grammar OnCategoryPress");
+            Debug.Log("[GrammarControl] OnCategoryPress");
+
             m_SelectedCategory = (ECategory) id;
             m_SelectedGrammar = 0;
 
             SetGrammarByCategory();
-
-            Show();
 
             m_ExampleUI.Hide();
             m_GrammarUI.Show();

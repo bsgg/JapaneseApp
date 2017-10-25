@@ -86,7 +86,6 @@ namespace JapaneseApp
         {
             for (int i = 0; i < AudioClips.Count; i++)
             {
-                Debug.Log("Clip: " + AudioClips[i].name);
                 if (AudioClips[i].name.Equals(name))
                 {
                     return AudioClips[i];
@@ -174,12 +173,17 @@ namespace JapaneseApp
             // Check if category is visible
             if (m_CategoriesUI.Visible)
             {
-                AppController.Instance.ShowMainMenu();
                 m_CategoriesUI.ScrollMenu.OnItemPress -= OnCategoryPress;
                 m_CategoriesUI.Hide();
+
+                Hide();
                 // Back to main menu (App Controller)
-            }else
+                AppController.Instance.ShowMainMenu();
+            }
+            else
             {
+                Hide();
+                // Show categories
                 SetCategories();
                 m_CategoriesUI.Show();
                 m_CategoriesUI.ScrollMenu.OnItemPress += OnCategoryPress;
@@ -194,6 +198,12 @@ namespace JapaneseApp
             m_CategoriesUI.Show();
 
             m_CategoriesUI.ScrollMenu.OnItemPress += OnCategoryPress;
+        }
+
+        public override void Hide()
+        {
+            base.Hide();
+            m_DialogUI.Hide();
         }
 
         private void SetCategories()
@@ -211,11 +221,9 @@ namespace JapaneseApp
 
         public void OnCategoryPress(int id, int x, int y)
         {
-            m_CategoriesUI.ScrollMenu.OnItemPress -= OnCategoryPress;
-            Debug.Log("Dialog OnCategoryPress");
+            Debug.Log("[DialogControl] OnCategoryPress");
 
-            Show();
-
+            m_CategoriesUI.ScrollMenu.OnItemPress -= OnCategoryPress;            
             m_CategoriesUI.Hide();
 
             // Set dialog
