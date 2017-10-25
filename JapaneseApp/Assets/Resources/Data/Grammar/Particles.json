@@ -8,19 +8,27 @@
       "SentencesExamples": {
         "Sentence": [
           "コンピューターのパスワード",
-          "私の会社"
+          "私の会社",
+          "私の姉",
+          "私の兄"
         ],
         "Kanjis": [
           "",
-          "- 私 = Me/I (けいたい - Watashi)|- 会社 = Company (1.Meeting 2.Company) (かい しゃ - kai sha)"
+          "- 私 = Me/I (けいたい - Watashi)|- 会社 = Company (1.Meeting 2.Company) (かい しゃ - kai sha)",
+          "- 私 = Me/I (けいたい - Watashi)|- 姉 = Siter (あね - Ane)",
+          "- 私 = Me/I (けいたい - Watashi)|- 兄 = Brother (あに - Ani)"
         ],
         "Romaji": [
           "konpyūtā no pasuwādo",
-          "watashi no kaisha"
+          "watashi no kaisha",
+          "Watashi no ane",
+          "Watashi no ani"
         ],
         "English": [
           "Computer's password, Password for the computer",
-          "My company"
+          "My company",
+          "My sister",
+          "My brother"
         ]
       }
     }

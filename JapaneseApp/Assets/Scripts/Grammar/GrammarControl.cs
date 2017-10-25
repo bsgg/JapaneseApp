@@ -85,6 +85,12 @@ namespace JapaneseApp
         private ECategory m_SelectedCategory;
         private int m_SelectedExample;
 
+        [SerializeField]
+        private Color m_EnableBtnColor;
+
+        [SerializeField]
+        private Color m_DisableBtnColor;
+
         public override void Init()
         {
             base.Init();
@@ -203,14 +209,14 @@ namespace JapaneseApp
             {
                 if (grammar.SentencesExamples.Sentence.Count > 1)
                 {
-                    m_ExampleUI.ActiveNextSentenceBtn(true);
+                    m_ExampleUI.NextBtn.Enable(true, m_EnableBtnColor);
                 }
                 else
                 {
-                    m_ExampleUI.ActiveNextSentenceBtn(false);
+                    m_ExampleUI.NextBtn.Enable(false, m_DisableBtnColor);
                 }
 
-                m_GrammarUI.ExampleButton.SetActive(true);
+                m_GrammarUI.ExampleBtn.Enable(true, m_EnableBtnColor);
 
                 // Set sentence
                 m_SelectedExample = 0;
@@ -220,8 +226,8 @@ namespace JapaneseApp
             }
             else
             {
-                m_GrammarUI.ExampleButton.SetActive(false);
-                m_ExampleUI.ActiveNextSentenceBtn(false);
+                m_GrammarUI.ExampleBtn.Enable(false, m_DisableBtnColor);
+                m_ExampleUI.NextBtn.Enable(false, m_DisableBtnColor);
             }
         }
 

@@ -417,12 +417,10 @@ namespace JapaneseApp
             // Check number of words for this category
             if (m_VocabularySet[(int) m_CurrentCategory].Data.Count > 0)
             {
-                m_VocabularyUI.NextWordBtn.Enable(true);
-                m_VocabularyUI.NextWordBtn.SetColor(m_EnableBtnColor);
+                m_VocabularyUI.NextWordBtn.Enable(true, m_EnableBtnColor);
             }else
             {
-                m_VocabularyUI.NextWordBtn.Enable(false);
-                m_VocabularyUI.NextWordBtn.SetColor(m_DisableBtnColor);
+                m_VocabularyUI.NextWordBtn.Enable(false, m_DisableBtnColor);
             }
 
             if (m_Menu == EMenu.RandomWord)
@@ -443,8 +441,7 @@ namespace JapaneseApp
 
 
                 // Set sprite
-                m_VocabularyUI.SpriteBtn.Enable(false);
-                m_VocabularyUI.SpriteBtn.SetColor(m_DisableBtnColor);
+                m_VocabularyUI.SpriteBtn.Enable(false, m_DisableBtnColor);
                 if (!string.IsNullOrEmpty(m_SelectedWord.SpriteID))
                 {
                     Sprite sprite = GetSprite(m_CurrentCategory,m_SelectedWord.SpriteID);
@@ -452,8 +449,7 @@ namespace JapaneseApp
                     {
                         m_VocabularyUI.Sprite.SpriteObject = sprite;
 
-                        m_VocabularyUI.SpriteBtn.Enable(true);
-                        m_VocabularyUI.SpriteBtn.SetColor(m_EnableBtnColor);
+                        m_VocabularyUI.SpriteBtn.Enable(true, m_EnableBtnColor);
                     }
                 }
                 
@@ -465,16 +461,15 @@ namespace JapaneseApp
                 {
                     if (m_SelectedWord.SentencesExamples.Sentence.Count > 1)
                     {
-                        m_ExamplesUI.ActiveNextSentenceBtn(true);
+                        m_ExamplesUI.NextBtn.Enable(true, m_EnableBtnColor);
                     }
                     else
                     {
-                        m_ExamplesUI.ActiveNextSentenceBtn(false);
+                        m_ExamplesUI.NextBtn.Enable(false, m_DisableBtnColor);
                     }
 
 
-                    m_VocabularyUI.ExampleBtn.Enable(true);
-                    m_VocabularyUI.ExampleBtn.SetColor(m_EnableBtnColor);
+                    m_VocabularyUI.ExampleBtn.Enable(true, m_EnableBtnColor);
 
                     // Set sentence
                     m_ICurrentExample = 0;
@@ -482,9 +477,9 @@ namespace JapaneseApp
                 }
                 else
                 {
-                    m_ExamplesUI.ActiveNextSentenceBtn(false);
-                    m_VocabularyUI.ExampleBtn.Enable(false);
-                    m_VocabularyUI.ExampleBtn.SetColor(m_DisableBtnColor);
+                    m_ExamplesUI.NextBtn.Enable(false, m_DisableBtnColor);
+                    m_VocabularyUI.ExampleBtn.Enable(false, m_DisableBtnColor);
+
 
                 }
 

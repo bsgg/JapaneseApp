@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Utility;
 
 namespace JapaneseApp
 {
@@ -65,17 +66,11 @@ namespace JapaneseApp
 
 
         [SerializeField]
-        private Button m_NextSentenceBtn;
-        public Button NextSentenceBtn
+        private IconBtn m_NextBtn;
+        public IconBtn NextBtn
         {
-            set { m_NextSentenceBtn = value; }
-            get { return m_NextSentenceBtn; }
-        }
-
-        public void ActiveNextSentenceBtn(bool active)
-        {
-            m_NextSentenceBtn.gameObject.SetActive(active);
-        }
+            get { return m_NextBtn; }
+        }        
 
         public override void Show()
         {

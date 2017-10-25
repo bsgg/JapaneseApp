@@ -45,8 +45,7 @@ namespace JapaneseApp
             get { return m_Hiragana.text; }
         }
 
-        [Header("Buttons")]
-        
+        [Header("Buttons")]        
 
         [SerializeField]
         private IconBtn m_ExampleBtn;

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Utility;
 
 namespace JapaneseApp
 {
@@ -27,11 +28,17 @@ namespace JapaneseApp
         }
 
         [SerializeField]
-        private GameObject m_ExampleButton;
-        public GameObject ExampleButton
+        private IconBtn m_ExampleBtn;
+        public IconBtn ExampleBtn
         {
-            set { m_ExampleButton = value; }
-            get { return m_ExampleButton; }
+            get { return m_ExampleBtn; }
+        }
+
+        [SerializeField]
+        private IconBtn m_NextBtn;
+        public IconBtn NextBtn
+        {
+            get { return m_NextBtn; }
         }
 
     }
