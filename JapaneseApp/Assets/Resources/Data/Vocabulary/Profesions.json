@@ -4,7 +4,7 @@
     {
       "Word": "学生",
       "Hiragana": "がくせい",
-      "Romanji": "Gakusei",
+      "Romaji": "Gakusei",
       "Meaning": "Student",
       "SpriteID": "",
       "SentencesExamples": {
@@ -16,7 +16,7 @@
           "- 学生 : がくせい (Gakusei) : Student",
           "- 学生 : がくせい (Gakusei) : Student"
         ],
-        "Romanji": [
+        "Romaji": [
           "Maria san gakusei desu.",
           "Watashi mo gakusei desu."
         ],
@@ -30,7 +30,7 @@
       "Title": "",
       "Word": "先生",
       "Hiragana": "せんせい",
-      "Romanji": "Sensei",
+      "Romaji": "Sensei",
       "Meaning": "Teacher, Doctor",
       "SpriteID": "",
       "Description": "",
@@ -43,7 +43,7 @@
           "- 先生 : せんせい (Sensei) : Teacher, Doctor",
           "- 先生 : せんせい (Sensei) : Teacher, Doctor"
         ],
-        "Romanji": [
+        "Romaji": [
           "Maria wa sensei desu.",
           "Sensei desu ka?"
         ],

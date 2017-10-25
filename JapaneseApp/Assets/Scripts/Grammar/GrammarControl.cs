@@ -231,7 +231,7 @@ namespace JapaneseApp
 
             // Set sentence
             m_ExampleUI.Sentence = grammar.SentencesExamples.GetSentence(index);            
-            m_ExampleUI.Romanji = grammar.SentencesExamples.GetRomanji(index);
+            m_ExampleUI.Romaji = grammar.SentencesExamples.GetRomanji(index);
             m_ExampleUI.English = grammar.SentencesExamples.GetEnglish(index);
             m_ExampleUI.Kanji = grammar.SentencesExamples.GetKanjis(index);
 

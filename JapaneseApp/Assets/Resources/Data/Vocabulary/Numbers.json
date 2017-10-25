@@ -4,7 +4,7 @@
     {      
       "Word": "一",
       "Hiragana": "いち",
-      "Romanji": "Ichi",
+      "Romaji": "Ichi",
       "Meaning": "1",
       "SpriteID": "",     
       "Examples": {
@@ -16,7 +16,7 @@
           "",
           ""
         ],
-        "Romanji": [
+        "Romaji": [
           "",
           ""
         ],
@@ -29,7 +29,7 @@
     {      
       "Word": "二",
       "Hiragana": "に",
-      "Romanji": "Ni",
+      "Romaji": "Ni",
       "Meaning": "2",
       "SpriteID": "",     
       "Examples": {
@@ -41,7 +41,7 @@
           "",
           ""
         ],
-        "Romanji": [
+        "Romaji": [
           "",
           ""
         ],
@@ -54,7 +54,7 @@
     {      
       "Word": "三",
       "Hiragana": "さん",
-      "Romanji": "San",
+      "Romaji": "San",
       "Meaning": "3",
       "SpriteID": "",     
       "Examples": {
@@ -66,7 +66,7 @@
           "",
           ""
         ],
-        "Romanji": [
+        "Romaji": [
           "",
           ""
         ],
@@ -79,7 +79,7 @@
     {      
       "Word": "四",
       "Hiragana": "よん / し",
-      "Romanji": "Yon / Shi",
+      "Romaji": "Yon / Shi",
       "Meaning": "4",
       "SpriteID": "",     
       "Examples": {
@@ -91,7 +91,7 @@
           "",
           ""
         ],
-        "Romanji": [
+        "Romaji": [
           "",
           ""
         ],
@@ -104,7 +104,7 @@
     {      
       "Word": "五",
       "Hiragana": "ご",
-      "Romanji": "Go",
+      "Romaji": "Go",
       "Meaning": "5",
       "SpriteID": "",     
       "Examples": {
@@ -116,7 +116,7 @@
           "",
           ""
         ],
-        "Romanji": [
+        "Romaji": [
           "",
           ""
         ],
@@ -129,7 +129,7 @@
     {      
       "Word": "六",
       "Hiragana": "ろく",
-      "Romanji": "Roku",
+      "Romaji": "Roku",
       "Meaning": "6",
       "SpriteID": "",     
       "Examples": {
@@ -141,7 +141,7 @@
           "",
           ""
         ],
-        "Romanji": [
+        "Romaji": [
           "",
           ""
         ],
@@ -154,7 +154,7 @@
     {      
       "Word": "七",
       "Hiragana": "なな　/　しち",
-      "Romanji": "Nana / Shichi",
+      "Romaji": "Nana / Shichi",
       "Meaning": "7",
       "SpriteID": "",     
       "Examples": {
@@ -166,7 +166,7 @@
           "",
           ""
         ],
-        "Romanji": [
+        "Romaji": [
           "",
           ""
         ],
@@ -179,7 +179,7 @@
     {      
       "Word": "八",
       "Hiragana": "はち",
-      "Romanji": "Hachi",
+      "Romaji": "Hachi",
       "Meaning": "8",
       "SpriteID": "",     
       "Examples": {
@@ -191,7 +191,7 @@
           "",
           ""
         ],
-        "Romanji": [
+        "Romaji": [
           "",
           ""
         ],
@@ -204,7 +204,7 @@
     {      
       "Word": "九",
       "Hiragana": "きゅう　/　く",
-      "Romanji": "Kuu / Ku",
+      "Romaji": "Kuu / Ku",
       "Meaning": "9",
       "SpriteID": "",     
       "Examples": {
@@ -216,7 +216,7 @@
           "",
           ""
         ],
-        "Romanji": [
+        "Romaji": [
           "",
           ""
         ],
@@ -229,7 +229,7 @@
     {
       "Word": "十",
       "Hiragana": "じゅう",
-      "Romanji": "Juu",
+      "Romaji": "Juu",
       "Meaning": "10",
       "SpriteID": "",
       "Examples": {
@@ -241,7 +241,7 @@
           "",
           ""
         ],
-        "Romanji": [
+        "Romaji": [
           "",
           ""
         ],
@@ -254,7 +254,7 @@
     {
       "Word": "十一",
       "Hiragana": "じゅういち",
-      "Romanji": "Juu Ichi",
+      "Romaji": "Juu Ichi",
       "Meaning": "11",
       "SpriteID": "",
       "Examples": {
@@ -266,7 +266,7 @@
           "",
           ""
         ],
-        "Romanji": [
+        "Romaji": [
           "",
           ""
         ],
@@ -279,7 +279,7 @@
     {
       "Word": "十二",
       "Hiragana": "じゅうに",
-      "Romanji": "Juuni",
+      "Romaji": "Juuni",
       "Meaning": "20",
       "SpriteID": "",
       "Examples": {
@@ -291,7 +291,7 @@
           "",
           ""
         ],
-        "Romanji": [
+        "Romaji": [
           "",
           ""
         ],
@@ -304,7 +304,7 @@
     {
       "Word": "十三",
       "Hiragana": "じゅうさん",
-      "Romanji": "Juu San",
+      "Romaji": "Juu San",
       "Meaning": "13",
       "SpriteID": "",
       "Examples": {
@@ -316,7 +316,7 @@
           "",
           ""
         ],
-        "Romanji": [
+        "Romaji": [
           "",
           ""
         ],
@@ -329,7 +329,7 @@
     {
       "Word": "十四",
       "Hiragana": "じゅうよん",
-      "Romanji": "Juu Yon",
+      "Romaji": "Juu Yon",
       "Meaning": "14",
       "SpriteID": "",
       "Examples": {
@@ -341,7 +341,7 @@
           "",
           ""
         ],
-        "Romanji": [
+        "Romaji": [
           "",
           ""
         ],
@@ -354,7 +354,7 @@
     {
       "Word": "十五",
       "Hiragana": "じゅうご",
-      "Romanji": "Juu Go",
+      "Romaji": "Juu Go",
       "Meaning": "15",
       "SpriteID": "",
       "Examples": {
@@ -366,7 +366,7 @@
           "",
           ""
         ],
-        "Romanji": [
+        "Romaji": [
           "",
           ""
         ],
@@ -379,7 +379,7 @@
     {
       "Word": "十六",
       "Hiragana": "じゅうろく",
-      "Romanji": "Juu Roku",
+      "Romaji": "Juu Roku",
       "Meaning": "16",
       "SpriteID": "",
       "Examples": {
@@ -391,7 +391,7 @@
           "",
           ""
         ],
-        "Romanji": [
+        "Romaji": [
           "",
           ""
         ],
@@ -404,7 +404,7 @@
     {
       "Word": "十七",
       "Hiragana": "じゅうなな",
-      "Romanji": "Juu Nana",
+      "Romaji": "Juu Nana",
       "Meaning": "17",
       "SpriteID": "",
       "Examples": {
@@ -416,7 +416,7 @@
           "",
           ""
         ],
-        "Romanji": [
+        "Romaji": [
           "",
           ""
         ],
@@ -429,7 +429,7 @@
     {
       "Word": "十八",
       "Hiragana": "じゅうはち",
-      "Romanji": "Juu Hachi",
+      "Romaji": "Juu Hachi",
       "Meaning": "18",
       "SpriteID": "",
       "Examples": {
@@ -441,7 +441,7 @@
           "",
           ""
         ],
-        "Romanji": [
+        "Romaji": [
           "",
           ""
         ],
@@ -454,7 +454,7 @@
     {
       "Word": "十九",
       "Hiragana": "じゅうきゆう",
-      "Romanji": "Juu Kyoo",
+      "Romaji": "Juu Kyoo",
       "Meaning": "19",
       "SpriteID": "",
       "Examples": {
@@ -466,7 +466,7 @@
           "",
           ""
         ],
-        "Romanji": [
+        "Romaji": [
           "",
           ""
         ],
@@ -479,7 +479,7 @@
     {
       "Word": "ニ十",
       "Hiragana": "にじゅう",
-      "Romanji": "Ni Juu",
+      "Romaji": "Ni Juu",
       "Meaning": "20",
       "SpriteID": "",
       "Examples": {
@@ -491,7 +491,7 @@
           "",
           ""
         ],
-        "Romanji": [
+        "Romaji": [
           "",
           ""
         ],
@@ -504,7 +504,7 @@
     {
       "Word": "ニ十三 ",
       "Hiragana": "にじゅうさん",
-      "Romanji": "Ni Juu San",
+      "Romaji": "Ni Juu San",
       "Meaning": "23",
       "SpriteID": "",
       "Examples": {
@@ -516,7 +516,7 @@
           "",
           ""
         ],
-        "Romanji": [
+        "Romaji": [
           "",
           ""
         ],
@@ -529,7 +529,7 @@
     {
       "Word": "百",
       "Hiragana": "ひゅく",
-      "Romanji": "Hyaku",
+      "Romaji": "Hyaku",
       "Meaning": "100",
       "SpriteID": "",
       "Examples": {
@@ -541,7 +541,7 @@
           "",
           ""
         ],
-        "Romanji": [
+        "Romaji": [
           "",
           ""
         ],

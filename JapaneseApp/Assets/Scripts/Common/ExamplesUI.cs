@@ -40,11 +40,11 @@ namespace JapaneseApp
 
 
         [SerializeField]
-        private Text m_Romanji;
-        public string Romanji
+        private Text m_Romaji;
+        public string Romaji
         {
-            set { m_Romanji.text = value; }
-            get { return m_Romanji.text; }
+            set { m_Romaji.text = value; }
+            get { return m_Romaji.text; }
         }
 
         [SerializeField]
@@ -122,7 +122,7 @@ namespace JapaneseApp
         {
             if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
             {
-                EasyTTSUtil.SpeechFlush(m_Romanji.text);
+                EasyTTSUtil.SpeechFlush(m_Romaji.text);
             }
         }
 

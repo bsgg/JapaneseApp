@@ -3,7 +3,7 @@
     {
       "Word": "学校",
       "Hiragana": "がっこう",
-      "Romanji": "Gakkō",
+      "Romaji": "Gakkō",
       "Meaning": "School",
       "SpriteID": "",
       "SentencesExamples": {
@@ -13,7 +13,7 @@
         "Kanjis": [
           "- 学校 = School (がっこう - Gakkō)|- 行こ = Go (いこ - IKo): "
         ],
-        "Romanji": [
+        "Romaji": [
           "Gakkō ni ikimasen"
         ],
         "English": [

@@ -80,7 +80,7 @@ namespace JapaneseApp
             for (int i=0; i< m_ABCSet.Data.Count; i++)
             {
                 string[] splitH = m_ABCSet.Data[i].Hiragana.Split('_');
-                string[] splitE = m_ABCSet.Data[i].Romanji.Split('_');
+                string[] splitE = m_ABCSet.Data[i].Romaji.Split('_');
 
                 // Both must have 5 elements
                 if ((splitH != null) && (splitE != null) && (splitH.Length >= 5) && (splitE.Length >= 5))
@@ -122,7 +122,7 @@ namespace JapaneseApp
                 }
                 else
                 {
-                    Debug.Log("<color=cyan>" + "Wrong Format: " + m_ABCSet.Data[i].Hiragana + " - " + m_ABCSet.Data[i].Romanji + "</color>");
+                    Debug.Log("<color=cyan>" + "Wrong Format: " + m_ABCSet.Data[i].Hiragana + " - " + m_ABCSet.Data[i].Romaji + "</color>");
                 }
             }
 
@@ -228,8 +228,8 @@ namespace JapaneseApp
             string examples = string.Empty;
             for (int i= 0; i< m_SelectedABC.SentencesExamples.Sentence.Count; i++ )
             {
-                examples += " - " + m_SelectedABC.SentencesExamples.Sentence[i] + " (" + m_SelectedABC.SentencesExamples.Romanji[i] + ") = " + m_SelectedABC.SentencesExamples.English[i];
-                m_ABCCharUI.ExampleUI.HiraganaExample += m_SelectedABC.SentencesExamples.Romanji[i] + " ";
+                examples += " - " + m_SelectedABC.SentencesExamples.Sentence[i] + " (" + m_SelectedABC.SentencesExamples.Romaji[i] + ") = " + m_SelectedABC.SentencesExamples.English[i];
+                m_ABCCharUI.ExampleUI.HiraganaExample += m_SelectedABC.SentencesExamples.Romaji[i] + " ";
                 if (i < (m_SelectedABC.SentencesExamples.Sentence.Count -1))
                 {
                     examples += "\n";

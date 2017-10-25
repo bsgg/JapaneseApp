@@ -3,7 +3,7 @@
 	[
     {
       "Hiragana": "あ_い_う_え_お",
-      "Romanji": "A_I_U_E_O",
+      "Romaji": "A_I_U_E_O",
       "SentencesExamples": {
         "Sentence": [
           "あう",
@@ -13,7 +13,7 @@
           "あおい"
         ],
 
-        "Romanji": [
+        "Romaji": [
           "Au",
           "Iu",
           "Ie",
@@ -31,7 +31,7 @@
     },
     {
       "Hiragana": "か_き_く_け_こ",
-      "Romanji": "Ka_Ki_Ku_Ke_Ko",
+      "Romaji": "Ka_Ki_Ku_Ke_Ko",
       "SentencesExamples": {
         "Sentence": [
           "かお",
@@ -40,7 +40,7 @@
           "あき",
           "えき"
         ],
-        "Romanji": [
+        "Romaji": [
           "Kao",
           "Akai",
           "Kau",
@@ -58,12 +58,12 @@
     },
     {
       "Hiragana": "が_ぎ_ぐ_げ_ご",
-      "Romanji": "Ga_Gi_Gu_Ge_Go",
+      "Romaji": "Ga_Gi_Gu_Ge_Go",
       "SentencesExamples": {
         "Sentence": [
           "えいが"
         ],
-        "Romanji": [
+        "Romaji": [
           "Eiga"
         ],
         "English": [
@@ -73,7 +73,7 @@
     },
     {
       "Hiragana": "さ_し_す_せ_そ",
-      "Romanji": "Sa_Shi_Su_Se_So",
+      "Romaji": "Sa_Shi_Su_Se_So",
       "SentencesExamples": {
         "Sentence": [
           "あさ",
@@ -81,7 +81,7 @@
           "すえいえ",
           "あそこ"
         ],
-        "Romanji": [
+        "Romaji": [
           "Asa",
           "Sushi",
           "Sueie",
@@ -97,7 +97,7 @@
     },
     {
       "Hiragana": "ざ_じ_ず_ぜ_ぞ",
-      "Romanji": "Za_Ji_Zu_Ze_Zo",
+      "Romaji": "Za_Ji_Zu_Ze_Zo",
       "SentencesExamples": {
         "Sentence": [
           "かぜ",
@@ -105,7 +105,7 @@
           "くじ",
           "かぞく"
         ],
-        "Romanji": [
+        "Romaji": [
           "Kaze",
           "Zaseki",
           "Kuzi",
@@ -121,14 +121,14 @@
     },
     {
       "Hiragana": "た_ち_つ_て_と",
-      "Romanji": "Ta_Chi_Tsu_Te_To",
+      "Romaji": "Ta_Chi_Tsu_Te_To",
       "SentencesExamples": {
         "Sentence": [
           "たかい",
           "ちいさい",
           "て"
         ],
-        "Romanji": [
+        "Romaji": [
           "Takai",
           "Chiisai",
           "Te"
@@ -142,7 +142,7 @@
     },
     {
       "Hiragana": "だ_ぢ_づ_で_ど",
-      "Romanji": "Da_Ji(di)_Zu(du)_De_Do",
+      "Romaji": "Da_Ji(di)_Zu(du)_De_Do",
       "SentencesExamples": {
         "Sentence": [
           "どうぞ",
@@ -150,7 +150,7 @@
           "いちど",
           "ただしい"
         ],
-        "Romanji": [
+        "Romaji": [
           "Douzo",
           "Tsuduku",
           "Ichido",
@@ -166,7 +166,7 @@
     },
     {
       "Hiragana": "な_に_ぬ_ね_の",
-      "Romanji": "Na_Ni_Nu_Ne_No",
+      "Romaji": "Na_Ni_Nu_Ne_No",
       "SentencesExamples": {
         "Sentence": [
           "なか",
@@ -175,7 +175,7 @@
           "おかね",
           "ねこ"
         ],
-        "Romanji": [
+        "Romaji": [
           "Naka",
           "Nishi",
           "Inu",
@@ -193,7 +193,7 @@
     },
     {
       "Hiragana": "は_ひ_ふ_へ_ほ",
-      "Romanji": "Ha_Hi_Fu_He_Ho",
+      "Romaji": "Ha_Hi_Fu_He_Ho",
       "SentencesExamples": {
         "Sentence": [
           "はは",
@@ -202,7 +202,7 @@
           "へた",
           "ほね"
         ],
-        "Romanji": [
+        "Romaji": [
           "Haha",
           "Hito",
           "Fune",
@@ -220,7 +220,7 @@
     },
     {
       "Hiragana": "ば_び_ぶ_べ_ぼ",
-      "Romanji": "Ba_Bi_Bu_Be_Bo",
+      "Romaji": "Ba_Bi_Bu_Be_Bo",
       "SentencesExamples": {
         "Sentence": [
           "くび",
@@ -228,7 +228,7 @@
           "かべ",
           "ぼうし"
         ],
-        "Romanji": [
+        "Romaji": [
           "Kubi",
           "Doubutsu",
           "Kabe",
@@ -244,13 +244,13 @@
     },
     {
       "Hiragana": "ぱ_ぴ_ぷ_ぺ_ぽ",
-      "Romanji": "Pa_Pi_Pu_Pe_Po",
+      "Romaji": "Pa_Pi_Pu_Pe_Po",
       "SentencesExamples": {
         "Sentence": [
           "ぴかぴか",
           "ぺらぺら"
         ],
-        "Romanji": [
+        "Romaji": [
           "PikaPika",
           "PeraPera"
         ],
@@ -262,7 +262,7 @@
     },
     {
       "Hiragana": "ま_み_む_め_も",
-      "Romanji": "Ma_Mi_Mu_Me_Mo",
+      "Romaji": "Ma_Mi_Mu_Me_Mo",
       "SentencesExamples": {
         "Sentence": [
           "しま",
@@ -271,7 +271,7 @@
           "みみ",
           "あめ"
         ],
-        "Romanji": [
+        "Romaji": [
           "Shima",
           "Namae",
           "Minami",
@@ -289,14 +289,14 @@
     },
     {
       "Hiragana": "や_-_ゆ_-_よ",
-      "Romanji": "Ya_-_Yu_-_Yo",
+      "Romaji": "Ya_-_Yu_-_Yo",
       "SentencesExamples": {
         "Sentence": [
           "やさしい",
           "ゆき",
           "よむ"
         ],
-        "Romanji": [
+        "Romaji": [
           "Yasashii",
           "Yuki",
           "Yomu"
@@ -310,7 +310,7 @@
     },
     {
       "Hiragana": "ら_り_る_れ_ろ",
-      "Romanji": "Ra_Ri_Ru_Re_Ro",
+      "Romaji": "Ra_Ri_Ru_Re_Ro",
       "SentencesExamples": {
         "Sentence": [
           "ひらがな",
@@ -319,7 +319,7 @@
           "これ",
           "いろ"
         ],
-        "Romanji": [
+        "Romaji": [
           "Hiragana",
           "Furui",
           "Kirei",
@@ -337,7 +337,7 @@
     },
     {
       "Hiragana": "わ_-_を_-_ん",
-      "Romanji": "Wa_-_Wo_-_N",
+      "Romaji": "Wa_-_Wo_-_N",
       "SentencesExamples": {
         "Sentence": [
           "わたし",
@@ -345,7 +345,7 @@
           "すしをたべる",
           "おんな"
         ],
-        "Romanji": [
+        "Romaji": [
           "Watashi",
           "Warui",
           "Sushi o taberu",

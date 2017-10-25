@@ -4,7 +4,7 @@
     {
       "Word": "水",
       "Hiragana": "みず",
-      "Romanji": "Mizu",
+      "Romaji": "Mizu",
       "Meaning": "Water",
       "SpriteID": "",
       "SentencesExamples": {
@@ -16,7 +16,7 @@
           "- 水 = Water (みず - Mizu)",
           ""
         ],
-        "Romanji": [
+        "Romaji": [
           "Kore wa mizu desu ka?",
           ""
         ],

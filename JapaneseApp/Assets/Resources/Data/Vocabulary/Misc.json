@@ -3,7 +3,7 @@
     {
       "Word": "男の人",
       "Hiragana": "おとこのひと",
-      "Romanji": "Otokonohito",
+      "Romaji": "Otokonohito",
       "Meaning": "Man (Male Person)",
       "SpriteID": "",
       "SentencesExamples": {
@@ -13,7 +13,7 @@
         "Kanjis": [
           "- 男の人 = Man (おとこのひと - Otokonohito)|- 男 = Male (おとこ - Otoko)|- 人 = Person (ひと - Hito)"
         ],
-        "Romanji": [
+        "Romaji": [
           "Sore ha(wa) nan desu ka"
         ],
         "English": [
@@ -24,7 +24,7 @@
     {
       "Word": "何",
       "Hiragana": "なん",
-      "Romanji": "Nan",
+      "Romaji": "Nan",
       "Meaning": "Que",
       "SpriteID": "",
       "SentencesExamples": {
@@ -34,7 +34,7 @@
         "Kanjis": [
           "何 = What (なん - Nan)"
         ],
-        "Romanji": [
+        "Romaji": [
           "Sore ha(wa) nan desu ka"
         ],
         "English": [
@@ -45,7 +45,7 @@
     {
       "Word": "名前",
       "Hiragana": "なまえ",
-      "Romanji": "Namae",
+      "Romaji": "Namae",
       "Meaning": "Name",
       "SpriteID": "",
       "SentencesExamples": {
@@ -55,7 +55,7 @@
         "Kanjis": [
           " - 名前 = Name (なまえ - Namae) |- 何 = What (なん - Nan)"
         ],
-        "Romanji": [
+        "Romaji": [
           "O-namae wa nan desu ka"
         ],
         "English": [

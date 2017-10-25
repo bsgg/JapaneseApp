@@ -3,7 +3,7 @@
     {
       "Word": "鳥",
       "Hiragana": "とり",
-      "Romanji": "Tori",
+      "Romaji": "Tori",
       "Meaning": "Bird",
       "SpriteID": "",
       "SentencesExamples": {
@@ -15,7 +15,7 @@
           "- 鳥 = Bird (とり - Tori)|- ニ = 2 (に - Ni)",
           "- 鳥 = Bird (とり - Tori)|- 七 = 7 (なな - Nana)"
         ],
-        "Romanji": [
+        "Romaji": [
           "Tori ga ni wa imadesu",
           "Tori ga nana ga imasu."
         ],
@@ -28,7 +28,7 @@
     {
       "Word": "猫",
       "Hiragana": "ねこ",
-      "Romanji": "Neko",
+      "Romaji": "Neko",
       "Meaning": "Cat",
       "SpriteID": "",
       "SentencesExamples": {
@@ -36,11 +36,16 @@
           "猫です",
           "猫がいます"
         ],
+		"Hiragana":
+		[
+		  "ねこ です",
+          "ねこ がいます"
+		],
         "Kanjis": [
           "- 猫 = Cat (ねこ - Neko)",
           "- 猫 = Cat (ねこ - Neko)"
         ],
-        "Romanji": [
+        "Romaji": [
           "Neko desu",
           "Neko ga imasu"
         ],
@@ -53,7 +58,7 @@
     {
       "Word": "蟹",
       "Hiragana": "かに",
-      "Romanji": "Kani",
+      "Romaji": "Kani",
       "Meaning": "Crab",
       "SpriteID": "Animals_Crab",
       "SentencesExamples": {
@@ -61,11 +66,16 @@
           "蟹がはまべをあるいている",
           "オレンジと赤の蟹"
         ],
+		"Hiragana":
+		[
+		  "かに が はまべ を あるいて いる",
+          "オレンジ と あか の かに"
+		],
         "Kanjis": [
-          "- 蟹 : かに (Kani) : Crab",
-          "- 蟹 : かに (Kani) : Crab"
+          "- 蟹 = Crab (かに- Kani)",
+          "- 蟹 = Crab (かに- Kani)|- 赤 = Red (あか　- aka)"
         ],
-        "Romanji": [
+        "Romaji": [
           "Kani ga hamabe o aruite iru.",
           "Orenji to aka no kani"
         ],
@@ -78,7 +88,7 @@
     {
       "Word": "犬",
       "Hiragana": "いぬ",
-      "Romanji": "Inu",
+      "Romaji": "Inu",
       "Meaning": "Dog",
       "SpriteID": "",
       "SentencesExamples": {
@@ -86,11 +96,16 @@
           "犬です",
           "犬と猫がいます"
         ],
+		"Hiragana":
+		[
+		  "いぬ です",
+          "いぬ と ねこ が います"
+		],
         "Kanjis": [
           "- 犬 = Dog (いぬ - Inu)",
           "- 犬 = Dog (いぬ - Inu)|- 猫 = Cat (ねこ - Neko)"
         ],
-        "Romanji": [
+        "Romaji": [
           "Inu desu",
           "Inu to neko ga imasu"
         ],

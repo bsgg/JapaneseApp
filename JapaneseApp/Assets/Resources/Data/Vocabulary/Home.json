@@ -3,7 +3,7 @@
     {
       "Word": "家",
       "Hiragana": "いえ",
-      "Romanji": "Ie",
+      "Romaji": "Ie",
       "Meaning": "House/Home",
       "SpriteID": "",
       "SentencesExamples": {
@@ -17,7 +17,7 @@
           "- 家 = House (いえ - Ie)",
           "- 家 = House (いえ - Ie)|- 家 = Warm (あたたかい - atatakai)"
         ],
-        "Romanji": [
+        "Romaji": [
           "Ie desu",
           "Ie ha(wa) doko desu ka?",
           "Atatakai ie"
@@ -32,7 +32,7 @@
     {
       "Word": "居間",
       "Hiragana": "いま",
-      "Romanji": "Ima",
+      "Romaji": "Ima",
       "Meaning": "Living Room",
       "SpriteID": "",
       "SentencesExamples": {
@@ -42,7 +42,7 @@
         "Kanjis": [
           "- 居間 = Living Room (いま - Ima)|- 家具 = Furniture (かぐ - Kagu): "
         ],
-        "Romanji": [
+        "Romaji": [
           "Ima no kagu"
         ],
         "English": [
@@ -53,7 +53,7 @@
     {
       "Word": "椅子",
       "Hiragana": "いす",
-      "Romanji": "Isu",
+      "Romaji": "Isu",
       "Meaning": "Chair",
       "SpriteID": "",
       "SentencesExamples": {
@@ -65,7 +65,7 @@
           "- 部屋 = Room (へや - Heya)|- 三つ = 3 (みっ - Mittsu)|- 三 = 3 (さん - San)|- 椅子 = Chair (いす - isu)",
           "- 部屋 = Room (へや - Heya)|- 椅子 = Chair (いす - isu)"
         ],
-        "Romanji": [
+        "Romaji": [
           "Heya ni mittsu isu ga arimasu",
           "Heya ni isu wa ikutsu arimasu ka"
         ],

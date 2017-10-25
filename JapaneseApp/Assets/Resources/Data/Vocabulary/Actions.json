@@ -4,7 +4,7 @@
     {
       "Word": "出る",
       "Hiragana": "でる",
-      "Romanji": "Deru",
+      "Romaji": "Deru",
       "Meaning": "Leave",
       "SpriteID": "",
       "SentencesExamples": {
@@ -23,7 +23,7 @@
           "- 家 = Home (いえ - Ie)|- 出ます = Leave (でる - Deru)",
           "- 会社 = Company (かいしゃ - Kaishya)|- 出 = Leave (でる - Deru)"
         ],
-        "Romanji": [
+        "Romaji": [
           "Watashi wa, mainichi hachi-ji ni ie o demasu.",
           "Ie o deru",
           "Kaisha o deru"
@@ -39,7 +39,7 @@
      {
       "Word": "跳ぶ",
       "Hiragana": "とぶ",
-      "Romanji": "Tobu",
+      "Romaji": "Tobu",
       "Meaning": "Jump",
       "SpriteID": "",
       "SentencesExamples": {
@@ -52,7 +52,7 @@
         "Kanjis": [
           "- 女の人 = Woman (おんなのひと - Onna no hito)|- 空中 = Air (くうちゅう - Kūchū)|- 跳 = Jump (とぶ - Tobu)"
         ],
-        "Romanji": [
+        "Romaji": [
           "Onna no hito ga kūchū ni tobiagatte iru."
         ],
         "English": [
@@ -64,7 +64,7 @@
     {
       "Word": "助ける",
       "Hiragana": "たすける",
-      "Romanji": "Tasukeru",
+      "Romaji": "Tasukeru",
       "Meaning": "Help",
       "SpriteID": "",
       "SentencesExamples": {
@@ -80,7 +80,7 @@
           "- 助け = Help (たすけ - Tasuke)",
           "- 助け = Help (たすけ - Tasuke) |- 来る = Come (くる - Kuru)"
         ],
-        "Romanji": [
+        "Romaji": [
           "Tasukete!",
           "Tasuke ni kuru"
         ],
@@ -93,17 +93,19 @@
     {
       "Word": "飲む",
       "Hiragana": "のむ",
-      "Romanji": "Nomu",
+      "Romaji": "Nomu",
       "Meaning": "Drink",
       "SpriteID": "",
       "SentencesExamples": {
         "Sentence": [
           ""
         ],
+		 "Hiragana": [
+        ],
         "Kanjis": [
           ""
         ],
-        "Romanji": [
+        "Romaji": [
           ""
         ],
         "English": [
@@ -114,7 +116,7 @@
     {
       "Word": "洗う",
       "Hiragana": "あらう",
-      "Romanji": "Arau",
+      "Romaji": "Arau",
       "Meaning": "Wash",
       "SpriteID": "",
       "SentencesExamples": {
@@ -130,7 +132,7 @@
           "- 男 = Boy (おとこ - Otoko)|- 子 = Child (こ - Ko)|- 皿 = Dishes (さら - Sara)|- 洗う = Wash (あらう - Arau)",
           "- 女 = Girl (おんな - Onna)|- 子 = Child (こ - Ko)|- 顔 = Face (かお - kao)|- 洗う = Wash (あらう - Arau)"
         ],
-        "Romanji": [
+        "Romaji": [
           "Otoko no ko ga sara o arau.",
           "Onna no ko ga kao o aratta."
         ],

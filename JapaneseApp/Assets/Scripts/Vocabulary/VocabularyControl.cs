@@ -73,18 +73,18 @@ namespace JapaneseApp
         }
 
         [SerializeField]
-        private List<string> m_Romanji= new List<string>();
-        public List<string> Romanji
+        private List<string> m_Romaji= new List<string>();
+        public List<string> Romaji
         {
-            set { m_Romanji = value; }
-            get { return m_Romanji; }
+            set { m_Romaji = value; }
+            get { return m_Romaji; }
         }
 
         public string GetRomanji(int index)
         {
-            if ((m_Romanji != null) && (index >= 0) && (index < m_Romanji.Count))
+            if ((m_Romaji != null) && (index >= 0) && (index < m_Romaji.Count))
             {
-                return m_Romanji[index];
+                return m_Romaji[index];
             }
             return string.Empty;
         }
@@ -136,11 +136,11 @@ namespace JapaneseApp
         }
 
         [SerializeField]
-        private string m_Romanji;
-        public string Romanji
+        private string m_Romaji;
+        public string Romaji
         {
-            set { m_Romanji = value; }
-            get { return m_Romanji; }
+            set { m_Romaji = value; }
+            get { return m_Romaji; }
         }
 
         [SerializeField]
@@ -439,7 +439,7 @@ namespace JapaneseApp
                 // Set word
                 m_VocabularyUI.Word = m_SelectedWord.Word;
                 m_VocabularyUI.English = m_SelectedWord.Meaning;
-                m_VocabularyUI.Hiragana = m_SelectedWord.Hiragana + " : " + m_SelectedWord.Romanji;
+                m_VocabularyUI.Hiragana = m_SelectedWord.Hiragana + " : " + m_SelectedWord.Romaji;
 
 
                 // Set sprite
@@ -511,7 +511,7 @@ namespace JapaneseApp
             m_ExamplesUI.Sentence = m_SelectedWord.SentencesExamples.GetSentence(index);
             m_ExamplesUI.KanjiExample = m_SelectedWord.SentencesExamples.GetSentence(index);
             m_ExamplesUI.HiraganaExample = m_SelectedWord.SentencesExamples.GetHiragana(index);
-            m_ExamplesUI.Romanji = m_SelectedWord.SentencesExamples.GetRomanji(index);
+            m_ExamplesUI.Romaji = m_SelectedWord.SentencesExamples.GetRomanji(index);
             m_ExamplesUI.English = m_SelectedWord.SentencesExamples.GetEnglish(index);
             m_ExamplesUI.Kanji = m_SelectedWord.SentencesExamples.GetKanjis(index);            
         }
