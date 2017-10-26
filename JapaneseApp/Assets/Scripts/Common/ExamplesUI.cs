@@ -11,8 +11,7 @@ namespace JapaneseApp
         public delegate void ExampleAction();
         public ExampleAction OnNextExampleEvent;
 
-        [Header("ExamplesUI")]
-
+        [Header("ExamplesU Text")]
         [SerializeField]
         private Text m_Sentence;
         public string Sentence
@@ -64,13 +63,20 @@ namespace JapaneseApp
             get { return m_Kanji.text; }
         }
 
-
+        [Header("ExamplesU Buttons")]
         [SerializeField]
         private IconBtn m_NextBtn;
         public IconBtn NextBtn
         {
             get { return m_NextBtn; }
-        }        
+        }
+
+        [SerializeField]
+        private IconBtn m_SoundBtn;
+        public IconBtn SoundBtn
+        {
+            get { return m_SoundBtn; }
+        }
 
         public override void Show()
         {

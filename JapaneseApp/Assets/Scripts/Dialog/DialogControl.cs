@@ -161,7 +161,7 @@ namespace JapaneseApp
 
             m_DialogUI.Title = m_DialogSet[m_SelectedDialogID].Title;
 
-            OnChangeToKanji();
+            SwitchToKanji();
         }
 
         public override void Back()
@@ -232,7 +232,7 @@ namespace JapaneseApp
         }
 
 
-        public void OnChangeToKanji()
+        private void SwitchToKanji()
         {
             m_DialogUI.Subtitle = "Hiragana-Kanji";
 
@@ -251,8 +251,7 @@ namespace JapaneseApp
             m_DialogUI.SetScrollDialog(dialog);
         }
 
-
-        public void OnChangeToHiragana()
+        private void SwitchToKana()
         {
             m_DialogUI.Subtitle = "Hiragana";
 
@@ -271,7 +270,7 @@ namespace JapaneseApp
             m_DialogUI.SetScrollDialog(dialog);
         }
 
-        public void OnChangeToRomaji()
+        private void SwitchToRomaji()
         {
             m_DialogUI.Subtitle = "Romaji";
 
@@ -290,7 +289,26 @@ namespace JapaneseApp
             m_DialogUI.SetScrollDialog(dialog);
         }
 
-        public void OnVocabulary()
+        private void SwitchToEnglish()
+        {
+            m_DialogUI.Subtitle = "English";
+
+            string dialog = "\n\n";
+            int nElements = m_DialogSet[m_SelectedDialogID].English.Count;
+            for (int i = 0; i < nElements; i++)
+            {
+                dialog += m_DialogSet[m_SelectedDialogID].English[i];
+
+                if (i < (nElements - 1))
+                {
+                    dialog += "\n\n";
+                }
+            }
+
+            m_DialogUI.SetScrollDialog(dialog);
+        }
+
+        private void SwitchToVocabulary()
         {
             m_DialogUI.Subtitle = "Vocabulary";
             string dialog = "\n\n";
@@ -308,7 +326,7 @@ namespace JapaneseApp
             m_DialogUI.SetScrollDialog(dialog);
         }
 
-        public void OnDescription()
+        public void SwitchToDescription()
         {
             m_DialogUI.Subtitle = "Description";
 
@@ -317,10 +335,38 @@ namespace JapaneseApp
             m_DialogUI.SetScrollDialog(dialog);
         }
 
-        public void OnSound()
+        public void SwitchToSound()
         {
             m_AudioSource.Stop();
             m_AudioSource.Play();
+        }
+
+        public void OnMenuItemPress(int id)
+        {
+            switch (id)
+            {
+                case 0:
+                    SwitchToKanji();
+                break;
+                case 1:
+                    SwitchToKana();
+                break;
+                case 2:
+                    SwitchToRomaji();
+                break;
+                case 3:
+                    SwitchToEnglish();
+                break;
+                case 4:
+                    SwitchToVocabulary();
+                break;
+                case 5:
+                    SwitchToDescription();
+                    break;
+                case 6:
+                    SwitchToSound();
+                break;
+            }
         }
     }
 }

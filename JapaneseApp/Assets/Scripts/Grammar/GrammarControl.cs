@@ -204,6 +204,16 @@ namespace JapaneseApp
             m_GrammarUI.Title = grammar.Title;
             m_GrammarUI.Description = grammar.Description;           
 
+            // Set number of grammar for this category
+            if (m_GrammarSet[(int)m_SelectedCategory].Data.Count > 1)
+            {
+                m_GrammarUI.NextBtn.Enable(true, m_EnableBtnColor);
+            }else
+            {
+                m_GrammarUI.NextBtn.Enable(false, m_DisableBtnColor);
+            }
+
+
             // Set examples
             if ((grammar.SentencesExamples != null) && (grammar.SentencesExamples.Sentence.Count > 0))
             {
