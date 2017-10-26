@@ -12,15 +12,20 @@
           "家はどこですか",
           "暖かい家"
         ],
+        "Kana": [
+          "いえ です",
+          "いえ は どこ です か",
+          "あたたかい いえ"
+        ],
         "Kanjis": [
           "- 家 = House (いえ - Ie)",
           "- 家 = House (いえ - Ie)",
-          "- 家 = House (いえ - Ie)|- 家 = Warm (あたたかい - atatakai)"
+          "- 暖かい = Warm (あたたかい - attakai)|- 家 = House (いえ - Ie)"
         ],
         "Romaji": [
           "Ie desu",
           "Ie ha(wa) doko desu ka?",
-          "Atatakai ie"
+          "Attakai ie"
         ],
         "English": [
           "It's a house",
@@ -38,6 +43,9 @@
       "SentencesExamples": {
         "Sentence": [
           " 居間の家具"
+        ],
+        "Kani": [
+          " いま の かぐ"
         ],
         "Kanjis": [
           "- 居間 = Living Room (いま - Ima)|- 家具 = Furniture (かぐ - Kagu): "
@@ -60,6 +68,10 @@
         "Sentence": [
           "部屋　に　三つ　椅子　が　あります",
           "部屋　に　椅子　は　いくつ　あります　か"
+        ],
+        "Kana": [
+          "へや　に　みっ　いす　が　あります",
+          "へや　に　いす　は　いくつ　あります　か"
         ],
         "Kanjis": [
           "- 部屋 = Room (へや - Heya)|- 三つ = 3 (みっ - Mittsu)|- 三 = 3 (さん - San)|- 椅子 = Chair (いす - isu)",

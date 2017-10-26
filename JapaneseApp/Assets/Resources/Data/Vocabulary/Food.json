@@ -9,20 +9,19 @@
       "SpriteID": "",
       "SentencesExamples": {
         "Sentence": [
-          "これは水ですか",
-          ""
+          "これ は 水 で すか"
+        ],
+        "Kana": [
+          "これ は みず です か"
         ],
         "Kanjis": [
-          "- 水 = Water (みず - Mizu)",
-          ""
+          "- 水 = Water (みず - Mizu)"
         ],
         "Romaji": [
-          "Kore wa mizu desu ka?",
-          ""
+          "Kore wa mizu desu ka?"
         ],
         "English": [
-          "Is this water?",
-          ""
+          "Is this water?"
         ]
       }
     }
