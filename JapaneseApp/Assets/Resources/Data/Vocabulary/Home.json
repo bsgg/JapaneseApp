@@ -2,7 +2,7 @@
   "Data": [
     {
       "Word": "家",
-      "Hiragana": "いえ",
+      "Kana": "いえ",
       "Romaji": "Ie",
       "Meaning": "House/Home",
       "SpriteID": "",
@@ -31,7 +31,7 @@
     },
     {
       "Word": "居間",
-      "Hiragana": "いま",
+      "Kana": "いま",
       "Romaji": "Ima",
       "Meaning": "Living Room",
       "SpriteID": "",
@@ -52,7 +52,7 @@
     },
     {
       "Word": "椅子",
-      "Hiragana": "いす",
+      "Kana": "いす",
       "Romaji": "Isu",
       "Meaning": "Chair",
       "SpriteID": "",

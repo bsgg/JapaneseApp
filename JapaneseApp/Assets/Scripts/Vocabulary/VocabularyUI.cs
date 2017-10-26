@@ -38,11 +38,11 @@ namespace JapaneseApp
         
 
         [SerializeField]
-        private Text m_Hiragana;
-        public string Hiragana
+        private Text m_Kana;
+        public string Kana
         {
-            set { m_Hiragana.text = value; }
-            get { return m_Hiragana.text; }
+            set { m_Kana.text = value; }
+            get { return m_Kana.text; }
         }
 
         [Header("Buttons")]        

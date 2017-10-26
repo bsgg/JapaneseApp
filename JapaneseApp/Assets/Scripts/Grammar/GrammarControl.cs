@@ -242,7 +242,7 @@ namespace JapaneseApp
             m_ExampleUI.Kanji = grammar.SentencesExamples.GetKanjis(index);
 
             m_ExampleUI.KanjiExample = grammar.SentencesExamples.GetSentence(index);
-            m_ExampleUI.HiraganaExample = grammar.SentencesExamples.GetHiragana(index);
+            m_ExampleUI.KanaExample = grammar.SentencesExamples.GetKana(index);
         }
 
         #region MenuButtons

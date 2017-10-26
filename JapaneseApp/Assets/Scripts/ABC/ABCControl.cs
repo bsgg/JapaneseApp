@@ -79,7 +79,7 @@ namespace JapaneseApp
             int lastButtonId = -1;
             for (int i=0; i< m_ABCSet.Data.Count; i++)
             {
-                string[] splitH = m_ABCSet.Data[i].Hiragana.Split('_');
+                string[] splitH = m_ABCSet.Data[i].Kana.Split('_');
                 string[] splitE = m_ABCSet.Data[i].Romaji.Split('_');
 
                 // Both must have 5 elements
@@ -122,7 +122,7 @@ namespace JapaneseApp
                 }
                 else
                 {
-                    Debug.Log("<color=cyan>" + "Wrong Format: " + m_ABCSet.Data[i].Hiragana + " - " + m_ABCSet.Data[i].Romaji + "</color>");
+                    Debug.Log("<color=cyan>" + "Wrong Format: " + m_ABCSet.Data[i].Kana + " - " + m_ABCSet.Data[i].Romaji + "</color>");
                 }
             }
 

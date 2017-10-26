@@ -2,7 +2,7 @@
   "Data": [
     {
       "Word": "鳥",
-      "Hiragana": "とり",
+      "Kana": "とり",
       "Romaji": "Tori",
       "Meaning": "Bird",
       "SpriteID": "",
@@ -27,7 +27,7 @@
     },
     {
       "Word": "猫",
-      "Hiragana": "ねこ",
+      "Kana": "ねこ",
       "Romaji": "Neko",
       "Meaning": "Cat",
       "SpriteID": "",
@@ -36,7 +36,7 @@
           "猫です",
           "猫がいます"
         ],
-		"Hiragana":
+		"Kana":
 		[
 		  "ねこ です",
           "ねこ がいます"
@@ -57,7 +57,7 @@
     },
     {
       "Word": "蟹",
-      "Hiragana": "かに",
+      "Kana": "かに",
       "Romaji": "Kani",
       "Meaning": "Crab",
       "SpriteID": "Animals_Crab",
@@ -66,7 +66,7 @@
           "蟹がはまべをあるいている",
           "オレンジと赤の蟹"
         ],
-		"Hiragana":
+		"Kana":
 		[
 		  "かに が はまべ を あるいて いる",
           "オレンジ と あか の かに"
@@ -87,7 +87,7 @@
     },
     {
       "Word": "犬",
-      "Hiragana": "いぬ",
+      "Kana": "いぬ",
       "Romaji": "Inu",
       "Meaning": "Dog",
       "SpriteID": "",
@@ -96,7 +96,7 @@
           "犬です",
           "犬と猫がいます"
         ],
-		"Hiragana":
+		"Kana":
 		[
 		  "いぬ です",
           "いぬ と ねこ が います"

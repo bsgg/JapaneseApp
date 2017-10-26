@@ -2,7 +2,7 @@
 	"Data":	
 	[
     {
-      "Hiragana": "あ_い_う_え_お",
+      "Kana": "あ_い_う_え_お",
       "Romaji": "A_I_U_E_O",
       "SentencesExamples": {
         "Sentence": [
@@ -30,7 +30,7 @@
       }
     },
     {
-      "Hiragana": "か_き_く_け_こ",
+      "Kana": "か_き_く_け_こ",
       "Romaji": "Ka_Ki_Ku_Ke_Ko",
       "SentencesExamples": {
         "Sentence": [
@@ -57,7 +57,7 @@
       }
     },
     {
-      "Hiragana": "が_ぎ_ぐ_げ_ご",
+      "Kana": "が_ぎ_ぐ_げ_ご",
       "Romaji": "Ga_Gi_Gu_Ge_Go",
       "SentencesExamples": {
         "Sentence": [
@@ -72,7 +72,7 @@
       }
     },
     {
-      "Hiragana": "さ_し_す_せ_そ",
+      "Kana": "さ_し_す_せ_そ",
       "Romaji": "Sa_Shi_Su_Se_So",
       "SentencesExamples": {
         "Sentence": [
@@ -96,7 +96,7 @@
       }
     },
     {
-      "Hiragana": "ざ_じ_ず_ぜ_ぞ",
+      "Kana": "ざ_じ_ず_ぜ_ぞ",
       "Romaji": "Za_Ji_Zu_Ze_Zo",
       "SentencesExamples": {
         "Sentence": [
@@ -120,7 +120,7 @@
       }
     },
     {
-      "Hiragana": "た_ち_つ_て_と",
+      "Kana": "た_ち_つ_て_と",
       "Romaji": "Ta_Chi_Tsu_Te_To",
       "SentencesExamples": {
         "Sentence": [
@@ -141,7 +141,7 @@
       }
     },
     {
-      "Hiragana": "だ_ぢ_づ_で_ど",
+      "Kana": "だ_ぢ_づ_で_ど",
       "Romaji": "Da_Ji(di)_Zu(du)_De_Do",
       "SentencesExamples": {
         "Sentence": [
@@ -165,7 +165,7 @@
       }
     },
     {
-      "Hiragana": "な_に_ぬ_ね_の",
+      "Kana": "な_に_ぬ_ね_の",
       "Romaji": "Na_Ni_Nu_Ne_No",
       "SentencesExamples": {
         "Sentence": [
@@ -192,7 +192,7 @@
       }
     },
     {
-      "Hiragana": "は_ひ_ふ_へ_ほ",
+      "Kana": "は_ひ_ふ_へ_ほ",
       "Romaji": "Ha_Hi_Fu_He_Ho",
       "SentencesExamples": {
         "Sentence": [
@@ -219,7 +219,7 @@
       }
     },
     {
-      "Hiragana": "ば_び_ぶ_べ_ぼ",
+      "Kana": "ば_び_ぶ_べ_ぼ",
       "Romaji": "Ba_Bi_Bu_Be_Bo",
       "SentencesExamples": {
         "Sentence": [
@@ -243,7 +243,7 @@
       }
     },
     {
-      "Hiragana": "ぱ_ぴ_ぷ_ぺ_ぽ",
+      "Kana": "ぱ_ぴ_ぷ_ぺ_ぽ",
       "Romaji": "Pa_Pi_Pu_Pe_Po",
       "SentencesExamples": {
         "Sentence": [
@@ -261,7 +261,7 @@
       }
     },
     {
-      "Hiragana": "ま_み_む_め_も",
+      "Kana": "ま_み_む_め_も",
       "Romaji": "Ma_Mi_Mu_Me_Mo",
       "SentencesExamples": {
         "Sentence": [
@@ -288,7 +288,7 @@
       }
     },
     {
-      "Hiragana": "や_-_ゆ_-_よ",
+      "Kana": "や_-_ゆ_-_よ",
       "Romaji": "Ya_-_Yu_-_Yo",
       "SentencesExamples": {
         "Sentence": [
@@ -309,7 +309,7 @@
       }
     },
     {
-      "Hiragana": "ら_り_る_れ_ろ",
+      "Kana": "ら_り_る_れ_ろ",
       "Romaji": "Ra_Ri_Ru_Re_Ro",
       "SentencesExamples": {
         "Sentence": [
@@ -320,14 +320,14 @@
           "いろ"
         ],
         "Romaji": [
-          "Hiragana",
+          "Kana",
           "Furui",
           "Kirei",
           "Kore",
           "Iro"
         ],
         "English": [
-          "Hiragana",
+          "Kana",
           "Old (Thing)",
           "Pretty, Clean",
           "This",
@@ -336,7 +336,7 @@
       }
     },
     {
-      "Hiragana": "わ_-_を_-_ん",
+      "Kana": "わ_-_を_-_ん",
       "Romaji": "Wa_-_Wo_-_N",
       "SentencesExamples": {
         "Sentence": [

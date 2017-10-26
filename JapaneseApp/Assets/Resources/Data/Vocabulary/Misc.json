@@ -2,7 +2,7 @@
   "Data": [
     {
       "Word": "男の人",
-      "Hiragana": "おとこのひと",
+      "Kana": "おとこのひと",
       "Romaji": "Otokonohito",
       "Meaning": "Man (Male Person)",
       "SpriteID": "",
@@ -23,7 +23,7 @@
     },
     {
       "Word": "何",
-      "Hiragana": "なん",
+      "Kana": "なん",
       "Romaji": "Nan",
       "Meaning": "Que",
       "SpriteID": "",
@@ -31,7 +31,7 @@
         "Sentence": [
           "それ　は　何　です　か"
         ],
-        "Hiragana": [
+        "Kana": [
           "それ　は　なん　です　か"
         ],
         "Kanjis": [
@@ -47,7 +47,7 @@
     },
     {
       "Word": "誰",
-      "Hiragana": "だれ",
+      "Kana": "だれ",
       "Romaji": "Dare",
       "Meaning": "Who",
       "SpriteID": "",
@@ -56,7 +56,7 @@
           "誰 です　か",
           "彼女 は　誰　です　か"
         ],
-        "Hiragana": [
+        "Kana": [
           "だれ です　か",
           "かのじょ は　だれ　です　か"
         ],
@@ -77,7 +77,7 @@
     },
     {
       "Word": "名前",
-      "Hiragana": "なまえ",
+      "Kana": "なまえ",
       "Romaji": "Namae",
       "Meaning": "Name",
       "SpriteID": "",

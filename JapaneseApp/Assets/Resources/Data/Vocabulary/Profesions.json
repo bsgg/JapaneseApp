@@ -3,7 +3,7 @@
 	[
     {
       "Word": "学生",
-      "Hiragana": "がくせい",
+      "Kana": "がくせい",
       "Romaji": "Gakusei",
       "Meaning": "Student",
       "SpriteID": "",
@@ -29,7 +29,7 @@
     {
       "Title": "",
       "Word": "先生",
-      "Hiragana": "せんせい",
+      "Kana": "せんせい",
       "Romaji": "Sensei",
       "Meaning": "Teacher, Doctor",
       "SpriteID": "",

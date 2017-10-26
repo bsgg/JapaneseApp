@@ -30,11 +30,11 @@ namespace JapaneseApp
         }
 
         // Sentence with only hiragana symbols
-        private string m_HiraganaExample;
-        public string HiraganaExample
+        private string m_KanaExample;
+        public string KanaExample
         {
-            set { m_HiraganaExample = value; }
-            get { return m_HiraganaExample; }
+            set { m_KanaExample = value; }
+            get { return m_KanaExample; }
         }
 
         private bool m_ToggleToKanjiExample = true;
@@ -91,7 +91,7 @@ namespace JapaneseApp
 
         public void OnSentencePress()
         {
-            if (string.IsNullOrEmpty(m_HiraganaExample) || string.IsNullOrEmpty(m_KanjiExample)) return;
+            if (string.IsNullOrEmpty(m_KanaExample) || string.IsNullOrEmpty(m_KanjiExample)) return;
 
             if (m_ToggleToKanjiExample)
             {
@@ -100,7 +100,7 @@ namespace JapaneseApp
 
             } else
             {
-                m_Sentence.text = m_HiraganaExample;
+                m_Sentence.text = m_KanaExample;
                 m_ToggleToKanjiExample = true;
             }
         }

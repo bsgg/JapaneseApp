@@ -2,7 +2,7 @@
   "Data": [
     {
       "Word": "誕生日",
-      "Hiragana": "たん じょう び",
+      "Kana": "たん じょう び",
       "Romaji": "Tanjōbi",
       "Meaning": "Birtday",
       "SpriteID": "",
@@ -11,7 +11,7 @@
           "私の誕生日は 七月です。",
           "東さんの 誕生日"
         ],
-		"Hiragana": [
+		"Kana": [
           "わたし の たんじょうび は しちがつ です。",
           "ひがし さん の たんじょうび"
         ],
@@ -31,7 +31,7 @@
     },
     {
       "Word": "出る",
-      "Hiragana": "でる",
+      "Kana": "でる",
       "Romaji": "Deru",
       "Meaning": "Leave",
       "SpriteID": "",
@@ -41,7 +41,7 @@
           "家を出る",
           "会社を出る"
         ],
-		"Hiragana": [
+		"Kana": [
           "わたし は、まいにち8じ に いえ を でます。",
           "いえ を でる",
           "かいしゃ を でる"
@@ -66,7 +66,7 @@
     },
     {
       "Word": "助ける",
-      "Hiragana": "たすける",
+      "Kana": "たすける",
       "Romaji": "Tasukeru",
       "Meaning": "Help",
       "SpriteID": "",
@@ -75,7 +75,7 @@
           "助けて！",
           "助けに来る"
         ],
-		"Hiragana": [
+		"Kana": [
           "たすけて！",
           "たすけ に 来る"
         ],

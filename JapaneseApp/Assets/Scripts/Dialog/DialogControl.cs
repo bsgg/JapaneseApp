@@ -34,11 +34,11 @@ namespace JapaneseApp
             get { return m_Kanji; }
         }
         [SerializeField]
-        private List<string> m_Hiragana= new List<string>();
-        public List<string> Hiragana
+        private List<string> m_Kana= new List<string>();
+        public List<string> Kana
         {
-            set { m_Hiragana = value; }
-            get { return m_Hiragana; }
+            set { m_Kana = value; }
+            get { return m_Kana; }
         }
         [SerializeField]
         private List<string> m_Romaji= new List<string>();
@@ -257,10 +257,10 @@ namespace JapaneseApp
             m_DialogUI.Subtitle = "Hiragana";
 
             string dialog = "\n\n";
-            int nElements = m_DialogSet[m_SelectedDialogID].Hiragana.Count;
+            int nElements = m_DialogSet[m_SelectedDialogID].Kana.Count;
             for (int i = 0; i < nElements; i++)
             {
-                dialog += m_DialogSet[m_SelectedDialogID].Hiragana[i];
+                dialog += m_DialogSet[m_SelectedDialogID].Kana[i];
 
                 if (i < (nElements - 1))
                 {

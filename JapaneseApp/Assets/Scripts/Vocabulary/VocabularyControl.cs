@@ -27,17 +27,17 @@ namespace JapaneseApp
         }
 
         [SerializeField]
-        private List<string> m_Hiragana = new List<string>();
-        public List<string> Hiragana
+        private List<string> m_Kana = new List<string>();
+        public List<string> Kana
         {
-            set { m_Hiragana = value; }
-            get { return m_Hiragana; }
+            set { m_Kana = value; }
+            get { return m_Kana; }
         }
-        public string GetHiragana(int index)
+        public string GetKana(int index)
         {
-            if ((m_Hiragana != null) && (index >= 0) && (index < m_Hiragana.Count))
+            if ((m_Kana != null) && (index >= 0) && (index < m_Kana.Count))
             {
-                return m_Hiragana[index];
+                return m_Kana[index];
             }
             return string.Empty;
         }
@@ -128,11 +128,11 @@ namespace JapaneseApp
         }
 
         [SerializeField]
-        private string m_Hiragana;
-        public string Hiragana
+        private string m_Kana;
+        public string Kana
         {
-            set { m_Hiragana = value; }
-            get { return m_Hiragana; }
+            set { m_Kana = value; }
+            get { return m_Kana; }
         }
 
         [SerializeField]
@@ -437,7 +437,7 @@ namespace JapaneseApp
                 // Set word
                 m_VocabularyUI.Word = m_SelectedWord.Word;
                 m_VocabularyUI.English = m_SelectedWord.Meaning;
-                m_VocabularyUI.Hiragana = m_SelectedWord.Hiragana + " : " + m_SelectedWord.Romaji;
+                m_VocabularyUI.Kana = m_SelectedWord.Kana + " : " + m_SelectedWord.Romaji;
 
 
                 // Set sprite
@@ -505,7 +505,7 @@ namespace JapaneseApp
             // Set sentence
             m_ExamplesUI.Sentence = m_SelectedWord.SentencesExamples.GetSentence(index);
             m_ExamplesUI.KanjiExample = m_SelectedWord.SentencesExamples.GetSentence(index);
-            m_ExamplesUI.HiraganaExample = m_SelectedWord.SentencesExamples.GetHiragana(index);
+            m_ExamplesUI.KanaExample = m_SelectedWord.SentencesExamples.GetKana(index);
             m_ExamplesUI.Romaji = m_SelectedWord.SentencesExamples.GetRomanji(index);
             m_ExamplesUI.English = m_SelectedWord.SentencesExamples.GetEnglish(index);
             m_ExamplesUI.Kanji = m_SelectedWord.SentencesExamples.GetKanjis(index);            
@@ -518,7 +518,7 @@ namespace JapaneseApp
         {
             if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
             {
-                EasyTTSUtil.SpeechFlush(m_SelectedWord.Hiragana);
+                EasyTTSUtil.SpeechFlush(m_SelectedWord.Kana);
             }
         }
 

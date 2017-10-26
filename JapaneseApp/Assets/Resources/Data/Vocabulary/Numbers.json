@@ -3,7 +3,7 @@
 	[
     {      
       "Word": "一",
-      "Hiragana": "いち",
+      "Kana": "いち",
       "Romaji": "Ichi",
       "Meaning": "1",
       "SpriteID": "",     
@@ -28,7 +28,7 @@
     },
     {      
       "Word": "二",
-      "Hiragana": "に",
+      "Kana": "に",
       "Romaji": "Ni",
       "Meaning": "2",
       "SpriteID": "",     
@@ -53,7 +53,7 @@
     },
     {      
       "Word": "三",
-      "Hiragana": "さん",
+      "Kana": "さん",
       "Romaji": "San",
       "Meaning": "3",
       "SpriteID": "",     
@@ -78,7 +78,7 @@
     },
     {      
       "Word": "四",
-      "Hiragana": "よん / し",
+      "Kana": "よん / し",
       "Romaji": "Yon / Shi",
       "Meaning": "4",
       "SpriteID": "",     
@@ -103,7 +103,7 @@
     },
     {      
       "Word": "五",
-      "Hiragana": "ご",
+      "Kana": "ご",
       "Romaji": "Go",
       "Meaning": "5",
       "SpriteID": "",     
@@ -128,7 +128,7 @@
     },
     {      
       "Word": "六",
-      "Hiragana": "ろく",
+      "Kana": "ろく",
       "Romaji": "Roku",
       "Meaning": "6",
       "SpriteID": "",     
@@ -153,7 +153,7 @@
     },
     {      
       "Word": "七",
-      "Hiragana": "なな　/　しち",
+      "Kana": "なな　/　しち",
       "Romaji": "Nana / Shichi",
       "Meaning": "7",
       "SpriteID": "",     
@@ -178,7 +178,7 @@
     },
     {      
       "Word": "八",
-      "Hiragana": "はち",
+      "Kana": "はち",
       "Romaji": "Hachi",
       "Meaning": "8",
       "SpriteID": "",     
@@ -203,7 +203,7 @@
     },
     {      
       "Word": "九",
-      "Hiragana": "きゅう　/　く",
+      "Kana": "きゅう　/　く",
       "Romaji": "Kuu / Ku",
       "Meaning": "9",
       "SpriteID": "",     
@@ -228,7 +228,7 @@
     },
     {
       "Word": "十",
-      "Hiragana": "じゅう",
+      "Kana": "じゅう",
       "Romaji": "Juu",
       "Meaning": "10",
       "SpriteID": "",
@@ -253,7 +253,7 @@
     },    
     {
       "Word": "十一",
-      "Hiragana": "じゅういち",
+      "Kana": "じゅういち",
       "Romaji": "Juu Ichi",
       "Meaning": "11",
       "SpriteID": "",
@@ -278,7 +278,7 @@
     },
     {
       "Word": "十二",
-      "Hiragana": "じゅうに",
+      "Kana": "じゅうに",
       "Romaji": "Juuni",
       "Meaning": "20",
       "SpriteID": "",
@@ -303,7 +303,7 @@
     },
     {
       "Word": "十三",
-      "Hiragana": "じゅうさん",
+      "Kana": "じゅうさん",
       "Romaji": "Juu San",
       "Meaning": "13",
       "SpriteID": "",
@@ -328,7 +328,7 @@
     },
     {
       "Word": "十四",
-      "Hiragana": "じゅうよん",
+      "Kana": "じゅうよん",
       "Romaji": "Juu Yon",
       "Meaning": "14",
       "SpriteID": "",
@@ -353,7 +353,7 @@
     },
     {
       "Word": "十五",
-      "Hiragana": "じゅうご",
+      "Kana": "じゅうご",
       "Romaji": "Juu Go",
       "Meaning": "15",
       "SpriteID": "",
@@ -378,7 +378,7 @@
     },
     {
       "Word": "十六",
-      "Hiragana": "じゅうろく",
+      "Kana": "じゅうろく",
       "Romaji": "Juu Roku",
       "Meaning": "16",
       "SpriteID": "",
@@ -403,7 +403,7 @@
     },
     {
       "Word": "十七",
-      "Hiragana": "じゅうなな",
+      "Kana": "じゅうなな",
       "Romaji": "Juu Nana",
       "Meaning": "17",
       "SpriteID": "",
@@ -428,7 +428,7 @@
     },
     {
       "Word": "十八",
-      "Hiragana": "じゅうはち",
+      "Kana": "じゅうはち",
       "Romaji": "Juu Hachi",
       "Meaning": "18",
       "SpriteID": "",
@@ -453,7 +453,7 @@
     },
     {
       "Word": "十九",
-      "Hiragana": "じゅうきゆう",
+      "Kana": "じゅうきゆう",
       "Romaji": "Juu Kyoo",
       "Meaning": "19",
       "SpriteID": "",
@@ -478,7 +478,7 @@
     },
     {
       "Word": "ニ十",
-      "Hiragana": "にじゅう",
+      "Kana": "にじゅう",
       "Romaji": "Ni Juu",
       "Meaning": "20",
       "SpriteID": "",
@@ -503,7 +503,7 @@
     },
     {
       "Word": "ニ十三 ",
-      "Hiragana": "にじゅうさん",
+      "Kana": "にじゅうさん",
       "Romaji": "Ni Juu San",
       "Meaning": "23",
       "SpriteID": "",
@@ -528,7 +528,7 @@
     },
     {
       "Word": "百",
-      "Hiragana": "ひゅく",
+      "Kana": "ひゅく",
       "Romaji": "Hyaku",
       "Meaning": "100",
       "SpriteID": "",
