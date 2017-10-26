@@ -8,16 +8,19 @@
       "SpriteID": "",
       "SentencesExamples": {
         "Sentence": [
-          "サラは男の人がきらいです"
+          "サラ は 男の人がきらいです"
+        ],
+        "Kana": [
+          "サラ は おとこのひと がきらいです"
         ],
         "Kanjis": [
-          "- 男の人 = Man (おとこのひと - Otokonohito)|- 男 = Male (おとこ - Otoko)|- 人 = Person (ひと - Hito)"
+          "- 男の人 = Man (おとこのひと - Otokonohito) [1. 男 = Male (おとこ - Otoko), 2. 人 = Person (ひと - Hito)]"
         ],
         "Romaji": [
-          "Sore ha(wa) nan desu ka"
+          "Sara ha(wa) otokonohito ga kirai desu"
         ],
         "English": [
-          "What is this?"
+          "Sara doesn't like man."
         ]
       }
     },
@@ -84,6 +87,9 @@
       "SentencesExamples": {
         "Sentence": [
           "お　名前　は　何　です　か"
+        ],
+        "Kana": [
+          "お　なまえ　は　なん　です　か"
         ],
         "Kanjis": [
           " - 名前 = Name (なまえ - Namae) |- 何 = What (なん - Nan)"

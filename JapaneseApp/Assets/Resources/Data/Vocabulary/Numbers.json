@@ -7,22 +7,16 @@
       "Romaji": "Ichi",
       "Meaning": "1",
       "SpriteID": "",     
-      "Examples": {
+      "SentencesExamples": {
         "Sentence": [
-          "",
-          ""
+        ],
+        "Kana": [
         ],
         "Kanjis": [
-          "",
-          ""
         ],
         "Romaji": [
-          "",
-          ""
         ],
         "English": [
-          "",
-          ""
         ]
       }
     },
@@ -32,22 +26,16 @@
       "Romaji": "Ni",
       "Meaning": "2",
       "SpriteID": "",     
-      "Examples": {
+      "SentencesExamples": {
         "Sentence": [
-          "",
-          ""
+        ],
+        "Kana": [
         ],
         "Kanjis": [
-          "",
-          ""
         ],
         "Romaji": [
-          "",
-          ""
         ],
         "English": [
-          "",
-          ""
         ]
       }
     },
@@ -57,22 +45,16 @@
       "Romaji": "San",
       "Meaning": "3",
       "SpriteID": "",     
-      "Examples": {
+      "SentencesExamples": {
         "Sentence": [
-          "",
-          ""
+        ],
+        "Kana": [
         ],
         "Kanjis": [
-          "",
-          ""
         ],
         "Romaji": [
-          "",
-          ""
         ],
         "English": [
-          "",
-          ""
         ]
       }
     },
@@ -82,22 +64,16 @@
       "Romaji": "Yon / Shi",
       "Meaning": "4",
       "SpriteID": "",     
-      "Examples": {
+     "SentencesExamples": {
         "Sentence": [
-          "",
-          ""
+        ],
+        "Kana": [
         ],
         "Kanjis": [
-          "",
-          ""
         ],
         "Romaji": [
-          "",
-          ""
         ],
         "English": [
-          "",
-          ""
         ]
       }
     },
@@ -107,22 +83,16 @@
       "Romaji": "Go",
       "Meaning": "5",
       "SpriteID": "",     
-      "Examples": {
+      "SentencesExamples": {
         "Sentence": [
-          "",
-          ""
+        ],
+        "Kana": [
         ],
         "Kanjis": [
-          "",
-          ""
         ],
         "Romaji": [
-          "",
-          ""
         ],
         "English": [
-          "",
-          ""
         ]
       }
     },
@@ -132,22 +102,16 @@
       "Romaji": "Roku",
       "Meaning": "6",
       "SpriteID": "",     
-      "Examples": {
+      "SentencesExamples": {
         "Sentence": [
-          "",
-          ""
+        ],
+        "Kana": [
         ],
         "Kanjis": [
-          "",
-          ""
         ],
         "Romaji": [
-          "",
-          ""
         ],
         "English": [
-          "",
-          ""
         ]
       }
     },
@@ -157,22 +121,16 @@
       "Romaji": "Nana / Shichi",
       "Meaning": "7",
       "SpriteID": "",     
-      "Examples": {
+      "SentencesExamples": {
         "Sentence": [
-          "",
-          ""
+        ],
+        "Kana": [
         ],
         "Kanjis": [
-          "",
-          ""
         ],
         "Romaji": [
-          "",
-          ""
         ],
         "English": [
-          "",
-          ""
         ]
       }
     },
@@ -182,22 +140,16 @@
       "Romaji": "Hachi",
       "Meaning": "8",
       "SpriteID": "",     
-      "Examples": {
+      "SentencesExamples": {
         "Sentence": [
-          "",
-          ""
+        ],
+        "Kana": [
         ],
         "Kanjis": [
-          "",
-          ""
         ],
         "Romaji": [
-          "",
-          ""
         ],
         "English": [
-          "",
-          ""
         ]
       }
     },
@@ -207,22 +159,16 @@
       "Romaji": "Kuu / Ku",
       "Meaning": "9",
       "SpriteID": "",     
-      "Examples": {
+      "SentencesExamples": {
         "Sentence": [
-          "",
-          ""
+        ],
+        "Kana": [
         ],
         "Kanjis": [
-          "",
-          ""
         ],
         "Romaji": [
-          "",
-          ""
         ],
         "English": [
-          "",
-          ""
         ]
       }
     },
@@ -232,22 +178,16 @@
       "Romaji": "Juu",
       "Meaning": "10",
       "SpriteID": "",
-      "Examples": {
+      "SentencesExamples": {
         "Sentence": [
-          "",
-          ""
+        ],
+        "Kana": [
         ],
         "Kanjis": [
-          "",
-          ""
         ],
         "Romaji": [
-          "",
-          ""
         ],
         "English": [
-          "",
-          ""
         ]
       }
     },    
@@ -257,22 +197,16 @@
       "Romaji": "Juu Ichi",
       "Meaning": "11",
       "SpriteID": "",
-      "Examples": {
+     "SentencesExamples": {
         "Sentence": [
-          "",
-          ""
+        ],
+        "Kana": [
         ],
         "Kanjis": [
-          "",
-          ""
         ],
         "Romaji": [
-          "",
-          ""
         ],
         "English": [
-          "",
-          ""
         ]
       }
     },
@@ -282,22 +216,16 @@
       "Romaji": "Juuni",
       "Meaning": "20",
       "SpriteID": "",
-      "Examples": {
+      "SentencesExamples": {
         "Sentence": [
-          "",
-          ""
+        ],
+        "Kana": [
         ],
         "Kanjis": [
-          "",
-          ""
         ],
         "Romaji": [
-          "",
-          ""
         ],
         "English": [
-          "",
-          ""
         ]
       }
     },
@@ -307,22 +235,16 @@
       "Romaji": "Juu San",
       "Meaning": "13",
       "SpriteID": "",
-      "Examples": {
+     "SentencesExamples": {
         "Sentence": [
-          "",
-          ""
+        ],
+        "Kana": [
         ],
         "Kanjis": [
-          "",
-          ""
         ],
         "Romaji": [
-          "",
-          ""
         ],
         "English": [
-          "",
-          ""
         ]
       }
     },
@@ -332,22 +254,16 @@
       "Romaji": "Juu Yon",
       "Meaning": "14",
       "SpriteID": "",
-      "Examples": {
+      "SentencesExamples": {
         "Sentence": [
-          "",
-          ""
+        ],
+        "Kana": [
         ],
         "Kanjis": [
-          "",
-          ""
         ],
         "Romaji": [
-          "",
-          ""
         ],
         "English": [
-          "",
-          ""
         ]
       }
     },
@@ -357,22 +273,16 @@
       "Romaji": "Juu Go",
       "Meaning": "15",
       "SpriteID": "",
-      "Examples": {
+      "SentencesExamples": {
         "Sentence": [
-          "",
-          ""
+        ],
+        "Kana": [
         ],
         "Kanjis": [
-          "",
-          ""
         ],
         "Romaji": [
-          "",
-          ""
         ],
         "English": [
-          "",
-          ""
         ]
       }
     },
@@ -382,22 +292,16 @@
       "Romaji": "Juu Roku",
       "Meaning": "16",
       "SpriteID": "",
-      "Examples": {
+      "SentencesExamples": {
         "Sentence": [
-          "",
-          ""
+        ],
+        "Kana": [
         ],
         "Kanjis": [
-          "",
-          ""
         ],
         "Romaji": [
-          "",
-          ""
         ],
         "English": [
-          "",
-          ""
         ]
       }
     },
@@ -407,22 +311,16 @@
       "Romaji": "Juu Nana",
       "Meaning": "17",
       "SpriteID": "",
-      "Examples": {
+      "SentencesExamples": {
         "Sentence": [
-          "",
-          ""
+        ],
+        "Kana": [
         ],
         "Kanjis": [
-          "",
-          ""
         ],
         "Romaji": [
-          "",
-          ""
         ],
         "English": [
-          "",
-          ""
         ]
       }
     },
@@ -432,22 +330,16 @@
       "Romaji": "Juu Hachi",
       "Meaning": "18",
       "SpriteID": "",
-      "Examples": {
+      "SentencesExamples": {
         "Sentence": [
-          "",
-          ""
+        ],
+        "Kana": [
         ],
         "Kanjis": [
-          "",
-          ""
         ],
         "Romaji": [
-          "",
-          ""
         ],
         "English": [
-          "",
-          ""
         ]
       }
     },
@@ -457,22 +349,16 @@
       "Romaji": "Juu Kyoo",
       "Meaning": "19",
       "SpriteID": "",
-      "Examples": {
+      "SentencesExamples": {
         "Sentence": [
-          "",
-          ""
+        ],
+        "Kana": [
         ],
         "Kanjis": [
-          "",
-          ""
         ],
         "Romaji": [
-          "",
-          ""
         ],
         "English": [
-          "",
-          ""
         ]
       }
     },
@@ -482,22 +368,16 @@
       "Romaji": "Ni Juu",
       "Meaning": "20",
       "SpriteID": "",
-      "Examples": {
+      "SentencesExamples": {
         "Sentence": [
-          "",
-          ""
+        ],
+        "Kana": [
         ],
         "Kanjis": [
-          "",
-          ""
         ],
         "Romaji": [
-          "",
-          ""
         ],
         "English": [
-          "",
-          ""
         ]
       }
     },
@@ -507,22 +387,16 @@
       "Romaji": "Ni Juu San",
       "Meaning": "23",
       "SpriteID": "",
-      "Examples": {
+      "SentencesExamples": {
         "Sentence": [
-          "",
-          ""
+        ],
+        "Kana": [
         ],
         "Kanjis": [
-          "",
-          ""
         ],
         "Romaji": [
-          "",
-          ""
         ],
         "English": [
-          "",
-          ""
         ]
       }
     },
@@ -532,22 +406,16 @@
       "Romaji": "Hyaku",
       "Meaning": "100",
       "SpriteID": "",
-      "Examples": {
+      "SentencesExamples": {
         "Sentence": [
-          "",
-          ""
+        ],
+        "Kana": [
         ],
         "Kanjis": [
-          "",
-          ""
         ],
         "Romaji": [
-          "",
-          ""
         ],
         "English": [
-          "",
-          ""
         ]
       }
     }
