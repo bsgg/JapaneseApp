@@ -228,7 +228,7 @@ namespace JapaneseApp
     public class VocabularyControl : Base
     {
         public enum EMenu { NONE = -1, Category, WordDay, RandomWord };
-        public enum ECategory { NONE = -1, Animals,  Places, Technology, Profesions, Actions, Home, Numbers, Dates, Misc, NUM };
+        public enum ECategory { NONE = -1, Animals,  Places, Technology, Profesions, Actions, Home, Food, Numbers, Dates, Misc, NUM };
 
         [SerializeField] private string m_DataPath = "Data/Vocabulary/";
 

@@ -38,7 +38,24 @@
     {
       "Title": "Introduction",
       "Description": "よろしくね",
-      "Vocabulary": "Yoroshikune. Nice to meet you",
+      "Vocabulary": "(Yoroshikune). Nice to meet you",
+      "SentencesExamples": {
+        "Sentence": [
+        ],
+        "Kana": [
+        ],
+        "Kanjis": [
+        ],
+        "Romaji": [
+        ],
+        "English": [
+        ]
+      }
+    },
+    {
+      "Title": "Introduction",
+      "Description": "どうぞ よろしく お願いします",
+      "Vocabulary": "(Dōzo yoroshiku onegaishimasu) Nice to meet you.",
       "SentencesExamples": {
         "Sentence": [
         ],

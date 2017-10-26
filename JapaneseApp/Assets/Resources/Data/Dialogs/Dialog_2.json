@@ -1,59 +1,42 @@
 ﻿{
-  "Title": "Dialog 1. Are you Ms. Cole?",
-  "Audio": "Dialog_1",
+  "Title": "Dialog 2. How do you do?",
+  "Audio": "Dialog_2",
 
-  "Kanji": [
-    "- A: (ランチ）ミヨンちゃんは どんな人が 好きですか。",
-    "- B: 私は、頭がいい人が好きですね。\n 東さんは？東さんは、どんな女の人がタイプですか？",
-    "- C: え？えっとぉ...。うーん。",
-    "- B: 髪が長い人が 好きですか…それとも、髪が短い人が 好きですか。",
-    "- C: いや、えっと...。うーん。気が強い人が 好きですよ。\n えっと、それから 声が大きい人が 好きです。",
-    "- A: 気が 強い人...声が 大きい人...",
-    "- D: ハッ、ハ、ハックション！うー。風邪かなあ。"
-
+  "Kanji": 
+  [
+	"- A: あの、スミス　さん　です　か。",
+	"- B: はい スミス です",
+	"- A: はじめまして　山田　です。",
+	"- B: はじめまして、 スミス です。どうぞ よろしく お願いします"
   ],
 
-  "Kana": [
-    "- A: (ランチ）ミヨンちゃんは どんな人が 好きですか。",
-    "- B: 私は、頭がいい人が好きですね。\n 東さんは？東さんは、どんな女の人がタイプですか？",
-    "- C: え？えっとぉ...。うーん。",
-    "- B: 髪が長い人が 好きですか…それとも、髪が短い人が 好きですか。",
-    "- C: いや、えっと...。うーん。気が強い人が 好きですよ。\n えっと、それから 声が大きい人が 好きです。",
-    "- A: 気が 強い人...声が 大きい人...",
-    "- D: ハッ、ハ、ハックション！うー。風邪かなあ。"
+  "Kana": 
+  [
+	"- A: あの、スミス　さん　です　か",
+	"- B: はい スミス です",
+	"- A: はじめまして　やまだ　です。",
+	"- B: はじめまして、 スミス です。どうぞ よろしく おねがいします"
   ],
 
   "Romaji": [
-    "- A: (Ranchi)Miyon-chan wa donna hito ga suki desu ka?",
-    "- B: Watashi wa, atama ga ii hito ga suki desu ne.\n Higashi-san wa? Higashi-san wa, donna on'na no hito ga taipu desu ka?",
-    "- C: E? Ettō.... Ūn.",
-    "- B: Kami ga nagai hito ga suki desu ka...Soretomo, kami ga mijikai hito ga suki desu ka.",
-    "- C: Iya, etto.... Ūn. Ki ga tsuyoi hito ga suki desu yo.\nEtto, sore kara koe ga ōkii hito ga suki desu.",
-    "- A: Ki ga tsuyoi hito... Koe ga ōkii hito....",
-    "- D: Hahha, hakkushon! Ū. kaze kanā."
+	"- A: Ano、Sumisu-san desu ka",
+	"- B: Hai, Sumisu desu.",
+	"- A: Hajimemashite. Yamada desu.",
+	"- B: Hajimemashite. Sumisu desu. Dōzo yoroshiku onegaishimasu."
   ],
 
   "English": [
-    "- A: Miyon-chan, what kind of guys do you like?",
-    "- B: I like smart guys. \n What about you, Higashi-san? What kind of person is your type?",
-    "- C: Ah...Uh...",
-    "- D:	Do you like people with long hair? or do you like people with short hair?",
-    "- C:	No, Uh...hmmm...I like strong minded people \n and I like people with loud voices.",
-    "- A:	strong minded people...people with laud voices...",
-    "- D:	I think I have a cold."
-
+	"- A: Excuse me、Are you Mr. Smith?",
+	"- B: Yes, I'm Smith.",
+	"- A: How do you do. I'm Yamada.",
+	"- B: How do you do. I'm Smith. Nice to meet you."
   ],
 
   "Vocabulary": [
-    "- 女の人 (おんなのひと - onna no hito): Woman",
-    "- 髪 (かみ - Kami): Hair",
-    "- 短い (みじかい - Mijikai): Short (i-adjective)",
-    "- 気 (き - Ki):  Feeling, Mood, Spirit, Mind, Temper",
-    "- 強い (つよい - Tsuyoi): Strong,Powerful (i-adjective)",
-    "- 気が強い = strong-minded : 気 (き - ki) Feeling +  が (ga)   +  強い (つよい-tsuyoi) Strong, Powerful",
-    "- 声 (こえ - Koe): Voice",
-    "- 風邪 (かぜ - Kaze): cold (respiratory infection)"
+    "はじめまして (Hajimemashite): How do you do.",
+    "どうぞ (Dōzo): Nice to meet you.",
+    "どうぞ よろしく お願いします (Dōzo yoroshiku onegaishimasu): Nice to meet you. "
   ],
 
-  "Description": "\n- 気 (き - Ki) is used to describe personality. The followings are the common expression.\n- 気 が 弱い  (き　が　よわい - ki ga yowai) = 	Direct translation: Spirit is week, Translation:Timid\n- 気 が 長い (き　が　ながい - ki ga nagai) = Direct translation: Temper is long	patient, Translation: Have a lot of patient "
+  "Description": "To ask a question in Japanese is very easy.\nAll you need to do is to add the particle か (Ka) at the end of a sentence, Example: \n\n - スミス　さん　です　か (Sumisu-san desu ka): Are you Mr. Smith?\n\n -  スミス　です (Sumisu-san desu): I'm Smith"
 }

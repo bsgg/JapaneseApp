@@ -74,7 +74,31 @@
         "English": [
           "Who are you?",
           "Who is she?"
-           
+
+        ]
+      }
+    },
+    {
+      "Word": "今",
+      "Kana": "いま",
+      "Romaji": "Ima",
+      "Meaning": "Now",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "今　何 時 です　か"
+        ],
+        "Kana": [
+          "いま　なん　じ です　か"
+        ],
+        "Kanjis": [
+          "- 今 = Now (いま - Ima)|- 何 = What (なん - Nan)|- 時 = Time (じ - Ji)"
+        ],
+        "Romaji": [
+          "Ima nan ji desu ka"
+        ],
+        "English": [
+          "What time is it, now?"           
         ]
       }
     },

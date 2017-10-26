@@ -34,7 +34,7 @@
       "Kana": "ねこ",
       "Romaji": "Neko",
       "Meaning": "Cat",
-      "SpriteID": "",
+      "SpriteID": "Animals_Cat",
       "SentencesExamples": {
         "Sentence": [
           "猫です",
