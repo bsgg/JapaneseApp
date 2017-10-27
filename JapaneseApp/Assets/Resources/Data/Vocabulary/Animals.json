@@ -100,11 +100,10 @@
           "犬です",
           "犬と猫がいます"
         ],
-		    "Kana":
-		    [
-		      "いぬ です",
+        "Kana": [
+          "いぬ です",
           "いぬ と ねこ が います"
-		    ],
+        ],
         "Kanjis": [
           "- 犬 = Dog (いぬ - Inu)",
           "- 犬 = Dog (いぬ - Inu)|- 猫 = Cat (ねこ - Neko)"
@@ -116,6 +115,30 @@
         "English": [
           "It's a cat",
           "There is a cat and a dog."
+        ]
+      }
+    },
+    {
+      "Word": "キツネ",
+      "Kana": "キツネ",
+      "Romaji": "Kitsune",
+      "Meaning": "Fox",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "雪 の 中 に いる キツネ"
+        ],
+        "Kana": [
+          "ゆき の なか に いる キツネ"
+        ],
+        "Kanjis": [
+          "- 雪 = Snow (ゆき - Yuki)|- 中 = During (なか - Naka)"
+        ],
+        "Romaji": [
+          "Yuki no naka ni iru kitsune."
+        ],
+        "English": [
+          "Fox in the snow"
         ]
       }
     }
