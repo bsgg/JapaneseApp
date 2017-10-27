@@ -539,9 +539,11 @@ namespace JapaneseApp
         {
             if (m_VocabularyUI.Sprite.Visible)
             {
+                m_VocabularyUI.Word = m_SelectedWord.Word;
                 m_VocabularyUI.Sprite.Hide();
             }else
             {
+                m_VocabularyUI.Word = "";
                 m_VocabularyUI.Sprite.Show();
             }            
         }

@@ -5,7 +5,7 @@
       "Kana": "とり",
       "Romaji": "Tori",
       "Meaning": "Bird",
-      "SpriteID": "",
+      "SpriteID": "Bird",
       "SentencesExamples": {
         "Sentence": [
           "鳥がニわいます",
@@ -34,7 +34,7 @@
       "Kana": "ねこ",
       "Romaji": "Neko",
       "Meaning": "Cat",
-      "SpriteID": "Animals_Cat",
+      "SpriteID": "Cat",
       "SentencesExamples": {
         "Sentence": [
           "猫です",
@@ -64,7 +64,7 @@
       "Kana": "かに",
       "Romaji": "Kani",
       "Meaning": "Crab",
-      "SpriteID": "Animals_Crab",
+      "SpriteID": "Crab",
       "SentencesExamples": {
         "Sentence": [
           "蟹がはまべをあるいている",
@@ -94,7 +94,7 @@
       "Kana": "いぬ",
       "Romaji": "Inu",
       "Meaning": "Dog",
-      "SpriteID": "Animals_Dog",
+      "SpriteID": "Dog",
       "SentencesExamples": {
         "Sentence": [
           "犬です",
@@ -123,7 +123,7 @@
       "Kana": "キツネ",
       "Romaji": "Kitsune",
       "Meaning": "Fox",
-      "SpriteID": "",
+      "SpriteID": "Fox",
       "SentencesExamples": {
         "Sentence": [
           "雪 の 中 に いる キツネ"

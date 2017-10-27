@@ -1,6 +1,43 @@
 ﻿{
-	"Data":	
-	[
+  "Data": [
+
+    {
+      "Title": "Particle は (Wa)",
+      "Description": "は is a topic marking particle.",
+      "Vocabulary": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "わたし は なつみ です。",
+          "わたし は ふゆか です。",
+          "わたし は 学生 です。",
+          "わたし は スペイン人 です"
+        ],
+        "Kana": [
+          "わたし は なつみ です。",
+          "わたし は ふゆか です。",
+          "わたし は がくせい です。",
+          "わたし は スペインじん です"
+        ],
+        "Kanjis": [
+          "",
+          "",
+          "- 学生 = Student (がくせい - Gakusei)",
+          "- 人 = Person (じん - Jin)"
+        ],
+        "Romaji": [
+          "Watashi wa Natsumi desu.",
+          "Watashi wa Fuyuka desu.",
+          "Watashi wa gakusei desu.",
+          "Watashi wa Supeingo-Jin desu."
+        ],
+        "English": [
+          "I'm Natsumi.",
+          "I'm Fuyuka.",
+          "I'm a student.",
+          "I'm Spanish."
+        ]
+      }
+    },
     {
       "Title": "Particle の (No)",
       "Description": "No（の）is a possessive particle which indicates ownership or attribution.\n No （の）comes after the noun it modifies, like \"___'s\" in English.",
@@ -38,5 +75,5 @@
         ]
       }
     }
-	]
+  ]
 }

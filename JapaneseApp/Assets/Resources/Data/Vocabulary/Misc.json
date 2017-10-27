@@ -79,6 +79,36 @@
       }
     },
     {
+      "Word": "どこ",
+      "Kana": "どこ",
+      "Romaji": "Doko",
+      "Meaning": "Where",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "いえ　は　どこ　です　か",
+          "そこ　は　どこ　です　か"
+        ],
+        "Kana": [
+          "いえ　は　どこ　です　か",
+           "そこ　は　どこ　です　か"
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romaji": [
+          "Ie wa doko desu ka",
+          "Soko ha doko desu ka"
+        ],
+        "English": [
+          "Where is the house？",
+          "Where is that place?"
+
+        ]
+      }
+    },
+    {
       "Word": "今",
       "Kana": "いま",
       "Romaji": "Ima",
