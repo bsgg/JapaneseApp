@@ -121,10 +121,16 @@ namespace JapaneseApp
 
         public void OnSoundPlay()
         {
+            string debug = "[ExamplesUI.OnSoundPlay]";
+
             if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
             {
+                debug += " Call SpeechFlush, Romaji: " + m_Romaji.text;
+
                 EasyTTSUtil.SpeechFlush(m_Romaji.text);
             }
+
+            AppController.Instance.DebugUI.Log0 = debug;
         }
 
         #endregion Handles

@@ -3,8 +3,8 @@
 	[
     {
       "Title": "Introduction",
-      "Description": "ちがいます",
-      "Vocabulary": "Chigaimasu That´s not right",
+      "Description": "ちがいます(Chigaimasu) = That´s not right",
+      "Vocabulary": "",
       "SentencesExamples": {
         "Sentence": [
         ],
@@ -20,8 +20,8 @@
     },
     {
       "Title": "Introduction",
-      "Description": "ちがいますよ",
-      "Vocabulary": "Chigaimasuyo. That´s not right",
+      "Description": "ちがいますよ (Chigaimasuyo) = That´s not right",
+      "Vocabulary": "",
       "SentencesExamples": {
         "Sentence": [
         ],
@@ -37,8 +37,8 @@
     },
     {
       "Title": "Introduction",
-      "Description": "よろしくね",
-      "Vocabulary": "(Yoroshikune). Nice to meet you",
+      "Description": "よろしくね (Yoroshikune) = Nice to meet you",
+      "Vocabulary": "",
       "SentencesExamples": {
         "Sentence": [
         ],
@@ -54,8 +54,8 @@
     },
     {
       "Title": "Introduction",
-      "Description": "どうぞ よろしく お願いします",
-      "Vocabulary": "(Dōzo yoroshiku onegaishimasu) Nice to meet you.",
+      "Description": "どうぞ よろしく お願いします (Dōzo yoroshiku onegaishimasu) = Nice to meet you.",
+      "Vocabulary": "",
       "SentencesExamples": {
         "Sentence": [
         ],

@@ -27,6 +27,8 @@ namespace JapaneseApp
             get { return m_Description.text; }
         }
 
+        [Header("Icon Buttons")]
+
         [SerializeField]
         private IconBtn m_ExampleBtn;
         public IconBtn ExampleBtn

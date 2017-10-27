@@ -25,27 +25,5 @@ namespace JapaneseApp
             set { m_Categories = value; }
         }
 
-
-        /*public override void Init()
-        {
-            base.Init();
-            if (m_Categories != null)
-            {
-                m_ScrollMenu.InitScroll(m_Categories);
-                m_ScrollMenu.OnItemPress += OnItemPress;
-            }
-
-        }*/
-
-        #region Handles
-
-        
-
-
-        #endregion  Handles
-
-
-
-
     }
 }

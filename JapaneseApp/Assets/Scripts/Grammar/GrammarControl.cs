@@ -68,7 +68,7 @@ namespace JapaneseApp
 
     public class GrammarControl : Base
     {
-        public enum ECategory { NONE = -1, Numbers, Particles, NUM };
+        public enum ECategory { NONE = -1, Numbers, Particles, Expressions_1, NUM };
 
         [SerializeField]
         private string m_DataPath = "Data/Grammar/";
@@ -99,10 +99,10 @@ namespace JapaneseApp
             m_ExampleUI.Hide();
             m_CategoriesUI.Hide();
 
-
+            m_GrammarSet = new List<GrammarData>();
             for (int i = 0; i < (int) ECategory.NUM; i++)
             {
-                m_GrammarSet[i] = new GrammarData();
+                GrammarData grammar = new GrammarData();
 
                 string category = ((ECategory)i).ToString();
 
@@ -111,10 +111,12 @@ namespace JapaneseApp
 
                 if (json != "")
                 {
-                    m_GrammarSet[i] = JsonMapper.ToObject<GrammarData>(json);
-                    m_GrammarSet[i].Name = category;
+                    grammar = JsonMapper.ToObject<GrammarData>(json);
+                    grammar.Name = category;
+                    m_GrammarSet.Add(grammar);
                 }
             }
+
 
             m_SelectedGrammar = 0;
         }
@@ -194,6 +196,7 @@ namespace JapaneseApp
             m_ExampleUI.Hide();
             m_GrammarUI.Show();
             m_CategoriesUI.Hide();
+
         }
 
 
@@ -262,6 +265,17 @@ namespace JapaneseApp
             m_ExampleUI.OnNextExampleEvent += OnNextExample;
             m_ExampleUI.Show();
         }
+
+        public void OnDescriptionBtn()
+        {
+            m_GrammarUI.Description = m_GrammarSet[(int)m_SelectedCategory].Data[m_SelectedGrammar].Description;
+        }
+
+        public void OnVocabularyBtn()
+        {
+            m_GrammarUI.Description = m_GrammarSet[(int)m_SelectedCategory].Data[m_SelectedGrammar].Vocabulary;
+        }
+
 
         public void OnNextGrammarBtn()
         {

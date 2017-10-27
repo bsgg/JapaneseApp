@@ -195,13 +195,10 @@ namespace JapaneseApp
 
             m_SelectedABC = m_ABCSet.Data[x];
 
-            if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+            /*if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
             {
                 EasyTTSUtil.SpeechFlush(m_ABCSet.RomanjiChar[x, y]);
-            }
-
-
-
+            }*/
             
             //SetExample(0);
             //m_ABCCharUI.ExampleUI.Show();

@@ -28,6 +28,19 @@ namespace JapaneseApp
         }
         #endregion Instance
 
+        [Header("Debug")]
+        [SerializeField]
+        private bool m_EnableDebug = false;
+
+        [SerializeField]
+        private DebugUI m_DebugUI;
+        public DebugUI DebugUI
+        {
+            get { return m_DebugUI; }
+        }
+
+
+        [Header("Controls")]
         [SerializeField]
         private VocabularyControl m_VocabularyControl;
 
@@ -71,6 +84,14 @@ namespace JapaneseApp
 
 
             ShowMainMenu();
+
+            if (m_EnableDebug)
+            {
+                m_DebugUI.Show();
+            }else
+            {
+                m_DebugUI.Hide();
+            }
 
         }
 

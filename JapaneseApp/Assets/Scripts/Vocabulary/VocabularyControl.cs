@@ -516,10 +516,17 @@ namespace JapaneseApp
 
         public void OnSoundBtn()
         {
+            string debug = "[VocabularyControl.OnSoundBtn]";
+
+            if (m_SelectedWord == null) return;
+
             if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
             {
-                EasyTTSUtil.SpeechFlush(m_SelectedWord.Kana);
+                debug += " Call SpeechFlush, Romaji: " + m_SelectedWord.Romaji;
+                EasyTTSUtil.SpeechFlush(m_SelectedWord.Romaji);
             }
+
+            AppController.Instance.DebugUI.Log0 = debug;
         }
 
         public void OnExamplesBtn()
