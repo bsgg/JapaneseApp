@@ -94,7 +94,7 @@
       "Kana": "いぬ",
       "Romaji": "Inu",
       "Meaning": "Dog",
-      "SpriteID": "",
+      "SpriteID": "Animals_Dog",
       "SentencesExamples": {
         "Sentence": [
           "犬です",
