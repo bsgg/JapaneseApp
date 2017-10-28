@@ -1,0 +1,131 @@
+{
+	"Data":	
+	[
+    {
+      "Word": "おにい",
+      "Kana": "おにい",
+      "Romaji": "Onii",
+      "Meaning": "Brother",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "これ　の　おにさん　は　中学生　です"
+        ],
+        "Kana": [
+          "これ　の　おにさん　は　ちゅうがくせい　です"
+        ],
+        "Kanjis": [
+          "- 中学生  = Junior High school student (ちゅうがくせい - chūgakusei)"
+        ],
+        "Romaji": [
+          "Kore no oniisan wa chūgakusei desu."
+        ],
+        "English": [
+          "His older brother is a junior high school student"
+        ]
+      }
+    },
+    {
+      "Word": "きようだい",
+      "Kana": "きようだい",
+      "Romaji": "Kyōdai",
+      "Meaning": "Brothers, Siblings",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "かれら　は　きようだい　です　か"
+        ],
+        "Kana": [
+          "かれら　は　きようだい　です　か"
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          "Korera wa Kyōdai desu ka"
+        ],
+        "English": [
+          "Are they brothers?"
+        ]
+      }
+    },
+    {
+      "Word": "おねえ",
+      "Kana": "おねえ",
+      "Romaji": "Onē",
+      "Meaning": "Older sister",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "これ　の　おねえさん　は　大学生　です"
+        ],
+        "Kana": [
+          "これ　の　おねえさん　は　だいがくせい　です"
+        ],
+        "Kanjis": [
+          "- 大学生  = College student (だいがくせい - daigakusei)"
+        ],
+        "Romaji": [
+          "Kore no onēsan wa daigakusei desu."
+        ],
+        "English": [
+          "His older sister is a college student"
+        ]
+      }
+    },
+    {
+      "Word": "おとうと",
+      "Kana": "おとうと",
+      "Romaji": "Otōto",
+      "Meaning": "Younger Brother",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "わたし　は　かれ　の　おとうと　です"
+        ],
+        "Kana": [
+          "わたし　は　かれ　の　おとうと　です"
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          "Watashi wa kore no otōto desu"
+        ],
+        "English": [
+          "I'm his youger brother"
+        ]
+      }
+    },
+    {
+      "Word": "いもうと",
+      "Kana": "いもうと",
+      "Romaji": "Imōto",
+      "Meaning": "Younger Sister",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "わたし　は　かれ　の　いもうと　です",
+          "わたし　は　かのじょ　の　いもうと　です"
+        ],
+        "Kana": [
+          "わたし　は　かれ　の　いもうと　です",
+          "わたし　は　かのじょ　の　いもうと　です"
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romaji": [
+          "Watashi wa kore no imōto desu",
+          "Watashi wa kanoyo no imōto desu"
+
+        ],
+        "English": [
+          "I'm his youger sister",
+          "I'm here younger sister."
+        ]
+      }
+    }
+	]
+}

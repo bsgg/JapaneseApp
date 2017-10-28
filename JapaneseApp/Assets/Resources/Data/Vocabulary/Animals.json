@@ -141,6 +141,35 @@
           "Fox in the snow"
         ]
       }
+    },
+    {
+      "Word": "子羊",
+      "Kana": "こひつじ",
+      "Romaji": "Kohitsuji",
+      "Meaning": "Lamb",
+      "SpriteID": "Lamb",
+      "SentencesExamples": {
+        "Sentence": [
+          "子羊 が 食べて いる。",
+          "小さい 子羊"
+        ],
+        "Kana": [
+          "こひつじ　が　たべて　いる",
+          "ちいさい こひつじ"
+        ],
+        "Kanjis": [
+          "- 子羊 = Lamb (こひつじ - Kohitsuji)|- 食べ = Eat (たべ - Tabe)",
+          "- 小さい = Small (ちいさい - Chiisai)|- 子羊 = Lamb (こひつじ - Kohitsuji)"
+        ],
+        "Romaji": [
+          "Kohitsuji ga tabete iru.",
+          "Chiisai  Kohitsuji"
+        ],
+        "English": [
+          "The lambs are eating.",
+          "Little lamb"
+        ]
+      }
     }
   ]
 }
