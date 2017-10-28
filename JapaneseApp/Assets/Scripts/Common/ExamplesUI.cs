@@ -7,9 +7,9 @@ using Utility;
 namespace JapaneseApp
 {
     public class ExamplesUI : UIBase
-    {
-        public delegate void ExampleAction();
-        public ExampleAction OnNextExampleEvent;
+    { 
+        public delegate void ExampleAction(AppController.EMenu id);
+        public ExampleAction OnMenuItemEvent;
 
         [Header("ExamplesU Text")]
         [SerializeField]
@@ -18,33 +18,6 @@ namespace JapaneseApp
         {
             set { m_Sentence.text = value; }
             get { return m_Sentence.text; }
-        }
-
-        // Sentence with kanji symbols
-        private string m_KanjiExample;
-        public string KanjiExample
-        {
-            set { m_KanjiExample = value; }
-            get { return m_KanjiExample; }
-        }
-
-        // Sentence with only hiragana symbols
-        private string m_KanaExample;
-        public string KanaExample
-        {
-            set { m_KanaExample = value; }
-            get { return m_KanaExample; }
-        }
-
-        private bool m_ToggleToKanjiExample = true;
-
-
-        [SerializeField]
-        private Text m_Romaji;
-        public string Romaji
-        {
-            set { m_Romaji.text = value; }
-            get { return m_Romaji.text; }
         }
 
         [SerializeField]
@@ -56,11 +29,11 @@ namespace JapaneseApp
         }
 
         [SerializeField]
-        private Text m_Kanji;
-        public string Kanji
+        private Text m_Kanjis;
+        public string Kanjis
         {
-            set { m_Kanji.text = value; }
-            get { return m_Kanji.text; }
+            set { m_Kanjis.text = value; }
+            get { return m_Kanjis.text; }
         }
 
         [Header("ExamplesU Buttons")]
@@ -72,66 +45,37 @@ namespace JapaneseApp
         }
 
         [SerializeField]
-        private IconBtn m_SoundBtn;
-        public IconBtn SoundBtn
+        private IconBtn m_KanaBtn;
+        public IconBtn KanaBtn
         {
-            get { return m_SoundBtn; }
+            get { return m_KanaBtn; }
         }
 
-        public override void Show()
+        [SerializeField]
+        private IconBtn m_KajiBtn;
+        public IconBtn KajiBtn
         {
-            base.Show();
-
-            m_Sentence.text = m_KanjiExample;
-            m_ToggleToKanjiExample = false;
+            get { return m_KajiBtn; }
         }
 
-        public override void Hide()
+        [SerializeField]
+        private IconBtn m_RomajiBtn;
+        public IconBtn RomajiBtn
         {
-            base.Hide();
-            m_Sentence.text = m_KanjiExample;
-            m_ToggleToKanjiExample = false;
+            get { return m_RomajiBtn; }
         }
+        
 
-        #region Handles
+        #region Handles        
 
-        public void OnSentencePress()
+        public void OnMenuItem(int id)
         {
-            if (string.IsNullOrEmpty(m_KanaExample) || string.IsNullOrEmpty(m_KanjiExample)) return;
-
-            if (m_ToggleToKanjiExample)
+            if (OnMenuItemEvent != null)
             {
-                m_Sentence.text = m_KanjiExample;
-                m_ToggleToKanjiExample = false;
-
-            } else
-            {
-                m_Sentence.text = m_KanaExample;
-                m_ToggleToKanjiExample = true;
+                OnMenuItemEvent((AppController.EMenu)id);
             }
         }
 
-        public void OnNextExamplePress()
-        {
-            if (OnNextExampleEvent != null)
-            {
-                OnNextExampleEvent();
-            }
-        }
-
-        public void OnSoundPlay()
-        {
-            string debug = "[ExamplesUI.OnSoundPlay]";
-
-            if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
-            {
-                debug += " Call SpeechFlush, Romaji: " + m_Romaji.text;
-
-                EasyTTSUtil.SpeechFlush(m_Romaji.text);
-            }
-
-            AppController.Instance.DebugUI.Log0 = debug;
-        }
 
         #endregion Handles
 

@@ -297,7 +297,7 @@ namespace JapaneseApp
             // If example is visible, hide it, otherwise check type menu
             if (m_ExamplesUI.Visible)
             {
-                m_ExamplesUI.OnNextExampleEvent -= OnNextExample;
+                m_ExamplesUI.OnMenuItemEvent -= OnExampleMenuItem;
                 m_ExamplesUI.Hide();
             }else
             {
@@ -504,11 +504,8 @@ namespace JapaneseApp
         {
             // Set sentence
             m_ExamplesUI.Sentence = m_SelectedWord.SentencesExamples.GetSentence(index);
-            m_ExamplesUI.KanjiExample = m_SelectedWord.SentencesExamples.GetSentence(index);
-            m_ExamplesUI.KanaExample = m_SelectedWord.SentencesExamples.GetKana(index);
-            m_ExamplesUI.Romaji = m_SelectedWord.SentencesExamples.GetRomanji(index);
             m_ExamplesUI.English = m_SelectedWord.SentencesExamples.GetEnglish(index);
-            m_ExamplesUI.Kanji = m_SelectedWord.SentencesExamples.GetKanjis(index);            
+            m_ExamplesUI.Kanjis = m_SelectedWord.SentencesExamples.GetKanjis(index);
         }
         #endregion SetData
 
@@ -531,7 +528,7 @@ namespace JapaneseApp
 
         public void OnExamplesBtn()
         {
-            m_ExamplesUI.OnNextExampleEvent += OnNextExample;
+            m_ExamplesUI.OnMenuItemEvent += OnExampleMenuItem;
             m_ExamplesUI.Show();
         }
 
@@ -564,9 +561,9 @@ namespace JapaneseApp
             }
         }
 
-        public void OnNextExample()
+        private void OnExampleMenuItem(AppController.EMenu id)
         {
-            Debug.Log("<color=cyan> VOCABULARY CONTROL OnNextExample </color>");
+            Debug.Log("<color=cyan> [Vocabulary.OnExampleMenuItem] id: " + id.ToString() + "</color>");
 
             if (m_SelectedWord == null)
             {
@@ -574,13 +571,26 @@ namespace JapaneseApp
                 return;
             }
 
+            switch (id)
+            {
+                case AppController.EMenu.NEXT:
+                    // Set next sentence
+                    m_ICurrentExample++;
+                    m_ICurrentExample %= m_SelectedWord.SentencesExamples.Sentence.Count;
 
-            // Set next sentence
-            m_ICurrentExample++;
-            m_ICurrentExample %= m_SelectedWord.SentencesExamples.Sentence.Count;
+                    SetExample(m_ICurrentExample);
+                break;
 
-            SetExample(m_ICurrentExample);
-
+                case AppController.EMenu.KANJI:
+                    m_ExamplesUI.Sentence = m_SelectedWord.SentencesExamples.Sentence[m_ICurrentExample];
+                    break;
+                case AppController.EMenu.KANA:
+                    m_ExamplesUI.Sentence = m_SelectedWord.SentencesExamples.Kana[m_ICurrentExample];
+                    break;
+                case AppController.EMenu.ROMAJI:
+                    m_ExamplesUI.Sentence = m_SelectedWord.SentencesExamples.Romaji[m_ICurrentExample];
+                    break;
+            }
         }
 
         #endregion MenuButtons

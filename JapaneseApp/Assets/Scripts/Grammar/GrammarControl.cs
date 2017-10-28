@@ -143,7 +143,7 @@ namespace JapaneseApp
             // If example is visible, hide it, otherwise check type menu
             if (m_ExampleUI.Visible)
             {
-                m_ExampleUI.OnNextExampleEvent -= OnNextExample;
+                m_ExampleUI.OnMenuItemEvent -= OnExampleMenuItem;
                 m_ExampleUI.Hide();
             }
             else if (m_CategoriesUI.Visible)
@@ -250,19 +250,15 @@ namespace JapaneseApp
 
             // Set sentence
             m_ExampleUI.Sentence = grammar.SentencesExamples.GetSentence(index);            
-            m_ExampleUI.Romaji = grammar.SentencesExamples.GetRomanji(index);
             m_ExampleUI.English = grammar.SentencesExamples.GetEnglish(index);
-            m_ExampleUI.Kanji = grammar.SentencesExamples.GetKanjis(index);
-
-            m_ExampleUI.KanjiExample = grammar.SentencesExamples.GetSentence(index);
-            m_ExampleUI.KanaExample = grammar.SentencesExamples.GetKana(index);
+            m_ExampleUI.Kanjis = grammar.SentencesExamples.GetKanjis(index);
         }
 
         #region MenuButtons
 
         public void OnExamplesBtn()
         {
-            m_ExampleUI.OnNextExampleEvent += OnNextExample;
+            m_ExampleUI.OnMenuItemEvent += OnExampleMenuItem;
             m_ExampleUI.Show();
         }
 
@@ -286,14 +282,30 @@ namespace JapaneseApp
             SetGrammarByCategory();
         }
 
-        public void OnNextExample()
+        private void OnExampleMenuItem(AppController.EMenu id)
         {
-            Debug.Log("<color=cyan> grammar CONTROL OnNextExample </color>");
-            // Set next sentence
-            m_SelectedExample ++;
-            m_SelectedExample %= m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar].SentencesExamples.Sentence.Count;
+            Debug.Log("<color=cyan> [GrammarControl.OnExampleMenuItem] id: " + id.ToString() + "</color>");
 
-            SetExample(m_SelectedExample);
+            switch (id)
+            {
+                case AppController.EMenu.NEXT:
+                    // Set next sentence
+                    m_SelectedExample++;
+                    m_SelectedExample %= m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar].SentencesExamples.Sentence.Count;
+
+                    SetExample(m_SelectedExample);
+                break;
+
+                case AppController.EMenu.KANJI:
+                    m_ExampleUI.Sentence = m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar].SentencesExamples.Sentence[m_SelectedExample];
+                break;
+                case AppController.EMenu.KANA:
+                    m_ExampleUI.Sentence = m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar].SentencesExamples.Kana[m_SelectedExample];
+                    break;
+                case AppController.EMenu.ROMAJI:
+                    m_ExampleUI.Sentence = m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar].SentencesExamples.Romaji[m_SelectedExample];
+                break;
+            }
         }
 
         #endregion MenuButtons

@@ -47,31 +47,36 @@
           "コンピューター の パスワード",
           "私の会社",
           "私の姉",
-          "私の兄"
+          "私の兄",
+          "東京　の　お土産"
         ],
         "Kana": [
           "コンピューター の パスワード",
           "けいたい の かいしゃ",
           "けいたい の あね",
-          "けいたい の あに"
+          "けいたい の あに",
+          "ときょ　の　おみやげ"
         ],
         "Kanjis": [
           "",
           "- 私 = Me/I (けいたい - Watashi)|- 会社 = Company (かいしゃ - Kaisha) [1. 会 = Meeting (かい - Kai), 2. 社 = Company (しゃ - sha)]",
           "- 私 = Me/I (けいたい - Watashi)|- 姉 = Siter (あね - Ane)",
-          "- 私 = Me/I (けいたい - Watashi)|- 兄 = Brother (あに - Ani)"
+          "- 私 = Me/I (けいたい - Watashi)|- 兄 = Brother (あに - Ani)",
+          "- 東京 = Tokyo (ときょ - Tokyo)|- お土産 = Souvenier (おみやげ - Omiyage)"
         ],
         "Romaji": [
           "konpyūtā no pasuwādo",
           "watashi no kaisha",
           "Watashi no ane",
-          "Watashi no ani"
+          "Watashi no ani",
+          "Tokyo no omiyage"
         ],
         "English": [
           "Computer's password, Password for the computer",
           "My company",
           "My sister",
-          "My brother"
+          "My brother",
+          "A souvenier from Tokyo"
         ]
       }
     }

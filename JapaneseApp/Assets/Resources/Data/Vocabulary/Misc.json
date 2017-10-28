@@ -155,6 +155,32 @@
           "What's your name?"
         ]
       }
+    },
+    {
+      "Word": "お土産",
+      "Kana": "おみやげ",
+      "Romaji": "Omiyage",
+      "Meaning": "Souvenier, Present",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "それ　は　タイ　の　お土産　です。",
+          "それ　は　お土産　です か。"
+        ],
+        "Kana": [
+          "それ　は　タイ　の　おみやげ　です。",
+          "それ　は　おみやげ　です か。"
+        ],
+        "Kanjis": [
+          " - お土産 = Souvenier (おみやげ - Omiyage)"
+        ],
+        "Romaji": [
+          "Sore wa Tai no omiyage desu."
+        ],
+        "English": [
+          "It's a souvenier from Tailand"
+        ]
+      }
     }
   ]
 }
