@@ -1,0 +1,47 @@
+﻿{
+  "Title": "Dialog 3. Where is the toilet?",
+  "Audio": "Dialog_3",
+
+  "Kanji": 
+  [
+    "- さくら: ここ　は　教室　です。",
+    "- アンナ: わあ、広い",
+    "- さくら: あそこ　は　図書館",
+    "- アンナ:トイレ　は　どこ　です　か",
+    "- さくら: すぐ　そこ　です"
+  ],
+
+  "Kana": 
+  [
+    "- さくら: ここ　は　きようしつ　です。",
+    "- アンナ: わあ、ひろい",
+    "- さくら: あそこ　は　としょかん",
+    "- アンナ:トイレ　は　どこ　です　か",
+    "- さくら: すぐ　そこ　です"
+  ],
+
+  "Romaji": [
+    "- Sakura: Koko wa kyōshitsu desu.",
+    "- Anna: Wā, Hiroi",
+    "- Sakura: Asoko wa toshokan",
+    "- Anna: Toire wa doko desu ka",
+    "- Sakura: Sugu soko desu."
+  ],
+
+  "English": [
+    "- Sakura: Here is the classroom.",
+    "- Anna: Oh. It's spacious",
+    "- Sakura: Over there is the library.",
+    "- Anna: Where is the toilet?",
+    "- Sakura: Just over there."
+  ],
+
+  "Vocabulary": [
+    "- 教室 = Classroom (きようしつ - kyōshitsu)",
+    "- 広い = Spacious, Wide (ひろい - Hiroi)",
+    "- 図書館 = Library (としょかん - Toshokan)",
+    "- トイレ: Toilet (トイレ - Toire)"
+  ],
+
+  "Description": "Doko desu ka (Where is...) is a phrase that allows you to ask where something is, either a place or thing. Examples: \n - トイレ　は　どこ　です　か = Where is the bathroom? (Toire wa doko desu ka?)"
+}
