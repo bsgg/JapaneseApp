@@ -1,6 +1,35 @@
 {
-	"Data":	
-	[
+  "Data": [
+
+    {
+      "Word": "かぞく",
+      "Kana": "かぞく",
+      "Romaji": "Kazoku",
+      "Meaning": "Family",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "かぞく　は　います　か",
+          "いいえ、　かぞく　は　いません"
+        ],
+        "Kana": [
+          "かぞく　は　います　か",
+          "いいえ、　かぞく　は　いません"
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romaji": [
+          "Kazoku wa imasu ka",
+          "Iie, Kazoku wa imasen"
+        ],
+        "English": [
+          "Do you have a family?",
+          "No, I don't have a family."
+        ]
+      }
+    },
     {
       "Word": "おにい",
       "Kana": "おにい",
@@ -49,6 +78,103 @@
         ]
       }
     },
+
+    {
+      "Word": "父",
+      "Kana": "ちち",
+      "Romaji": "Chichi",
+      "Meaning": "Father",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          ""
+        ],
+        "Kana": [
+          ""
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          ""
+        ],
+        "English": [
+          ""
+        ]
+      }
+    },
+    {
+      "Word": "お父さん",
+      "Kana": "おとうさん",
+      "Romaji": "Otōsan",
+      "Meaning": "Dad, Father",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "お父さん　は　どこ　です　か"
+        ],
+        "Kana": [
+          "おとうさん　は　どこ　です　か"
+        ],
+        "Kanjis": [
+          "- お父 = Dad (おとう - Otō)"
+        ],
+        "Romaji": [
+          "Otōsan doko desu ka"
+        ],
+        "English": [
+          "Where is father?"
+        ]
+      }
+    },
+    {
+      "Word": "お母さん",
+      "Kana": "おかあさん",
+      "Romaji": "Okāsan",
+      "Meaning": "Mom, Mother",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          ""
+        ],
+        "Kana": [
+          ""
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          ""
+        ],
+        "English": [
+          ""
+        ]
+      }
+    },
+    {
+      "Word": "母",
+      "Kana": "はは",
+      "Romaji": "Haha",
+      "Meaning": "Mother",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          ""
+        ],
+        "Kana": [
+          ""
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          ""
+        ],
+        "English": [
+          ""
+        ]
+      }
+    },
     {
       "Word": "おねえ",
       "Kana": "おねえ",
@@ -70,6 +196,30 @@
         ],
         "English": [
           "His older sister is a college student"
+        ]
+      }
+    },
+    {
+      "Word": "ご両親",
+      "Kana": "ごりようしん",
+      "Romaji": "Goryōshin",
+      "Meaning": "Parents",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "ご両親　は　どこ　ですか"
+        ],
+        "Kana": [
+          "ごりようしん　は　どこ　ですか"
+        ],
+        "Kanjis": [
+          "- ご両親 = Parents (ごりようしん - Goryōshin)"
+        ],
+        "Romaji": [
+          "Gori yō shin wa doko desu ka"
+        ],
+        "English": [
+          "Where are your parents?"
         ]
       }
     },
@@ -127,5 +277,5 @@
         ]
       }
     }
-	]
+  ]
 }

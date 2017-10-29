@@ -1,0 +1,93 @@
+﻿{
+	"Data":	
+	[
+    {
+      "Title": "Home",
+      "Description": "ただいま (Tadaima) = I'm home, I'm back",
+      "Vocabulary": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "ただいま、お姉さん"
+        ],
+        "Kana": [
+          "ただいま、おねえさん"
+        ],
+        "Kanjis": [
+          "- お姉 = sister (おねえ - onē)"
+        ],
+        "Romaji": [
+          "Tadaima, onēsan"
+        ],
+        "English": [
+          "I'm back, older sister"
+        ]
+      }
+    },
+    {
+      "Title": "Home",
+      "Description": "おかえりなさい (Okaerinasai) = Welcome back",
+      "Vocabulary": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "お兄さん、おおかえりなさい"
+        ],
+        "Kana": [
+          "おにいさん、おねえさん"
+        ],
+        "Kanjis": [
+          "- お兄 = brother (おにい - Onī)"
+        ],
+        "Romaji": [
+          "Okaerinasai, Onīsan"
+        ],
+        "English": [
+          "Big brother, welcome back"
+        ]
+      }
+    },
+    {
+      "Title": "Home",
+      "Description": "おかえりなさい (Iterasai) = Have a good day",
+      "Vocabulary": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "お兄さん、お父さん"
+        ],
+        "Kana": [
+          "おにいさん、おとうさん"
+        ],
+        "Kanjis": [
+          "- お父さん = Father (おとうさん - Otōsan)"
+        ],
+        "Romaji": [
+          "Okaerinasai, Otōsan"
+        ],
+        "English": [
+          "Have a good day/Have fun, Father"
+        ]
+      }
+    },
+    {
+      "Title": "Home",
+      "Description": "行ってきます (いってきます - Ittekimasu) = I'm off, I'm leaving",
+      "Vocabulary": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "お母さん, 行ってきます"
+        ],
+        "Kana": [
+          "おかあさん、いってきます"
+        ],
+        "Kanjis": [
+          "- 行く = Go (いく -Iku)| - お母さん = Mom (おかあさん - Okāsan)"
+        ],
+        "Romaji": [
+          "Okāsan, ittekimasu"
+        ],
+        "English": [
+          "Mom, I'm off"
+        ]
+      }
+    }
+	]
+}
