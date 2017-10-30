@@ -1,0 +1,53 @@
+﻿{
+  "Title": "Dialog 4. In the office",
+  "Audio": "Dialog_4",
+
+  "Kanji": 
+  [
+    "- A: おはようございます。私は、キム ミ ヨンです。 : インターンです。どうぞよろしくおねがいします。",
+    "- B: あ、おはようございます。キム・・・ん？えっと・・・。",
+    "- A: ミ ヨンです。",
+    "- B: ミ ヨンさんですか",
+    "- A: はい。ミ ヨンです。",
+    "- B: えっと、東春人です。ひがしです。 ミ ヨンさんは、アメリカ人ですか",
+    "- A: はい、そうです。"
+  ],
+
+  "Kana": 
+  [
+    "- A: おはようございます。わたしは、キム ミ ヨンです。 : インターンです。どうぞよろしくおねがいします。",
+    "- B: あ、おはようございます。キム・・・ん？えっと・・・。",
+    "- A: ミ ヨンです。",
+    "- B: ミ ヨンさんですか",
+    "- A: はい。ミ ヨンです。",
+    "- B: えっと、ひがしはるひとです。ひがしです。ミ ヨンさんは、アメリカじんですか",
+    "- A: はい、そうです。"
+  ],
+
+  "Romaji": [
+    "- A: Ohayō gozaimasu. Watashi wa, Kimu Mi Yon desu. Intān desu.Dōzo yoroshiku onegaisimasu",
+    "- B: A, Ohayō gozaimasu. Kimu... n? Etto...",
+    "- A: Mi Yon desu",
+    "- B: Mi Yon-San desu ka",
+    "- A: Hai. Mi Yon desu.",
+    "- B: Etto, Higashi Haruhito desu. Higashi desu. Mi Yon san wa, Amerika-jin desu ka",
+    "- A: Hai, sō desu."
+  ],
+
+  "English": [
+    "- A: Good morning. I'm Kimu Mi Yeon. I'm an inter. It's very nice to meet you.",
+    "- B: Oh. Good morning. Kim M... ummm...",
+    "- A: It's Mi Yeon.",
+    "- B: Mi Yeon?",
+    "- A: Yes, Mi YYn.",
+    "- B: Uh...I'm Haruhito Higashi. Call me Higashi. Are you American, Mi Yeon?",
+    "- A: Yes, I am."
+  ],
+
+  "Vocabulary": [
+    "- インターン = Inter, (Intership) (インターン - Intān)",
+    "- アメリカ人 = American Nationality (あめりかじん - Amerika-jin)"
+  ],
+
+  "Description": "Nationalities: To form a nationality we need the country + 人 Kanji (Jin = Person). Example:\n - アメリカ人 = American (アメリカじん - Amerika-jin\n - スペイン語人 = Spanish (スペインごじん - Supeingo-jin)"
+}
