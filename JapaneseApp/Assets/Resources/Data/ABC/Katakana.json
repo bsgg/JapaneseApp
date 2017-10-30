@@ -43,9 +43,27 @@
       "Kana": "サ_シ_ス_セ_ソ",
       "Romaji": "Sa_Shi_Su_Se_So",
       "SentencesExamples": {
-        "Sentence":[],
-        "Romaji":[],
-        "English":[]
+        "Sentence": [ ],
+        "Romaji": [ ],
+        "English": [ ]
+      }
+    },
+    {
+      "Kana": "ザ_ジ_ズ_ゼ_ゾ",
+      "Romaji": "Za_Ji_Zu_Ze_Zo",
+      "SentencesExamples": {
+        "Sentence": [
+          "アジア",
+          "ザーザー"
+        ],
+        "Romaji": [
+          "Ajia",
+          "ZaaZaa"
+        ],
+        "English": [
+          "Asia",
+          "The sound of heavy rain"
+        ]
       }    
     }
 	]

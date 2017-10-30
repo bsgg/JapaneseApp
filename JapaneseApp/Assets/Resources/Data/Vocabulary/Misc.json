@@ -181,6 +181,35 @@
           "It's a souvenier from Tailand"
         ]
       }
+    },
+    {
+      "Word": "円",
+      "Kana": "えん",
+      "Romaji": "Yen",
+      "Meaning": "Yen",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "一万千　円　です",
+          "百 円 です"
+        ],
+        "Kana": [
+          "いちまんせん　えん　です",
+          "ひゅく えん です"
+        ],
+        "Kanjis": [
+          " - 一 = One (いち - Ichi)|- 万 = Million (まん - Man)|- 千 = Thousand (せん - Sen)|- 円 = Yen (えん - En)",
+          " - 百 = 100 (ひゅく - Hyaku)|- 円 = Yen (えん - En)"
+        ],
+        "Romaji": [
+          "Ichi man sen yen desu",
+          "Hyaku Yen desu"
+        ],
+        "English": [
+          "It is 11000 yens",
+          "It is 100 yens"
+        ]
+      }
     }
   ]
 }
