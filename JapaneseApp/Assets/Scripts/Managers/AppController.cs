@@ -68,12 +68,15 @@ namespace JapaneseApp
         
         void Start ()
         {
+            PlayerPrefController m_PlayerPrefs = new PlayerPrefController();
+            m_PlayerPrefs.CheckDayWordDate();
+
             // Initialize EasyTTUTIL
-            if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+            /*if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
             {
                 
                 EasyTTSUtil.Initialize(EasyTTSUtil.Japan);
-            }
+            }*/
 
             m_VocabularyControl.Init();
 
