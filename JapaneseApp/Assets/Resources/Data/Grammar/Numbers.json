@@ -26,17 +26,66 @@
       "Vocabulary": "",
       "SentencesExamples": {
         "Sentence": [
-          
+
         ],
         "Kana": [
-         
+
         ],
         "Romaji": [
-          
+
         ],
         "English": [
-          
+
         ]
+      }
+    },
+    {
+      "Title": "Numbers 100 - 900",
+      "Description": "Number 100 = 百 (ひゅく - Hyaku). \n To form any number from 100 to 900. We put the number in front of 百 = Number + 百. \n- 100: 百 (ひゅく - Hyaku)\n- 200: ニ百 (に　ひゅく - Ni Hyaku)\n- 300: 三百 (さん　ひゅく - San Byaku, This case is an exception)\n - 600: 六百 (ろく　ひゅく - Roppyaku, This case is an exception)\n - 800: 八百 (はち　ひゅく - happiyaku, This case is an exception)",
+      "Vocabulary": "",
+      "SentencesExamples": {
+        "Sentence": [ ],
+        "Kana": [ ],
+        "Romaji": [ ],
+        "English": [ ]
+      }
+    },
+    {
+      "Title": "Numbers 1000 - 9000",
+      "Description": "Number 1000 = 千 (せん - Sen). \n To form any number from 1000 to 9000. We put the number in front of 千 = Number + 千.\n- 1000: 千 (せん - Sen)\n- 3000: 三千 (さん　せん - San Zen, Exception)\n- 4000: 四千 (よん　ひゅく - Yon Sen)\n- 6000: 六千 (ろく　ひゅく - Roku Sen)\n- 8000: 八千 (はち　ひゅく - Hassen, This is an exceiption)",
+      "Vocabulary": "",
+      "SentencesExamples": {
+        "Sentence": [ ],
+        "Kana": [ ],
+        "Romaji": [ ],
+        "English": [ ]
+      }
+    },
+    {
+      "Title": "Number 10000",
+      "Description": "Number 10000 = 万（まん - Man).\n To form numbers from 10000 the rule is the same, the number goes in front of 万 = Number + 万.\n- 10000: 一万  (いち　まん - Ichiman)",
+      "Vocabulary": "",
+      "SentencesExamples": {
+        "Sentence": [],
+        "Kana": [],
+        "Romaji": [],
+        "English": []
+      }
+    },
+    {
+      "Title": "Rule to form numbers",
+      "Description": "The rule to form any number is split that whole number:\n- 11 (10 + 1) = 十一\n (じゅう いち - Jū Ichi)\n\n- 21 (2 + 10 + 1) = ニ十一 \n (に　じゅう いち - Ni Jū Ichi)\n- 121 (100 + 2 + 10 + 1) = 百ニ十一 (ひゅく　に　じゅう いち -　Hyaku Ni Jū Ichi)\n- 321 (3 + 100 + 2 + 10 + 1) = 三百ニ十一 (さん　ひゅく　に　じゅう いち -　San byaku Ni Jū Ichi)\n- 1321 (1000 + 3 + 100 + 2 + 10 + 1) = 千三百ニ十一 (せん　さん　ひゅく　に　じゅう いち -　Sen San byaku Ni Jū Ichi)\n- 4321 (4 + 1000 + 3 + 100 + 2 + 10 + 1) = 四千三百ニ十一 (よん　せん　さん　ひゅく　に　じゅう いち -　Yon Sen San byaku Ni Jū Ichi)",
+      "Vocabulary": "",
+      "SentencesExamples": {
+        "Sentence": [
+        ],
+        "Kana": [
+        ],
+        "Romaji": 
+        [
+        ],
+          "English":
+          []
       }
     }
 	]

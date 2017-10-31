@@ -31,55 +31,6 @@
       }
     },
     {
-      "Word": "おにい",
-      "Kana": "おにい",
-      "Romaji": "Onii",
-      "Meaning": "Brother",
-      "SpriteID": "",
-      "SentencesExamples": {
-        "Sentence": [
-          "これ　の　おにさん　は　中学生　です"
-        ],
-        "Kana": [
-          "これ　の　おにさん　は　ちゅうがくせい　です"
-        ],
-        "Kanjis": [
-          "- 中学生  = Junior High school student (ちゅうがくせい - chūgakusei)"
-        ],
-        "Romaji": [
-          "Kore no oniisan wa chūgakusei desu."
-        ],
-        "English": [
-          "His older brother is a junior high school student"
-        ]
-      }
-    },
-    {
-      "Word": "きようだい",
-      "Kana": "きようだい",
-      "Romaji": "Kyōdai",
-      "Meaning": "Brothers, Siblings",
-      "SpriteID": "",
-      "SentencesExamples": {
-        "Sentence": [
-          "かれら　は　きようだい　です　か"
-        ],
-        "Kana": [
-          "かれら　は　きようだい　です　か"
-        ],
-        "Kanjis": [
-          ""
-        ],
-        "Romaji": [
-          "Korera wa Kyōdai desu ka"
-        ],
-        "English": [
-          "Are they brothers?"
-        ]
-      }
-    },
-
-    {
       "Word": "父",
       "Kana": "ちち",
       "Romaji": "Chichi",
@@ -87,19 +38,19 @@
       "SpriteID": "",
       "SentencesExamples": {
         "Sentence": [
-          ""
+          "父　も　母　げんき　です"
         ],
         "Kana": [
-          ""
+          "ちち　も　はは　げんき　です"
         ],
         "Kanjis": [
-          ""
+          "- 父 = Father (ちち - Chichi)|- 母 = Mother (はは - Haha)"
         ],
         "Romaji": [
-          ""
+          "Chichi mo haha genki desu."
         ],
         "English": [
-          ""
+          "My father and mother are good."
         ]
       }
     },
@@ -128,6 +79,30 @@
       }
     },
     {
+      "Word": "母",
+      "Kana": "はは",
+      "Romaji": "Haha",
+      "Meaning": "Mother",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "父　と　母　は　おおさか　しゆつしん　です"
+        ],
+        "Kana": [
+          "ちち　と　はは　は　おおさか　しゆつしん　です"
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          "Chichi to haha wa Osaka shusshin desu"
+        ],
+        "English": [
+          "My fader and mother are from Osaka."
+        ]
+      }
+    },
+    {
       "Word": "お母さん",
       "Kana": "おかあさん",
       "Romaji": "Okāsan",
@@ -151,27 +126,58 @@
         ]
       }
     },
+
     {
-      "Word": "母",
-      "Kana": "はは",
-      "Romaji": "Haha",
-      "Meaning": "Mother",
+      "Word": "ご両親",
+      "Kana": "ごりようしん",
+      "Romaji": "Goryōshin",
+      "Meaning": "Parents",
       "SpriteID": "",
       "SentencesExamples": {
         "Sentence": [
-          ""
+          "ご両親　は　どこ　ですか"
         ],
         "Kana": [
-          ""
+          "ごりようしん　は　どこ　ですか"
         ],
         "Kanjis": [
+          "- ご両親 = Parents (ごりようしん - Goryōshin)"
+        ],
+        "Romaji": [
+          "Gori yō shin wa doko desu ka"
+        ],
+        "English": [
+          "Where are your parents?"
+        ]
+      }
+    },
+
+    {
+      "Word": "おにい",
+      "Kana": "おにい",
+      "Romaji": "Onii",
+      "Meaning": "Brother",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "これ　の　おにさん　は　中学生　です。",
+          "かれ　は　わたし　の　おに　です。"
+        ],
+        "Kana": [
+          "これ　の　おにさん　は　ちゅうがくせい　です",
+          "かれ　は　わたし　の　おに　です。"
+        ],
+        "Kanjis": [
+          "- 中学生  = Junior High school student (ちゅうがくせい - chūgakusei)",
           ""
         ],
         "Romaji": [
-          ""
+          "Kore no oniisan wa chūgakusei desu.",
+          "Kare was watashi no oni desu"
         ],
         "English": [
-          ""
+          "His older brother is a junior high school student",
+          "He is my older brother."
         ]
       }
     },
@@ -199,30 +205,7 @@
         ]
       }
     },
-    {
-      "Word": "ご両親",
-      "Kana": "ごりようしん",
-      "Romaji": "Goryōshin",
-      "Meaning": "Parents",
-      "SpriteID": "",
-      "SentencesExamples": {
-        "Sentence": [
-          "ご両親　は　どこ　ですか"
-        ],
-        "Kana": [
-          "ごりようしん　は　どこ　ですか"
-        ],
-        "Kanjis": [
-          "- ご両親 = Parents (ごりようしん - Goryōshin)"
-        ],
-        "Romaji": [
-          "Gori yō shin wa doko desu ka"
-        ],
-        "English": [
-          "Where are your parents?"
-        ]
-      }
-    },
+    
     {
       "Word": "おとうと",
       "Kana": "おとうと",
@@ -256,24 +239,79 @@
       "SentencesExamples": {
         "Sentence": [
           "わたし　は　かれ　の　いもうと　です",
-          "わたし　は　かのじょ　の　いもうと　です"
+          "わたし　は　かのじょ　の　いもうと　です",
+          "いもうと　が　七人　います"
         ],
         "Kana": [
           "わたし　は　かれ　の　いもうと　です",
-          "わたし　は　かのじょ　の　いもうと　です"
+          "わたし　は　かのじょ　の　いもうと　です",
+          "いもうと　が　しち　じん　います"
         ],
         "Kanjis": [
           "",
-          ""
+          "",
+          "- 七 = 7 (しち - Hachi)|- 人 = Person (じん - Jin)"
         ],
         "Romaji": [
           "Watashi wa kore no imōto desu",
-          "Watashi wa kanoyo no imōto desu"
+          "Watashi wa kanoyo no imōto desu",
+          "Imōto ga hachijin imasu"
 
         ],
         "English": [
           "I'm his youger sister",
-          "I'm here younger sister."
+          "I'm here younger sister.",
+          "I have 7 little sisters"
+        ]
+      }
+    },
+    {
+      "Word": "きようだい",
+      "Kana": "きようだい",
+      "Romaji": "Kyōdai",
+      "Meaning": "Brothers, Siblings",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "かれら　は　きようだい　です　か"
+        ],
+        "Kana": [
+          "かれら　は　きようだい　です　か"
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          "Korera wa Kyōdai desu ka"
+        ],
+        "English": [
+          "Are they brothers?"
+        ]
+      }
+    },   
+    
+
+    {
+      "Word": "子ども",
+      "Kana": "こども",
+      "Romaji": "kodomo",
+      "Meaning": "Child",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "あなた　の　子ども　は　何　さい　です　か"
+        ],
+        "Kana": [
+          "あなた　の　こども　は　なん　さい　です　か"
+        ],
+        "Kanjis": [
+          "- 子ども = Child (こども - Kodomo)|- 何 = What (なん - Nan)"
+        ],
+        "Romaji": [
+          "Anata no kodomo wa nan sai desu ka"
+        ],
+        "English": [
+          "How old is your child?"
         ]
       }
     }

@@ -194,7 +194,7 @@
     {
       "Word": "十一",
       "Kana": "じゅういち",
-      "Romaji": "Juu Ichi",
+      "Romaji": "Jū Ichi",
       "Meaning": "11",
       "SpriteID": "",
      "SentencesExamples": {
@@ -213,7 +213,7 @@
     {
       "Word": "十二",
       "Kana": "じゅうに",
-      "Romaji": "Juuni",
+      "Romaji": "Jūni",
       "Meaning": "20",
       "SpriteID": "",
       "SentencesExamples": {
@@ -384,7 +384,7 @@
     {
       "Word": "ニ十三 ",
       "Kana": "にじゅうさん",
-      "Romaji": "Ni Juu San",
+      "Romaji": "Ni Jū San",
       "Meaning": "23",
       "SpriteID": "",
       "SentencesExamples": {
@@ -401,22 +401,227 @@
       }
     },
     {
+      "Word": "三十",
+      "Kana": "さんじゅう",
+      "Romaji": "San Jū",
+      "Meaning": "30",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [ ],
+        "Kana": [ ],
+        "Kanjis": [ ],
+        "Romaji": [ ],
+        "English": [ ]
+      }
+    },
+    {
+      "Word": "三十一",
+      "Kana": "さん　じゅう　いち",
+      "Romaji": "San Jū Ichi",
+      "Meaning": "31",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [ ],
+        "Kana": [ ],
+        "Kanjis": [ ],
+        "Romaji": [ ],
+        "English": [ ]
+      }
+    },
+    {
+      "Word": "四十",
+      "Kana": "よん　じゅう",
+      "Romaji": "Yon Jū",
+      "Meaning": "40",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [ ],
+        "Kana": [ ],
+        "Kanjis": [ ],
+        "Romaji": [ ],
+        "English": [ ]
+      }
+    },
+    {
+      "Word": "四十八",
+      "Kana": "よん　じゅう　はち",
+      "Romaji": "Yon Jū Hachi",
+      "Meaning": "48",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [ ],
+        "Kana": [ ],
+        "Kanjis": [ ],
+        "Romaji": [ ],
+        "English": [ ]
+      }
+    },
+    {
+      "Word": "五十",
+      "Kana": "ご じゅう",
+      "Romaji": "Go Jū",
+      "Meaning": "50",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [ ],
+        "Kana": [ ],
+        "Kanjis": [ ],
+        "Romaji": [ ],
+        "English": [ ]
+      }
+    },
+    {
+      "Word": "五十三",
+      "Kana": "ご じゅう　さん",
+      "Romaji": "Go Jū San",
+      "Meaning": "53",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [ ],
+        "Kana": [ ],
+        "Kanjis": [ ],
+        "Romaji": [ ],
+        "English": [ ]
+      }
+    },
+    {
+      "Word": "六十",
+      "Kana": "ろく じゅう",
+      "Romaji": "Roku Jū",
+      "Meaning": "60",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [ ],
+        "Kana": [ ],
+        "Kanjis": [ ],
+        "Romaji": [ ],
+        "English": [ ]
+      }
+    },
+    {
+      "Word": "六十ニ",
+      "Kana": "ろく じゅう に",
+      "Romaji": "Roku Jū Ni",
+      "Meaning": "62",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [ ],
+        "Kana": [ ],
+        "Kanjis": [ ],
+        "Romaji": [ ],
+        "English": [ ]
+      }
+    },
+    {
+      "Word": "七十",
+      "Kana": "ななじゅう",
+      "Romaji": "Nana Jū",
+      "Meaning": "70",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [ ],
+        "Kana": [ ],
+        "Kanjis": [ ],
+        "Romaji": [ ],
+        "English": [ ]
+      }
+    },
+    {
+      "Word": "七十四",
+      "Kana": "なな　じゅう　よん",
+      "Romaji": "Nana Jū　Yon",
+      "Meaning": "74",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [ ],
+        "Kana": [ ],
+        "Kanjis": [ ],
+        "Romaji": [ ],
+        "English": [ ]
+      }
+    },
+    {
+      "Word": "八十",
+      "Kana": "はちじゅう",
+      "Romaji": "Hachi Jū",
+      "Meaning": "80",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [ ],
+        "Kana": [ ],
+        "Kanjis": [ ],
+        "Romaji": [ ],
+        "English": [ ]
+      }
+    },
+    {
+      "Word": "八十五",
+      "Kana": "はち　じゅう　ご",
+      "Romaji": "Hachi Jū　Go",
+      "Meaning": "85",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [ ],
+        "Kana": [ ],
+        "Kanjis": [ ],
+        "Romaji": [ ],
+        "English": [ ]
+      }
+    },
+    {
+      "Word": "九十",
+      "Kana": "きゆう　じゅう",
+      "Romaji": "Kyū Jū",
+      "Meaning": "90",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [],
+        "Kana": [],
+        "Kanjis": [],
+        "Romaji": [],
+        "English": []
+      }
+    },
+    {
+      "Word": "九十九",
+      "Kana": "きゆう　じゅう　きゆう",
+      "Romaji": "Kyū Jū Kyū",
+      "Meaning": "99",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [],
+        "Kana": [],
+        "Kanjis": [],
+        "Romaji": [],
+        "English": []
+      }
+    },
+    {
       "Word": "百",
       "Kana": "ひゅく",
       "Romaji": "Hyaku",
       "Meaning": "100",
       "SpriteID": "",
       "SentencesExamples": {
-        "Sentence": [
-        ],
-        "Kana": [
-        ],
-        "Kanjis": [
-        ],
-        "Romaji": [
-        ],
-        "English": [
-        ]
+        "Sentence": [ ],
+        "Kana": [ ],
+        "Kanjis": [ ],
+        "Romaji": [ ],
+        "English": [ ]
+      }
+    },
+    {
+      "Word": "ニ百",
+      "Kana": "に　ひゅく",
+      "Romaji": "Ni Hyaku",
+      "Meaning": "200",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [],
+        "Kana": [],
+        "Kanjis": [],
+        "Romaji": [],
+        "English": []
       }
     }
 
