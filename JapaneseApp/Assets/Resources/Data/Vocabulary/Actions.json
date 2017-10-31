@@ -1,5 +1,44 @@
 ﻿{
   "Data": [
+    {
+      "Word": "焼く",
+      "Kana": "やく",
+      "Romaji": "Yaku",
+      "Meaning": "Bake",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "女の人 が ケーキ を 焼いて いる。",
+          "女の人 が ケーキ を 焼く。",
+          "女の人 が ケーキ を 焼いた。",
+          "その 男の人 は、奥さん の ため に ケーキを焼いている。"
+        ],
+        "Kana": [
+          "おんなのひと が ケーキ を やいて　いる。",
+          "おんなのひと が ケーキ を やく。",
+          "おんなのひと が ケーキ を やいた。",
+          "その おとこのひと は、おくさん の ため に ケーキ を やいて いる。"
+        ],
+        "Kanjis": [
+          "- 女の人 = Woman (おんなのひと - Onna no hito)|- 焼く　= Bake (やく - Yaku)",
+          "- 女の人 = Woman (おんなのひと - Onna no hito)|- 焼く　= Bake (やく - Yaku)",
+          "- 女の人 = Woman (おんなのひと - Onna no hito)|- 焼く　= Bake (やく - Yaku)",
+          "- 男の人 = Man (おとこのひと - Otoko no hito)|- 奥さん = Wife (おくさん - Okusan)|- 焼く　= Bake (やく - Yaku)"
+        ],
+        "Romaji": [
+          "Onna no hito ga kēki o yaite iru.",
+          "Onna no hito ga kēki o yaku.",
+          "Onna no hito ga kēki o yaita.",
+          "Sono otoko no hito wa, okusan no tame ni kēki o yaite iru."
+        ],
+        "English": [
+          "The woman is baking a cake.",
+          "The woman bakes a cake.",
+          "The woman baked a cake.",
+          "The man is baking a cake for his wife."
+        ]
+      }
+    },
 
     {
       "Word": "出る",
