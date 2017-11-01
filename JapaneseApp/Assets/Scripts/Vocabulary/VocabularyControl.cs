@@ -426,7 +426,7 @@ namespace JapaneseApp
 
         private void SetWord()
         {
-            if ((m_SelectedCategory <= ECategory.NONE) || (m_SelectedExampleID <= 0)) return;
+            if ((m_SelectedCategory <= ECategory.NONE) || (m_SelectedWordID < 0)) return;
 
             // Check number of words for this category
             if (m_Menu == EMenu.WordDay)
@@ -513,7 +513,7 @@ namespace JapaneseApp
 
         private void SetExample(int index)
         {
-            if ((m_SelectedCategory <= ECategory.NONE) || (m_SelectedExampleID <= 0)) return;
+            if ((m_SelectedCategory <= ECategory.NONE) || (m_SelectedWordID < 0)) return;
             // Set sentence
             VWord word = m_VocabularySet[(int)m_SelectedCategory].GetWordById(m_SelectedWordID);
             m_ExamplesUI.Sentence = word.SentencesExamples.GetSentence(index);
@@ -545,7 +545,7 @@ namespace JapaneseApp
 
         public void OnNextWordBtn()
         {
-            if ((m_SelectedCategory <= ECategory.NONE) || (m_SelectedExampleID <= 0)) return;
+            if ((m_SelectedCategory <= ECategory.NONE) || (m_SelectedWordID < 0)) return;
             /*if (m_Menu == EMenu.RandomWord)
             {
                 SetRandomWord();
@@ -593,7 +593,7 @@ namespace JapaneseApp
 
         public void CheckNewDayWord()
         {
-            PlayerPrefs.DeleteAll();
+            //PlayerPrefs.DeleteAll();
 
             string keyLastDay = "LastDayWordDate";
             string keyLastCategory = "LastCategoryDayWord";
