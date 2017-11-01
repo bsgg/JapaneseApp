@@ -1,4 +1,5 @@
 ﻿using LitJson;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -183,7 +184,7 @@ namespace JapaneseApp
         {
             if (m_Data != null)
             {
-                int iRand = Random.Range(0, m_Data.Count);
+                int iRand = UnityEngine.Random.Range(0, m_Data.Count);
                 return m_Data[iRand];
             }
 
@@ -194,7 +195,7 @@ namespace JapaneseApp
         {
             if (m_Data != null)
             {
-                 return Random.Range(0, m_Data.Count);
+                 return UnityEngine.Random.Range(0, m_Data.Count);
             }
 
             return -1;
@@ -368,25 +369,7 @@ namespace JapaneseApp
                 break;
                 case EMenu.WordDay:
 
-                    // AppController.Instance.
-                    // Set word day
-                    if (PlayerPrefController.IsNewDayWord())
-                    {
-                        // Select random category and word
-                        // Random category
-                        m_SelectedCategory = GetRandomCategory();
-                        PlayerPrefController.UpdateLastDayWordCategory((int)m_SelectedCategory);
-
-                        // Set new random word
-                        m_SelectedWordID = m_VocabularySet[(int)m_SelectedCategory].GetRandomWordID();
-                        PlayerPrefController.UpdateLastDayWord(m_SelectedWordID);
-                    }
-                    else
-                    {
-                        // Get last category and last word
-                        m_SelectedCategory = (ECategory)PlayerPrefController.GetLastDayWordCategory();
-                        m_SelectedWordID = PlayerPrefController.GetLastDayWord();
-                    }
+                    CheckNewDayWord();
 
                     SetWord();
                     //SetRandomWord();
@@ -523,20 +506,14 @@ namespace JapaneseApp
 
         private ECategory GetRandomCategory()
         {
-            int rCategory = Random.Range(0, (int)ECategory.NUM);
+            int rCategory = UnityEngine.Random.Range(0, (int)ECategory.NUM);
             return (ECategory)rCategory;
         } 
-
-        /*private void SetRandomWord()
-        {
-            // Get random word from a category
-            m_SelectedCategory = GetRandomCategory();
-            SetWordByCategory();
-        }  */     
-
+        
 
         private void SetExample(int index)
         {
+            if ((m_SelectedCategory <= ECategory.NONE) || (m_SelectedExampleID <= 0)) return;
             // Set sentence
             VWord word = m_VocabularySet[(int)m_SelectedCategory].GetWordById(m_SelectedWordID);
             m_ExamplesUI.Sentence = word.SentencesExamples.GetSentence(index);
@@ -546,21 +523,6 @@ namespace JapaneseApp
         #endregion SetData
 
         #region MenuButtons
-
-       /* public void OnSoundBtn()
-        {
-            string debug = "[VocabularyControl.OnSoundBtn]";
-
-            if (m_SelectedWord == null) return;
-
-            if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
-            {
-                debug += " Call SpeechFlush, Romaji: " + m_SelectedWord.Romaji;
-                EasyTTSUtil.SpeechFlush(m_SelectedWord.Romaji);
-            }
-
-            AppController.Instance.DebugUI.Log0 = debug;
-        }*/
 
         public void OnExamplesBtn()
         {
@@ -583,17 +545,18 @@ namespace JapaneseApp
 
         public void OnNextWordBtn()
         {
+            if ((m_SelectedCategory <= ECategory.NONE) || (m_SelectedExampleID <= 0)) return;
             /*if (m_Menu == EMenu.RandomWord)
             {
                 SetRandomWord();
             }
             else
             {*/
-                // Increase current word id
-                m_SelectedWordID++;
-                m_SelectedWordID %= m_VocabularySet[(int)m_SelectedCategory].Data.Count;
+            // Increase current word id
+            m_SelectedWordID++;
+            m_SelectedWordID %= m_VocabularySet[(int)m_SelectedCategory].Data.Count;
 
-                SetWord();
+            SetWord();
             //}
         }
 
@@ -624,6 +587,94 @@ namespace JapaneseApp
         }
 
         #endregion MenuButtons
+
+
+        #region WordOfDay
+
+        public void CheckNewDayWord()
+        {
+            PlayerPrefs.DeleteAll();
+
+            string keyLastDay = "LastDayWordDate";
+            string keyLastCategory = "LastCategoryDayWord";
+            string keyLastWord = "LastWordDayWord";
+
+            if (PlayerPrefs.HasKey(keyLastDay))
+            {
+                // Check date
+                string dateV = PlayerPrefs.GetString(keyLastDay);
+
+                DateTime lastTime = Convert.ToDateTime(dateV);
+                DateTime current = DateTime.Now;                
+
+                // Check if last time 
+                TimeSpan elapsed = current - lastTime;
+
+                // Select new word
+                if (elapsed.TotalDays >= 1)
+                {
+                    // Update time
+                    PlayerPrefs.SetString(keyLastDay, current.ToString());
+
+                    // New category New word
+                    m_SelectedCategory = GetRandomCategory();
+                    SetKey(keyLastCategory, (int)m_SelectedCategory);
+
+                    // Set new random word
+                    m_SelectedWordID = m_VocabularySet[(int)m_SelectedCategory].GetRandomWordID();
+                    SetKey(keyLastWord, m_SelectedWordID);
+                }
+                else
+                {
+                    // Get last category and last word
+                    m_SelectedCategory = (ECategory)GetKey(keyLastCategory);
+                    m_SelectedWordID = GetKey(keyLastWord);
+                }
+                
+
+            }
+            else
+            { 
+                // First time set current Time, Get random category and word
+                string dateTime = DateTime.Now.ToString();
+                PlayerPrefs.SetString(keyLastDay, dateTime);
+
+                // New category New word
+                m_SelectedCategory = GetRandomCategory();
+                SetKey(keyLastCategory, (int)m_SelectedCategory);
+
+                // Set new random word
+                m_SelectedWordID = m_VocabularySet[(int)m_SelectedCategory].GetRandomWordID();
+                SetKey(keyLastWord, m_SelectedWordID);
+
+                PlayerPrefs.Save();
+            }
+        }
+
+
+        public int GetKey(string key, int defaultValue = -1)
+        {
+            if (PlayerPrefs.HasKey(key))
+            {
+                return PlayerPrefs.GetInt(key);
+            }
+            else
+            {
+                // Create key
+                SetKey(key, defaultValue);
+                return -1;
+            }
+        }
+
+        public void SetKey(string key, int value)
+        {
+            PlayerPrefs.SetInt(key, value);
+            PlayerPrefs.Save();
+        }
+
+
+        #endregion WordOfDay
+
     }
 
 }
