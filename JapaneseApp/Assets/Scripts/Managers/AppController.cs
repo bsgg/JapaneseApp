@@ -65,11 +65,10 @@ namespace JapaneseApp
         [SerializeField]
         private TopBar m_TopBar;
         private Base m_CurrentControl;
+
         
         void Start ()
         {
-            PlayerPrefController m_PlayerPrefs = new PlayerPrefController();
-            m_PlayerPrefs.CheckDayWordDate();
 
             // Initialize EasyTTUTIL
             /*if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
@@ -147,6 +146,7 @@ namespace JapaneseApp
             m_TopBar.CloseBtn.SetActive(true);
             m_MainMenuController.Hide();
             m_CurrentControl = m_VocabularyControl;
+
             m_VocabularyControl.SelectMenu(VocabularyControl.EMenu.WordDay);
         }
 

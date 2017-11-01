@@ -190,6 +190,16 @@ namespace JapaneseApp
             return null;
         }
 
+        public int GetRandomWordID()
+        {
+            if (m_Data != null)
+            {
+                 return Random.Range(0, m_Data.Count);
+            }
+
+            return -1;
+        }
+
         public VWord GetWordById(int id)
         {
             if ((m_Data != null) && (id >= 0) && (id < m_Data.Count))
@@ -243,11 +253,10 @@ namespace JapaneseApp
         [SerializeField] private CategoriesUI m_CategoriesUI;
         [SerializeField] private ExamplesUI m_ExamplesUI;
 
-
-        private VWord m_SelectedWord;
-        private int m_ICurrentExample;
-        private int m_CurrentWordID = 0;
-        private ECategory m_CurrentCategory;
+       // private VWord m_SelectedWord;
+        private int m_SelectedExampleID;
+        private int m_SelectedWordID;      
+        private ECategory m_SelectedCategory;
 
         private EMenu m_Menu;
 
@@ -354,12 +363,33 @@ namespace JapaneseApp
                 break;
 
                 case EMenu.RandomWord:
-                    SetRandomWord();
+                    SetWord();
                     m_VocabularyUI.Show();
                 break;
                 case EMenu.WordDay:
-                    // TODO DO LOGIC FOR DIFFERENT WORD EVERYDAY
-                    SetRandomWord();
+
+                    // AppController.Instance.
+                    // Set word day
+                    if (PlayerPrefController.IsNewDayWord())
+                    {
+                        // Select random category and word
+                        // Random category
+                        m_SelectedCategory = GetRandomCategory();
+                        PlayerPrefController.UpdateLastDayWordCategory((int)m_SelectedCategory);
+
+                        // Set new random word
+                        m_SelectedWordID = m_VocabularySet[(int)m_SelectedCategory].GetRandomWordID();
+                        PlayerPrefController.UpdateLastDayWord(m_SelectedWordID);
+                    }
+                    else
+                    {
+                        // Get last category and last word
+                        m_SelectedCategory = (ECategory)PlayerPrefController.GetLastDayWordCategory();
+                        m_SelectedWordID = PlayerPrefController.GetLastDayWord();
+                    }
+
+                    SetWord();
+                    //SetRandomWord();
                     m_VocabularyUI.Show();
                 break;
             }
@@ -372,10 +402,10 @@ namespace JapaneseApp
             Debug.Log("[VocabularyControl] OnCategoryPress");
             m_CategoriesUI.ScrollMenu.OnItemPress -= OnCategoryPress;
 
-            m_CurrentCategory = (ECategory)id;
-            m_CurrentWordID = 0;
+            m_SelectedCategory = (ECategory)id;
+            m_SelectedWordID = 0;
 
-            SetWordByCategory();
+            SetWord();
 
             m_ExamplesUI.Hide();
             m_VocabularyUI.Show();
@@ -411,40 +441,40 @@ namespace JapaneseApp
             m_CategoriesUI.ScrollMenu.InitScroll(categories);
         }
 
-        private void SetWordByCategory()
+        private void SetWord()
         {
+            if ((m_SelectedCategory <= ECategory.NONE) || (m_SelectedExampleID <= 0)) return;
 
             // Check number of words for this category
-            if (m_VocabularySet[(int) m_CurrentCategory].Data.Count > 0)
-            {
-                m_VocabularyUI.NextWordBtn.Enable(true, m_EnableBtnColor);
-            }else
+            if (m_Menu == EMenu.WordDay)
             {
                 m_VocabularyUI.NextWordBtn.Enable(false, m_DisableBtnColor);
             }
-
-            if (m_Menu == EMenu.RandomWord)
+            else
             {
-                m_SelectedWord = m_VocabularySet[(int)m_CurrentCategory].GetRandomWord();
-            }else
-            {
-                m_SelectedWord = m_VocabularySet[(int)m_CurrentCategory].GetWordById(m_CurrentWordID);
+                if (m_VocabularySet[(int)m_SelectedCategory].Data.Count > 0)
+                {
+                    m_VocabularyUI.NextWordBtn.Enable(true, m_EnableBtnColor);
+                }
+                else
+                {
+                    m_VocabularyUI.NextWordBtn.Enable(false, m_DisableBtnColor);
+                }
             }
+            VWord word = m_VocabularySet[(int)m_SelectedCategory].GetWordById(m_SelectedWordID);  
 
-
-            if (m_SelectedWord != null)
+            if (word != null)
             {
                 // Set word
-                m_VocabularyUI.Word = m_SelectedWord.Word;
-                m_VocabularyUI.English = m_SelectedWord.Meaning;
-                m_VocabularyUI.Kana = m_SelectedWord.Kana + " : " + m_SelectedWord.Romaji;
-
+                m_VocabularyUI.Word = word.Word;
+                m_VocabularyUI.English = word.Meaning;
+                m_VocabularyUI.Kana = word.Kana + " : " + word.Romaji;
 
                 // Set sprite
                 m_VocabularyUI.SpriteBtn.Enable(false, m_DisableBtnColor);
-                if (!string.IsNullOrEmpty(m_SelectedWord.SpriteID))
+                if (!string.IsNullOrEmpty(word.SpriteID))
                 {
-                    Sprite sprite = GetSprite(m_CurrentCategory,m_SelectedWord.SpriteID);
+                    Sprite sprite = GetSprite(m_SelectedCategory, word.SpriteID);
                     if (sprite != null)
                     {
                         m_VocabularyUI.Sprite.SpriteObject = sprite;
@@ -457,9 +487,9 @@ namespace JapaneseApp
 
 
                 // Set sentence
-                if ((m_SelectedWord.SentencesExamples != null) && (m_SelectedWord.SentencesExamples.Sentence.Count > 0))
+                if ((word.SentencesExamples != null) && (word.SentencesExamples.Sentence.Count > 0))
                 {
-                    if (m_SelectedWord.SentencesExamples.Sentence.Count > 1)
+                    if (word.SentencesExamples.Sentence.Count > 1)
                     {
                         m_ExamplesUI.NextBtn.Enable(true, m_EnableBtnColor);
                     }
@@ -472,8 +502,8 @@ namespace JapaneseApp
                     m_VocabularyUI.ExampleBtn.Enable(true, m_EnableBtnColor);
 
                     // Set sentence
-                    m_ICurrentExample = 0;
-                    SetExample(m_ICurrentExample);
+                    m_SelectedExampleID = 0;
+                    SetExample(m_SelectedExampleID);
                 }
                 else
                 {
@@ -491,27 +521,33 @@ namespace JapaneseApp
         }
 
 
-        private void SetRandomWord()
+        private ECategory GetRandomCategory()
+        {
+            int rCategory = Random.Range(0, (int)ECategory.NUM);
+            return (ECategory)rCategory;
+        } 
+
+        /*private void SetRandomWord()
         {
             // Get random word from a category
-            int rCategory = Random.Range(0, (int)ECategory.NUM);
-            m_CurrentCategory = (ECategory)rCategory;
+            m_SelectedCategory = GetRandomCategory();
             SetWordByCategory();
-        }       
+        }  */     
 
 
         private void SetExample(int index)
         {
             // Set sentence
-            m_ExamplesUI.Sentence = m_SelectedWord.SentencesExamples.GetSentence(index);
-            m_ExamplesUI.English = m_SelectedWord.SentencesExamples.GetEnglish(index);
-            m_ExamplesUI.Kanjis = m_SelectedWord.SentencesExamples.GetKanjis(index);
+            VWord word = m_VocabularySet[(int)m_SelectedCategory].GetWordById(m_SelectedWordID);
+            m_ExamplesUI.Sentence = word.SentencesExamples.GetSentence(index);
+            m_ExamplesUI.English = word.SentencesExamples.GetEnglish(index);
+            m_ExamplesUI.Kanjis = word.SentencesExamples.GetKanjis(index);
         }
         #endregion SetData
 
         #region MenuButtons
 
-        public void OnSoundBtn()
+       /* public void OnSoundBtn()
         {
             string debug = "[VocabularyControl.OnSoundBtn]";
 
@@ -524,7 +560,7 @@ namespace JapaneseApp
             }
 
             AppController.Instance.DebugUI.Log0 = debug;
-        }
+        }*/
 
         public void OnExamplesBtn()
         {
@@ -536,7 +572,7 @@ namespace JapaneseApp
         {
             if (m_VocabularyUI.Sprite.Visible)
             {
-                m_VocabularyUI.Word = m_SelectedWord.Word;
+                m_VocabularyUI.Word = m_VocabularySet[(int)m_SelectedCategory].Data[m_SelectedWordID].Word;
                 m_VocabularyUI.Sprite.Hide();
             }else
             {
@@ -547,49 +583,43 @@ namespace JapaneseApp
 
         public void OnNextWordBtn()
         {
-            if (m_Menu == EMenu.RandomWord)
+            /*if (m_Menu == EMenu.RandomWord)
             {
                 SetRandomWord();
             }
             else
-            {
+            {*/
                 // Increase current word id
-                m_CurrentWordID++;
-                m_CurrentWordID %= m_VocabularySet[(int) m_CurrentCategory].Data.Count;
+                m_SelectedWordID++;
+                m_SelectedWordID %= m_VocabularySet[(int)m_SelectedCategory].Data.Count;
 
-                SetWordByCategory();
-            }
+                SetWord();
+            //}
         }
 
         private void OnExampleMenuItem(AppController.EMenu id)
         {
-            Debug.Log("<color=cyan> [Vocabulary.OnExampleMenuItem] id: " + id.ToString() + "</color>");
-
-            if (m_SelectedWord == null)
-            {
-                Debug.Log("<color=cyan> No Current Word </color>");
-                return;
-            }
+            VWord word = m_VocabularySet[(int)m_SelectedCategory].GetWordById(m_SelectedWordID);
 
             switch (id)
             {
                 case AppController.EMenu.NEXT:
                     // Set next sentence
-                    m_ICurrentExample++;
-                    m_ICurrentExample %= m_SelectedWord.SentencesExamples.Sentence.Count;
+                    m_SelectedExampleID++;
+                    m_SelectedExampleID %= word.SentencesExamples.Sentence.Count;
 
-                    SetExample(m_ICurrentExample);
+                    SetExample(m_SelectedExampleID);
                 break;
 
                 case AppController.EMenu.KANJI:
-                    m_ExamplesUI.Sentence = m_SelectedWord.SentencesExamples.Sentence[m_ICurrentExample];
+                    m_ExamplesUI.Sentence = word.SentencesExamples.Sentence[m_SelectedExampleID];
                     break;
                 case AppController.EMenu.KANA:
-                    m_ExamplesUI.Sentence = m_SelectedWord.SentencesExamples.Kana[m_ICurrentExample];
+                    m_ExamplesUI.Sentence = word.SentencesExamples.Kana[m_SelectedExampleID];
                     break;
                 case AppController.EMenu.ROMAJI:
-                    m_ExamplesUI.Sentence = m_SelectedWord.SentencesExamples.Romaji[m_ICurrentExample];
-                    break;
+                    m_ExamplesUI.Sentence = word.SentencesExamples.Romaji[m_SelectedExampleID];
+                break;
             }
         }
 

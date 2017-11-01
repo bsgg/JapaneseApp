@@ -7,7 +7,7 @@ namespace JapaneseApp
 {
     public class PlayerPrefController
     {
-        private string GetGUID()
+        public static string GetGUID()
         {
             string guid = string.Empty;
             string key = "GUID";
@@ -26,8 +26,8 @@ namespace JapaneseApp
             return guid;
         }
 
-
-        /*public int GetLastDayWordCategory(int newCategory = -1)
+        #region WordDay
+        public static int GetLastDayWordCategory()
         {
             string key = "LastDayWordCategory";
             if (PlayerPrefs.HasKey(key))
@@ -36,15 +36,44 @@ namespace JapaneseApp
             }
             else
             {
-
+                // Create key
+                UpdateLastDayWordCategory(-1);
+                return -1;
             }
-        }*/
+        }
 
-        public bool CheckDayWordDate()
+
+        public static void UpdateLastDayWordCategory(int updateCategory)
         {
-            // Get category and word from last time
+            string key = "LastDayWordCategory";
+            PlayerPrefs.SetInt(key, updateCategory);
+            PlayerPrefs.Save();
+        }
 
+        public static int GetLastDayWord()
+        {
+            string key = "LastLastDayWord";
+            if (PlayerPrefs.HasKey(key))
+            {
+                return PlayerPrefs.GetInt(key);
+            }
+            else
+            {
+                // Create key
+                UpdateLastDayWord(-1);
+                return -1;
+            }
+        }
 
+        public static void UpdateLastDayWord(int updateWord)
+        {
+            string key = "LastLastDayWord";
+            PlayerPrefs.SetInt(key, updateWord);
+            PlayerPrefs.Save();
+        }
+
+        public static bool IsNewDayWord()
+        {
             string key = "LastDayWordDate";
             bool check = false;
             if (PlayerPrefs.HasKey(key))
@@ -72,7 +101,7 @@ namespace JapaneseApp
 
             return check;
         }
-        
 
+        #endregion WordDay
     }
 }
