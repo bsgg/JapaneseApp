@@ -75,6 +75,43 @@
         ]
       }
     },
+
+    {
+      "Word": "食べる",
+      "Kana": "たべる",
+      "Romaji": "Taberu",
+      "Meaning": "Eat",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "ばんごはん　を　食べます",
+          "午前八時　に　あさごはん　を　食べます",
+          "おひるごはん　を　食べます"
+        ],
+        "Kana": [
+          "ばんごはん　を　たべます",
+          "ごせん　はち　じ　に　あさごはん　を　たべます",
+          "おひるごはん　を　たべます"
+        ],
+        "Kanjis": [
+          "- 食べ = Eat (たべ - Tabe)",
+          "- 午前 = a.m (ごせん - Gozen)|- 八 = 8 (はち - Hachi)|- 時 = O'clock (時 - Ji)|- 食べ = Eat (たべ - Tabe)",
+          "- 食べ = Eat (たべ - Tabe)"
+        ],
+        "Romaji": [
+          "Bangonhan o tabemasu",
+          "Gozen hachi-ji ni asagohan o tabemasu.",
+          "Ohirugohan o tabemasu."
+        ],
+        "English": [
+          "I eat dinner.",
+          "I eat breakfast at eight a.m",
+          "I eat lunch."
+
+        ]
+      }
+    },
+
      {
       "Word": "跳ぶ",
       "Kana": "とぶ",
