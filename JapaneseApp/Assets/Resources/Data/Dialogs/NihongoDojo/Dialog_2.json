@@ -1,0 +1,61 @@
+﻿{
+	"Title": "Dialog 2. What can I eat?",
+	"Audio": "Dialog_2",
+
+	"Kanji": [
+		"- 乾杯！",
+		"- ファブリツィオ:　すみません,　これ　は　肉　です　か",
+		"- ウェイトレス:　いいえ、肉　でわ　ありません、魚　です。サーモン　です",
+		"- ファブリツィオ: そう　です　か。えっと　これ　は　肉　です　か",
+		"- ウェイトレス: はい　そう　です。鶏肉　です",
+		"- ファブリツィオ: これ　は　肉　です　か",
+		"- ウェイトレス: いえいえ、肉　じゃ　ない　です。野菜　と　豆　です",
+		"- 夏見: ファブリツィオさん　は、ベジタリアン　です　か"
+	],
+
+	"Kana": [
+		"- かんぱい！",
+		"- ファブリツィオ:　すみません,　これ　は　にく　です　か",
+		"- ウェイトレス:　いいえ、にく　でわ　ありません、さかな　サーモン　です。",
+		"- ファブリツィオ: そう　です　か。えっと　これ　は　にく　です　か",
+		"- ウェイトレス: はい　そう　です。とり　にく　です",
+		"- ファブリツィオ: これ　は　にく　です　か",
+		"- ウェイトレス: いえいえ、にく　じゃ　ない　です。やさい　と　まめ　です",
+		"- なつみ: ファブリツィオさん　は、ベジタリアン　です　か"
+	],
+
+	"Romaji": [
+		"- Kampai!",
+		"- Faburitsio: Sumimasen, Kore ha niku desu ka",
+		"- Weitoresu: Iie, niku dewa arimasen. Sakana desu. Sāmon desu.",
+		"- Faburitsio: Sō desu ka. Etto, kore wa niku desu ka.",
+		"- Weitoresu: Hai Sō desu. Tori niku desu.",
+		"- Faburitsio: Kore ha niku desu ka",
+		"- Weitoresu: Ieie, niku ja nai desu. Yasai to mame desu.",
+		"- Natsumi: Faburitsio-san wa, bejitarian desu ka."
+	],
+
+	"English": [
+		"- Cheers!",
+		"- Fabrizio: Excuse me, Is this meat?",
+		"- Waitress: No, It's not meat. It's fish. It's salmon.",
+		"- Fabrizio: I see. Umm, Is this meat?",
+		"- Waitress: Yes it is. It's chicken.",
+		"- Fabrizio: Is this meat?",
+		"- Waitress: Nono, it's not meat. That's salad and beans.",
+		"- Natsumi: Are you vegetarian Fabrizio?"
+
+	],
+
+	"Vocabulary": [
+		"- 乾杯 = Cheers, Tost (かん ぱい - Kanpai) [1.乾 = Dry] [2.杯 = Glass]",
+		"- 肉 = Meat (にく - Niku)",
+		"- とり = Bird (Tori)",
+		"- とり肉 = Chicken (とり　にく - Tori niku)",
+		"- 魚　= Fish (さかな - Sakana)",
+		"- 野菜　= Vegetables (や　さい - Yasai) [1.野 =Fields ] [2.菜 = Greens]",
+		"- 豆 = Beans, Peas　(まめ - Mame)"
+	],
+
+	"Description": "This is = これ　は　[something]　です (Kore wa [something] desu):\n\n- これ (Kore) = this\n\n- は (Wa) = Topic marking particle\n\n- です（desu）= Copula (equivalent to English am/is/are). \n\n - Examples:\n - これ(kore) は(wa) にく(niku) です。(desu) = This is meat\n - これ(kore) は(wa) さかな(sakana) です。(desu) = This is fish\n\n - です (desu) is equivalent to English am/is/are. There are 3 negative forms of desu（です）: \n- ではありません (de wa arimasen), Very formal. Example = やさい では ありません (Yasai dewa arimasen) \n- じゃ ありません (ja arimasen). Example = さかな じゃ ありません (Sakana ja arimasen) \n - じゃないです (ja nai desu） Example: にく じゃ ない です (niku ja nai desu)"
+}

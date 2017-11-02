@@ -252,6 +252,7 @@ namespace JapaneseApp
             Dates,
             Family,
             Objects,
+            Adjectives,
             Questions,
             Misc,
         NUM };

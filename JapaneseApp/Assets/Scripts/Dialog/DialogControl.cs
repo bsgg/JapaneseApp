@@ -77,7 +77,7 @@ namespace JapaneseApp
 
     #endregion DataModel
 
-    [System.Serializable]
+   /* [System.Serializable]
     public class AudioData
     {
         [SerializeField]
@@ -100,22 +100,66 @@ namespace JapaneseApp
             if ((id < 0) || (id >= AudioClips.Count)) return null;
             return AudioClips[id];
         }
+    }*/
+
+    [System.Serializable]
+    public class DialogSet
+    {
+        public string Title;
+
+        public DialogControl.ECategory Category;
+
+        public int NumberDialogs;
+
+        public List<Dialog> ListDialog;
+
+        public List<AudioClip> AudioClips;
+
+        public DialogSet()
+        {
+            ListDialog = new List<Dialog>();
+        }
+
+        public AudioClip GetAudio(string name)
+        {
+            for (int i = 0; i < AudioClips.Count; i++)
+            {
+                if (AudioClips[i].name.Equals(name))
+                {
+                    return AudioClips[i];
+                }
+            }
+
+            return null;
+        }
+
+        public AudioClip GetAudio(int id)
+        {
+            if ((id < 0) || (id >= AudioClips.Count)) return null;
+            return AudioClips[id];
+        }
     }
 
     public class DialogControl : Base
     {
+        public enum ECategory {  NONE = -1, NHSEasyJapanese = 0, NihongoDojo, NUM };
+
         [SerializeField]
         private string m_DataPath = "Data/Dialogs/";
         [SerializeField]
         private int m_NumberDialogs;
 
-        [SerializeField]
-        private AudioData m_AudioDataSet;
-        private int m_SelectedAudioClipID;
+        //[SerializeField]
+        //private AudioData m_AudioDataSet;
+        
 
+        //[SerializeField]
+        //private List<Dialog>  m_DialogSet;
         [SerializeField]
-        private List<Dialog>  m_DialogSet;
+        private List<DialogSet> m_DialogSet;
         private int m_SelectedDialogID;
+        private int m_SelectedAudioClipID;
+        private ECategory m_SelectedCategory = ECategory.NHSEasyJapanese;
 
         [SerializeField]
         private AudioSource m_AudioSource;
@@ -132,21 +176,20 @@ namespace JapaneseApp
             m_DialogUI.Hide();
 
             // Load the data
-            m_DialogSet = new List<Dialog>();
-            for (int i = 0; i < m_NumberDialogs; i++)
+            for (int i = 0; i < m_DialogSet.Count; i++)
             {
-                string nameDialog = "Dialog_" + (i + 1);
-
-                string path = m_DataPath + nameDialog;
-                string json = Utility.LoadJSONResource(path);
-                if (json != "")
+                for (int d = 0; d< m_DialogSet[i].NumberDialogs; d++)
                 {
-                    Dialog data = JsonMapper.ToObject<Dialog>(json);
-                    m_DialogSet.Add(data);
-
+                    string nameDialog =m_DialogSet[i].Category.ToString() + "\\Dialog_" + (d + 1);
+                    string path = m_DataPath + nameDialog;
+                    string json = Utility.LoadJSONResource(path);
+                    if (!string.IsNullOrEmpty(json))
+                    {
+                        Dialog data = JsonMapper.ToObject<Dialog>(json);
+                        m_DialogSet[i].ListDialog.Add(data);
+                    }
                 }
-            }
-                 
+            }                 
         }
 
         private void SetDialog(int id)
@@ -154,14 +197,15 @@ namespace JapaneseApp
             if ((id < 0) || (id >= m_DialogSet.Count)) return;
             m_SelectedDialogID = id;
 
-            // Set clip            
-            AudioClip clip = m_AudioDataSet.GetAudio(m_DialogSet[m_SelectedDialogID].Audio);
+            // Set clip        
+            string nameClip = m_DialogSet[(int)m_SelectedCategory].ListDialog[m_SelectedDialogID].Audio;
+            AudioClip clip =  m_DialogSet[(int) m_SelectedCategory].GetAudio(nameClip);
             if (clip != null)
             {
                 m_AudioSource.clip = clip;
             }
 
-            m_DialogUI.Title = m_DialogSet[m_SelectedDialogID].Title;
+            m_DialogUI.Title = m_DialogSet[(int) m_SelectedCategory].ListDialog[m_SelectedDialogID].Title;
 
             SwitchToKanji();
         }
@@ -175,18 +219,34 @@ namespace JapaneseApp
             // Check if category is visible
             if (m_CategoriesUI.Visible)
             {
-                m_CategoriesUI.ScrollMenu.OnItemPress -= OnCategoryPress;
-                m_CategoriesUI.Hide();
+                if (m_IsSubcategory)
+                {
+                    m_DialogUI.Hide();
 
-                Hide();
-                // Back to main menu (App Controller)
-                AppController.Instance.ShowMainMenu();
+                    SetCategories();
+                    m_CategoriesUI.ScrollMenu.OnItemPress += OnCategoryPress;
+                    m_CategoriesUI.Show();
+
+                    m_IsSubcategory = false;
+
+                }
+                else
+                {
+                    m_CategoriesUI.ScrollMenu.OnItemPress -= OnCategoryPress;
+                    m_CategoriesUI.Hide();
+
+                    Hide();
+                    // Back to main menu (App Controller)
+                    AppController.Instance.ShowMainMenu();
+                }
+               
             }
             else
             {
                 Hide();
                 // Show categories
-                SetCategories();
+                SetSubcategories();
+                //SetCategories();
                 m_CategoriesUI.Show();
                 m_CategoriesUI.ScrollMenu.OnItemPress += OnCategoryPress;
             }
@@ -196,6 +256,7 @@ namespace JapaneseApp
         {
             base.Show();
 
+            m_IsSubcategory = false;
             SetCategories();
             m_CategoriesUI.Show();
 
@@ -207,6 +268,8 @@ namespace JapaneseApp
             base.Hide();
             m_DialogUI.Hide();
         }
+
+        private bool m_IsSubcategory = false;
 
         private void SetCategories()
         {
@@ -225,7 +288,35 @@ namespace JapaneseApp
         {
             Debug.Log("[DialogControl] OnCategoryPress");
 
-            m_CategoriesUI.ScrollMenu.OnItemPress -= OnCategoryPress;            
+
+            m_CategoriesUI.ScrollMenu.OnItemPress -= OnCategoryPress;
+
+            m_SelectedCategory = (ECategory) id;
+
+            m_IsSubcategory = true;
+            SetSubcategories();
+
+            m_CategoriesUI.Show();
+            m_CategoriesUI.ScrollMenu.OnItemPress += OnSubCategoriesPress;
+        }
+
+        private void SetSubcategories()
+        {
+            // Set subcateogry
+            List<string> categories = new List<string>();
+
+            for (int i = 0; i < m_DialogSet[(int) m_SelectedCategory].ListDialog.Count; i++)
+            {
+                string dialogName = m_DialogSet[(int)m_SelectedCategory].ListDialog[i].Title;
+                categories.Add(dialogName);
+            }
+            m_CategoriesUI.ScrollMenu.InitScroll(categories);
+        }
+
+
+        private void OnSubCategoriesPress(int id, int x, int y)
+        {
+            m_CategoriesUI.ScrollMenu.OnItemPress -= OnSubCategoriesPress;
             m_CategoriesUI.Hide();
 
             // Set dialog
@@ -234,15 +325,16 @@ namespace JapaneseApp
         }
 
 
+
         private void SwitchToKanji()
         {
             m_DialogUI.Subtitle = "Kanji";
 
-            string dialog = "<size=50>\n\n";
-            int nElements = m_DialogSet[m_SelectedDialogID].Kanji.Count;
+            string dialog = "\n\n";
+            int nElements = m_DialogSet[(int)m_SelectedCategory].ListDialog[m_SelectedDialogID].Kanji.Count;
             for (int i = 0; i < nElements; i++)
             {
-                dialog += m_DialogSet[m_SelectedDialogID].Kanji[i];
+                dialog += m_DialogSet[(int) m_SelectedCategory].ListDialog[m_SelectedDialogID].Kanji[i];
 
                 if (i < (nElements - 1))
                 {
@@ -250,7 +342,7 @@ namespace JapaneseApp
                 }
             }
 
-            dialog += "</size>";
+            
 
             m_DialogUI.SetScrollDialog(dialog);
         }
@@ -260,10 +352,10 @@ namespace JapaneseApp
             m_DialogUI.Subtitle = "Kana";
 
             string dialog = "\n\n";
-            int nElements = m_DialogSet[m_SelectedDialogID].Kana.Count;
+            int nElements =  m_DialogSet[(int)m_SelectedCategory].ListDialog[m_SelectedDialogID].Kana.Count;
             for (int i = 0; i < nElements; i++)
             {
-                dialog += m_DialogSet[m_SelectedDialogID].Kana[i] + "</size>";
+                dialog += m_DialogSet[(int) m_SelectedCategory].ListDialog[m_SelectedDialogID].Kana[i];
 
                 if (i < (nElements - 1))
                 {
@@ -279,10 +371,10 @@ namespace JapaneseApp
             m_DialogUI.Subtitle = "Romaji";
 
             string dialog = "\n\n";
-            int nElements = m_DialogSet[m_SelectedDialogID].Romaji.Count;
+            int nElements =  m_DialogSet[(int)m_SelectedCategory].ListDialog[m_SelectedDialogID].Romaji.Count;
             for (int i = 0; i < nElements; i++)
             {
-                dialog += m_DialogSet[m_SelectedDialogID].Romaji[i];
+                dialog += m_DialogSet[(int) m_SelectedCategory].ListDialog[m_SelectedDialogID].Romaji[i];
 
                 if (i < (nElements - 1))
                 {
@@ -298,10 +390,10 @@ namespace JapaneseApp
             m_DialogUI.Subtitle = "English";
 
             string dialog = "\n\n";
-            int nElements = m_DialogSet[m_SelectedDialogID].English.Count;
+            int nElements =  m_DialogSet[(int)m_SelectedCategory].ListDialog[m_SelectedDialogID].English.Count;
             for (int i = 0; i < nElements; i++)
             {
-                dialog += m_DialogSet[m_SelectedDialogID].English[i];
+                dialog += m_DialogSet[(int) m_SelectedCategory].ListDialog[m_SelectedDialogID].English[i];
 
                 if (i < (nElements - 1))
                 {
@@ -316,10 +408,10 @@ namespace JapaneseApp
         {
             m_DialogUI.Subtitle = "Vocabulary";
             string dialog = "\n\n";
-            int nElements = m_DialogSet[m_SelectedDialogID].Vocabulary.Count;
+            int nElements =  m_DialogSet[(int)m_SelectedCategory].ListDialog[m_SelectedDialogID].Vocabulary.Count;
             for (int i = 0; i < nElements; i++)
             {
-                dialog += m_DialogSet[m_SelectedDialogID].Vocabulary[i];
+                dialog += m_DialogSet[(int) m_SelectedCategory].ListDialog[m_SelectedDialogID].Vocabulary[i];
 
                 if (i < (nElements - 1))
                 {
@@ -334,7 +426,7 @@ namespace JapaneseApp
         {
             m_DialogUI.Subtitle = "Description";
 
-            string dialog = "\n\n" + m_DialogSet[m_SelectedDialogID].Description;
+            string dialog = "\n\n" +  m_DialogSet[(int)m_SelectedCategory].ListDialog[m_SelectedDialogID].Description;
 
             m_DialogUI.SetScrollDialog(dialog);
         }

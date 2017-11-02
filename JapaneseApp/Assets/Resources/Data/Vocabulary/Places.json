@@ -1,5 +1,5 @@
 ﻿{
-  "Data": [    
+  "Data": [
     {
       "Word": "学校",
       "Kana": "がっこう",
@@ -21,6 +21,30 @@
         ],
         "English": [
           "I don't go to the school."
+        ]
+      }
+    },
+    {
+      "Word": "しよくどう",
+      "Kana": "しよくどう",
+      "Romaji": "Shiyokudō",
+      "Meaning": "Dining room.",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "しよくどう で　あさごはん　を　食べます"
+        ],
+        "Kana": [
+          "しよくどう で　あさごはん　を　たべます"
+        ],
+        "Kanjis": [
+          "- 食べ = Eat (たべ - Tabe)"
+        ],
+        "Romaji": [
+          "Shiyokudō de asagohan o tabemasu"
+        ],
+        "English": [
+          "I eat breakfast in the dining room."
         ]
       }
     }

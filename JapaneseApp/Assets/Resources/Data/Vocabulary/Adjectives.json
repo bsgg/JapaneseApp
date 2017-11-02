@@ -1,0 +1,33 @@
+﻿{
+  "Data": [
+    {
+      "Word": "まずい",
+      "Kana": "まずい",
+      "Romaji": "Mazui",
+      "Meaning": "Taste bad",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "まずい　です",
+          "この　おちゃ　は　まずい　です"
+        ],
+        "Kana": [
+          "まずい　です",
+          "この　おちゃ　は　まずい　です"
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romaji": [
+          "Mazui desu",
+          "Kono ocha wa mazui desu"
+        ],
+        "English": [
+          "It tastes bad",
+          "This tea tastes bad."
+        ]
+      }
+    }
+  ]
+}
