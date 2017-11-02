@@ -42,7 +42,14 @@ namespace JapaneseApp
         {
             m_ScrollText.text = text;
 
-            m_ContentDialogScroll.sizeDelta = new Vector2(m_ContentDialogScroll.sizeDelta.x, m_ScrollText.preferredHeight);
+
+            Debug.Log("m_ContentDialogScroll.sizeDelta.y: " + m_ContentDialogScroll.sizeDelta.y + " m_ScrollText.preferredHeight " + m_ScrollText.preferredHeight);
+
+            if (m_ScrollText.preferredHeight > m_ContentDialogScroll.sizeDelta.y)
+            {
+
+                m_ContentDialogScroll.sizeDelta = new Vector2(m_ContentDialogScroll.sizeDelta.x, m_ScrollText.preferredHeight);
+            }
 
             m_DialogScrollRect.verticalNormalizedPosition = 1.0f;
         }

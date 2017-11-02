@@ -239,7 +239,22 @@ namespace JapaneseApp
     public class VocabularyControl : Base
     {
         public enum EMenu { NONE = -1, Category, WordDay, RandomWord };
-        public enum ECategory { NONE = -1, Animals,  Places, Technology, Profesions, Actions, Home, Food, Numbers, Dates, Family, Objects, Misc, NUM };
+        public enum ECategory
+        { NONE = -1,
+            Animals,
+            Places,
+            Technology,
+            Profesions,
+            Actions,
+            Home,
+            Food,
+            Numbers,
+            Dates,
+            Family,
+            Objects,
+            Questions,
+            Misc,
+        NUM };
 
         [SerializeField] private string m_DataPath = "Data/Vocabulary/";
 
@@ -546,18 +561,12 @@ namespace JapaneseApp
         public void OnNextWordBtn()
         {
             if ((m_SelectedCategory <= ECategory.NONE) || (m_SelectedWordID < 0)) return;
-            /*if (m_Menu == EMenu.RandomWord)
-            {
-                SetRandomWord();
-            }
-            else
-            {*/
+            
             // Increase current word id
             m_SelectedWordID++;
             m_SelectedWordID %= m_VocabularySet[(int)m_SelectedCategory].Data.Count;
 
             SetWord();
-            //}
         }
 
         private void OnExampleMenuItem(AppController.EMenu id)

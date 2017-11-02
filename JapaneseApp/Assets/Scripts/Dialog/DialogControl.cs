@@ -107,7 +107,7 @@ namespace JapaneseApp
         [SerializeField]
         private string m_DataPath = "Data/Dialogs/";
         [SerializeField]
-        private List<string> m_ListDialogs= new List<string>();
+        private int m_NumberDialogs;
 
         [SerializeField]
         private AudioData m_AudioDataSet;
@@ -133,9 +133,11 @@ namespace JapaneseApp
 
             // Load the data
             m_DialogSet = new List<Dialog>();
-            for (int i = 0; i < m_ListDialogs.Count; i++)
+            for (int i = 0; i < m_NumberDialogs; i++)
             {
-                string path = m_DataPath + m_ListDialogs[i];
+                string nameDialog = "Dialog_" + (i + 1);
+
+                string path = m_DataPath + nameDialog;
                 string json = Utility.LoadJSONResource(path);
                 if (json != "")
                 {
@@ -234,9 +236,9 @@ namespace JapaneseApp
 
         private void SwitchToKanji()
         {
-            m_DialogUI.Subtitle = "Hiragana-Kanji";
+            m_DialogUI.Subtitle = "Kanji";
 
-            string dialog = "\n\n";
+            string dialog = "<size=50>\n\n";
             int nElements = m_DialogSet[m_SelectedDialogID].Kanji.Count;
             for (int i = 0; i < nElements; i++)
             {
@@ -248,18 +250,20 @@ namespace JapaneseApp
                 }
             }
 
+            dialog += "</size>";
+
             m_DialogUI.SetScrollDialog(dialog);
         }
 
         private void SwitchToKana()
         {
-            m_DialogUI.Subtitle = "Hiragana";
+            m_DialogUI.Subtitle = "Kana";
 
             string dialog = "\n\n";
             int nElements = m_DialogSet[m_SelectedDialogID].Kana.Count;
             for (int i = 0; i < nElements; i++)
             {
-                dialog += m_DialogSet[m_SelectedDialogID].Kana[i];
+                dialog += m_DialogSet[m_SelectedDialogID].Kana[i] + "</size>";
 
                 if (i < (nElements - 1))
                 {
