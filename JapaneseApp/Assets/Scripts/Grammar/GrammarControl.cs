@@ -1,4 +1,5 @@
 ﻿using LitJson;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -68,7 +69,7 @@ namespace JapaneseApp
 
     public class GrammarControl : Base
     {
-        public enum ECategory { NONE = -1, Numbers, Particles, Expressions_1, Demostratives, NUM };
+        public enum ECategory { NONE = -1, Numbers, Pronouns, Demostratives, Particles, Expressions_1, Expressions_2, NUM };
 
         [SerializeField]
         private string m_DataPath = "Data/Grammar/";
@@ -109,11 +110,22 @@ namespace JapaneseApp
                 string path = m_DataPath + category;
                 string json = Utility.LoadJSONResource(path);
 
-                if (json != "")
+                if (!string.IsNullOrEmpty(json))
                 {
-                    grammar = JsonMapper.ToObject<GrammarData>(json);
-                    grammar.Name = category;
-                    m_GrammarSet.Add(grammar);
+                    try
+                    {
+                        grammar = JsonMapper.ToObject<GrammarData>(json);
+                        grammar.Name = category;
+                        m_GrammarSet.Add(grammar);
+                    }
+                    catch (Exception e)
+                    {
+                        Debug.LogError("[GrammarControl.Init] Bad Format JSON File: " + path);
+                    }
+                }
+                else
+                {
+                    Debug.Log("[GrammarControl.Init] JSON not found: " + path);
                 }
             }
 

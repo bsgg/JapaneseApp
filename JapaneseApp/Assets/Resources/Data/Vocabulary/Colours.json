@@ -1,0 +1,53 @@
+﻿{
+	"Data":	
+	[
+    {
+      "Word": "青",
+      "Kana": "あお",
+      "Romaji": "Ao",
+      "Meaning": "Blue",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          ""
+        ],
+        "Kana": [
+          ""
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          ""
+        ],
+        "English": [
+          ""
+        ]
+      }
+    },
+    {
+      "Word": "赤",
+      "Kana": "あか",
+      "Romaji": "Aka",
+      "Meaning": "Red",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          ""
+        ],
+        "Kana": [
+          ""
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          ""
+        ],
+        "English": [
+          ""
+        ]
+      }
+    }
+	]
+}

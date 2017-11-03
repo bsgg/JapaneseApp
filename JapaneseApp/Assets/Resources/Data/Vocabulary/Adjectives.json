@@ -28,6 +28,60 @@
           "This tea tastes bad."
         ]
       }
+    },
+    {
+      "Word": "つめたい",
+      "Kana": "つめたい",
+      "Romaji": "Tsumetai",
+      "Meaning": "Cold",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "おちゃ　が　つめたい　です",
+          "水　が　つめたい　です"
+        ],
+        "Kana": [
+          "おちゃ　が　つめたい　です",
+          "みず　が　つめたい　です"
+        ],
+        "Kanjis": [
+          "",
+          "- 水 = Water (みず - Mizu)"
+        ],
+        "Romaji": [
+          "Ocha ga tsumetai desu",
+          "Mizu ga tsumetai desu."
+        ],
+        "English": [
+          "The tea is cold",
+          "The water is cold."
+        ]
+      }
+    },
+
+     {
+      "Word": "あつい",
+      "Kana": "あつい",
+      "Romaji": "Atsui",
+      "Meaning": "Cold",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "パン　が　あつい　です"
+        ],
+        "Kana": [
+          "パン　が　あつい　です"
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          "Pan ga atsui desu."
+        ],
+        "English": [
+          "The bread is hot"
+        ]
+      }
     }
   ]
 }

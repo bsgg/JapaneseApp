@@ -1,0 +1,36 @@
+﻿{
+  "Data": [
+    {
+      "Title": "Pronoum I: First person singular",
+      "Description": "There are different types of pronouns depending on if we are man or woman and who are we talking to: \n\n- Very formal Fem/Masc: わたくし　(Watakushi)\n\n- Formal Masculine: 私　(わたし - Watashi)\n\n- Formal Female: あたくし (atakushi)\n\n- Casual Masculine: 僕　(ぼく - Boku)\n\n - Casual Female: あたし (atashi)\n\n- Very Casual Masculine: 俺　(おれ - Ore)",
+      "Vocabulary": "",
+      "SentencesExamples": 
+      {
+        "Sentence": 
+        [
+          "- おれ　は　ちがう。。。",
+          "- こいつ　は　僕　が　殺す。。。"
+        ],
+        "Kana": 
+        [
+          "- おれ　は　ちがう...",
+          "- こいつ　は　ぼく　が　ころす。。。"
+        ],
+        "Kanjis": 
+        [
+          "",
+          "- 僕 = I (male casual) (ぼく - Boku)|- 殺す = Kill (ころす - Korosu)"
+        ],
+        "Romaji": [
+          "- Ore ga chigau...",
+          "- Koitsu wa boku ga korosu..."
+        ],
+        "English": [
+          "- I'm wrong... (A boy talking to himself)",
+          "- I will kill him!"
+        ]
+      }
+    }
+    
+  ]
+}

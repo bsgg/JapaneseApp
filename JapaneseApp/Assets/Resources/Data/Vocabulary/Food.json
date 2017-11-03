@@ -1,5 +1,31 @@
 ﻿{
   "Data": [
+
+    {
+      "Word": "パン",
+      "Kana": "パン",
+      "Romaji": "Pan",
+      "Meaning": "Bread",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "パン　が　あつい　です"
+        ],
+        "Kana": [
+          "パン　が　あつい　です"
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          "Pan ga atsui desu."
+        ],
+        "English": [
+          "The bread is hot"
+        ]
+      }
+    },
+
     {
       "Word": "肉",
       "Kana": "にく",
@@ -33,23 +59,28 @@
       "SentencesExamples": {
         "Sentence": [
           "これ は 水 で すか",
-          "それ　は　水　です"
+          "それ　は　水　です",
+          "水　が　つめたい　です"
         ],
         "Kana": [
           "これ は みず です か",
-          "それ　は　みず　です"
+          "それ　は　みず　です",
+          "みず　が　つめたい　です"
         ],
         "Kanjis": [
+          "- 水 = Water (みず - Mizu)",
           "- 水 = Water (みず - Mizu)",
           "- 水 = Water (みず - Mizu)"
         ],
         "Romaji": [
           "Kore wa mizu desu ka?",
-          "Sore wa mizu desu"
+          "Sore wa mizu desu",
+          "Mizu ga tsumetai desu."
         ],
         "English": [
           "Is this water?",
-          "That is water."
+          "That is water.",
+          "The water is cold."
         ]
       }
     },
@@ -82,6 +113,32 @@
         ]
       }
     },
+
+    {
+      "Word": "おちゃ",
+      "Kana": "おちゃ",
+      "Romaji": "Ocha",
+      "Meaning": "Tea",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "おちゃ　が　つめたい　です"
+        ],
+        "Kana": [
+          "おちゃ　が　つめたい　です"
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          "Ocha ga tsumetai desu"
+        ],
+        "English": [
+          "The tea is cold"
+        ]
+      }
+    },
+
     {
       "Word": "野菜",
       "Kana": "やさい",

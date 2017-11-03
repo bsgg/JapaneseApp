@@ -246,6 +246,7 @@ namespace JapaneseApp
             Technology,
             Profesions,
             Actions,
+            Colours,
             Home,
             Food,
             Numbers,
@@ -255,7 +256,8 @@ namespace JapaneseApp
             Adjectives,
             Questions,
             Misc,
-        NUM };
+            NUM
+        };
 
         [SerializeField] private string m_DataPath = "Data/Vocabulary/";
 
@@ -298,12 +300,23 @@ namespace JapaneseApp
                 string category = ((ECategory)i).ToString();
                 string path = m_DataPath + category;
                 string json = Utility.LoadJSONResource(path);
-                if (json != "")
+                if (!string.IsNullOrEmpty(json))
                 {
-                    WordData data = JsonMapper.ToObject<WordData>(json);
-                    data.Name = category;
-                    m_VocabularySet.Add(data);
+                    try
+                    {
+                        WordData data = JsonMapper.ToObject<WordData>(json);
+                        data.Name = category;
+                        m_VocabularySet.Add(data);
+                    }
+                    catch(Exception e)
+                    {
+                        Debug.LogError("[VocabularyControl.Init] Bad Format JSON File: " + path);
+                    }
+                    
 
+                }else
+                {
+                    Debug.Log("[VocabularyControl.Init] JSON not found: " + path);
                 }
             }
         }        

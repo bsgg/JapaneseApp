@@ -2,26 +2,26 @@
 	"Data":	
 	[
     {
-      "Word": "",
-      "Kana": "",
-      "Romaji": "",
-      "Meaning": "",
+      "Word": "だれ",
+      "Kana": "だれ",
+      "Romaji": "Dare",
+      "Meaning": "Who",
       "SpriteID": "",
       "SentencesExamples": {
         "Sentence": [
-          ""
+          "すみません　だれ　です　か"
         ],
         "Kana": [
-          ""
+          "すみません　だれ　です　か"
         ],
         "Kanjis": [
           ""
         ],
         "Romaji": [
-          ""
+          "Sumimasen, dare desu ka"
         ],
         "English": [
-          ""
+          "Excuse me, Who are you?"
         ]
       }
     }

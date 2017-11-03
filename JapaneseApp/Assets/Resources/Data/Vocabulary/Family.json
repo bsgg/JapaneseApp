@@ -110,19 +110,19 @@
       "SpriteID": "",
       "SentencesExamples": {
         "Sentence": [
-          ""
+          "お母さん　は　どこ　です　か"
         ],
         "Kana": [
-          ""
+          "おかあさん　は　どこ　です　か"
         ],
         "Kanjis": [
-          ""
+          "お母さん　= Mother (おかあさん - Okāsan)"
         ],
         "Romaji": [
-          ""
+          "Okāsan doko desu ka."
         ],
         "English": [
-          ""
+          "Where is your mother?"
         ]
       }
     },
@@ -135,19 +135,24 @@
       "SpriteID": "",
       "SentencesExamples": {
         "Sentence": [
-          "ご両親　は　どこ　ですか"
+          "ご両親　は　どこ　ですか",
+          "ご両親　は　おげんき　です　か"
         ],
         "Kana": [
-          "ごりようしん　は　どこ　ですか"
+          "ごりようしん　は　どこ　ですか",
+          "ごりようしん　は　おげんき　です　か"
         ],
         "Kanjis": [
+          "- ご両親 = Parents (ごりようしん - Goryōshin)",
           "- ご両親 = Parents (ごりようしん - Goryōshin)"
         ],
         "Romaji": [
-          "Gori yō shin wa doko desu ka"
+          "Gori yō shin wa doko desu ka",
+          "Gori yō shin wa o-genki desu ka"
         ],
         "English": [
-          "Where are your parents?"
+          "Where are your parents?",
+          "How are your parents?"
         ]
       }
     },

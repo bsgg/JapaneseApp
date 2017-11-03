@@ -176,7 +176,7 @@
         "Sentence": [
           ""
         ],
-		 "Kana": [
+        "Kana": [
         ],
         "Kanjis": [
           ""
@@ -186,6 +186,46 @@
         ],
         "English": [
           ""
+        ]
+      }
+    },
+    {
+      "Word": "好き",
+      "Kana": "すき",
+      "Romaji": "Suki",
+      "Meaning": "Like",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "ごはん　が　好き　です",
+          "学校　は　好き　です　か",
+          "やさい　は　すき　じゃ ない　です",
+          "肉　は　すき　じゃ　ない　です"
+        ],
+        "Kana": 
+        [
+          "ごはん　が　すき　です",
+          "学校　は　好き　です　か",
+          "やさいは　すき　じゃ ない　です",
+          "にく は　すき　じゃ　ない　です"
+        ],
+        "Kanjis": [
+          "- 好き = Like (すき - Suki)",
+          "- 学校 = School (がっこう - Gakkō)|- 好き = Like (すき - Suki)",
+          "- 好き = Like (すき - Suki)",
+          "- 肉 = Meat (にく - Niku)|- 好き = Like (すき - Suki)"
+        ],
+        "Romaji": [
+          "Gohan ga suki desu",
+          "Gakkō wa suki desu ka",
+          "Yasai suki ja nai desu",
+          "Niku suki ja nai desu"
+        ],
+        "English": [
+          "I like rice.",
+          "Do you like school?",
+          "I don't like vegetables",
+          "I don't like meat"
         ]
       }
     },
