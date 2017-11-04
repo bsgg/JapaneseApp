@@ -170,6 +170,35 @@
           "Little lamb"
         ]
       }
+    },
+    {
+      "Word": "クジラ",
+      "Kana": "クジラ",
+      "Romaji": "Kujira",
+      "Meaning": "Whale",
+      "SpriteID": "Whale",
+      "SentencesExamples": {
+        "Sentence": [
+          "クジラたち が、いきつぎ に でてきて いる",
+          "クジラ が 海 を 泳いで いる。"
+        ],
+        "Kana": [
+          "クジラたち が、いきつぎ に でてきて いる",
+          "クジラ が うみ を およいで いる。"
+        ],
+        "Kanjis": [
+          "",
+          "- 海 = Ocean (うみ - Umi)|- 泳いで = Swiming (およいで - Oyaide)"
+        ],
+        "Romaji": [
+          "Kujira-tachi ga, ikitsugi ni detekite iru",
+          "Kujira ga umi o oyaide iru."
+        ],
+        "English": [
+          "The whales is coming up for air",
+          "The whale is swimming in the ocean."
+        ]
+      }
     }
   ]
 }

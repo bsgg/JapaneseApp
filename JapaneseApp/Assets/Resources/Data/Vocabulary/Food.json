@@ -6,7 +6,7 @@
       "Kana": "パン",
       "Romaji": "Pan",
       "Meaning": "Bread",
-      "SpriteID": "",
+      "SpriteID": "Bread",
       "SentencesExamples": {
         "Sentence": [
           "パン　が　あつい　です"
@@ -31,7 +31,7 @@
       "Kana": "にく",
       "Romaji": "Niku",
       "Meaning": "Meat",
-      "SpriteID": "Food_Meat",
+      "SpriteID": "Meat",
       "SentencesExamples": {
         "Sentence": [
           "肉　は　食べません"
@@ -89,7 +89,7 @@
       "Kana": "ごはん",
       "Romaji": "Gohan",
       "Meaning": "Rice",
-      "SpriteID": "Food_Rice",
+      "SpriteID": "Rice",
       "SentencesExamples": {
         "Sentence": [
           "ご飯　を　食べます",
@@ -144,7 +144,7 @@
       "Kana": "やさい",
       "Romaji": "Yasai",
       "Meaning": "Vegetables",
-      "SpriteID": "Food_Vegetables",
+      "SpriteID": "Vegetables",
       "SentencesExamples": {
         "Sentence": [
           "肉　と　野菜 を　食べます"

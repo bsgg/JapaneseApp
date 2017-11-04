@@ -64,6 +64,27 @@
           "Asia",
           "The sound of heavy rain"
         ]
+      }
+    },
+    {
+      "Kana": "タ_チ_ツ_テ_ト",
+      "Romaji": "Ta_Chi_Tsu_Te_To",
+      "SentencesExamples": {
+        "Sentence": [
+          "ゲート",
+          "コート",
+          "セーター"
+        ],
+        "Romaji": [
+          "Gēto",
+          "Kōto",
+          "Sētā"
+        ],
+        "English": [
+          "Gate",
+          "Coat",
+          "Sweater"
+        ]
       }    
     }
 	]
