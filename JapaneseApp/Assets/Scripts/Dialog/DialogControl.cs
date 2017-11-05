@@ -1,6 +1,8 @@
 ﻿using LitJson;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 namespace JapaneseApp
@@ -75,32 +77,7 @@ namespace JapaneseApp
 
     }
 
-    #endregion DataModel
-
-   /* [System.Serializable]
-    public class AudioData
-    {
-        [SerializeField]
-        public List<AudioClip> AudioClips;
-        public AudioClip GetAudio(string name)
-        {
-            for (int i = 0; i < AudioClips.Count; i++)
-            {
-                if (AudioClips[i].name.Equals(name))
-                {
-                    return AudioClips[i];
-                }
-            }
-
-            return null;
-        }
-
-        public AudioClip GetAudio(int id)
-        {
-            if ((id < 0) || (id >= AudioClips.Count)) return null;
-            return AudioClips[id];
-        }
-    }*/
+    #endregion DataModel  
 
     [System.Serializable]
     public class DialogSet
@@ -109,7 +86,7 @@ namespace JapaneseApp
 
         public DialogControl.ECategory Category;
 
-        public int NumberDialogs;
+        public List<string> NameDialog;
 
         public List<Dialog> ListDialog;
 
@@ -149,14 +126,7 @@ namespace JapaneseApp
         [SerializeField]
         private int m_NumberDialogs;
 
-        //[SerializeField]
-        //private AudioData m_AudioDataSet;
-        
-
-        //[SerializeField]
-        //private List<Dialog>  m_DialogSet;
-        [SerializeField]
-        private List<DialogSet> m_DialogSet;
+        [SerializeField] private List<DialogSet> m_DialogSet;
         private int m_SelectedDialogID;
         private int m_SelectedAudioClipID;
         private ECategory m_SelectedCategory = ECategory.NHSEasyJapanese;
@@ -177,17 +147,28 @@ namespace JapaneseApp
 
             // Load the data
             for (int i = 0; i < m_DialogSet.Count; i++)
-            {
-                for (int d = 0; d< m_DialogSet[i].NumberDialogs; d++)
+            {               
+                for (int d = 0; d< m_DialogSet[i].NameDialog.Count; d++)
                 {
-                    string nameDialog =m_DialogSet[i].Category.ToString() + "\\Dialog_" + (d + 1);
+                    string nameDialog = m_DialogSet[i].Category.ToString() + "\\" + m_DialogSet[i].NameDialog[d];
                     string path = m_DataPath + nameDialog;
                     string json = Utility.LoadJSONResource(path);
-                    if (!string.IsNullOrEmpty(json))
+                    try
                     {
-                        Dialog data = JsonMapper.ToObject<Dialog>(json);
-                        m_DialogSet[i].ListDialog.Add(data);
+                        if (!string.IsNullOrEmpty(json))
+                        {
+                            Dialog data = JsonMapper.ToObject<Dialog>(json);
+                            m_DialogSet[i].ListDialog.Add(data);
+                        }
+                        else
+                        {
+                            Debug.Log("[DialogControl.Init] JSON not found: " + path);
+                        }
                     }
+                    catch(Exception e)
+                    {
+                        Debug.LogError("[DialogControl.Init] Bad Format JSON File: " + path);
+                    }                    
                 }
             }                 
         }
