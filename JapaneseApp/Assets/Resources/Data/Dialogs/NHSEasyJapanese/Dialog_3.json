@@ -1,0 +1,38 @@
+﻿{
+  "Title": "Dialog 3. They are my treasures",
+  "Audio": "Dialog_3",
+
+  "Kanji": 
+  [
+    "- アンナ:　私　の　部屋　こちら　です。どうぞ",
+    "- 寮母: すごい！　これ　は　全部　マンガ?",
+    "- アンナ: それ　は　私　の　宝物　です。私　は　毎日　マンガ　を　読みます。"
+    
+  ],
+
+  "Kana": 
+  [
+    "- アンナ:　わたし　の　へや　こちら　です。どうぞ",
+    "- りょうぼ: すごい！　これ　は　ぜんぶ　マンガが?",
+    "- アンナ: それ　は　わたし　の　たからもの　です。わたし　は　まいにち　マンガ　を　よみます。"
+  ],
+
+  "Romaji": [
+
+    "- Anna: Watashi no heya kochira desu. Dōzo",
+    "- Sakura: Sugoi! Kore wa zenbu manga?",
+    "- Anna: Sore wa watashi no takaramono desu. Watashi wa mainichi manga o yomimasu."
+  ],
+
+  "English": [
+    "- Anna: My room is this way. Please",
+    "- Sakura: Amazing? Are all these manga?",
+    "- Anna: They are my treasures. I read manga every day."
+  ],
+
+  "Vocabulary": [
+    ""
+  ],
+
+  "Description": ""
+}

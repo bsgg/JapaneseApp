@@ -85,6 +85,30 @@
           "Coat",
           "Sweater"
         ]
+      }
+    },
+    {
+      "Kana": "ダ_ヂ_ヅ_デ_ド",
+      "Romaji": "Da_Ji_Dzu_De_Do",
+      "SentencesExamples": {
+        "Sentence": [
+          "カード",
+          "ドイツ",
+          "クツキー",
+          "ドア"
+        ],
+        "Romaji": [
+          "Kādo",
+          "Doitsu",
+          "Kutsukii",
+          "Doa"
+        ],
+        "English": [
+          "Card",
+          "Germany",
+          "Cookie",
+          "Door"
+        ]
       }    
     }
 	]

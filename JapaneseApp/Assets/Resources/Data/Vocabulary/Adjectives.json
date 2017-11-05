@@ -1,5 +1,6 @@
 ﻿{
-  "Data": [
+  "Data": 
+  [
     {
       "Word": "まずい",
       "Kana": "まずい",
@@ -58,8 +59,7 @@
         ]
       }
     },
-
-     {
+    {
       "Word": "あつい",
       "Kana": "あつい",
       "Romaji": "Atsui",
@@ -80,6 +80,93 @@
         ],
         "English": [
           "The bread is hot"
+        ]
+      }
+    },
+    {
+      "Word": "高い",
+      "Kana": "たかい",
+      "Romaji": "Takai",
+      "Meaning": "Expensive High, Tall",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "肉　は　高い　です",
+          "高い　肉　を　食べます"
+        ],
+        "Kana": [
+          "にく　は　たかい　です",
+          "たかい　にく　を　たべます"
+        ],
+        "Kanjis": [
+          "- 肉 = Meat (にく - Niku)|- 高い = Expensive (たかい - akai)",
+          "- 高い = Expensive (たかい - akai)|- 肉 = Meat (にく - Niku)|- 食べ = Eat (たべ - Tabe)"
+        ],
+        "Romaji": [
+          "Niku wa takai desu",
+          "Takai niku o tabemasu"
+        ],
+        "English": [
+          "Meat is expensive",
+          "I eat expensive meat."
+        ]
+      }
+    },
+    {
+      "Word": "甘い",
+      "Kana": "あまい",
+      "Romaji": "Amai",
+      "Meaning": "Sweet",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "この　おちゃ　は　甘い　です",
+          "甘い　パン　を　食べます"
+        ],
+        "Kana": [
+          "この　おちゃ　は　あまい　です",
+          "あまい　パン　を　たべます"
+        ],
+        "Kanjis": [
+          "- 甘い = Sweet (あまい - Amai)",
+          "- 甘い = Sweet (あまい - Amai)|- 食べ = Eat (たべ - Tabe)"
+        ],
+        "Romaji": [
+          "Kono ocha wa amai desu",
+          "Amai pan o tabemasu"
+        ],
+        "English": [
+          "This tea is sweet",
+          "I eat sweet pan."
+        ]
+      }
+    },
+    {
+      "Word": "辛い",
+      "Kana": "からい",
+      "Romaji": "Karai",
+      "Meaning": "Spicy",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "この　ごかん　は　辛い　です",
+          "辛い　です　か"
+        ],
+        "Kana": [
+          "この　ごかん　は　からい　です",
+          "からい　です　か"
+        ],
+        "Kanjis": [
+          "- 辛い = Spicy (からい - Karai)",
+          "- 辛い = Spicy (からい - Karai)"
+        ],
+        "Romaji": [
+          "Kono gohan wa karai desu",
+          "Karai desu ka"
+        ],
+        "English": [
+          "This rice is spicy",
+          "Is it spicy?"
         ]
       }
     }

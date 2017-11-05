@@ -202,8 +202,7 @@
           "やさい　は　すき　じゃ ない　です",
           "肉　は　すき　じゃ　ない　です"
         ],
-        "Kana": 
-        [
+        "Kana": [
           "ごはん　が　すき　です",
           "学校　は　好き　です　か",
           "やさいは　すき　じゃ ない　です",
@@ -226,6 +225,36 @@
           "Do you like school?",
           "I don't like vegetables",
           "I don't like meat"
+        ]
+      }
+    },
+    {
+      "Word": "きらい",
+      "Kana": "きらい",
+      "Romaji": "Kirai",
+      "Meaning": "Hate",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "おちゃ　が　きらい　です。",
+          "魚　が　きらい　です。"
+        ],
+        "Kana": 
+        [
+          "おちゃ　が　きらい　です",
+          "あかな　が　きらい　です。"
+        ],
+        "Kanjis": [
+          "",
+          "- 魚 = Fish (あかな - Sakana)"
+        ],
+        "Romaji": [
+          "Ocha ga kirai desu",
+          "Sakana ga kirai desu"
+        ],
+        "English": [
+          "I hate tea.",
+          "I hate fish."
         ]
       }
     },

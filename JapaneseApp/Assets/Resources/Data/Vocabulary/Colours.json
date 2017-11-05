@@ -48,6 +48,30 @@
           ""
         ]
       }
+    },
+    {
+      "Word": "しろ",
+      "Kana": "しろ",
+      "Romaji": "Shiro",
+      "Meaning": "White",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          ""
+        ],
+        "Kana": [
+          ""
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          ""
+        ],
+        "English": [
+          ""
+        ]
+      }
     }
 	]
 }

@@ -86,6 +86,30 @@
           "How many chairs are there in the room?"
         ]
       }
+    },
+     {
+      "Word": "ベッド",
+      "Kana": "ベッド",
+      "Romaji": "Beddo",
+      "Meaning": "Bed",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "ベッド で 休む"
+        ],
+        "Kana": [
+          "ベッド で やすむ"
+        ],
+        "Kanjis": [
+          "- 休む = Rest (やすむ - Yasumu)"
+        ],
+        "Romaji": [
+          "Beddo de yasumu"
+        ],
+        "English": [
+          "Rest in bed"
+        ]
+      }
     }
   ]
 }
