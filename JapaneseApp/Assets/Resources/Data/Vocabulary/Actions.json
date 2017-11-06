@@ -269,7 +269,7 @@
           "男の子が皿を洗う。",
           "女の子が顔を洗った。"
         ],
-         "Kana": [
+        "Kana": [
           "おとこ　の　こ　が　さら　を　あらう",
           "おんあ　の　こ　が　かお　を　あらった"
         ],
@@ -284,6 +284,36 @@
         "English": [
           "The boy washes the dishes.",
           "The girl washed her face."
+        ]
+      }
+    },
+
+    {
+      "Word": "勉強",
+      "Kana": "べんきょう",
+      "Romaji": "Benkyō",
+      "Meaning": "Study",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "あさって　勉強　します",
+          "あした　勉強　します"
+        ],
+        "Kana": [
+          "あさって　べんきょう　します",
+          "あした　べんきょう　します"
+        ],
+        "Kanjis": [
+          "- 勉強 = Study (べんきょう - べんきょう)",
+          "- 勉強 = Study (べんきょう - べんきょう)"
+        ],
+        "Romaji": [
+          "Osatte benkyō shimasu",
+          "Ashita benkyō shimasu"
+        ],
+        "English": [
+          "I will study the day after tomorrow.",
+          "I will study tomorrow."
         ]
       }
     }

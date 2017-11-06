@@ -24,6 +24,41 @@
           "Excuse me, Who are you?"
         ]
       }
+    },
+     {
+      "Word": "何",
+      "Kana": "なん",
+      "Romaji": "Nan",
+      "Meaning": "Que",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "それ　は　何　です　か",
+          "おさって　は　何　を　しますか",
+          "あした　は　何　を　しますか"
+        ],
+        "Kana": [
+          "それ　は　なん　です　か",
+          "おさって　は　なに　を　しますか",
+          "あした　は　なに　を　しますか"
+
+        ],
+        "Kanjis": [
+          "何 = What (なん - Nan)",
+          "何 = What (なん - Nan)",
+          "何 = What (なん - Nan)"
+        ],
+        "Romaji": [
+          "Sore ha(wa) nan desu ka",
+          "Osatte wa nani o shimasu ka",
+          "Ashita wa nani o shimasu ka"
+        ],
+        "English": [
+          "What is this?",
+          "What will you do the day after tomorrow?",
+          "What will you do tomorrow?"
+        ]
+      }
     }
 	]
 }

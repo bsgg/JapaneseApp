@@ -24,30 +24,7 @@
         ]
       }
     },
-    {
-      "Word": "何",
-      "Kana": "なん",
-      "Romaji": "Nan",
-      "Meaning": "Que",
-      "SpriteID": "",
-      "SentencesExamples": {
-        "Sentence": [
-          "それ　は　何　です　か"
-        ],
-        "Kana": [
-          "それ　は　なん　です　か"
-        ],
-        "Kanjis": [
-          "何 = What (なん - Nan)"
-        ],
-        "Romaji": [
-          "Sore ha(wa) nan desu ka"
-        ],
-        "English": [
-          "What is this?"
-        ]
-      }
-    },
+   
     {
       "Word": "誰",
       "Kana": "だれ",
