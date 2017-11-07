@@ -1,0 +1,64 @@
+﻿{
+	"Title": "Dialog 3. Are You Prepared if You Catch a Cold in Japan?!",
+	"Audio": "Dialog_3",
+
+	"Kanji": [
+    "北川 冬菓： しゆうさん、おはいようございま。。。（ハクション！ゴホゴホ）。",
+    "西本秋：　風邪　です　か、冬菓さん。",
+    "冬菓： たぶん。（ゴホゴホ）。",
+    "西本秋： これ　は　何　です　か。",
+    "冬菓：え？　これ？　これ　は　薬　です。",
+    "西本秋： それ　も　薬　です　か。",
+    "冬菓：あ。。。これ　は　たばこ　です",
+    "西本秋：たばこは　だめ　です。冬菓さん"
+	],
+
+	"Kana": [
+    "きたがわ ふゆか:　しゆうさん、おはいようございま。。。（ハクション！ゴホゴホ）。",
+    "にしもと　しゅう: かぜ　です　か、ふゆかさん。",
+    "ふゆか:　たぶん。（ゴホゴホ）。",
+    "しゅう:　これ　は　なん　です　か。",
+    "ふゆか: え？　これ？　これ　は　くすり　です。",
+    "しゅう:　それ　も　くすり　です　か。",
+    "ふゆか:　あ。。。これ　は　たばこ　です",
+    "しゅう：たばこは　だめ　です。ふゆかさん。"
+	],
+
+	"Romaji": [
+    "Kitagawa Fuyuka: Shū-san, o-hayō gozaimasu...(Hakushon! Gohogoho)",
+    "Nishimoto Shū: Kaze desu ka, Fuyuka san.",
+    "Fuyuka: Tabun. (Gohogoho)",
+    "Nishimoto Shū: Kore wa nan desu ka.",
+    "Fuyuka: E? Kore? Kore wa kusuri desu.",
+    "Nishimoto Shū:　Kore mo kusuri desu ka.",
+    "Fuyuka: A... kore wa tabako desu.",
+    "Shū: Tabako wa dame desu. Fuyuka-san"
+	],
+
+	"English": [
+    "Kitagawa Fuyuka: Good morning...",
+    "Nishimoto Shū: Do you have a cold, Fuyuka?",
+    "Kitagawa Fuyuka: Maybe...",
+    "Nishimoto Shū: What is that?",
+    "Kitagawa Fuyuka: Eh? This? It's medicine",
+    "Nishimoto Shū: Is that also medicine?",
+    "Fuyuka: Oh.. those are cigarettes.",
+    "Shū: Cigarettes are no good Fuyuka."
+	],
+
+	"Vocabulary": [
+    "風邪 = Cold (Illness) (かぜ - Kaze) [1. 風 = Wind, 2. 邪 = Evil]. Example = いいえ、風邪（かぜ）じゃ ない です。 (Iie, kaze ja nai desu.) = No, I don't have a cold.",
+    "何 = What (なに - Nani). It means what but becomes なん (Nan) before D or T sound. Example: これ　は　なん　です　か。（Kore wa nan desu ka?） = What's this?",
+    "薬 = Medicine (くすり - Kusuri). Example: これ は くすり です。(Kore wa kusuri desu.）= This is medicine.",
+    "も = Particle also, too. Example: これ　も　くする　です　か (Kore mo kusuri desu ka?) = Is this also a medicine?",
+    "駄目 = No good, useless　(だめ - Dame) Example: これ 薬 (くすり) はだめです。(Kore kusuri wa dame desu) = This medicine is useless.",
+    "たぶん = Maybe, Probably (Tabun). Example: たぶん、風邪（かぜ）です。(Tabun, kaze desu) = I probably have a cold."
+	],
+
+  "Description": 
+  [
+    "これ (Kore) = This. Particle Demostrative. Examples: - これは 薬（くすり）です (Kore wa kusuri desu) = This is medicine \n - これは何（なん）ですか。(Kore wa nan desu ka?) = What is this?",
+    "それ (Sore) = That. Particle Demostrative. Examples: - それ　は　カメラ　です (Sore wa Kamera desu) = That is a camera \n - それは何（なん）ですか。(Sore wa nan desu ka?) = What is that?",
+    "あれ (Are) = That. Particle Demostrative. Examples: - あれ　は　煙草 (たばこ)　です か　(Are wa tabako desu ka?) = Are those cigarettes? \n - あれ　も　薬（くすり）です　(Are mo kusuri desu) = That is also mecidine."
+  ]
+}

@@ -49,5 +49,7 @@
     "- アメリカ人 = American Nationality (あめりかじん - Amerika-jin)"
   ],
 
-  "Description": "Nationalities: To form a nationality we need the country + 人 Kanji (Jin = Person). Example:\n - アメリカ人 = American (アメリカじん - Amerika-jin\n - スペイン語人 = Spanish (スペインごじん - Supeingo-jin)"
+  "Description": [
+    "Nationalities: To form a nationality we need the country + 人 Kanji (Jin = Person). Example:\n - アメリカ人 = American (アメリカじん - Amerika-jin\n - スペイン語人 = Spanish (スペインごじん - Supeingo-jin)"
+  ]
 }
