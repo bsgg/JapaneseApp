@@ -57,5 +57,7 @@
 		"- 豆 = Beans, Peas　(まめ - Mame)"
 	],
 
-	"Description": "This is = これ　は　[something]　です (Kore wa [something] desu):\n\n- これ (Kore) = this\n\n- は (Wa) = Topic marking particle\n\n- です（desu）= Copula (equivalent to English am/is/are). \n\n - Examples:\n - これ(kore) は(wa) にく(niku) です。(desu) = This is meat\n - これ(kore) は(wa) さかな(sakana) です。(desu) = This is fish\n\n - です (desu) is equivalent to English am/is/are. There are 3 negative forms of desu（です）: \n- ではありません (de wa arimasen), Very formal. Example = やさい では ありません (Yasai dewa arimasen) \n- じゃ ありません (ja arimasen). Example = さかな じゃ ありません (Sakana ja arimasen) \n - じゃないです (ja nai desu） Example: にく じゃ ない です (niku ja nai desu)"
+  "Description": [
+  "This is = これ　は　[something]　です (Kore wa [something] desu):\n\n- これ (Kore) = this\n\n- は (Wa) = Topic marking particle\n\n- です（desu）= Copula (equivalent to English am/is/are). \n\n - Examples:\n - これ(kore) は(wa) にく(niku) です。(desu) = This is meat\n - これ(kore) は(wa) さかな(sakana) です。(desu) = This is fish\n\n - です (desu) is equivalent to English am/is/are. There are 3 negative forms of desu（です）: \n- ではありません (de wa arimasen), Very formal. Example = やさい では ありません (Yasai dewa arimasen) \n- じゃ ありません (ja arimasen). Example = さかな じゃ ありません (Sakana ja arimasen) \n - じゃないです (ja nai desu） Example: にく じゃ ない です (niku ja nai desu)"
+     ]
 }

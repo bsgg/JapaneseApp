@@ -44,5 +44,5 @@
     "- お帰りなさい (Okaerinasai) = Welcome back. Greeting when someone is back home."
   ],
 
-  "Description": "です Desu verb is, polite form. Example:\n- はい、わたし　わ　日本人　です (Hai, Watashi wa Nihon-Jin desu) = Yes, I'm Japanese\n\n- でわ　ありません　(Dewa arimasen) Is the negative form of desu. Example:\n -　いいえ、わたし　わ　日本人　でわ　ありません (Iie, Watashi wa nihon-jin dewa arimasen) = No I'm not Japanese\n\n - If you change でわ (Dewa) to じゃ (Ja), you sound more casual. Example:\n -　いいえ、わたし　わ　日本人　じゃ　ありません (Iie, Watashi wa nihon-jin ja arimasen) = No I'm not Japanese"
+  "Description": [ "です Desu verb is, polite form. Example:\n- はい、わたし　わ　日本人　です (Hai, Watashi wa Nihon-Jin desu) = Yes, I'm Japanese\n\n- でわ　ありません　(Dewa arimasen) Is the negative form of desu. Example:\n -　いいえ、わたし　わ　日本人　でわ　ありません (Iie, Watashi wa nihon-jin dewa arimasen) = No I'm not Japanese\n\n - If you change でわ (Dewa) to じゃ (Ja), you sound more casual. Example:\n -　いいえ、わたし　わ　日本人　じゃ　ありません (Iie, Watashi wa nihon-jin ja arimasen) = No I'm not Japanese" ]
 }

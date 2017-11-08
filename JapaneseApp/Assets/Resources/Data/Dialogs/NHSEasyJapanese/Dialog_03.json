@@ -43,5 +43,5 @@
     "- トイレ: Toilet (トイレ - Toire)"
   ],
 
-  "Description": "Doko desu ka (Where is...) is a phrase that allows you to ask where something is, either a place or thing. Examples: \n - トイレ　は　どこ　です　か = Where is the bathroom? (Toire wa doko desu ka?)"
+  "Description": [ "Doko desu ka (Where is...) is a phrase that allows you to ask where something is, either a place or thing. Examples: \n - トイレ　は　どこ　です　か = Where is the bathroom? (Toire wa doko desu ka?)" ]
 }

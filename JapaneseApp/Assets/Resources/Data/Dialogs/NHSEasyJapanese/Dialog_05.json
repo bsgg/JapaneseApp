@@ -39,5 +39,14 @@
     "- 毎日 = Every day (まいにち - Mainichi) [1.毎 = Every (まい - Mai), 2.日 = Day (にち - Nichi)]"
   ],
 
-  "Description": "\n- A typical word order in Japanese is: SUBJECT + OBJECT + VERB.\n- を (O) is a particle indicating the object of an action. Example: 私 は マンガ　を　読みます = I read manga. (わたし は マンガ　を　よみます - Watashi wa Manga o yomimasu)\n\n- ます(Masu) Form. ます form when we speak in a polite way. To make it neagative ます(Masu) change to ません(Masen). Example:\n - Verb Read 読む (よむ - Yomu) -> Read Polite way 読みます (よみます - Yomimasu) -> Becomes 読みません = Do not read in negative　(よみません - Yomimasen)"
+  "Description": 
+  [
+
+    "A typical word order in Japanese is: SUBJECT + OBJECT + VERB.",
+    "を (O) is a particle indicating the object of an action. ",
+    "Example: 私 は マンガ　を　読みます = I read manga. (わたし は マンガ　を　よみます - Watashi wa Manga o yomimasu)",
+    "ます(Masu) Form. ます form when we speak in a polite way. To make it neagative ます(Masu) change to ません(Masen). Example:",
+    "Verb Read 読む (よむ - Yomu) -> Read Polite way 読みます (よみます - Yomimasu) -> Becomes 読みません = Do not read in negative　(よみません - Yomimasen)"
+
+  ]
 }

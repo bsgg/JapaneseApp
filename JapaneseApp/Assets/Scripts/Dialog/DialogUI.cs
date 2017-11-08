@@ -42,9 +42,6 @@ namespace JapaneseApp
         {
             m_ScrollText.text = text;
 
-
-            Debug.Log("m_ContentDialogScroll.sizeDelta.y: " + m_ContentDialogScroll.sizeDelta.y + " m_ScrollText.preferredHeight " + m_ScrollText.preferredHeight);
-
             if (m_ScrollText.preferredHeight > m_ContentDialogScroll.sizeDelta.y)
             {
 
