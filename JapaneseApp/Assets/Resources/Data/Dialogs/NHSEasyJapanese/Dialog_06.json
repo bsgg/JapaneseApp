@@ -1,0 +1,54 @@
+﻿{
+  "Title": "What is your number",
+  "Audio": "Dialog_06",
+
+  "Kanji": 
+  [
+    "さくら：　ところで　アンナさん。　電話番号　は　何番　です　か？",
+    "アンナ：　ええと。。。　れい　はち　れい　いち　に　さん　よん。",
+    "さくら：　ありがとう。　じゃ、　今度、　電話　を　します　ね"    
+  ],
+
+  "Kana": 
+  [
+    "さくら：　ところで　アンナさん。でんわ ばんごう　は　なん ばん　です　か？",
+    "アンナ：　ええと。。。れい　はち　れい　いち　に　さん　よん。",
+    "さくら：　ありがとう。じゃ　こんど、でんわ　を　します　ね。"
+  ],
+
+  "Romaji": [
+
+    "Sakura: Tokorode Anna-San. Denwa bangō wa nan ban desu ka",
+    "Anna: Êto. Rei Hachi Rei - Ichi Ni San Yon...",
+    "Sakura: Arigatō. Ja, Kondo, denwa o shimasu ne."
+  ],
+
+  "English": [
+    "Sakura: By the way Anna. What is your phone number?",
+    "Anna: Let me see. 080-1234-...",
+    "Sakura: Thank you. I'll phone you next time, Ok?"
+  ],
+
+  "Vocabulary": [
+    "- ところで = By the way (ところで - Tokorode)",
+    "- 電話番号 = Telephone Number [1.電話 = Phone (でんわ - Denwa) 2.番号 = Number (ばんごう - Bangō)",
+    "- 何 = What (なん - Nan)",
+    "- 番 =  Counter Number (ばん - Ban) = A counter is a word to count things in Japanese.",
+    "- 何番 = What number (1.なん 2.ばん - 1.Nan 2.Ban)",
+    "- じゃ = Ya, Casual way of connecting sentences",
+    "- 今度 = This time, Next time (でんわ - Kondo)",
+    "- ね = Ok? Particle to reafirm something you are saying."
+  ],
+
+  "Description": 
+  [
+    "- します (Shimasu) = It's a verb which means to do something.",
+    "- The particle を can be written in rōmaji as O or Wo. It is pronounced more like O.",
+    "- を marks the direct object in a sentence. The direct object is the noun which receives the action of the verb.",
+    "- In Japanese, を always comes right after the direct object in a sentence, followed by a verb at the end.",
+    "- Structure  SOMETHING + を(wo) + します(Shimasu) = Talk about actions. Examples:",
+    "- べんきおう Study => べんきおう を します (Benkiō o shimasu) => I study",
+    "- りようり Study => りようり を します (Ryōri o shimasu) => I cook",
+    "- でんわ Phone, Call => でんわ　を　します (Denwa o shimasu) => I will call, I will phone"
+  ]
+}
