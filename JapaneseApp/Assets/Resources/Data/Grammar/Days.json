@@ -1,0 +1,49 @@
+﻿{
+	"Data":	
+	[
+    {
+      "Title": "Days of the week",
+      "Description": "A day of the week is form by => Kanji word + 曜日 (ようび - Yōbi)",
+      "Vocabulary": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "月曜日　= Monday, Day of Moon (Getsuyōbi)",
+          "火曜日　= Tuesday, Day of fire (Kayōbi)",
+          "水曜日　= Wednesday, Day of the water (Suiyōbi)",
+          "木曜日　= Thursday, Day of tree (Mokuyōbi)",
+          "金曜日　= Friday, Day of metal (Kinyōbi)",
+          "土曜日　= Saturday, Day of Land (Doyōbi)",
+          "日曜日　= Sunday, Day of sun (Nichiyōbi)"
+        ],
+        "Kanjis": [
+          "- 月 = Moon (つき- Tsuki)|- 曜日 = Day of Week (ようび - Yōbi)",
+          "- 火 = Fire (か - Ka)|- 曜日 = Day of Week (ようび - Yōbi)",
+          "- 水 = Water (みず- Mizu)|- 曜日 = Day of Week (ようび - Yōbi)",
+          "- 木 = Tree (き - Ki)|- 曜日 = Day of Week (ようび - Yōbi)",
+          "- 金 = Metal (きん- Kin)|- 曜日 = Day of Week (ようび - Yōbi)",
+          "- 土 = Land (つち- Tsuchi)|- 曜日 = Day of Week (ようび - Yōbi)",
+          "- 日 = Sun (にち- Nichi)|- 曜日 = Day of Week (ようび - Yōbi)"
+
+        ],
+        "Romaji": [
+          "Getsuyōbi",
+          "Kayōbi",
+          "Suiyōbi",
+          "Mokuyōbi",
+          "Kinyōbi",
+          "Doyōbi",
+          "Nichiyōbi"
+        ],
+        "English": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ]
+      }
+    }
+	]
+}

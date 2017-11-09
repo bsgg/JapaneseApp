@@ -109,6 +109,27 @@
           "Cookie",
           "Door"
         ]
+      }
+    },
+    {
+      "Kana": "ナ_ニ_ヌ_ネ_ノ",
+      "Romaji": "Na_Ni_Nu_Ne_No",
+      "SentencesExamples": {
+        "Sentence": [
+          "カナダ",
+          "ノート",
+          "スカート"
+        ],
+        "Romaji": [
+          "Kanada",
+          "Nōto",
+          "Sukāto"
+        ],
+        "English": [
+          "Canada",
+          "Notebook",
+          "Skirt"
+        ]
       }    
     }
 	]
