@@ -87,7 +87,7 @@
         ]
       }
     },
-     {
+    {
       "Word": "ベッド",
       "Kana": "ベッド",
       "Romaji": "Beddo",
@@ -108,6 +108,35 @@
         ],
         "English": [
           "Rest in bed"
+        ]
+      }
+    },
+    {
+      "Word": "裏庭",
+      "Kana": "うらにわ",
+      "Romaji": "Uraniwa",
+      "Meaning": "Backyard",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "裏庭 に は 広 い 花畑 が あります。",
+          "広 い 裏庭"
+        ],
+        "Kana": [
+          "うらにわ に は ひろい はなばたけ が あります。",
+          "ひろい い うらにわ"
+        ],
+        "Kanjis": [
+          "- 裏庭 = Backyard (うらにわ - Uraniwa)|- 広 = Wide (ひろい - Hiroi)|- 花畑 = Flower garden (はなばたけ - Hanabatake)",
+          "- 広 = Wide, Big (ひろい - Hiroi)|- 裏庭 = Backyard (うらにわ - Uraniwa)"
+        ],
+        "Romaji": [
+          "Uraniwa ni wa hiroi hanabatake ga arimasu.",
+          "Hiroi ni uraniwa."
+        ],
+        "English": [
+          "There is a huge flower garden in the backyard.",
+          "Wide backyard"
         ]
       }
     }

@@ -304,8 +304,8 @@
           "あした　べんきょう　します"
         ],
         "Kanjis": [
-          "- 勉強 = Study (べんきょう - べんきょう)",
-          "- 勉強 = Study (べんきょう - べんきょう)"
+          "- 勉強 = Study (benkyō - べんきょう)",
+          "- 勉強 = Study (benkyō - べんきょう)"
         ],
         "Romaji": [
           "Osatte benkyō shimasu",
@@ -316,6 +316,33 @@
           "I will study tomorrow."
         ]
       }
+    },
+
+    {
+      "Word": "買い",
+      "Kana": "かい",
+      "Romaji": "Kai",
+      "Meaning": "Buy",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "テーブル　を　買います"
+        ],
+        "Kana": [
+          "テーブル　を　かいます"
+        ],
+        "Kanjis": [
+          "- 買い = Buy (かい - Kai)"
+        ],
+        "Romaji": [
+          "Teeburu o kaimasu"
+        ],
+        "English": [
+          "I will buy a table."
+        ]
+      }
     }
+
+
   ]
 }

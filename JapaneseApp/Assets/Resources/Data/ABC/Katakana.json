@@ -130,6 +130,27 @@
           "Notebook",
           "Skirt"
         ]
+      }
+    },
+    {
+      "Kana": "ハ_ヒ_フ_ヘ_ホ",
+      "Romaji": "Ha_Hi_Fu_He_Ho",
+      "SentencesExamples": {
+        "Sentence": [
+          "ナイフ",
+          "ギター",
+          "タクシー"
+        ],
+        "Romaji": [
+          "Naifu",
+          "Gitaa",
+          "Takushi"
+        ],
+        "English": [
+          "Knife",
+          "Guitar",
+          "Taxi"
+        ]
       }    
     }
 	]

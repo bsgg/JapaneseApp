@@ -35,15 +35,18 @@
         "Sentence": [
           "それ　は　何　です　か",
           "おさって　は　何　を　しますか",
-          "あした　は　何　を　しますか"
+          "あした　は　何　を　しますか",
+          "何　を　かいます　か"
         ],
         "Kana": [
           "それ　は　なん　です　か",
           "おさって　は　なに　を　しますか",
-          "あした　は　なに　を　しますか"
+          "あした　は　なに　を　しますか",
+          "なに　を　かいます　か"
 
         ],
         "Kanjis": [
+          "何 = What (なん - Nan)",
           "何 = What (なん - Nan)",
           "何 = What (なん - Nan)",
           "何 = What (なん - Nan)"
@@ -51,12 +54,14 @@
         "Romaji": [
           "Sore ha(wa) nan desu ka",
           "Osatte wa nani o shimasu ka",
-          "Ashita wa nani o shimasu ka"
+          "Ashita wa nani o shimasu ka",
+          "Nani o kaimasu ka"
         ],
         "English": [
           "What is this?",
           "What will you do the day after tomorrow?",
-          "What will you do tomorrow?"
+          "What will you do tomorrow?",
+          "What will you buy?"
         ]
       }
     }
