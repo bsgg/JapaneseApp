@@ -69,7 +69,7 @@ namespace JapaneseApp
 
     public class GrammarControl : Base
     {
-        public enum ECategory { NONE = -1, Numbers, Pronouns, Demostratives, Particles, Expressions_1, Expressions_2, NUM };
+        public enum ECategory { NONE = -1, Numbers, Pronouns, Demostratives, Particles, Expressions_1, Expressions_2, Existance, NUM };
 
         [SerializeField]
         private string m_DataPath = "Data/Grammar/";

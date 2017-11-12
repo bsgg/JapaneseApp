@@ -1,0 +1,69 @@
+﻿{
+	"Data":	
+	[
+    {
+      "Title": "There is/There are: います (Imasu)",
+      "Description": "います (Imasu): It's used to indicate that someone exist at a location and moves by himself/itself, like people or animals.",
+      "Vocabulary": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "猫　が　います",
+          "犬　と　猫　が　います"
+        ],
+        "Kana": [
+          "ねこ　が　います",
+          "いぬ　と　ねこ　が　います"
+        ],
+        "Kanjis": [
+          "- 猫: Neko (ねこ - Cat)",
+          "- 犬: Dog (いぬ - Inu)|- 猫: Neko (ねこ - Cat)"
+        ],
+        "Romaji": [
+          "Neko ga imasu",
+          "Inu to neko imasu"
+        ],
+        "English": [
+          "There is a cat",
+          "There are cats and dogs."
+        ]
+      }
+    },
+    {
+      "Title": "There is/There are: あります (Arimasu)",
+      "Description": "あります (Arimasu): It's used to indicate that someone exist at a location and do not moves by itself, like things or plants.",
+      "Vocabulary": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "つくえ が あります。",
+          "き が あります。",
+          "いす　が　ニつ　あります",
+          "へや　が　あります"
+        ],
+        "Kana": [
+          "つくえ が あります。",
+          "き が あります。",
+          "いす　が　につ　あります",
+           "へや　が　あります"
+        ],
+        "Kanjis": [
+          "",
+          "",
+          "ニ: 2 (に - Ni)",
+          ""
+        ],
+        "Romaji": [
+          "Tsukue ga arimasu",
+          "Ki ga arimasu",
+          "Isu ga nitsu arimasu",
+          "Heya ga arimasu"
+        ],
+        "English": [
+          "There is a desk",
+          "There is a tree.",
+          "There are 2 chairs.",
+          "The is a room"
+        ]
+      }
+    }
+	]
+}
