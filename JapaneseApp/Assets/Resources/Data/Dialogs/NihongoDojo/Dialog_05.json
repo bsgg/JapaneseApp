@@ -1,0 +1,63 @@
+﻿{
+  "Title": "Dialog 5. In Japan, It's all in the numbers.",
+  "Audio": "Dialog_5",
+
+  "Kanji": [
+    "キムミヨン: すみません、東さん。コンピューター　の　パスワード は　何　です　か?",
+    "東春人： コンピューター　の　パスワード? えっと、会社の電話番号　です。",
+    "キムミヨン: え？",
+    "東春人： コンピューター　の　パスワード は 会社の電話番号　です。",
+    "キムミヨン: 会社の電話番号　は　何　です　か?",
+    "東春人：　ぜろさん　ご　　ろく　なな　はち　はち　です",
+    "キムミヨン: ぜろ　さん　さん　よん　ご　ろく　なな　はち　はち。。。"
+  ],
+
+  "Kana": [
+    "キムミヨン: すみません、ひがしさ。コンピューター　の　パスワード は　なん　です　か?",
+    "ひがし はるひと: コンピューター　の　パスワード? えっと、かいしゃ　の　でんわばんごう　です。",
+    "キムミヨン: え？",
+    "ひがし はるひと:　コンピューター　の　パスワード　は　かいしゃ　の　でんわばんごう　です。",
+    "キムミヨン: かいしゃ　の　でんわばんごう　なん　です か？",
+    "ひがし はるひと: 03-345-6788 です",
+    "キムミヨン: ぜろ　さん　さん　よん　ご　ろく　なな　はち　はち。。。"
+  ],
+
+  "Romaji": [
+    "Kimu mi yon: Sumimasen, Higashi-san. Konpyūtā no pasuwādo wa nan desu ka?",
+    "Higashi Haruhito: Konpyūtā no pasuwādo? Etto, Kaisha no denwa bangō desu.",
+    "Kimu mi yon: E?",
+    "Higashi Haruhito: Konpyūtā no pasuwādo wa Kaisha no denwa bangō desu.",
+    "Kimu mi yon:　Kaisha no denwa bangō desu ka>",
+    "Higashi Haruhito: 03-345-6788 です",
+    "Kimu mi yon:　Zero San San Yon Go Roku Nana Hachi Hachi"
+  ],
+
+  "English": [
+    "Kimu mi yon: Excuse me, Higashi-san. What's the computer password?",
+    "Higashi Haruhito: Computer Password? Let's me think, It's the company telephone number..",
+    "Kimu mi yon: Ha?",
+    "Higashi Haruhito: The computer password is the company phone number.",
+    "Kimu mi yon: What is the company phone number?",
+    "Higashi Haruhito: It's 03-345-6788",
+    "Kimu mi yon:　0-3-3-4-5-6-7-8-8..."
+  ],
+
+  "Vocabulary": [
+    "コンピューター: Computer (Konpyūtā)",
+    "パスワード: Password (pasuwādo)",
+    "会社: Company (かいしゃ - Kaisha) [1.会 = Meeting] [2.社 = Company]",
+    "電話: Telephone (でんわ - Denwa) [1.電 = Electricity] [2.話 = Talk]",
+    "番号: Number, Series of digits (ばんごう - bangō) [1.番 = Number] [2.号 = Nickname]",
+    "何: What (なん - Nan)"
+  ],
+
+  "Description": [
+    "の (No) It's a possesive particle which indicates ownsership or attribution"
+  ]
+}
+
+/*
+
+    "キムさん	の	電話番号	は	何	ですか。 (Kimu-san	no	denwa bangō	wa	nan	desu ka?) = What's your phone number Kimu-san?",
+    "会社	の	メールアドレス	は	何	ですか。 (Kaisha	no	mēru adoresu	wa	nan	desu ka?) = What's is the company's email address?"
+    */
