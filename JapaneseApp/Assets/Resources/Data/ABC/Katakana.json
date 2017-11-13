@@ -151,6 +151,48 @@
           "Guitar",
           "Taxi"
         ]
+      }
+    },
+    {
+      "Kana": "バ_ビ_ブ_ベ_ボ",
+      "Romaji": "Ba_Bi_Bu_Be_Bo",
+      "SentencesExamples": {
+        "Sentence": [
+          "ズボン",
+          "ストーブ",
+          "ベッド"
+        ],
+        "Romaji": [
+          "Zubon",
+          "Sutōbu",
+          "Beddo"
+        ],
+        "English": [
+          "Pants",
+          "Stove",
+          "Bed"
+        ]
+      }
+    },
+    {
+      "Kana": "パ_ピ_プ_ペ_ポ",
+      "Romaji": "Pa_Pi_Pu_Pe_Po",
+      "SentencesExamples": {
+        "Sentence": [
+          "スーパー",
+          "コップ",
+          "ポケット"
+        ],
+        "Romaji": [
+          "Sūpā",
+          "Koppu",
+          "Poketto"
+        ],
+        "English": [
+          "Supermarket",
+          "Cup",
+          "Pocket"
+        ]
       }    
     }
 	]
