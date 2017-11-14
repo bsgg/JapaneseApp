@@ -8,23 +8,33 @@
       "SentencesExamples": {
         "Sentence": [
           "猫　が　います",
-          "犬　と　猫　が　います"
+          "犬　と　猫　が　います",
+          "となり　に　母　が　います",
+          "あなた の　前に　います"
         ],
         "Kana": [
           "ねこ　が　います",
-          "いぬ　と　ねこ　が　います"
+          "いぬ　と　ねこ　が　います",
+          "となり　に　はは　が　います",
+          "あなた の　まえに　います"
         ],
         "Kanjis": [
           "- 猫: Neko (ねこ - Cat)",
-          "- 犬: Dog (いぬ - Inu)|- 猫: Neko (ねこ - Cat)"
+          "- 犬: Dog (いぬ - Inu)|- 猫: Neko (ねこ - Cat)",
+          "- 母: Mother (はは - Haha)",
+          "- 前に: In front of (まえに - Mae ni)"
         ],
         "Romaji": [
           "Neko ga imasu",
-          "Inu to neko imasu"
+          "Inu to neko imasu",
+          "Tonari ni haha ga imasu",
+          "Anata no maeni imasu"
         ],
         "English": [
           "There is a cat",
-          "There are cats and dogs."
+          "There are cats and dogs.",
+          "My mother is next to me.",
+          "I am in front of you"
         ]
       }
     },
@@ -37,31 +47,35 @@
           "つくえ が あります。",
           "き が あります。",
           "いす　が　ニつ　あります",
-          "へや　が　あります"
+          "へや　が　あります",
+          "水　が　たくさん　あります"
         ],
         "Kana": [
           "つくえ が あります。",
           "き が あります。",
           "いす　が　につ　あります",
-           "へや　が　あります"
+          "へや　が　あります",
+          "みず　が　たくさん　あります"
         ],
         "Kanjis": [
           "",
           "",
           "ニ: 2 (に - Ni)",
-          ""
+          "水: Water (みず - Mizu)"
         ],
         "Romaji": [
           "Tsukue ga arimasu",
           "Ki ga arimasu",
           "Isu ga nitsu arimasu",
-          "Heya ga arimasu"
+          "Heya ga arimasu",
+          "Mizu ga takusan arimasu"
         ],
         "English": [
           "There is a desk",
           "There is a tree.",
           "There are 2 chairs.",
-          "The is a room"
+          "There is a room",
+          "There is a lot of water"
         ]
       }
     }
