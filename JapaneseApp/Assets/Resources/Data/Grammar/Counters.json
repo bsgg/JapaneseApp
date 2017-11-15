@@ -1,0 +1,36 @@
+﻿{
+	"Data":	
+	[
+    {
+      "Title": "Counter つ (Tsu)",
+      "Description": "Counter つ is used for things like cakes",
+      "Vocabulary": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "1つ: Hitotsu",
+          "2つ: Futatsu",
+          "3つ: Mittsu",
+          "4つ: Yottsu",
+          "5つ: Itsutsu",
+          "6つ: Muttsu",
+          "7つ: Nanatsu",
+          "8つ: Yattsu",
+          "9つ: Kononotsu",
+          "10: To"
+        ],
+        "Kana": [
+          ""
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          ""
+        ],
+        "English": [
+          ""
+        ]
+      }
+    }
+	]
+}

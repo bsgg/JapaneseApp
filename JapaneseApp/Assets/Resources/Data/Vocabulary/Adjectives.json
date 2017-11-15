@@ -169,6 +169,56 @@
           "Is it spicy?"
         ]
       }
+    },
+
+    {
+      "Word": "古い",
+      "Kana": "ふるい",
+      "Romaji": "Furui",
+      "Meaning": "Old",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "この　れいぞうこ　は　古い　です"
+        ],
+        "Kana": [
+          "この　れいぞうこ　は　古い　です"
+        ],
+        "Kanjis": [
+          "- 古い = Old (ふるい - Furui)"
+        ],
+        "Romaji": [
+          "Kono Reizōko ha furui desu"
+        ],
+        "English": [
+          "This refrigerator is old"
+        ]
+      }
+    },
+
+    {
+      "Word": "新しい",
+      "Kana": "あたらしい",
+      "Romaji": "Atarashī",
+      "Meaning": "New",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "あの　テレビ　は　新しい　です"
+        ],
+        "Kana": [
+          "あの　テレビ　は　あたらしい　です"
+        ],
+        "Kanjis": [
+          "- 新しい = New (あたらしい - Atarashi)"
+        ],
+        "Romaji": [
+          "Ano terebi ha atarashi desu"
+        ],
+        "English": [
+          "That television is new."
+        ]
+      }
     }
   ]
 }
