@@ -240,6 +240,35 @@
           "I eat inside the restaurant"
         ]
       }
+    },
+    {
+      "Word": "今",
+      "Kana": "いま",
+      "Romaji": "Ima",
+      "Meaning": "Now",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "今ちょうど、10時です",
+          "今、何時ですか。"
+        ],
+        "Kana": [
+          "いまちょうど、じゅうじです。",
+          "いま、なんじですか。"
+        ],
+        "Kanjis": [
+          "- 今: Now (いま - Ima)",
+          "- 今: Now (いま - Ima)|- 何: What (なん - Nan)|- 時: Time (じ - Ji)"
+        ],
+        "Romaji": [
+          "Ima chōdo, jū-ji desu.",
+          "Ima, Nan ji desu ka"
+        ],
+        "English": [
+          "It's 10 o'clock just now.",
+          "What time is it now?"
+        ]
+      }
     }
   ]
 }
