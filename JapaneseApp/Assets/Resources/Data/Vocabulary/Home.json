@@ -139,6 +139,35 @@
           "Wide backyard"
         ]
       }
+    },
+     {
+      "Word": "窓",
+      "Kana": "まど",
+      "Romaji": "Mado",
+      "Meaning": "Window",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "窓 を 開けて くれます か？",
+          "窓 を 閉めて くれます か？"
+        ],
+        "Kana": [
+          "まど を あけて くれます か？",
+          "まど を しめて くれます か？"
+        ],
+        "Kanjis": [
+          "- 窓 = Window (まど - Mado)|- 開けて = Open (あけて - Akete)",
+          "- 窓 = Window (まど - Mado)|- 閉めて = Close (しめて - Shimete)"
+        ],
+        "Romaji": [
+          "Mado o akete kudasai ka?",
+          "Mado o shimete kudasai ka?"
+        ],
+        "English": [
+          "Open the window, please",
+          "Close the window, please"
+        ]
+      }
     }
   ]
 }
