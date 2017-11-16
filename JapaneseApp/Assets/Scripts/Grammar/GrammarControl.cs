@@ -19,16 +19,16 @@ namespace JapaneseApp
         }
 
         [SerializeField]
-        private string m_Description;
-        public string Description
+        private List<string> m_Description;
+        public List<string> Description
         {
             set { m_Description = value; }
             get { return m_Description; }
         }
 
         [SerializeField]
-        private string m_Vocabulary;
-        public string Vocabulary
+        private List<string> m_Vocabulary;
+        public List<string> Vocabulary
         {
             set { m_Vocabulary = value; }
             get { return m_Vocabulary; }
@@ -69,7 +69,7 @@ namespace JapaneseApp
 
     public class GrammarControl : Base
     {
-        public enum ECategory { NONE = -1, Numbers, Pronouns, Demostratives, Particles, Expressions_1, Expressions_2, Existance, NUM };
+        public enum ECategory { NONE = -1, Numbers, Pronouns, Demostratives, Particles, Expressions_1, Expressions_2, Existance, Verbs_1, NUM };
 
         [SerializeField]
         private string m_DataPath = "Data/Grammar/";
@@ -217,7 +217,17 @@ namespace JapaneseApp
             // Set Grammar info
             GrammarSection grammar = m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar];
             m_GrammarUI.Title = grammar.Title;
-            m_GrammarUI.Description = grammar.Description;           
+
+            if (grammar.Description != null)
+            {
+                string desc = "";
+
+                for (int i=0; i< grammar.Description.Count; i++ )
+                {
+                    desc += grammar.Description[i] + "\n";
+                }
+                m_GrammarUI.Description = desc;
+            }
 
             // Set number of grammar for this category
             if (m_GrammarSet[(int)m_SelectedCategory].Data.Count > 1)
@@ -276,12 +286,32 @@ namespace JapaneseApp
 
         public void OnDescriptionBtn()
         {
-            m_GrammarUI.Description = m_GrammarSet[(int)m_SelectedCategory].Data[m_SelectedGrammar].Description;
+            m_GrammarUI.Description = "";
+            if (m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar].Description != null)
+            {
+                string desc = "";
+
+                for (int i = 0; i < m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar].Description.Count; i++)
+                {
+                    desc += m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar].Description[i] + "\n";
+                }
+                m_GrammarUI.Description = desc;
+            }
+
         }
 
         public void OnVocabularyBtn()
         {
-            m_GrammarUI.Description = m_GrammarSet[(int)m_SelectedCategory].Data[m_SelectedGrammar].Vocabulary;
+            if (m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar].Vocabulary != null)
+            {
+                string desc = "";
+
+                for (int i = 0; i < m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar].Vocabulary.Count; i++)
+                {
+                    desc += m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar].Vocabulary[i] + "\n";
+                }
+                m_GrammarUI.Description = desc;
+            }
         }
 
 

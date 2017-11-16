@@ -1,0 +1,159 @@
+﻿{
+  "Data": [
+    {
+      "Title": "です (Desu): Verb Is - Present",
+      "Description": [
+        "Verbs are always at the end of a sentence.",
+        "The verb です doesn't change depending on the thing you are talking about.",
+        "The vowel u of です (desu) it's almost mute. It's not pronounced.",
+        "The present is です. Examples",
+        "これ　は　りんご　です(Kore wa ringo desu) => This is an apple.",
+        "どれ　は　とり　です　か？ (Dore wa ringo desu ka) => Which is a bird?"
+      ],
+      "Vocabulary": [ ],
+
+      "SentencesExamples": {
+        "Sentence": [
+          "これ　は　いす　です"
+        ],
+        "Kana": [
+          "これ　は　いす　です"
+        ],
+        "Kanjis": [
+          
+        ],
+        "Romaji": [
+          "Kore wa isu desu."
+        ],
+        "English": [
+          "This is a chari"
+        ]
+      }
+    },
+    {
+      "Title": "ですた (Deshita): Verb Is - Past",
+      "Description": [
+        "ですた (Deshita) Past tense of です (Desu). ",
+        " The vowel sound i it's not pronounced (deshta)",
+        "It goes at the end of the sentence as before. Examples:",
+        "これ　は　りんご　ですた (Kore wa ringo deshita) => This was an apple.",
+        "それ　は　テーブル　でした (Dore wa teeburu deshita) => That was a table."
+      ],
+      "Vocabulary": [ ],
+
+      "SentencesExamples": {
+        "Sentence": [
+          "これ　は　ねこ　でした"
+        ],
+        "Kana": [
+          "これ　は　ねこ　でした"
+        ],
+        "Kanjis": [
+          
+        ],
+        "Romaji": [
+          "Kore wa neko deshita"
+        ],
+        "English": [
+          "This wasn't a cat"
+        ]
+      }
+    },
+
+    {
+      "Title": "で　わ　ありません (De wa arimasen): Verb Is - Negative",
+      "Description": [
+        "で　わ　ありません (De wa arimasen) Negative of です (Desu). Examples:",
+        "これ　は　りんご　で　わ　ありません (Kore wa ringo de wa arimasen) => This isn't an apple.",
+        "それ　は　テーブル　で　わ　ありません (Dore wa teeburu de wa arimasen) => That isn't a table."
+      ],
+      "Vocabulary": [ ],
+
+      "SentencesExamples": {
+        "Sentence": [
+          ""
+        ],
+        "Kana": [
+          ""
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          ""
+        ],
+        "English": [
+          ""
+        ]
+      }
+    },
+
+    {
+      "Title": "です か？(Desu ka): Verb Is - Interrogativo",
+      "Description": [
+        "The interrogative is simple, adding the particle か (Kat) at the end of a sentence, that sentence becomes an interrogation. Examples:",
+        "これ　は　りんご　です か？ (Kore wa ringo desu ka?) => Is this an apple.",
+        "どれ　は　とり　です　か？ (Dore wa ringo desu ka?) => Which is a bird?",
+        "これ　は　何(なん)　です　か？ (Kore wa nan desu ka?) => What is this?"
+      ],
+      "Vocabulary": [ ],
+
+      "SentencesExamples": {
+        "Sentence": [
+          ""
+        ],
+        "Kana": [
+          ""
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          ""
+        ],
+        "English": [
+          ""
+        ]
+      }
+    },
+
+    {
+      "Title": "Casual form of です(Desu)",
+      "Description": [
+        "です is the formal form of the verb IS. The casual form is the next: ",
+        "です(desu) Present => だ(da)",
+        "でした(deshita) Past => だった(datta)",
+        "で　わ　ありません (De wa arimasen) Negative => で　は　ない (de wa nai) or じゃ　ない (ja nai)",
+        "これ　は　りんご　じゃ　ない (Kore wa ringo ja nai) => This isn't an apple",
+        "あれ　は　とり　だった (Are wa ringo datta) => That wasn't a bird"
+      ],
+      "Vocabulary": [],
+
+      "SentencesExamples": {
+        "Sentence": [
+          "あれ　は　しゃしん　だ",
+          "それ　は いぬ　だった",
+          "あれ　は　とり　じゃ　ない"
+        ],
+        "Kana": [
+          "あれ　は　しゃしん　だ",
+          "それ　は いぬ　だった",
+          "あれ　は　とり　じゃ　ない"
+        ],
+        "Kanjis": [
+          
+        ],
+        "Romaji": [
+          "Are wa shashin da",
+          "Sore wa inu datta",
+          "Are wa tori ja nai"
+        ],
+        "English": [
+          "That was a photo",
+          "This isn't a dog",
+          "That wasn't a bird."
+        ]
+      }
+    }
+  ]
+}

@@ -341,6 +341,57 @@
           "I will buy a table."
         ]
       }
+    },
+
+
+    {
+      "Word": "見",
+      "Kana": "み",
+      "Romaji": "Mimasu",
+      "Meaning": "Watch, See",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "えいが　見　ます　か"
+        ],
+        "Kana": [
+          "えいが　見　ます　か"
+        ],
+        "Kanjis": [
+          "- 見 = Watch, See (み - Mi)"
+        ],
+        "Romaji": [
+          "Eiga mi masu ka"
+        ],
+        "English": [
+          "Do you watch movies?"
+        ]
+      }
+    },
+
+    {
+      "Word": "書き",
+      "Kana": "かき",
+      "Romaji": "Kaki",
+      "Meaning": "Write",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "てがみ　は　書き　ます　か"
+        ],
+        "Kana": [
+          "てがみ　は　かき　ます　か"
+        ],
+        "Kanjis": [
+          "- 書き = Write (かき - Kaki)"
+        ],
+        "Romaji": [
+          "Tegami ha kaki masu ka"
+        ],
+        "English": [
+          "Do you write letters?"
+        ]
+      }
     }
 
 
