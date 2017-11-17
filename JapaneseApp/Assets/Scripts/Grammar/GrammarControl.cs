@@ -38,31 +38,13 @@ namespace JapaneseApp
     [Serializable]
     public class GrammarData
     {
+        public string Title;
+        public string FileName;
+        public List<GrammarSection> Data;
 
-        [SerializeField]
-        private string m_Title;
-        public string Title
+        public GrammarData()
         {
-            get { return m_Title; }
-            set { m_Title = value; }
-        }
-
-        [SerializeField]
-        private string m_FileName;
-        public string FileName
-        {
-            get { return m_FileName; }
-            set { m_FileName = value; }
-        }
-
-        
-
-        [SerializeField]
-        private List<GrammarSection> m_Data = new List<GrammarSection>();
-        public List<GrammarSection> Data
-        {
-            get { return m_Data; }
-            set { m_Data = value; }
+            Data = new List<GrammarSection>();
         }
 
     }
@@ -225,7 +207,7 @@ namespace JapaneseApp
 
                 for (int i=0; i< grammar.Description.Count; i++ )
                 {
-                    desc += grammar.Description[i] + "\n";
+                    desc += "\n\n" + grammar.Description[i];
                 }
                 m_GrammarUI.Description = desc;
             }
