@@ -25,16 +25,7 @@ namespace JapaneseApp
             set { m_Description = value; }
             get { return m_Description; }
         }
-
-        [SerializeField]
-        private List<string> m_Vocabulary;
-        public List<string> Vocabulary
-        {
-            set { m_Vocabulary = value; }
-            get { return m_Vocabulary; }
-        }
-
-
+        
         [SerializeField]
         private SentencesExamples m_SentencesExamples = new SentencesExamples();
         public SentencesExamples SentencesExamples
@@ -44,16 +35,27 @@ namespace JapaneseApp
         }
     }
 
-    [System.Serializable]
+    [Serializable]
     public class GrammarData
     {
+
         [SerializeField]
-        private string m_Name;
-        public string Name
+        private string m_Title;
+        public string Title
         {
-            get { return m_Name; }
-            set { m_Name = value; }
+            get { return m_Title; }
+            set { m_Title = value; }
         }
+
+        [SerializeField]
+        private string m_FileName;
+        public string FileName
+        {
+            get { return m_FileName; }
+            set { m_FileName = value; }
+        }
+
+        
 
         [SerializeField]
         private List<GrammarSection> m_Data = new List<GrammarSection>();
@@ -69,8 +71,6 @@ namespace JapaneseApp
 
     public class GrammarControl : Base
     {
-        public enum ECategory { NONE = -1, Numbers, Pronouns, Demostratives, Particles, Expressions_1, Expressions_2, Existance, Verbs_1, NUM };
-
         [SerializeField]
         private string m_DataPath = "Data/Grammar/";
 
@@ -83,7 +83,7 @@ namespace JapaneseApp
         [SerializeField] private ExamplesUI m_ExampleUI;
 
         private int m_SelectedGrammar;
-        private ECategory m_SelectedCategory;
+        private int m_SelectedCategory;
         private int m_SelectedExample;
 
         [SerializeField]
@@ -100,23 +100,24 @@ namespace JapaneseApp
             m_ExampleUI.Hide();
             m_CategoriesUI.Hide();
 
-            m_GrammarSet = new List<GrammarData>();
-            for (int i = 0; i < (int) ECategory.NUM; i++)
+            //m_GrammarSet = new List<GrammarData>();
+            for (int i = 0; i < m_GrammarSet.Count; i++)
             {
-                GrammarData grammar = new GrammarData();
+                GrammarSection grammar = new GrammarSection();
 
-                string category = ((ECategory)i).ToString();
-
-                string path = m_DataPath + category;
+                // string category = ((ECategory)i).ToString();
+                string fileName = m_GrammarSet[i].FileName;
+                string title = m_GrammarSet[i].Title;
+                string path = m_DataPath + fileName;
                 string json = Utility.LoadJSONResource(path);
 
                 if (!string.IsNullOrEmpty(json))
                 {
                     try
                     {
-                        grammar = JsonMapper.ToObject<GrammarData>(json);
-                        grammar.Name = category;
-                        m_GrammarSet.Add(grammar);
+                        m_GrammarSet[i] = JsonMapper.ToObject<GrammarData>(json);
+                        m_GrammarSet[i].FileName = fileName;
+                        m_GrammarSet[i].Title = title;
                     }
                     catch (Exception e)
                     {
@@ -179,9 +180,9 @@ namespace JapaneseApp
 
             List<string> categories =  new List<string>();
 
-            for (int i = 0; i < (int) ECategory.NUM; i++)
+            for (int i = 0; i < m_GrammarSet.Count; i++)
             {
-                categories.Add(((ECategory) i).ToString());
+                categories.Add(m_GrammarSet[i].Title);
             }
 
             m_CategoriesUI.ScrollMenu.InitScroll(categories);
@@ -200,7 +201,7 @@ namespace JapaneseApp
 
             Debug.Log("[GrammarControl] OnCategoryPress");
 
-            m_SelectedCategory = (ECategory) id;
+            m_SelectedCategory = id;
             m_SelectedGrammar = 0;
 
             SetGrammarByCategory();
@@ -215,7 +216,7 @@ namespace JapaneseApp
         private void SetGrammarByCategory()
         {
             // Set Grammar info
-            GrammarSection grammar = m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar];
+            GrammarSection grammar = m_GrammarSet[m_SelectedCategory].Data[m_SelectedGrammar];
             m_GrammarUI.Title = grammar.Title;
 
             if (grammar.Description != null)
@@ -230,7 +231,7 @@ namespace JapaneseApp
             }
 
             // Set number of grammar for this category
-            if (m_GrammarSet[(int)m_SelectedCategory].Data.Count > 1)
+            if (m_GrammarSet[m_SelectedCategory].Data.Count > 1)
             {
                 m_GrammarUI.NextBtn.Enable(true, m_EnableBtnColor);
             }else
@@ -268,7 +269,7 @@ namespace JapaneseApp
 
         private void SetExample(int index)
         {
-            GrammarSection grammar = m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar];
+            GrammarSection grammar = m_GrammarSet[m_SelectedCategory].Data[m_SelectedGrammar];
 
             // Set sentence
             m_ExampleUI.Sentence = grammar.SentencesExamples.GetSentence(index);            
@@ -287,39 +288,24 @@ namespace JapaneseApp
         public void OnDescriptionBtn()
         {
             m_GrammarUI.Description = "";
-            if (m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar].Description != null)
+            if (m_GrammarSet[m_SelectedCategory].Data[m_SelectedGrammar].Description != null)
             {
                 string desc = "";
 
-                for (int i = 0; i < m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar].Description.Count; i++)
+                for (int i = 0; i < m_GrammarSet[m_SelectedCategory].Data[m_SelectedGrammar].Description.Count; i++)
                 {
-                    desc += m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar].Description[i] + "\n";
+                    desc += m_GrammarSet[m_SelectedCategory].Data[m_SelectedGrammar].Description[i] + "\n\n";
                 }
                 m_GrammarUI.Description = desc;
             }
 
         }
-
-        public void OnVocabularyBtn()
-        {
-            if (m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar].Vocabulary != null)
-            {
-                string desc = "";
-
-                for (int i = 0; i < m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar].Vocabulary.Count; i++)
-                {
-                    desc += m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar].Vocabulary[i] + "\n";
-                }
-                m_GrammarUI.Description = desc;
-            }
-        }
-
 
         public void OnNextGrammarBtn()
         {
             // Increase grammar ID
             m_SelectedGrammar++;
-            m_SelectedGrammar %=  m_GrammarSet[(int) m_SelectedCategory].Data.Count;
+            m_SelectedGrammar %=  m_GrammarSet[m_SelectedCategory].Data.Count;
 
             SetGrammarByCategory();
         }
@@ -333,19 +319,19 @@ namespace JapaneseApp
                 case AppController.EMenu.NEXT:
                     // Set next sentence
                     m_SelectedExample++;
-                    m_SelectedExample %= m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar].SentencesExamples.Sentence.Count;
+                    m_SelectedExample %= m_GrammarSet[m_SelectedCategory].Data[m_SelectedGrammar].SentencesExamples.Sentence.Count;
 
                     SetExample(m_SelectedExample);
                 break;
 
                 case AppController.EMenu.KANJI:
-                    m_ExampleUI.Sentence = m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar].SentencesExamples.Sentence[m_SelectedExample];
+                    m_ExampleUI.Sentence = m_GrammarSet[m_SelectedCategory].Data[m_SelectedGrammar].SentencesExamples.Sentence[m_SelectedExample];
                 break;
                 case AppController.EMenu.KANA:
-                    m_ExampleUI.Sentence = m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar].SentencesExamples.Kana[m_SelectedExample];
+                    m_ExampleUI.Sentence = m_GrammarSet[m_SelectedCategory].Data[m_SelectedGrammar].SentencesExamples.Kana[m_SelectedExample];
                     break;
                 case AppController.EMenu.ROMAJI:
-                    m_ExampleUI.Sentence = m_GrammarSet[(int) m_SelectedCategory].Data[m_SelectedGrammar].SentencesExamples.Romaji[m_SelectedExample];
+                    m_ExampleUI.Sentence = m_GrammarSet[m_SelectedCategory].Data[m_SelectedGrammar].SentencesExamples.Romaji[m_SelectedExample];
                 break;
             }
         }

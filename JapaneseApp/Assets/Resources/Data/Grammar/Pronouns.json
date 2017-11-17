@@ -2,8 +2,16 @@
   "Data": [
     {
       "Title": "Pronoum I: First person singular",
-      "Description": "There are different types of pronouns depending on if we are man or woman and who are we talking to: \n\n- Very formal Fem/Masc: わたくし　(Watakushi)\n\n- Formal Masculine: 私　(わたし - Watashi)\n\n- Formal Female: あたくし (atakushi)\n\n- Casual Masculine: 僕　(ぼく - Boku)\n\n - Casual Female: あたし (atashi)\n\n- Very Casual Masculine: 俺　(おれ - Ore)",
-      "Vocabulary": "",
+      "Description": [
+        "There are different types of pronouns depending on if we are man or woman and who are we talking to:",
+        "- Very formal Fem/Masc: わたくし　(Watakushi)",
+        "- Formal Masculine: 私　(わたし - Watashi)",
+        "- Formal Female: あたくし (atakushi)",
+        "- Casual Masculine: 僕　(ぼく - Boku)",
+        "- Casual Female: あたし (atashi)",
+        "- Very Casual Masculine: 俺　(おれ - Ore)" 
+
+      ],
       "SentencesExamples": {
         "Sentence": [
           "- おれ　は　ちがう。。。",
@@ -29,8 +37,7 @@
     },
     {
       "Title": "Pronoum We: First person plural",
-      "Description": "There are different types of pronouns depending on if we are man or woman and who are we talking to: \n\n- Very formal Fem/Masc: わたくしども　(Watakushidomo)\n\n- Formal Masc/Fem: わたくしたち　(Watakushitachi) or わたしたち (Watashitachi)\n\n- Casual Masculine: ぼくたち (Bokutachi) or　ぼくら (Bokura)\n\n - Casual Female: あたしたち (Atashitachi) or　あたしら (Atashira)\n\n- Very Casual Masculine: おれたち　(Oretachi)",
-      "Vocabulary": "",
+      "Description": ["There are different types of pronouns depending on if we are man or woman and who are we talking to: \n\n- Very formal Fem/Masc: わたくしども　(Watakushidomo)\n\n- Formal Masc/Fem: わたくしたち　(Watakushitachi) or わたしたち (Watashitachi)\n\n- Casual Masculine: ぼくたち (Bokutachi) or　ぼくら (Bokura)\n\n - Casual Female: あたしたち (Atashitachi) or　あたしら (Atashira)\n\n- Very Casual Masculine: おれたち　(Oretachi)" ],
       "SentencesExamples": 
       {
         "Sentence": 
