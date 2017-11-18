@@ -52,12 +52,8 @@
   ],
 
   "Description": [
-    "の (No) It's a possesive particle which indicates ownsership or attribution"
+    "の (No) Possive particle which indicates ownership or attribution. Examples:",
+    "キささん　の　電話番号　は　何　です　か (Kimu-san no denwa bangō nan desu ka?) => What's your number Kimu-san?",
+    "会社　の　メール　アドレス　は　何　です　か (Kaisha no mēru adoresu wa nan desu ka?) => What's the company's email address?"
   ]
 }
-
-/*
-
-    "キムさん	の	電話番号	は	何	ですか。 (Kimu-san	no	denwa bangō	wa	nan	desu ka?) = What's your phone number Kimu-san?",
-    "会社	の	メールアドレス	は	何	ですか。 (Kaisha	no	mēru adoresu	wa	nan	desu ka?) = What's is the company's email address?"
-    */
