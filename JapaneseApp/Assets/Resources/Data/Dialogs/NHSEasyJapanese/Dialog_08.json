@@ -31,15 +31,24 @@
   ],
 
   "Vocabulary": [
-    "",
-    "",
-    ""
+    "みなさん (Minasan): Eveybody",
+    "覚えて (おぼえて - Oboete): Remember, Learn by hard => Asking someone to do this action",
+    "しけん (Shiken): Exam",
+    "よく (Yoku): Often",
+    "もういちど (mōichido): One more"
   ],
 
   "Description": 
   [
+    "When we use verbs in the middle of sentences (when there are other words after the verb) we use there conjugated forms.",
+    "て (Te) Form verbs: Verbs ending with て (Te) are called TE-form verbs.",
+    "て form is used when you ask somebody to do something. (After the verb you say ください - Kudasai = Please).",
+    "To get the て form of a veb you simply change: ます(MASU)  for て(TE). Examples:",
+    "おぼえます(oboemasu): To remember => おぼえて (oboete): Please remember",
+    "たべます(Tabemasu): To eat => たべて (Tabete): Please Eat",
+    "します(Shimeasu): To do => して (Shime): Please do something",
+    "きます(Kimasu): To come => きて (Kite): Please come.",
     "",
-    "",
-    ""
+    "に(Ni): Particle used with frequency expressions such as per week, per day, often."
   ]
 }
