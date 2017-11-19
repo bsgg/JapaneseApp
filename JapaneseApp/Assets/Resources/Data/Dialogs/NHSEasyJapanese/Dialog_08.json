@@ -1,0 +1,45 @@
+﻿{
+  "Title": "Once more, please",
+  "Audio": "Dialog_08",
+
+  "Kanji": 
+  [
+    "先生:　みなさん、これ　を　覚えて　ください。試験　に　よく　出ます。",
+    "学生: えつ",
+    "アンナ: せんせい　もう一度　お願い　します。"
+  ],
+
+  "Kana": 
+  [
+    "せんせい: みなさん、これ　を　おぼえて　ください。しけん　に　よく　でます。",
+    "がくせい: えつ",
+    "アンナ: せんせい　もういちど　おねがい　します。"
+  ],
+
+  "Romaji": [
+
+    "Sensei: Minasan, kore o oboete kudasai. Shiken ni yoku demasu.",
+    "Gakusei: E!",
+    "Anna: Sensei, mōichido onegai shimasu."
+  ],
+
+  "English": [
+     
+    "Teacher: Everybode, please memorize this. It often comes up in exam.",
+    "Students: Eh??",
+    "Anna: Teacher, one more time please."
+  ],
+
+  "Vocabulary": [
+    "",
+    "",
+    ""
+  ],
+
+  "Description": 
+  [
+    "",
+    "",
+    ""
+  ]
+}
