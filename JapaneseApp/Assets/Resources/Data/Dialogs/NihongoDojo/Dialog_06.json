@@ -1,0 +1,55 @@
+﻿{
+  "Title": "Dialog 6. Money makes the World go round.",
+  "Audio": "Dialog_6",
+
+  "Kanji": [
+    "店員: いらっしゃいませー。いらっしゃいませー。",
+    "南　夏見: すみません、　これ　は　いくら　です　か",
+    "店員:　100円　です",
+    "南　夏見:　じや　これ　は　いくら　です　か。",
+    "店員：　。。。おきゃくさん、ここ　は　100円　ショップ　です。　これ　も　100円。　それ　も　100円。あれ　も　100円　です。",
+    "南　夏見: あ、そう　です　か。すみません　じゃ　これ　と　これ　を　ください"
+  ],
+
+  "Kana": [
+    "てんいん： いらっしゃいませー。いらっしゃいませー。",
+    "みなみ　なつみ: すみません、　これ　は　いくら　です　か",
+    "てんいん：　ひゃく　えん　です",
+    "みなみ　なつみ: じや　これ　は　いくら　です　か。",
+    "てんいん：　。。。おきゃくさん、ここ　は　ひゃくえん　ショップ　です。　これ　も　ひゃくえん。　それ　も　ひゃくえん。あれ　も　ひゃくえん　です。",
+    "みなみ　なつみ: あ、そう　です　か。すみません　じゃ　これ　と　これ　を　ください"
+  ],
+
+  "Romaji": [
+    "Tenin: Irasshaimase. Irasshaimase",
+    "Minami Natsumi: Sumimasen, kore wa ikura desu ka?",
+    "Tenin: Hyaku en desu",
+    "Minami Natsumi: Ja, Kore wa ikure desu ka?",
+    "Tenin: ... O-kyaku-san. Koko wa hyaku en shoppu desu. Kore mo hyaku en. Sore mo hyaku en. Are mo hyaku en desu.",
+    "Minami Natsumi: A, Sō desu ka. Sumimasen. Ja, kore to kore o kudasai"
+  ],
+
+  "English": [
+    "Shopping clerk: Welcome, May I help you?",
+    "Minami Natsumi: Excuse me, How much is this?",
+    "Shopping clerk: It's a 100 Yen",
+    "Minami Natsumi: And how much is this?",
+    "Shopping clerk: Man, This shop is 100 Yen shop. This one is 100 Yen. That near you is also 100 Yen. That over there is also 100 Yen.",
+    "Minami Natsumi: Oh, I see. I am sorry. I'll take this and this, please."
+  ],
+
+  "Vocabulary": [
+    "いくら: How much, asking price (いくら - Ikura)",
+    "円: Yen, Japanese currency (えん - En)",
+    "ショップ: Shop, Store (ショップ - Shoppu)",
+    "店員: Clerk, Salesperson (てんいん - Tenin)",
+    "おきゃくさん: Guest, Customer (おきゃくさん - o-kyaku-san)"
+  ],
+
+  "Description": [
+    "To ask how much is something we use: いくら (Ikura). Examples",
+    "これ　は　いくら　です　か (Kore wa ikura desu ka) => How much is this?",
+    "それ　は　いくら　です　か (Sore wa ikura desu ka) => How much is this near you?",
+    "あれ　は　いくら　です　か　(Are wa ikura dues ka) => How much is that over there?"
+  ]
+}
