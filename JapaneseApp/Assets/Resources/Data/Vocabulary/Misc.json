@@ -25,90 +25,9 @@
       }
     },
    
-    {
-      "Word": "誰",
-      "Kana": "だれ",
-      "Romaji": "Dare",
-      "Meaning": "Who",
-      "SpriteID": "",
-      "SentencesExamples": {
-        "Sentence": [
-          "誰 です　か",
-          "彼女 は　誰　です　か"
-        ],
-        "Kana": [
-          "だれ です　か",
-          "かのじょ は　だれ　です　か"
-        ],
-        "Kanjis": [
-          "- 誰 = Who (だれ - Dare)",
-          "- 彼女 = She (かのじょ - Kanojyo) |- 誰 = Who (だれ - Dare)"
-        ],
-        "Romaji": [
-          "Dare desu ka",
-          "Kanojo wa dare desu ka"
-        ],
-        "English": [
-          "Who are you?",
-          "Who is she?"
-
-        ]
-      }
-    },
-    {
-      "Word": "どこ",
-      "Kana": "どこ",
-      "Romaji": "Doko",
-      "Meaning": "Where",
-      "SpriteID": "",
-      "SentencesExamples": {
-        "Sentence": [
-          "いえ　は　どこ　です　か",
-          "そこ　は　どこ　です　か"
-        ],
-        "Kana": [
-          "いえ　は　どこ　です　か",
-           "そこ　は　どこ　です　か"
-        ],
-        "Kanjis": [
-          "",
-          ""
-        ],
-        "Romaji": [
-          "Ie wa doko desu ka",
-          "Soko ha doko desu ka"
-        ],
-        "English": [
-          "Where is the house？",
-          "Where is that place?"
-
-        ]
-      }
-    },
-    {
-      "Word": "今",
-      "Kana": "いま",
-      "Romaji": "Ima",
-      "Meaning": "Now",
-      "SpriteID": "",
-      "SentencesExamples": {
-        "Sentence": [
-          "今　何 時 です　か"
-        ],
-        "Kana": [
-          "いま　なん　じ です　か"
-        ],
-        "Kanjis": [
-          "- 今 = Now (いま - Ima)|- 何 = What (なん - Nan)|- 時 = Time (じ - Ji)"
-        ],
-        "Romaji": [
-          "Ima nan ji desu ka"
-        ],
-        "English": [
-          "What time is it, now?"           
-        ]
-      }
-    },
+    
+    
+    
     {
       "Word": "名前",
       "Kana": "なまえ",
@@ -188,59 +107,8 @@
         ]
       }
     },
-    {
-      "Word": "外",
-      "Kana": "そと",
-      "Romaji": "Soto",
-      "Meaning": "Ouside",
-      "SpriteID": "",
-      "SentencesExamples": {
-        "Sentence": [
-          "外　に　あね　が　います",
-          "レストラン　の　外　で　食べます"
-        ],
-        "Kana": [
-          "そと　に　あね　が　います",
-          "レストラン　の　そと　で　たべます"
-        ],
-        "Kanjis": [
-          " - 外 = Outside (そと- Soto)",
-          " - 外 = Outside (そと- Soto)|- 食べ = Eat (たべ - Tabe)"
-        ],
-        "Romaji": [
-          "Soto ni one ga imasu",
-          "Resutoran no soto de tabemasu"
-        ],
-        "English": [
-          "My older sister is outside.",
-          "I eat on the outside restaurant"
-        ]
-      }
-    },
-    {
-      "Word": "中",
-      "Kana": "なか",
-      "Romaji": "Naka",
-      "Meaning": "Inside",
-      "SpriteID": "",
-      "SentencesExamples": {
-        "Sentence": [
-          "レストラン　の　中　で　食べます"
-        ],
-        "Kana": [
-          "レストラン　の　なか　で　たべます"
-        ],
-        "Kanjis": [
-          " - 中 = Eat (なか- Naka)|- 食べ = Eat (たべ - Tabe)"
-        ],
-        "Romaji": [
-          "Resutoran no naka de tabemasu"
-        ],
-        "English": [
-          "I eat inside the restaurant"
-        ]
-      }
-    },
+    
+   
     {
       "Word": "今",
       "Kana": "いま",

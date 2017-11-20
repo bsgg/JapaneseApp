@@ -1,0 +1,188 @@
+﻿{
+	"Data":	
+	[
+    {
+      "Word": "冬",
+      "Kana": "ふゆ",
+      "Romaji": "Fuyu",
+      "Meaning": "Winter",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "",
+          ""
+        ],
+        "Kana": [
+          "",
+          ""
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romaji": [
+          "",
+          ""
+        ],
+        "English": [
+          "",
+          ""
+        ]
+      }
+    },
+    {
+      "Word": "春",
+      "Kana": "はる",
+      "Romaji": "Haru",
+      "Meaning": "Spring",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "",
+          ""
+        ],
+        "Kana": [
+          "",
+          ""
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romaji": [
+          "",
+          ""
+        ],
+        "English": [
+          "",
+          ""
+        ]
+      }
+    },
+    {
+      "Word": "夏",
+      "Kana": "なつ",
+      "Romaji": "Natsu",
+      "Meaning": "Summer",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "",
+          ""
+        ],
+        "Kana": [
+          "",
+          ""
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romaji": [
+          "",
+          ""
+        ],
+        "English": [
+          "",
+          ""
+        ]
+      }
+    },
+    {
+      "Word": "秋",
+      "Kana": "あき",
+      "Romaji": "Aki",
+      "Meaning": "Autumn",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "",
+          ""
+        ],
+        "Kana": [
+          "",
+          ""
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romaji": [
+          "",
+          ""
+        ],
+        "English": [
+          "",
+          ""
+        ]
+      }
+    },
+    {
+      "Word": "雨",
+      "Kana": "あめ",
+      "Romaji": "Ame",
+      "Meaning": "Rain",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "今日　は　雨　が　ふります"
+        ],
+        "Kana": [
+          "きょう　は　あめ　が　ふります"
+        ],
+        "Kanjis": [
+          "- 今日 = Today (きょう - Kyō)|- 雨 = Rain (あめ - Ame)"
+        ],
+        "Romaji": [
+          "Kyō wa ame ga furimasu"
+        ],
+        "English": [
+          "It will rain today"
+        ]
+      }
+    },
+    {
+      "Word": "雪",
+      "Kana": "ゆき",
+      "Romaji": "Yuki",
+      "Meaning": "Snow",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "今日　は　雪　が　ふります"
+        ],
+        "Kana": [
+          "きょう　は　ゆき　が　ふります"
+        ],
+        "Kanjis": [
+          "- 今日 = Today (きょう - Kyō)|- 雪 = Snow (ゆき - Yuki)"
+        ],
+        "Romaji": [
+          "Kyō wa yuki ga furimasu"
+        ],
+        "English": [
+          "It will snow today"
+        ]
+      }
+    },
+    {
+      "Word": "風",
+      "Kana": "かぜ",
+      "Romaji": "Kaze",
+      "Meaning": "Wind",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+        ],
+        "Kana": [
+        ],
+        "Kanjis": [
+        ],
+        "Romaji": [
+        ],
+        "English": [
+        ]
+      }
+    }
+	]
+}
