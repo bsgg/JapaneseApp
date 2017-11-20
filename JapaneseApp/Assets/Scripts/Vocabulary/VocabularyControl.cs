@@ -8,54 +8,38 @@ namespace JapaneseApp
 {
     #region DataModel
 
-    [System.Serializable]
+    [Serializable]
     public class SentencesExamples
     {
-        [SerializeField]
-        private List<string> m_Sentence= new List<string>();
-        public List<string> Sentence
-        {
-            set { m_Sentence = value; }
-            get { return m_Sentence; }
-        }
+        public List<string> Sentence;
+        public List<string> Kana;
+        public List<string> Kanjis;
+        public List<string> Romaji;
+        public List<string> English;
+
         public string GetSentence(int index)
         {
-            if ((m_Sentence != null) && (index >= 0) && (index < m_Sentence.Count))
+            if ((Sentence != null) && (index >= 0) && (index < Sentence.Count))
             {
-                return m_Sentence[index];
+                return Sentence[index];
             }
             return string.Empty;
         }
 
-        [SerializeField]
-        private List<string> m_Kana = new List<string>();
-        public List<string> Kana
-        {
-            set { m_Kana = value; }
-            get { return m_Kana; }
-        }
         public string GetKana(int index)
         {
-            if ((m_Kana != null) && (index >= 0) && (index < m_Kana.Count))
+            if ((Kana != null) && (index >= 0) && (index < Kana.Count))
             {
-                return m_Kana[index];
+                return Kana[index];
             }
             return string.Empty;
-        }
-
-        [SerializeField]
-        private List<string> m_Kanjis= new List<string>();
-        public List<string> Kanjis
-        {
-            set { m_Kanjis = value; }
-            get { return m_Kanjis; }
         }
 
         public string GetKanjis(int index)
         {
-            if ((m_Kanjis != null) && (index >=0 ) && (index < m_Kanjis.Count))
+            if ((Kanjis != null) && (index >= 0) && (index < Kanjis.Count))
             {
-                string[] aKanjis = m_Kanjis[index].Split('|');
+                string[] aKanjis = Kanjis[index].Split('|');
                 if (aKanjis.Length >= 1)
                 {
                     string kanjis = "";
@@ -70,122 +54,52 @@ namespace JapaneseApp
                     return kanjis;
                 }
             }
-            return string.Empty;            
+            return string.Empty;
         }
 
-        [SerializeField]
-        private List<string> m_Romaji= new List<string>();
-        public List<string> Romaji
-        {
-            set { m_Romaji = value; }
-            get { return m_Romaji; }
-        }
 
         public string GetRomanji(int index)
         {
-            if ((m_Romaji != null) && (index >= 0) && (index < m_Romaji.Count))
+            if ((Romaji != null) && (index >= 0) && (index < Romaji.Count))
             {
-                return m_Romaji[index];
+                return Romaji[index];
             }
             return string.Empty;
-        }
-
-        [SerializeField]
-        private List<string> m_English = new List<string>();
-        public List<string> English
-        {
-            set { m_English = value; }
-            get { return m_English; }
-        }
+        }                
 
         public string GetEnglish(int index)
         {
-            if ((m_English != null) && (index >= 0) && (index < m_English.Count))
+            if ((English != null) && (index >= 0) && (index < English.Count))
             {
-                return m_English[index];
+                return English[index];
             }
             return string.Empty;
         }
     }
 
-    
-    [System.Serializable]
+    [Serializable]
     public class VWord
     {
-        [SerializeField]
-        private string m_Meaning;
-        public string Meaning
-        {
-            set { m_Meaning = value; }
-            get { return m_Meaning; }
-        }
-
-        [SerializeField]
-        private string m_Word;
-        public string Word
-        {
-            set { m_Word = value; }
-            get { return m_Word; }
-        }
-
-        [SerializeField]
-        private string m_Kana;
-        public string Kana
-        {
-            set { m_Kana = value; }
-            get { return m_Kana; }
-        }
-
-        [SerializeField]
-        private string m_Romaji;
-        public string Romaji
-        {
-            set { m_Romaji = value; }
-            get { return m_Romaji; }
-        }
-
-        [SerializeField]
-        private string m_SpriteID;
-        public string SpriteID
-        {
-            set { m_SpriteID = value; }
-            get { return m_SpriteID; }
-        }
-
-        [SerializeField]
-        private SentencesExamples m_SentencesExamples = new SentencesExamples();
-        public SentencesExamples SentencesExamples
-        {
-            set { m_SentencesExamples = value; }
-            get { return m_SentencesExamples; }
-        }
+        public string Word;
+        public string Kana;
+        public string Meaning;
+        public string Romaji;
+        public string SpriteID;
+        public SentencesExamples SentencesExamples;
     }
 
-    [System.Serializable]
+    [Serializable]
     public class WordData
     {
-        [SerializeField]
-        private string m_Name;
-        public string Name
-        {
-            get { return m_Name; }
-            set { m_Name = value; }
-        }
-
-        [SerializeField]
-        private List<VWord> m_Data = new List<VWord>();
-        public List<VWord> Data
-        {
-            get { return m_Data; }
-            set { m_Data = value; }
-        }
+        //public string Name;
+        public List<VWord> Data;        
 
         public VWord GetRandomWord()
         {
-            if (m_Data != null)
+            if (Data != null)
             {
-                int iRand = UnityEngine.Random.Range(0, m_Data.Count);
-                return m_Data[iRand];
+                int iRand = UnityEngine.Random.Range(0, Data.Count);
+                return Data[iRand];
             }
 
             return null;
@@ -193,9 +107,9 @@ namespace JapaneseApp
 
         public int GetRandomWordID()
         {
-            if (m_Data != null)
+            if (Data != null)
             {
-                 return UnityEngine.Random.Range(0, m_Data.Count);
+                return UnityEngine.Random.Range(0, Data.Count);
             }
 
             return -1;
@@ -203,9 +117,9 @@ namespace JapaneseApp
 
         public VWord GetWordById(int id)
         {
-            if ((m_Data != null) && (id >= 0) && (id < m_Data.Count))
+            if ((Data != null) && (id >= 0) && (id < Data.Count))
             {
-                return m_Data[id];
+                return Data[id];
             }
 
             return null;
@@ -213,12 +127,12 @@ namespace JapaneseApp
     }
 
 
-    #endregion DataModel
+    
 
-    [System.Serializable]
+   /* [Serializable]
     public class SpritesData
     {
-        public VocabularyControl.ECategory Category;        
+        public VocabularyControl.ECategory Category;
 
         [SerializeField]  public List<Sprite> Sprites;
         public Sprite Sprite(string id)
@@ -234,13 +148,40 @@ namespace JapaneseApp
 
             return null;
         }
+    }*/
+
+    [Serializable]
+    public class VocabularyData
+    {
+        public string Title;
+        public string FileName;
+
+        public WordData WordSet;
+        public List<Sprite> Sprites;       
+
+        public Sprite Sprite(string id)
+        {
+            for (int i = 0; i < Sprites.Count; i++)
+            {
+                Debug.Log("Sprite: " + Sprites[i].name);
+                if (Sprites[i].name.Equals(id))
+                {
+                    return Sprites[i];
+                }
+            }
+
+            return null;
+        }
+       
     }
+
+    #endregion DataModel
 
     public class VocabularyControl : Base
     {
         public enum EMenu { NONE = -1, Category, WordDay, RandomWord };
-        public enum ECategory
-        { NONE = -1,
+       /* public enum ECategory
+        {   NONE = -1,
             Animals,
             Places,
             Technology,
@@ -258,15 +199,17 @@ namespace JapaneseApp
             Questions,
             Misc,
             NUM
-        };
+        };*/
 
         [SerializeField] private string m_DataPath = "Data/Vocabulary/";
 
-        [SerializeField]
-        private List<SpritesData> m_SpriteSet;
+       /* [SerializeField]
+        private List<SpritesData> m_SpriteSet;*/
 
+        /* [SerializeField]
+         private List<WordData> m_VocabularySet;*/
         [SerializeField]
-        private List<WordData> m_VocabularySet;
+        private List<VocabularyData> m_VocabularyData;
 
         [Header("UI")]
         [SerializeField] private VocabularyUI m_VocabularyUI;
@@ -276,7 +219,7 @@ namespace JapaneseApp
        // private VWord m_SelectedWord;
         private int m_SelectedExampleID;
         private int m_SelectedWordID;      
-        private ECategory m_SelectedCategory;
+        private int m_SelectedCategory;
 
         private EMenu m_Menu;
 
@@ -295,25 +238,21 @@ namespace JapaneseApp
             m_CategoriesUI.Hide();
 
             // Load the data
-            m_VocabularySet = new List<WordData>();
-            for (int i = 0; i < (int) ECategory.NUM; i++)
+            //m_VocabularySet = new List<WordData>();
+            for (int i = 0; i < m_VocabularyData.Count; i++)
             {
-                string category = ((ECategory)i).ToString();
-                string path = m_DataPath + category;
+                string path = m_DataPath + m_VocabularyData[i].FileName;
                 string json = Utility.LoadJSONResource(path);
                 if (!string.IsNullOrEmpty(json))
                 {
                     try
                     {
-                        WordData data = JsonMapper.ToObject<WordData>(json);
-                        data.Name = category;
-                        m_VocabularySet.Add(data);
+                        m_VocabularyData[i].WordSet = JsonMapper.ToObject<WordData>(json);
                     }
                     catch(Exception e)
                     {
                         Debug.LogError("[VocabularyControl.Init] Bad Format JSON File: " + path);
-                    }
-                    
+                    }                    
 
                 }else
                 {
@@ -415,7 +354,7 @@ namespace JapaneseApp
             Debug.Log("[VocabularyControl] OnCategoryPress");
             m_CategoriesUI.ScrollMenu.OnItemPress -= OnCategoryPress;
 
-            m_SelectedCategory = (ECategory)id;
+            m_SelectedCategory = id;
             m_SelectedWordID = 0;
 
             SetWord();
@@ -429,7 +368,7 @@ namespace JapaneseApp
 
         #region SetData
 
-        public Sprite GetSprite(ECategory category, string key)
+        /*public Sprite GetSprite(ECategory category, string key)
         {
             for (int i = 0; i < m_SpriteSet.Count; i++)
             {
@@ -440,15 +379,15 @@ namespace JapaneseApp
             }
 
             return null;
-        }
+        }*/
 
         private void SetCategories()
         {
             List<string> categories =  new List<string>();
 
-            for (int i = 0; i < (int) ECategory.NUM; i++)
+            for (int i = 0; i < m_VocabularyData.Count; i++)
             {
-                categories.Add(((ECategory) i).ToString());
+                categories.Add(m_VocabularyData[i].Title);
             }
 
             m_CategoriesUI.ScrollMenu.InitScroll(categories);
@@ -456,7 +395,7 @@ namespace JapaneseApp
 
         private void SetWord()
         {
-            if ((m_SelectedCategory <= ECategory.NONE) || (m_SelectedWordID < 0)) return;
+            if ((m_SelectedCategory <= m_VocabularyData.Count) || (m_SelectedWordID < 0)) return;
 
             // Check number of words for this category
             if (m_Menu == EMenu.WordDay)
@@ -465,7 +404,7 @@ namespace JapaneseApp
             }
             else
             {
-                if (m_VocabularySet[(int)m_SelectedCategory].Data.Count > 0)
+                if (m_VocabularyData[m_SelectedCategory].WordSet.Data.Count > 0)
                 {
                     m_VocabularyUI.NextWordBtn.Enable(true, m_EnableBtnColor);
                 }
@@ -474,7 +413,7 @@ namespace JapaneseApp
                     m_VocabularyUI.NextWordBtn.Enable(false, m_DisableBtnColor);
                 }
             }
-            VWord word = m_VocabularySet[(int)m_SelectedCategory].GetWordById(m_SelectedWordID);  
+            VWord word = m_VocabularyData[m_SelectedCategory].WordSet.GetWordById(m_SelectedWordID);  
 
             if (word != null)
             {
@@ -487,7 +426,7 @@ namespace JapaneseApp
                 m_VocabularyUI.SpriteBtn.Enable(false, m_DisableBtnColor);
                 if (!string.IsNullOrEmpty(word.SpriteID))
                 {
-                    Sprite sprite = GetSprite(m_SelectedCategory, word.SpriteID);
+                    Sprite sprite = m_VocabularyData[m_SelectedCategory].Sprite(word.SpriteID);
                     if (sprite != null)
                     {
                         m_VocabularyUI.Sprite.SpriteObject = sprite;
@@ -534,18 +473,18 @@ namespace JapaneseApp
         }
 
 
-        private ECategory GetRandomCategory()
+        private int GetRandomCategory()
         {
-            int rCategory = UnityEngine.Random.Range(0, (int)ECategory.NUM);
-            return (ECategory)rCategory;
+            int rCategory = UnityEngine.Random.Range(0, m_VocabularyData.Count);
+            return rCategory;
         } 
         
 
         private void SetExample(int index)
         {
-            if ((m_SelectedCategory <= ECategory.NONE) || (m_SelectedWordID < 0)) return;
+            if ((m_SelectedCategory <= m_VocabularyData.Count) || (m_SelectedWordID < 0)) return;
             // Set sentence
-            VWord word = m_VocabularySet[(int)m_SelectedCategory].GetWordById(m_SelectedWordID);
+            VWord word = m_VocabularyData[m_SelectedCategory].WordSet.GetWordById(m_SelectedWordID);
             m_ExamplesUI.Sentence = word.SentencesExamples.GetSentence(index);
             m_ExamplesUI.English = word.SentencesExamples.GetEnglish(index);
             m_ExamplesUI.Kanjis = word.SentencesExamples.GetKanjis(index);
@@ -564,7 +503,7 @@ namespace JapaneseApp
         {
             if (m_VocabularyUI.Sprite.Visible)
             {
-                m_VocabularyUI.Word = m_VocabularySet[(int)m_SelectedCategory].Data[m_SelectedWordID].Word;
+                m_VocabularyUI.Word = m_VocabularyData[m_SelectedCategory].WordSet.Data[m_SelectedWordID].Word;
                 m_VocabularyUI.Sprite.Hide();
             }else
             {
@@ -575,18 +514,18 @@ namespace JapaneseApp
 
         public void OnNextWordBtn()
         {
-            if ((m_SelectedCategory <= ECategory.NONE) || (m_SelectedWordID < 0)) return;
+            if ((m_SelectedCategory <= m_VocabularyData.Count) || (m_SelectedWordID < 0)) return;
             
             // Increase current word id
             m_SelectedWordID++;
-            m_SelectedWordID %= m_VocabularySet[(int)m_SelectedCategory].Data.Count;
+            m_SelectedWordID %= m_VocabularyData[m_SelectedCategory].WordSet.Data.Count;
 
             SetWord();
         }
 
         private void OnExampleMenuItem(AppController.EMenu id)
         {
-            VWord word = m_VocabularySet[(int)m_SelectedCategory].GetWordById(m_SelectedWordID);
+            VWord word = m_VocabularyData[m_SelectedCategory].WordSet.GetWordById(m_SelectedWordID);
 
             switch (id)
             {
@@ -645,13 +584,13 @@ namespace JapaneseApp
                     SetKey(keyLastCategory, (int)m_SelectedCategory);
 
                     // Set new random word
-                    m_SelectedWordID = m_VocabularySet[(int)m_SelectedCategory].GetRandomWordID();
+                    m_SelectedWordID = m_VocabularyData[m_SelectedCategory].WordSet.GetRandomWordID();
                     SetKey(keyLastWord, m_SelectedWordID);
                 }
                 else
                 {
                     // Get last category and last word
-                    m_SelectedCategory = (ECategory)GetKey(keyLastCategory);
+                    m_SelectedCategory = GetKey(keyLastCategory);
                     m_SelectedWordID = GetKey(keyLastWord);
                 }
                 
@@ -668,7 +607,7 @@ namespace JapaneseApp
                 SetKey(keyLastCategory, (int)m_SelectedCategory);
 
                 // Set new random word
-                m_SelectedWordID = m_VocabularySet[(int)m_SelectedCategory].GetRandomWordID();
+                m_SelectedWordID = m_VocabularyData[m_SelectedCategory].WordSet.GetRandomWordID();
                 SetKey(keyLastWord, m_SelectedWordID);
 
                 PlayerPrefs.Save();
