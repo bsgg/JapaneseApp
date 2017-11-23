@@ -204,19 +204,24 @@
       "SpriteID": "",
       "SentencesExamples": {
         "Sentence": [
-          "あの　テレビ　は　新しい　です"
+          "あの　テレビ　は　新しい　です",
+          "新しい　れいぞこう　です"
         ],
         "Kana": [
-          "あの　テレビ　は　あたらしい　です"
+          "あの　テレビ　は　あたらしい　です",
+          "あたらしい　れいぞこう　です"
         ],
         "Kanjis": [
+          "- 新しい = New (あたらしい - Atarashi)",
           "- 新しい = New (あたらしい - Atarashi)"
         ],
         "Romaji": [
-          "Ano terebi ha atarashi desu"
+          "Ano terebi ha atarashi desu",
+          "Atarashi reizokou desu"
         ],
         "English": [
-          "That television is new."
+          "That television is new.",
+          "It is a new refrigerator"
         ]
       }
     }
