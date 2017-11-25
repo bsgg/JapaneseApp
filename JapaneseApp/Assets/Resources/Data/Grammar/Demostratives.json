@@ -2,7 +2,15 @@
   "Data": [
     {
       "Title": "Demonstratives Group Ko",
-      "Description": "Demonstratives are the words we use, when we point to the things, persons or places we are talking about. Ko group refers to things, persons or places close to the speaker:\n\n- これ (Kore) = This \n\n- ここ (Koko) = Here, at this place\n\n- この (Kono) = This, which comes before a noun.",
+      "Description": 
+      [
+        "Demonstratives are the words we use, when we point to the things, persons or places we are talking about. ",
+        "Ko group refers to things, persons or places close to the speaker:",
+        "- これ (Kore) = This ",
+        "- ここ (Koko) = Here, at this place",
+        "- この (Kono) = This, which comes before a noun."
+
+      ],
       "Vocabulary": "",
       "SentencesExamples": 
       {
@@ -15,19 +23,28 @@
     },
     {
       "Title": "Demonstratives Group So",
-      "Description": "So group refer to things, people or places close to the listener. But if the speaker and the listener are close together, these words refer to things, people or places a little distant from both of them:\n\n- それ (Sore) = It.\n\n- そこ (Soko) = There\n\n- その (Sono) = There, which comes before a noun",
-      "Vocabulary": "",
-      "SentencesExamples": {
-        "Sentence": [ ],
-        "Kana": [ ],
-        "Kanjis": [ ],
-        "Romaji": [ ],
-        "English": [ ]
-      }
+      "Description": [
+        "So group refer to things, people or places close to the listener.",
+        " But if the speaker and the listener are close together, these words refer to things, people or places a little distant from both of them:",
+        "- それ (Sore) = It.",
+        "- そこ (Soko) = There",
+        "- その (Sono) = There, which comes before a noun"
+      ],
+        "Vocabulary":
+        "",
+        "SentencesExamples"
+        :
+        {
+          "Sentence": [ ],
+          "Kana": [ ],
+          "Kanjis": [ ],
+          "Romaji": [ ],
+          "English": [ ]
+        }
     },
     {
       "Title": "Demonstratives Group A",
-      "Description": "A group refer to things, people or places distant from both the speaker and the listener:\n\n- あれ (Are) = That.\n\n- あそこ　(Asoko) = Over there\n\n- あの (Ano) = That, which comes before a noun",
+      "Description": [ "A group refer to things, people or places distant from both the speaker and the listener:\n\n- あれ (Are) = That.\n\n- あそこ　(Asoko) = Over there\n\n- あの (Ano) = That, which comes before a noun" ],
       "Vocabulary": "",
       "SentencesExamples": {
         "Sentence": [ ],
@@ -39,7 +56,7 @@
     },
     {
       "Title": "Demonstratives Group Do",
-      "Description": "Do group:\n\n-　どれ (Dore) = Which.\n\n- どこ　(Doko) = Where.\n\n- どの (Dono) = Which, which comes before a noun",
+      "Description": [ "Do group:\n\n-　どれ (Dore) = Which.\n\n- どこ　(Doko) = Where.\n\n- どの (Dono) = Which, which comes before a noun" ],
       "Vocabulary": "",
       "SentencesExamples": {
         "Sentence": [ ],
@@ -51,7 +68,7 @@
     },
     {
       "Title": "Demostratives for directions",
-      "Description": "When you indicate directions:\n\n-　こちら (Kochira) = This way.\n\n- そちら　(Sochira) = There.\n\n- あちら (Achira) = That way.\n　-　どちら (Dochira) = Which way.",
+      "Description": [ "When you indicate directions:\n\n-　こちら (Kochira) = This way.\n\n- そちら　(Sochira) = There.\n\n- あちら (Achira) = That way.\n　-　どちら (Dochira) = Which way." ],
       "Vocabulary": "",
       "SentencesExamples": 
       {

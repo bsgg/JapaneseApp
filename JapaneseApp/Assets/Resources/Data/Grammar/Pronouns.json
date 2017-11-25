@@ -37,19 +37,23 @@
     },
     {
       "Title": "Pronoum We: First person plural",
-      "Description": ["There are different types of pronouns depending on if we are man or woman and who are we talking to: \n\n- Very formal Fem/Masc: わたくしども　(Watakushidomo)\n\n- Formal Masc/Fem: わたくしたち　(Watakushitachi) or わたしたち (Watashitachi)\n\n- Casual Masculine: ぼくたち (Bokutachi) or　ぼくら (Bokura)\n\n - Casual Female: あたしたち (Atashitachi) or　あたしら (Atashira)\n\n- Very Casual Masculine: おれたち　(Oretachi)" ],
-      "SentencesExamples": 
-      {
-        "Sentence": 
-        [
+      "Description": [
+        "There are different types of pronouns depending on if we are man or woman and who are we talking to:",
+        "- Very formal Fem/Masc: わたくしども　(Watakushidomo)",
+        "- Formal Masc/Fem: わたくしたち　(Watakushitachi) or わたしたち (Watashitachi)",
+        "- Casual Masculine: ぼくたち (Bokutachi) or　ぼくら (Bokura)",
+        "- Casual Female: あたしたち (Atashitachi) or　あたしら (Atashira)",
+        "- Very Casual Masculine: おれたち　(Oretachi)"
+
+      ],
+      "SentencesExamples": {
+        "Sentence": [
           "- 私たち　わかれましょう"
         ],
-        "Kana": 
-        [
+        "Kana": [
           "- わたしたち わかれましょう"
         ],
-        "Kanjis": 
-        [
+        "Kanjis": [
           "- 私たち = We (わたしたち - Watashitachi)"
         ],
         "Romaji": [
@@ -57,6 +61,71 @@
         ],
         "English": [
           "- I want to break up"
+        ]
+      }
+    },
+
+    {
+      "Title": "Pronoum You: Second person singular",
+      "Description": [
+        "There are different types of pronouns depending who are we talking to:",
+        "- Formal Masc/Fem: あにた　(Anita)",
+        "- Casual Masc/Fem: きみ (Kimi)",
+        "- Very Casual Masc/Fem: おまえ (omae) or　あんた (anta)",
+        "",
+        "Sometimes instead of using the pronoum, the name of the person is used:",
+        "- 田中さん　は　頭　が　いい　です (Tanaka-san wa atama ga ii desu) = Tanaka is smart."
+
+      ],
+      "SentencesExamples": {
+        "Sentence": [
+          ""
+        ],
+        "Kana": [
+          ""
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          ""
+        ],
+        "English": [
+          ""
+        ]
+      }
+    },
+
+    {
+      "Title": "Pronoum You: Second person plural",
+      "Description": [
+        "There are different types of pronouns depending who are we talking to:",
+        "- Formal Masc/Fem: あなたがた　(Anatagachi)",
+        "- Casual Masc: きみだち (kimitachi) or　きみら (Kimira)",
+        "- Casual Fem: あなたたち (Anatatachi)",
+        "- Very Casual Masc: おまえたち (Omaetachi) or　おまえら (Omaera)",
+        "- Very Casual Mas/Fem: あんたたち (Antatachi) or あんたら(Antara)"
+
+      ],
+      "SentencesExamples": 
+      {
+        "Sentence": 
+        [
+          ""
+        ],
+        "Kana": 
+        [
+          ""
+        ],
+        "Kanjis": 
+        [
+          ""
+        ],
+        "Romaji": [
+          ""
+        ],
+        "English": [
+          ""
         ]
       }
     }

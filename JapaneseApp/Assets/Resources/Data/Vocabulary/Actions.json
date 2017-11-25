@@ -200,31 +200,36 @@
           "ごはん　が　好き　です",
           "学校　は　好き　です　か",
           "やさい　は　すき　じゃ ない　です",
-          "肉　は　すき　じゃ　ない　です"
+          "肉　は　すき　じゃ　ない　です",
+          "さんぽ　が　好き　です"
         ],
         "Kana": [
           "ごはん　が　すき　です",
           "学校　は　好き　です　か",
           "やさいは　すき　じゃ ない　です",
-          "にく は　すき　じゃ　ない　です"
+          "にく は　すき　じゃ　ない　です",
+          "さんぽ　が　すき　です"
         ],
         "Kanjis": [
           "- 好き = Like (すき - Suki)",
           "- 学校 = School (がっこう - Gakkō)|- 好き = Like (すき - Suki)",
           "- 好き = Like (すき - Suki)",
-          "- 肉 = Meat (にく - Niku)|- 好き = Like (すき - Suki)"
+          "- 肉 = Meat (にく - Niku)|- 好き = Like (すき - Suki)",
+          "- 好き = Like (すき - Suki)"
         ],
         "Romaji": [
           "Gohan ga suki desu",
           "Gakkō wa suki desu ka",
           "Yasai suki ja nai desu",
-          "Niku suki ja nai desu"
+          "Niku suki ja nai desu",
+          "Sanpo ga suki desu"
         ],
         "English": [
           "I like rice.",
           "Do you like school?",
           "I don't like vegetables",
-          "I don't like meat"
+          "I don't like meat",
+          "I like to walk"
         ]
       }
     },
@@ -390,6 +395,61 @@
         ],
         "English": [
           "Do you write letters?"
+        ]
+      }
+    },
+
+    {
+      "Word": "遊び",
+      "Kana": "あそび",
+      "Romaji": "Asobi",
+      "Meaning": "Play",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "きのう　は　友だちと　遊びました",
+          "きのう はは　たくさん　遊びました"
+        ],
+        "Kana": [
+          "きのう　は　ともだちと　あそびました",
+          "きのう はは　たくさん　あそびました"
+        ],
+        "Kanjis": [
+          "- 友 = Friend (とも - Tomo)|- 遊び = Play (あそび - Asobi)",
+          "- 遊び = Play (あそび - Asobi)"
+        ],
+        "Romaji": [
+          "Kinō wa tomodachi asobimashita.",
+          "Kinō wa takusann asobimashita"
+        ],
+        "English": [
+          "I played with friends yesterday",
+          "I played a lot yesterday."
+        ]
+      }
+    },
+
+    {
+      "Word": "走り",
+      "Kana": "はしり",
+      "Romaji": "Hashiri",
+      "Meaning": "Run",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "走りません"
+        ],
+        "Kana": [
+          "はしりません"
+        ],
+        "Kanjis": [
+          "- 走り = Run (はしり - Hashiri)"
+        ],
+        "Romaji": [
+          "Hashirimasen."
+        ],
+        "English": [
+          "I do not run"
         ]
       }
     }

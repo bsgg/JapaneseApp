@@ -351,7 +351,6 @@ namespace JapaneseApp
 
         public void OnCategoryPress(int id, int x, int y)
         {
-            Debug.Log("[VocabularyControl] OnCategoryPress");
             m_CategoriesUI.ScrollMenu.OnItemPress -= OnCategoryPress;
 
             m_SelectedCategory = id;
@@ -367,20 +366,7 @@ namespace JapaneseApp
         #endregion Navigation
 
         #region SetData
-
-        /*public Sprite GetSprite(ECategory category, string key)
-        {
-            for (int i = 0; i < m_SpriteSet.Count; i++)
-            {
-                if (m_SpriteSet[i].Category == category)
-                {
-                    return m_SpriteSet[i].Sprite(key);
-                }
-            }
-
-            return null;
-        }*/
-
+        
         private void SetCategories()
         {
             List<string> categories =  new List<string>();
@@ -395,7 +381,18 @@ namespace JapaneseApp
 
         private void SetWord()
         {
-            if ((m_SelectedCategory <= m_VocabularyData.Count) || (m_SelectedWordID < 0)) return;
+            // Out of bondaries
+            if ((m_SelectedCategory < 0) || (m_SelectedCategory >= m_VocabularyData.Count))
+            {
+                Debug.LogError("[VocabularyControl.SetWord] SelectedCategory " + m_SelectedCategory + " Out of range");
+                return;
+            }
+
+            if ((m_SelectedWordID < 0) || (m_SelectedWordID >= m_VocabularyData[m_SelectedCategory].WordSet.Data.Count))
+            {
+                Debug.LogError("[VocabularyControl.SetWord] m_SelectedWordID " + m_SelectedWordID + " Out of range");
+                return;
+            }
 
             // Check number of words for this category
             if (m_Menu == EMenu.WordDay)
@@ -482,7 +479,12 @@ namespace JapaneseApp
 
         private void SetExample(int index)
         {
-            if ((m_SelectedCategory <= m_VocabularyData.Count) || (m_SelectedWordID < 0)) return;
+            if ((index < 0) || (index >= m_VocabularyData.Count))
+            {
+                Debug.LogError("[VocabularyControl.SetExample] index " + index + " Out of range");
+                return;
+            }
+
             // Set sentence
             VWord word = m_VocabularyData[m_SelectedCategory].WordSet.GetWordById(m_SelectedWordID);
             m_ExamplesUI.Sentence = word.SentencesExamples.GetSentence(index);
@@ -514,7 +516,6 @@ namespace JapaneseApp
 
         public void OnNextWordBtn()
         {
-            if ((m_SelectedCategory <= m_VocabularyData.Count) || (m_SelectedWordID < 0)) return;
             
             // Increase current word id
             m_SelectedWordID++;

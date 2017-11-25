@@ -3,7 +3,7 @@
 
     {
       "Title": "Particle は (Wa)",
-      "Description": "は is a topic marking particle.",
+      "Description": [ "は is a topic marking particle." ],
       "Vocabulary": "",
       "SentencesExamples": {
         "Sentence": [
@@ -40,7 +40,7 @@
     },
     {
       "Title": "Particle の (No)",
-      "Description": "No（の）is a possessive particle which indicates ownership or attribution.\n No （の）comes after the noun it modifies, like \"___'s\" in English.",
+      "Description": [ "No（の）is a possessive particle which indicates ownership or attribution.\n No （の）comes after the noun it modifies, like \"___'s\" in English." ],
       "Vocabulary": "",
       "SentencesExamples": {
         "Sentence": [
