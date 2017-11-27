@@ -1,0 +1,65 @@
+﻿{
+  "Title": "How much did you say that costs?",
+  "Audio": "Dialog_07",
+
+  "Kanji": 
+  [
+    "店員：　いらつしゃいませ",
+    "ファブリツィオ：　すみません、　あの　傘　は　いくら　です　か。",
+    "店員：　33000円　で　ございます。",
+    "ファブリツィオ：　この　傘　は　いくら　です　か。",
+    "店員：28000円　で　ございます。",
+    "ファブリツィオ：　じゃ、　これ　を　ください。",
+    "店員：　ありがとう　がざいます。　税込み29400円　で　ございます。"
+  ],
+
+  "Kana": 
+  [
+    "てんいん：　いらつしゃいませ",
+    "ファブリツィオ：　すみません、　あの　かさ　は　いくら　です　か。",
+    "てんいん：　さん　まん　さんぜん　えん　で　ございます。",
+    "ファブリツィオ：　この　かさ　は　いくら　です　か。",
+    "てんいん：　はまん　はつせん　えん　で　ございます。",
+    "ファブリツィオ：　じゃ、　これ　を　ください",
+    "てんいん：　ありがとう　がざいます。ぜいこみ　に　まん　きゅう　せん　よん　ひゃく　えん　で　ございます。"
+  ],
+
+  "Romaji": [
+
+    "Ten'in: Irasaimasu.",
+    "Faburitsio: Sumimasen, ano kasa wa ikura desu ka?",
+    "Ten'in: San man sanzen en de gozaimasu.",
+    "Faburitsio: Kono kasa wa ikura desu ka?",
+    "Ten'in: Niman hassen en de gozaimasu.",
+    "Faburitsio: Ja, kore o kudasai.",
+    "Ten'in: Arigatō gozaimasu. Ziekomi ni man kyū sen yon hyaku en de gozaimasu."
+  ],
+
+  "English": [
+     
+    "Clerk: May I help you?",
+    "Fabritzio: Excuse me, how much is that umbrella cost?",
+    "Clerk: It's 33000 Yen",
+    "Fabritzio: How much is this umbrella cost?",
+    "Fabritzio: It's 28000 Yen.",
+    "Clerk: I'll take this one, then.",
+    "Fabritzio: Thank you very much. With that it will be 29400 Yen."
+  ],
+
+  "Vocabulary": [
+    "店員: Clerk, Salesperson (てんいん - Tenin)",
+    "傘: Umbrella (かさ - Kasa)",
+    "いくら: How much, asking price (いくら - Ikura)",
+    "税込み: Tax included (ぜいこみ - Zeikomi) => 1.税 = Tax, 2.込 = Included]",
+    "円: Yen (えん - En)"
+  ],
+
+  "Description": 
+  [
+    "- これ(kore), それ(sore), あれ(are), can be use on their own.",
+    "- この (kono), その(sono), あの(ano) cannot be used on their own. They must precede a noun.",
+    "- Correct: これをください(Kore o kudasai) = I'll take this.",
+    "- Correct: この　傘（かさ）　お　ください (Kono kasa o kudasai) = I'll take this umbrella. In this case  この (Kono) precedes 傘 (kasa)",
+    "- Incorrect: この　を　ください　(Kono wo kudasai)"
+  ]
+}

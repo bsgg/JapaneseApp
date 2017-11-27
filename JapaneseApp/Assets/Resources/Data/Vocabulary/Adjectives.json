@@ -224,6 +224,31 @@
           "It is a new refrigerator"
         ]
       }
-    }
+    },
+
+    {
+      "Word": "低い",
+      "Kana": "ひくい",
+      "Romaji": "Hikui",
+      "Meaning": "Low",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "この　テーブル　は　低い　です"
+        ],
+        "Kana": [
+          "この　は　ひくい　です"
+        ],
+        "Kanjis": [
+          "- 低い = Low (ひくい - Hikui)"
+        ],
+        "Romaji": [
+          "Kono tēburu ha hikui desu"
+        ],
+        "English": [
+          "This table is low"
+        ]
+      }
+    },
   ]
 }
