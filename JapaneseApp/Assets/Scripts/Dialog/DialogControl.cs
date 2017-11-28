@@ -205,22 +205,23 @@ namespace JapaneseApp
 
             m_AudioSource.Stop();
 
-            // Check if category is visible
+            // Check if category ui is visible
             if (m_CategoriesUI.Visible)
-            {
+            {  
+                // Check if subcategories is shown
                 if (m_IsSubcategory)
                 {
-                    m_DialogUI.Hide();
-
+                    // Set categories
                     SetCategories();
-                    m_CategoriesUI.ScrollMenu.OnItemPress += OnSubCategoriesPress;
+                    m_CategoriesUI.ScrollMenu.OnItemPress -= OnSubCategoriesPress;
+                    m_CategoriesUI.ScrollMenu.OnItemPress += OnCategoryPress;
                     m_CategoriesUI.Show();
 
                     m_IsSubcategory = false;
 
-                }
-                else
+                }else
                 {
+                    // Hide categories
                     m_CategoriesUI.ScrollMenu.OnItemPress -= OnCategoryPress;
                     m_CategoriesUI.Hide();
 
@@ -228,16 +229,15 @@ namespace JapaneseApp
                     // Back to main menu (App Controller)
                     AppController.Instance.ShowMainMenu();
                 }
-               
             }
-            else
+            else // Dialog visible
             {
-                Hide();
-                // Show categories
+                m_DialogUI.Hide();
+                // // Show sub categories
+                m_IsSubcategory = true;
                 SetSubcategories();
-                //SetCategories();
+                m_CategoriesUI.ScrollMenu.OnItemPress += OnSubCategoriesPress;
                 m_CategoriesUI.Show();
-                m_CategoriesUI.ScrollMenu.OnItemPress += OnCategoryPress;
             }
         }
 
@@ -277,7 +277,7 @@ namespace JapaneseApp
         {
             Debug.Log("[DialogControl] OnCategoryPress");
 
-            m_IsSubcategory = false;
+            m_IsSubcategory = true;
             m_CategoriesUI.ScrollMenu.OnItemPress -= OnCategoryPress;
 
             m_SelectedCategory = (ECategory) id;
