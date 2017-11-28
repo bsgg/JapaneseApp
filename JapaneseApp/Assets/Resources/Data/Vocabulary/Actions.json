@@ -452,6 +452,66 @@
           "I do not run"
         ]
       }
+    },
+
+    {
+      "Word": "読み",
+      "Kana": "よみ",
+      "Romaji": "Yomi",
+      "Meaning": "Read",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "てがみ　を　読みます",
+          "本 を　たくさん　読みます",
+          "本 は　あまり　読みません"
+        ],
+        "Kana": [
+          "てがみ　を　よみます",
+          "ほん を　たくさん　よみます",
+          "ほん は　あまり　よみます"
+        ],
+        "Kanjis": [
+          "- 読み = Read (よみ - Yomi)",
+          "- 本 = Book (ほん - Hon)|- 読み = Read (よみ - Yomi)",
+          "- 本 = Book (ほん - Hon)|- 読み = Read (よみ - Yomi)"
+        ],
+        "Romaji": [
+          "Tegami o yomimasu.",
+          "Hon o takusan yomimasu.",
+          "Hon wa amari yomimasen"
+        ],
+        "English": [
+          "I read a letter",
+          "I read a lot of books.",
+          "I don't read books much."
+        ]
+      }
+    },
+
+    {
+      "Word": "かき",
+      "Kana": "かき",
+      "Romaji": "Kaki",
+      "Meaning": "Draw",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "え を かきます"
+        ],
+        "Kana": [
+          "え を かきます"
+        ],
+        "Kanjis": [
+         
+        ],
+        "Romaji": [
+          "E o kakimasu"
+        ],
+        "English": [
+          "I draw a picture"
+        ]
+      }
     }
 
 

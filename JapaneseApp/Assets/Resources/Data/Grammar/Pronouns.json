@@ -107,18 +107,14 @@
         "- Very Casual Mas/Fem: あんたたち (Antatachi) or あんたら(Antara)"
 
       ],
-      "SentencesExamples": 
-      {
-        "Sentence": 
-        [
+      "SentencesExamples": {
+        "Sentence": [
           ""
         ],
-        "Kana": 
-        [
+        "Kana": [
           ""
         ],
-        "Kanjis": 
-        [
+        "Kanjis": [
           ""
         ],
         "Romaji": [
@@ -126,6 +122,37 @@
         ],
         "English": [
           ""
+        ]
+      }
+    },
+
+    {
+      "Title": "Pronoum She, He: Third person singular",
+      "Description": [
+        "There are no word for She or He. In Japanese you use the nomber or title of the person who is refered to.",
+        "The sentences 'You are smart' and 'The teacher is smart' can be transalated the same way => 先生　は　あたま　が　いい　です。(Sensei ha atama ga ii desu)",
+        "The difference is that the first sentece we are talking to that person and the second one we are talking about him.",
+        "",
+        "There are 2 words for the third person (they also mean girlfriend and boyfriend):",
+        "- 彼 = Him（かれ - Kare) ",
+        "- 彼女 = Her（かのじょ - Kanojo"
+
+      ],
+      "SentencesExamples": {
+        "Sentence": [
+          "彼女 は　あたま　が　いい　です"
+        ],
+        "Kana": [
+          "かのじょ　は　あたま　が　いい　です"
+        ],
+        "Kanjis": [
+          "- 彼女 = Her（かのじょ - Kanojo"
+        ],
+        "Romaji": [
+          "Kanojo ga atama ga ii desu."
+        ],
+        "English": [
+          "She (or my girlfriend) is smart."
         ]
       }
     }
