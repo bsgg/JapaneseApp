@@ -1,0 +1,58 @@
+﻿{
+  "Title": "Is everyone here?",
+  "Audio": "Dialog_10",
+
+  "Kanji": 
+  [
+    "先生：　はじめに　慎重　と　体重　を　はかります。全員　います　か？",
+    "ロドリゴ：　アンナさん　が　いません",
+    "アンナ:　すみません、　遅れました"
+  ],
+
+  "Kana": 
+  [
+    "せんせい：　はじめに　しんちょう　と　たいじゅう　を　はかります。ぜいん　います　か？",
+    "ロドリゴ：　アンナさん　が　いません",
+    "アンナ: すみません、　おくれました"
+  ],
+
+  "Romaji": [
+
+    "Sensei: Hajimeni shinchō to taijū o hakarimasu. Zen-in imasu ka?",
+    "Rodorigo: Anna-san ga imasen.",
+    "Anna: Sumimasen, okuremashita."
+  ],
+
+  "English": [
+     
+    "Teacher: At first, we measure your height and weight. Is everyone here?",
+    "Rodrigo: Anna is not here.",
+    "Anna: I'm sorry. I'm late."
+  ],
+
+  "Vocabulary": [
+    "はじめに = At first (Hajimeni)",
+    "慎重 = Height (しんちょう - Shinchō)",
+    "体重 = Weight (たいじゅう - Taijū)",
+    "を = Particle and, connects nouns.",
+    "はかります = To measure (Hakarimasu)",
+    "ぜいん = Everybody",
+    ""
+  ],
+
+  "Description": 
+  [
+    "ました (Mashita) is the past of verbs ます (Masu).",
+    "Example: 食べます(Tabemasu) = Eat =>　食べました (Tabemashita) = Ate",
+    "",
+    "There is/ There are = あります (Arimasu) います (Imasu).",
+    "あります (Arimasu) = Inanimate or not living things, such as objects.",
+    "あります is also used if an object is a living thing but cannot move, like a plant.",
+    "Negative form, there isn't/ aren't => ありません　(Arimasen)",
+    "Example: ケーキ が　いっぱい　あります (Kēki ga ippai arimasu) = There are lots of cakes.",
+    "",
+    "います (Imasu) = Animals or people.",
+    "Negative form, there isn't/ aren't => いません (Imasen)",
+    "Example: アンナさん　が　いません (Anna-san ga imasen.) = Ana isn't here."
+  ]
+}

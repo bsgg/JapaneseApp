@@ -350,26 +350,31 @@
 
 
     {
-      "Word": "見",
-      "Kana": "み",
+      "Word": "見ます",
+      "Kana": "みます",
       "Romaji": "Mimasu",
       "Meaning": "Watch, See",
       "SpriteID": "",
       "SentencesExamples": {
         "Sentence": [
-          "えいが　見　ます　か"
+          "えいが　見ます　か",
+          "ときどき　えいが　を　見ます"
         ],
         "Kana": [
-          "えいが　見　ます　か"
+          "えいが　みます　か",
+          "ときどき　えいが　を　みます"
         ],
         "Kanjis": [
+          "- 見 = Watch, See (み - Mi)",
           "- 見 = Watch, See (み - Mi)"
         ],
         "Romaji": [
-          "Eiga mi masu ka"
+          "Eiga mi masu ka",
+          "Tokidoki eiga o mimasu"
         ],
         "English": [
-          "Do you watch movies?"
+          "Do you watch movies?",
+          "I wach movies sometimes."
         ]
       }
     },
@@ -503,13 +508,45 @@
           "え を かきます"
         ],
         "Kanjis": [
-         
+
         ],
         "Romaji": [
           "E o kakimasu"
         ],
         "English": [
           "I draw a picture"
+        ]
+      }
+    },
+
+    {
+      "Word": "とります",
+      "Kana": "とります",
+      "Romaji": "Torimasu",
+      "Meaning": "Take pictures",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "ときどき　しゃしん　を　とります",
+          "よく　しゃしん　を　とります",
+          "かれ　は　いつも　しゃしん　を　あります"
+        ],
+        "Kana": [
+          "ときどき　しゃしん　を　とります",
+          "よく　しゃしん　を　とります",
+          "かれ　は　いつも　しゃしん　を　あります"
+        ],
+        "Kanjis": [
+        ],
+        "Romaji": [
+          "Tokidoki shashin o torimasu",
+          "Yoku shashin o torimasu.",
+          "Kare wa itsumo shashin wo arimasu."
+        ],
+        "English": [
+          "I sometimes take pictures.",
+          "I often take pictures",
+          "He always takes pictures."
         ]
       }
     }
