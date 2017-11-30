@@ -199,6 +199,30 @@
           "The whale is swimming in the ocean."
         ]
       }
+    },
+    {
+      "Word": "熊",
+      "Kana": "くま",
+      "Romaji": "Kuma",
+      "Meaning": "Bear",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "熊 は 強い 動物 です。"
+        ],
+        "Kana": [
+          "くま は つよい どうぶつ です。"
+        ],
+        "Kanjis": [
+          "- 熊 = Bear (くま - Kuma)|- 強い = Strong (つよい - Tsuyoi)|- 動物 = Animal (どうぶつ - Dōbutsu)"
+        ],
+        "Romaji": [
+          "Kuma ga tsuyoi dōbutsu desu."
+        ],
+        "English": [
+          "Bears are strong animals"
+        ]
+      }
     }
   ]
 }
