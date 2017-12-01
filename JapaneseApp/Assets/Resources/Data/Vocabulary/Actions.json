@@ -387,19 +387,25 @@
       "SpriteID": "",
       "SentencesExamples": {
         "Sentence": [
-          "てがみ　は　書き　ます　か"
+          "てがみ　は　書き　ます　か",
+          "てがみ　は　あまり　書きません"
         ],
         "Kana": [
-          "てがみ　は　かき　ます　か"
+          "てがみ　は　かき　ます　か",
+           "てがみ　は　あまり　かきません"
+
         ],
         "Kanjis": [
+          "- 書き = Write (かき - Kaki)",
           "- 書き = Write (かき - Kaki)"
         ],
         "Romaji": [
-          "Tegami ha kaki masu ka"
+          "Tegami wa kaki masu ka",
+          "Tegame wa amari kakimasen"
         ],
         "English": [
-          "Do you write letters?"
+          "Do you write letters?",
+          "I don't write a lot of letters."
         ]
       }
     },
@@ -442,12 +448,15 @@
       "SpriteID": "",
       "SentencesExamples": {
         "Sentence": [
-          "走りません"
+          "走りません",
+          "かのじょ　は　あまり　走りません"
         ],
         "Kana": [
-          "はしりません"
+          "はしりません",
+          "かのじょ　は　あまり　はしりません"
         ],
         "Kanjis": [
+          "- 走り = Run (はしり - Hashiri)",
           "- 走り = Run (はしり - Hashiri)"
         ],
         "Romaji": [
