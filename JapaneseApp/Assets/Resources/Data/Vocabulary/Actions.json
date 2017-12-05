@@ -460,10 +460,12 @@
           "- 走り = Run (はしり - Hashiri)"
         ],
         "Romaji": [
-          "Hashirimasen."
+          "Hashirimasen.",
+          "Kanojo wa amari hashirimasen"
         ],
         "English": [
-          "I do not run"
+          "I do not run",
+          "Seh doesn't run a lot."
         ]
       }
     },
