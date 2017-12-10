@@ -1,0 +1,70 @@
+﻿{
+  "Title": "When did you come to Japan?",
+  "Audio": "Dialog_12",
+
+  "Kanji": 
+  [
+    "さくら：　ロドリゴさん　は　いつ　日本　に　きました　か",
+    "ロドリゴ: 三月　に　きました",
+    "さくら：　もう　日本　の　生活　に　慣れた",
+	  "ロドリゴ: ええ、　まあ"   
+  ],
+
+  "Kana": 
+  [
+    "さくら：　ロドリゴさん　は　いつ　にほん　に　きました　か",
+    "ロドリゴ: さんがつ　に　きました",
+    "さくら：　もう　にほん　の　せいかつ　に　なれた",
+	  "ロドリゴ: ええ、　まあ"
+  ],
+
+  "Romaji": [
+
+    "Sakura: Rodorigo-san wa itsu Nihon ni kimashita ka",
+    "Rodorigo: Sangatsu ni kimshita",
+    "Sakura:　Mō Nihon no seikatsu ni Nareta",
+	  "Rodorigo: Ee, mā"
+  ],
+
+  "English": [
+     
+    "Sakura: Rodrigo, When did you come to Japan?",
+    "Rodrigo: I came in March",
+    "Sakura: Have you got used to live in Japan by now?",
+	  "Rodrigo: Yeah, well."
+  ],
+
+  "Vocabulary": [
+    "いつ(Itsu) = When ",
+    "日本(にほん - Nihon) = Japan ",
+    "に (Ni) = Particle indicating places, times or situations, in this conversation means to where someone's moved.",
+    "きました(Kimashita) = Past form of Come きます(Kimasu)",
+    "三月 = March, Consist: Number 3 => 三(さん - San) + Month => 月 (がつ - Gatsu)",
+    "もう(Mō) = Yet, already, by now",
+    "生活 (せいかつ - Seigatsu) = Living or life.",
+    "慣れた (なれた - Nareta) = Got used to. Past form of  なれます (Naremasu) = To get used to"
+  ],
+
+  "Description": 
+  [
+    "Ta form verbs, is the conjugation for of verbs that ends with TA or DA. It is the past or the perfect verb of a verb",
+    "General Rule: Change ます(Masu)　=> た(Ta)",
+    "- なれます (Naremasu) = Get used to => なれた(Nareta) => Got used to",
+    "",
+    "If the syllabe before ます(Masu) is り(Ri): Change ります(Rimasu) by つた(TTA)",
+    "あつまります(Atsumarimasu) = To gather => あつまった(Atsumatta)",
+    "",
+    "If the syllabe before ます(Masu) is い(I): Change います(imasu) by つた(TTA)",
+    "If the syllabe before ます(Masu) is ち(Chi): Change ちます(Chimasu) by つた(TTA)",
+    "",
+    "If the syllabe before ます(Masu) is み(Mi), に(Ni) or　び(Bi): Change ます(imasu) and the syllabe by んだ(NDA)",
+    "- よみます(Yomimasu) To read => よんだ(Yonda)",
+    "",
+    "If the syllabe before ます(Masu) is き(Ki): Change きます(kimasu) by いた(ITA)",
+    "- ききます(Kikimasu) To listen to => きいた(Kiita)",
+    "",
+     "If the syllabe before ます(Masu) is ぎ(Gi): Change ぎます(Gimasu) by いた(IDA)",
+    "- いそぎます(Isogimasu) To listen to => いそいだ(Isoida)",
+    "- Exception: いきます(Ikimasu) To go => いった(ITTA)"
+  ]
+}
