@@ -1,0 +1,120 @@
+﻿{
+  "Data": [
+    {
+      "Word": "左",
+      "Kana": "ひだり",
+      "Romaji": "Hidari",
+      "Meaning": "Left",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "",
+          ""
+        ],
+        "Kana": [
+          "",
+          ""
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romaji": [
+          "",
+          ""
+        ],
+        "English": [
+          "",
+          ""
+        ]
+      }
+    },
+    {
+      "Word": "右",
+      "Kana": "みぎ",
+      "Romaji": "Migi",
+      "Meaning": "Right",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "",
+          ""
+        ],
+        "Kana": [
+          "",
+          ""
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romaji": [
+          "",
+          ""
+        ],
+        "English": [
+          "",
+          ""
+        ]
+      }
+    },
+    {
+      "Word": "下",
+      "Kana": "した",
+      "Romaji": "Shita",
+      "Meaning": "Down",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "",
+          ""
+        ],
+        "Kana": [
+          "",
+          ""
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romaji": [
+          "",
+          ""
+        ],
+        "English": [
+          "",
+          ""
+        ]
+      }
+    },
+    {
+      "Word": "",
+      "Kana": "",
+      "Romaji": "",
+      "Meaning": "Up",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "",
+          ""
+        ],
+        "Kana": [
+          "",
+          ""
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romaji": [
+          "",
+          ""
+        ],
+        "English": [
+          "",
+          ""
+        ]
+      }
+    }
+  ]
+}

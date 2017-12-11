@@ -112,7 +112,7 @@
       }
     },
 
-     {
+    {
       "Word": "跳ぶ",
       "Kana": "とぶ",
       "Romaji": "Tobu",
@@ -148,7 +148,7 @@
           "助けて！",
           "助けに来る"
         ],
-         "Kana": [
+        "Kana": [
           "たすけて",
           "たすけにくる"
         ],
@@ -244,8 +244,7 @@
           "おちゃ　が　きらい　です。",
           "魚　が　きらい　です。"
         ],
-        "Kana": 
-        [
+        "Kana": [
           "おちゃ　が　きらい　です",
           "あかな　が　きらい　です。"
         ],
@@ -392,7 +391,7 @@
         ],
         "Kana": [
           "てがみ　は　かき　ます　か",
-           "てがみ　は　あまり　かきません"
+          "てがみ　は　あまり　かきません"
 
         ],
         "Kanjis": [
@@ -560,7 +559,39 @@
           "He always takes pictures."
         ]
       }
+    },
+
+    {
+      "Word": "話す",
+      "Kana": "はなす",
+      "Romaji": "Hanasu",
+      "Meaning": "Talk",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "友達　と　話します",
+          "彼女　と　話しません"
+        ],
+        "Kana": [
+          "ともだち　と　はなします",
+          "かのじょ　と　はなしません"
+        ],
+        "Kanjis": [
+          "- 友達 = Friend (ともだち - Tomodachi)|- 話す = Talk (はなす - Hanasu)",
+          "- 彼女 = She (かのじょ - Kanojo)|- 話す = Talk (はなす - Hanasu)"
+
+        ],
+        "Romaji": [
+          "Tomodachi to hanashimasu",
+          "Kanojo to hanashimasen"
+        ],
+        "English": [
+          "I will talk to my friends",
+          "I don't talk to her"
+        ]
+      }
     }
+
 
 
   ]

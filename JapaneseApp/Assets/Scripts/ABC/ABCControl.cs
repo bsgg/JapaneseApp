@@ -38,7 +38,7 @@ namespace JapaneseApp
     public class ABCControl : Base
     {
         [SerializeField]
-        private ABCUI m_ABCCharUI;        
+        private ABCUI m_ABCCharUI;          
 
         [SerializeField]
         private ButtonText[] m_ListButtonText;
