@@ -12,6 +12,7 @@ namespace Utility
         public string FileName;
         public string URL;
         public string Data;
+        public FileRequestManager.EDATATYPE DataType;
     }
 
     [System.Serializable]
@@ -26,6 +27,8 @@ namespace Utility
 
     public class FileRequestManager : MonoBehaviour
     {
+        public enum EDATATYPE { GRAMMAR, VOCABULARY };
+
         #region Instance
         private static FileRequestManager m_Instance;
         public static FileRequestManager Instance

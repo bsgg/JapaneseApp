@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Utility;
 
 namespace JapaneseApp
 {
@@ -153,13 +154,23 @@ namespace JapaneseApp
     [Serializable]
     public class VocabularyData
     {
-        public string Title;
+        public string Category;
         public string FileName;
 
         public WordData WordSet;
-        public List<Sprite> Sprites;       
+        //public List<Sprite> Sprites;       
 
-        public Sprite Sprite(string id)
+        
+       
+    }
+
+    [Serializable]
+    public class SpriteData
+    {
+        public string Category;
+        public List<Sprite> Sprites;
+
+        public Sprite GetSprite(string id)
         {
             for (int i = 0; i < Sprites.Count; i++)
             {
@@ -172,8 +183,8 @@ namespace JapaneseApp
 
             return null;
         }
-       
     }
+
 
     #endregion DataModel
 
@@ -203,8 +214,12 @@ namespace JapaneseApp
 
         [SerializeField] private string m_DataPath = "Data/Vocabulary/";
 
-       /* [SerializeField]
-        private List<SpritesData> m_SpriteSet;*/
+        [SerializeField] public List<SpriteData> m_SpriteData;
+
+        
+
+        /* [SerializeField]
+         private List<SpritesData> m_SpriteSet;*/
 
         /* [SerializeField]
          private List<WordData> m_VocabularySet;*/
@@ -220,7 +235,6 @@ namespace JapaneseApp
         private int m_SelectedExampleID;
         private int m_SelectedWordID;      
         private int m_SelectedCategory;
-
         private EMenu m_Menu;
 
         [SerializeField]
@@ -239,7 +253,40 @@ namespace JapaneseApp
 
             // Load the data
             //m_VocabularySet = new List<WordData>();
-            for (int i = 0; i < m_VocabularyData.Count; i++)
+
+            m_VocabularyData = new List<VocabularyData>();
+            for (int i = 0; i < FileRequestManager.Instance.FileData.Data.Count; i++)
+            {
+                //string path = m_DataPath + m_VocabularyData[i].FileName;
+                //string json = Utility.LoadJSONResource(path);
+                
+                VocabularyData aux = new VocabularyData();
+                aux.Category = FileRequestManager.Instance.FileData.Data[i].FileName;
+                aux.Category = FileRequestManager.Instance.FileData.Data[i].FileName;
+                string json = FileRequestManager.Instance.FileData.Data[i].Data;
+                if (!string.IsNullOrEmpty(json))
+                {
+                    try
+                    {
+
+
+                        aux.WordSet = JsonMapper.ToObject<WordData>(json);
+                        m_VocabularyData.Add(aux);
+                    }
+                    catch (Exception e)
+                    {
+                        Debug.LogError("[VocabularyControl.Init] Exception at: " + FileRequestManager.Instance.FileData.Data[i].URL + " " + e.ToString());
+                    }
+
+                }
+                else
+                {
+                    Debug.Log("[VocabularyControl.Init] JSON not found: " + FileRequestManager.Instance.FileData.Data[i].URL);
+                }
+            }
+
+
+            /*for (int i = 0; i < m_VocabularyData.Count; i++)
             {
                 string path = m_DataPath + m_VocabularyData[i].FileName;
                 string json = Utility.LoadJSONResource(path);
@@ -258,7 +305,7 @@ namespace JapaneseApp
                 {
                     Debug.Log("[VocabularyControl.Init] JSON not found: " + path);
                 }
-            }
+            }*/
         }        
 
         #region Navigation
@@ -373,7 +420,7 @@ namespace JapaneseApp
 
             for (int i = 0; i < m_VocabularyData.Count; i++)
             {
-                categories.Add(m_VocabularyData[i].Title);
+                categories.Add(m_VocabularyData[i].Category);
             }
 
             m_CategoriesUI.ScrollMenu.InitScroll(categories);
@@ -423,7 +470,18 @@ namespace JapaneseApp
                 m_VocabularyUI.SpriteBtn.Enable(false, m_DisableBtnColor);
                 if (!string.IsNullOrEmpty(word.SpriteID))
                 {
-                    Sprite sprite = m_VocabularyData[m_SelectedCategory].Sprite(word.SpriteID);
+                    //
+                    Sprite sprite = null;
+
+                    // Find sprite
+                    for (int i=0; i< m_SpriteData.Count; i++)
+                    {
+                        if (m_SpriteData[i].Category == m_VocabularyData[m_SelectedCategory].Category)
+                        {
+                            sprite = m_SpriteData[i].GetSprite(word.SpriteID);
+                        }
+                    }
+
                     if (sprite != null)
                     {
                         m_VocabularyUI.Sprite.SpriteObject = sprite;
