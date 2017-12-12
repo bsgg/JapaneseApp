@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Utility;
 
 namespace JapaneseApp
 {
@@ -69,13 +70,23 @@ namespace JapaneseApp
         
         void Start ()
         {
+            StartCoroutine(Init());
+        }
 
-            // Initialize EasyTTUTIL
-            /*if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+
+        private IEnumerator Init()
+        {
+            if (m_EnableDebug)
             {
-                
-                EasyTTSUtil.Initialize(EasyTTSUtil.Japan);
-            }*/
+                m_DebugUI.Show();
+            }
+            else
+            {
+                m_DebugUI.Hide();
+            }
+
+
+            yield return FileRequestManager.Instance.RequestFiles();
 
             m_VocabularyControl.Init();
 
@@ -90,13 +101,7 @@ namespace JapaneseApp
 
             ShowMainMenu();
 
-            if (m_EnableDebug)
-            {
-                m_DebugUI.Show();
-            }else
-            {
-                m_DebugUI.Hide();
-            }
+           
 
         }
 
