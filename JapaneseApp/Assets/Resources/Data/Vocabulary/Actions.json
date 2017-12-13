@@ -357,23 +357,28 @@
       "SentencesExamples": {
         "Sentence": [
           "えいが　見ます　か",
-          "ときどき　えいが　を　見ます"
+          "ときどき　えいが　を　見ます",
+          "えいが　は　あまり　見ません"
         ],
         "Kana": [
           "えいが　みます　か",
-          "ときどき　えいが　を　みます"
+          "ときどき　えいが　を　みます",
+          "えいが　は　あまり　みません"
         ],
         "Kanjis": [
+          "- 見 = Watch, See (み - Mi)",
           "- 見 = Watch, See (み - Mi)",
           "- 見 = Watch, See (み - Mi)"
         ],
         "Romaji": [
-          "Eiga mi masu ka",
-          "Tokidoki eiga o mimasu"
+          "Eiga mimasu ka",
+          "Tokidoki eiga o mimasu",
+          "Eiga wa amari mimasen"
         ],
         "English": [
           "Do you watch movies?",
-          "I wach movies sometimes."
+          "I wach movies sometimes.",
+          "I don't watch a lot of movies"
         ]
       }
     },
@@ -479,7 +484,7 @@
         "Sentence": [
           "てがみ　を　読みます",
           "本 を　たくさん　読みます",
-          "本 は　あまり　読みません"
+          "本 は　あまり　読みません"          
         ],
         "Kana": [
           "てがみ　を　よみます",
