@@ -37,14 +37,25 @@
   ],
 
   "Vocabulary": [
-    "",
-    "",
-    ""
+    "デザイナー = Designer (dezainā)",
+    "すごい = Great, wonderful, amazing (Sugoi)",
+    "どこ = Where? (Doko)",
+    "どこ の = From Where? (Doko no)",
+    "傘 = Umbrella (かさ - Kasa)",
+    "雨 = Rain (あめ - Ame)",
+    "南 = South (みなみ - Minami)",
+    "夏 = Summer (なつ - Natsu)",
+    "見 = See (み - Mi)"
   ],
 
   "Description": [
-    "",
-    "",
-    ""
+    "The particle の(no) is a possessive particle. It indicates that the first noun possesses the second noun or the first noun modifying the second.",
+    "When this particle is next to どこ(Doko) = Where, it becomes to where from. どこ の(Doko no)",
+    "Examples",
+    "- 車は　どこ　です　か？ (Kuruma wa doko desu ka) = Where is the car?",
+    "- それ　は　ソニー の カメラ　です (Sore wa Sony no kamera desu) = This is a Sony Camera",
+    "- これ　は　どこ　の　車　です　か？　(Kore wa doko no kuruma desu ka?) = Which company is thhis car made by?",
+    "- それ　は　どこ　の　傘　です　か？　(Sore wa doko no kasa desu ka?) = Where is that umbrella from?",
+    "- それ　は　どこ　の　カメラ　です　か？　(Sore wa doko no kamera desu ka?) = Where is that camera from?"
   ]
 }
