@@ -1,6 +1,5 @@
 {
-  "Data": 
-  [
+  "Data": [
     {
       "Word": "まずい",
       "Kana": "まずい",
@@ -247,6 +246,31 @@
         ],
         "English": [
           "This table is low"
+        ]
+      }
+    },
+
+    {
+      "Word": "早い",
+      "Kana": "はやい",
+      "Romaji": "Hayai",
+      "Meaning": "Fast",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "タクシー　は　早い　です　か"
+        ],
+        "Kana": [
+          "タクシー　は　はやい　です　か"
+        ],
+        "Kanjis": [
+          "- 早い = Fast (はやい - Hayai)"
+        ],
+        "Romaji": [
+          "Takushī ha hayai desu ka"
+        ],
+        "English": [
+          "Are taxis fast?"
         ]
       }
     }

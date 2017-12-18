@@ -1,0 +1,52 @@
+﻿{
+  "Title": "I like novels",
+  "Audio": "Dialog_13",
+
+  "Kanji": [
+    "さくら： ロドリゴさん　の　趣味　は　何　です　か？ ",
+    "ロドリゴ: 読書　です。　得に　歴史　小説　が　すき　です",
+    "さくら： へえ。新宿 に　新しい　本屋　が　出来ました　よ。　みんな　で　行きません　か"
+  ],
+
+  "Kana": [
+    "さくら： ロドリゴさん　の　しゅみ　は　なん　です　か？",
+    "ロドリゴ:　どくしょ　です。　とくに　れきし　しょうせつ　が　すき　です",
+    "さくら：　へえ。しんじゅく に　あたらしい　ほんや　が　できました　よ。　みんな　で　生きません　か"
+  ],
+
+  "Romaji": [
+
+    "Sakura: Rodorigo-San no shumi wa nan desu ka",
+    "Rodorigo: Dokusho desu. Tokuni rekishi shousetsu ga suki desu.",
+    "Sakura: Hee. Shinjuku ni atarashi hon-ya ga dekimashita yo. Minna de ikimasen ka."
+  ],
+
+  "English": [
+
+    "Sakura: Rodrigo, What is your hobby?",
+    "Rodrigo: It's reading books. I specially like historical novels.",
+    "Sakura: A new bookstore has opened in Shinjuki. Why don't we all go together?"
+  ],
+
+  "Vocabulary": [
+    "趣味 = Hobby (しゅみ - Shumi)",
+    "何 = What (なん - Nan) ",
+    "読書 = Reading books (どくしょ - Dokusho)",
+    "得 = Adverb Specially  (とくに - Tokuni)",
+    "歴史 = History (れきし - Rekishi)",
+    "小説 = Novels (しょうせつ - Shousetsu)",
+    "新宿 = It's a place in Tokyo Sinjuku",
+    "に = Particle indicating a place in this case.",
+    "新しい = Adjective New (あたらしい - Atarashi)",
+    "本屋 = Bookstore (ほんや - hon-ya)",
+    "出来ました = Past form of verb 出来ます Open (できました - Dekimashita)",
+    "みんな = We all (Minna)"
+  ],
+
+  "Description": 
+  [
+    "",
+    "",
+    ""
+  ]
+}
