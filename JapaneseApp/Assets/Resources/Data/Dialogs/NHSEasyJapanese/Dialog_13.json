@@ -43,10 +43,20 @@
     "みんな = We all (Minna)"
   ],
 
-  "Description": 
-  [
+  "Description": [
+    "A likes B = A は　B が　好き　です (A wa B ga suki desu): 好き(Suki) is an adjective meaning 'to be fond of or to like' ",
+    "アンナ　は　まんが　が　好き　です (Anna wa manga ga suki desu) = Anna likes manga",
     "",
+    "Adjectives are divided basically into 2 kinds:",
+    "- Adjectives ending with the syllabe I. (I-Adjectives:)",
+    "- 広い (Hiroi) = Wide",
+    "- 新しい (Atarashii) = New",
+    " We place adjectives before the nouns to modify them:",
+    "- 新しい　本　(Atarashii hon) = A new book",
     "",
-    ""
+    "- Adjectives ending any other way",
+    "To modify a noun with this kind of adjectives we add な(na) to them. They are called NA-Adjectives",
+    "The adjective 好き（Suki) Like, it's not an I-Adjective, it doesn't end with I. In this case it's an NA-Adjective. It needs to add Na to modify the noun:",
+    "- 好き(Suki)　+ 本(Hon)　=  好きな　本(Sukina hon) => The book I like "
   ]
 }
