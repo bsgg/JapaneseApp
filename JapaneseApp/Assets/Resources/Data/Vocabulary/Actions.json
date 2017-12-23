@@ -484,7 +484,7 @@
         "Sentence": [
           "てがみ　を　読みます",
           "本 を　たくさん　読みます",
-          "本 は　あまり　読みません"          
+          "本 は　あまり　読みません"
         ],
         "Kana": [
           "てがみ　を　よみます",
@@ -593,6 +593,36 @@
         "English": [
           "I will talk to my friends",
           "I don't talk to her"
+        ]
+      }
+    },
+
+    {
+      "Word": "来る",
+      "Kana": "くる",
+      "Romaji": "Kuru",
+      "Meaning": "Come",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "女 の 子 が ビデオ カメラ の 方に 来る。",
+          "ビデオカメラの方に来る"
+        ],
+        "Kana": [
+          "おんな の こ が ビデオ カメラ の ほう に くる。",
+          "ビデオカメラのほうにくる"
+        ],
+        "Kanjis": [
+          "- 女 = Girl (おんな - Onna)|- 方に = Towards (ほう に - hou)|-  来る = Come (くる - Kuru)",
+          "- 方に = Towards (ほう に - hou)|-  来る = Come (くる - Kuru)"
+        ],
+        "Romaji": [
+          "Onna no ko ga bideo kamera no hou ni Kuru",
+          "bideo kamera no hou ni kuru"
+        ],
+        "English": [
+          "The girl comes towards the video camera.",
+          "Come towards a video camera"
         ]
       }
     }
