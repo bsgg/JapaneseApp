@@ -201,20 +201,23 @@
           "学校　は　好き　です　か",
           "やさい　は　すき　じゃ ない　です",
           "肉　は　すき　じゃ　ない　です",
-          "さんぽ　が　好き　です"
+          "さんぽ　が　好き　です",
+          "しごと　が　好き　です"
         ],
         "Kana": [
           "ごはん　が　すき　です",
           "学校　は　好き　です　か",
           "やさいは　すき　じゃ ない　です",
           "にく は　すき　じゃ　ない　です",
-          "さんぽ　が　すき　です"
+          "さんぽ　が　すき　です",
+          "しごと　が　すき　です"
         ],
         "Kanjis": [
           "- 好き = Like (すき - Suki)",
           "- 学校 = School (がっこう - Gakkō)|- 好き = Like (すき - Suki)",
           "- 好き = Like (すき - Suki)",
           "- 肉 = Meat (にく - Niku)|- 好き = Like (すき - Suki)",
+          "- 好き = Like (すき - Suki)",
           "- 好き = Like (すき - Suki)"
         ],
         "Romaji": [
@@ -222,14 +225,16 @@
           "Gakkō wa suki desu ka",
           "Yasai suki ja nai desu",
           "Niku suki ja nai desu",
-          "Sanpo ga suki desu"
+          "Sanpo ga suki desu",
+          "Shigoto ga suki desu"
         ],
         "English": [
           "I like rice.",
           "Do you like school?",
           "I don't like vegetables",
           "I don't like meat",
-          "I like to walk"
+          "I like to walk",
+          "I like to work"
         ]
       }
     },
@@ -623,6 +628,31 @@
         "English": [
           "The girl comes towards the video camera.",
           "Come towards a video camera"
+        ]
+      }
+    },
+
+    {
+      "Word": "しごと",
+      "Kana": "しごと",
+      "Romaji": "Shigoto",
+      "Meaning": "Work",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "昨日　は　しごと でした"
+        ],
+        "Kana": [
+          "きのう　は　しごと でした"
+        ],
+        "Kanjis": [
+          "- 昨日 = Yesterday (のう - Kinō)"
+        ],
+        "Romaji": [
+          "Kinō wa shigoto deshita"
+        ],
+        "English": [
+          "I worked yesterday"
         ]
       }
     }
