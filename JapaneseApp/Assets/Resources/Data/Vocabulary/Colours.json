@@ -33,43 +33,43 @@
       "SpriteID": "",
       "SentencesExamples": {
         "Sentence": [
-          ""
+          "この　シャツ　は　赤い　です"
         ],
         "Kana": [
-          ""
+          "この　シャツ　は　赤い　です"
         ],
         "Kanjis": [
-          ""
+          "赤= Red (あか - Aka)"
         ],
         "Romaji": [
-          ""
+          "Kono shatsu wa akai desu"
         ],
         "English": [
-          ""
+          "This is a red shirt"
         ]
       }
     },
     {
-      "Word": "しろ",
+      "Word": "白",
       "Kana": "しろ",
       "Romaji": "Shiro",
       "Meaning": "White",
       "SpriteID": "",
       "SentencesExamples": {
         "Sentence": [
-          ""
+          "白い　コート　を　きます"
         ],
         "Kana": [
-          ""
+          "しろい　コート　を　きます"
         ],
         "Kanjis": [
-          ""
+          "白 = White (しろ - Shiro)"
         ],
         "Romaji": [
-          ""
+          "Shiroi Kōto o kimasu"
         ],
         "English": [
-          ""
+          "I wear a white coat"
         ]
       }
     }
