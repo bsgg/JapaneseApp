@@ -273,6 +273,31 @@
           "Are taxis fast?"
         ]
       }
+    },
+
+    {
+      "Word": "小さい",
+      "Kana": "はやい",
+      "Romaji": "Chīsai",
+      "Meaning": "Small",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "あなた　の　車　は　小さい　です"
+        ],
+        "Kana": [
+          "あなた　の　くるま　は　はやい　です"
+        ],
+        "Kanjis": [
+          "- 車 = Car (くるま - Kuruma)|- 小さい = Small (はやい - Chīsai)"
+        ],
+        "Romaji": [
+          "Anata no kuruma wa chīsai desu"
+        ],
+        "English": [
+          "Your car is small"
+        ]
+      }
     }
   ]
 }
