@@ -1,6 +1,5 @@
 {
-	"Data":	
-	[
+  "Data": [
     {
       "Word": "青",
       "Kana": "あお",
@@ -72,6 +71,31 @@
           "I wear a white coat"
         ]
       }
+    },
+
+    {
+      "Word": "黒",
+      "Kana": "くろ",
+      "Romaji": "Kuro",
+      "Meaning": "Black",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "この　ズボン　は　黒い　です"
+        ],
+        "Kana": [
+          "この　ズボン　は　くろい　です"
+        ],
+        "Kanjis": [
+          "黒 = Black (くろ - Kuro)"
+        ],
+        "Romaji": [
+          "Kono zubon wa kuroi desu"
+        ],
+        "English": [
+          "This pants are black"
+        ]
+      }
     }
-	]
+  ]
 }
