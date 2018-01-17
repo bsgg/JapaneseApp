@@ -96,6 +96,78 @@
           "This pants are black"
         ]
       }
+    },
+    {
+      "Word": "ピンク",
+      "Kana": "ピンク",
+      "Romaji": "Pinku",
+      "Meaning": "Pink",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          ""
+        ],
+        "Kana": [
+          ""
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          ""
+        ],
+        "English": [
+          ""
+        ]
+      }
+    },
+    {
+      "Word": "むらさきいろ",
+      "Kana": "むらさきいろ",
+      "Romaji": "Murasakiiro",
+      "Meaning": "Purple",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          ""
+        ],
+        "Kana": [
+          ""
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          ""
+        ],
+        "English": [
+          ""
+        ]
+      }
+    },
+    {
+      "Word": "緑色",
+      "Kana": "みどりいろ",
+      "Romaji": "Midoriiro",
+      "Meaning": "Green",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          ""
+        ],
+        "Kana": [
+          ""
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          ""
+        ],
+        "English": [
+          ""
+        ]
+      }
     }
   ]
 }
