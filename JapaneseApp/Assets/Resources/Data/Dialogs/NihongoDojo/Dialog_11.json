@@ -48,10 +48,14 @@
     "暖かい　(あたたかい - Atatakai) = Warm (Weather)"
   ],
 
-  "Description": 
-  [
+  "Description": [
+    "The are 2 types of adjectives in Japanese language [-i Adjectives] and [-na adjectives]",
+    "[-i Adjectives]: end with -i when they come before nouns:",
+    "- 今日　は　あつい　です(Kyō wa atsui desu) = Today is hot",
+    "- 今日　は　とても　さむい　です(Kyō wa totemo samui desu) = Today is very cold",
     "",
-    "",
-    ""
+    "To make the negative form of an [i] adjetive, you have to change -i to -kunai: ",
+    "-　これ　は　いい　です (Kore wa ii desu) = This is good.",
+    "-　これ　は　よくない　です (Kore wa yokunai desu) = This isn't good."
   ]
 }
