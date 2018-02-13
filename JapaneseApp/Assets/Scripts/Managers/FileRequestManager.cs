@@ -220,7 +220,9 @@ namespace Utility
 
         public enum EMediaType {NONE, PICTURE, AUDIO };
 
-        public IEnumerator RequestPicture(string folderName, string fileName, Action<Texture2D> callbackRequest)
+
+
+        public IEnumerator RequestPicture(string folderName, string url, Action<Texture2D> callbackRequest)
         {
 
             string localDirectory = Path.Combine(Application.persistentDataPath, folderName);
@@ -230,8 +232,7 @@ namespace Utility
                 Directory.CreateDirectory(localDirectory);
             }
 
-            string fileNameWithExt = fileName;
-            string localPath = Path.Combine(localDirectory, fileNameWithExt);
+            string localPath = Path.Combine(localDirectory, url);
 
             if (File.Exists(localPath))
             {
@@ -259,11 +260,11 @@ namespace Utility
             else
             {
                 string directory = Path.Combine(m_ServerUrl, folderName);
-                string url = Path.Combine(directory, fileNameWithExt);
+                string serverFileURL = Path.Combine(directory, url);
 
                 Debug.Log("<color=blue>" + "[FileRequestManager.RequestPicture] Requesting file :" + url + "</color>");
 
-                WWW wwwFile = new WWW(url);
+                WWW wwwFile = new WWW(serverFileURL);
 
                 yield return wwwFile;
 

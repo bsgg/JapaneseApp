@@ -491,13 +491,13 @@ namespace JapaneseApp
                     Sprite sprite = null;
 
                     // Find sprite
-                    for (int i=0; i< m_SpriteData.Count; i++)
+                    /*for (int i=0; i< m_SpriteData.Count; i++)
                     {
                         if (m_SpriteData[i].Category == m_VocabularyData[m_SelectedCategory].Category)
                         {
                             sprite = m_SpriteData[i].GetSprite(word.SpriteID);
                         }
-                    }
+                    }*/
 
                     if (sprite != null)
                     {
