@@ -222,7 +222,7 @@ namespace Utility
 
 
 
-        public IEnumerator RequestPicture(string folderName, string url, Action<Texture2D> callbackRequest)
+        public IEnumerator RequestPicture(string folderName, string fileNname, Action<Texture2D> callbackRequest)
         {
 
             string localDirectory = Path.Combine(Application.persistentDataPath, folderName);
@@ -232,7 +232,9 @@ namespace Utility
                 Directory.CreateDirectory(localDirectory);
             }
 
-            string localPath = Path.Combine(localDirectory, url);
+            string localPath = Path.Combine(localDirectory, fileNname);
+
+            Debug.Log("<color=blue>" + "[FileRequestManager.RequestMedia] Local path :" + localPath + "</color>");
 
             if (File.Exists(localPath))
             {
@@ -260,9 +262,9 @@ namespace Utility
             else
             {
                 string directory = Path.Combine(m_ServerUrl, folderName);
-                string serverFileURL = Path.Combine(directory, url);
+                string serverFileURL = Path.Combine(directory, fileNname);
 
-                Debug.Log("<color=blue>" + "[FileRequestManager.RequestPicture] Requesting file :" + url + "</color>");
+                Debug.Log("<color=blue>" + "[FileRequestManager.RequestPicture] Requesting file :" + serverFileURL + "</color>");
 
                 WWW wwwFile = new WWW(serverFileURL);
 
@@ -286,7 +288,7 @@ namespace Utility
                     yield return new WaitForEndOfFrame();
                 }else
                 {
-                    Debug.Log("<color=blue>" + "[FileRequestManager.RequestMedia] Pciture data is null: " + url + "</color>");
+                    Debug.Log("<color=blue>" + "[FileRequestManager.RequestMedia] Pciture data is null: " + serverFileURL + "</color>");
 
                     callbackRequest(null);
                 }

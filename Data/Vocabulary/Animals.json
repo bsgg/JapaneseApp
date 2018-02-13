@@ -5,7 +5,7 @@
       "Kana": "とり",
       "Romaji": "Tori",
       "Meaning": "Bird",
-      "SpriteID": "Pictures/Animals/Bird.png",
+      "SpriteID": "Bird.png",
       "SentencesExamples": {
         "Sentence": [
           "鳥がニわいます",
@@ -33,8 +33,8 @@
       "Word": "猫",
       "Kana": "ねこ",
       "Romaji": "Neko",
-      "Meaning": "Pictures/Animals/Cat.png",
-      "SpriteID": "Cat",
+      "Meaning": "Cat",
+      "SpriteID": "Cat.png",
       "SentencesExamples": {
         "Sentence": [
           "猫です",
@@ -64,7 +64,7 @@
       "Kana": "かに",
       "Romaji": "Kani",
       "Meaning": "Crab",
-      "SpriteID": "Pictures/Animals/Crab.png",
+      "SpriteID": "Crab.png",
       "SentencesExamples": {
         "Sentence": [
           "蟹がはまべをあるいている",
@@ -94,7 +94,7 @@
       "Kana": "いぬ",
       "Romaji": "Inu",
       "Meaning": "Dog",
-      "SpriteID": "Pictures/Animals/Dog.png",
+      "SpriteID": "Dog.png",
       "SentencesExamples": {
         "Sentence": [
           "犬です",
@@ -123,7 +123,7 @@
       "Kana": "キツネ",
       "Romaji": "Kitsune",
       "Meaning": "Fox",
-      "SpriteID": "Pictures/Animals/Fox.png",
+      "SpriteID": "Fox.png",
       "SentencesExamples": {
         "Sentence": [
           "雪 の 中 に いる キツネ"
@@ -147,7 +147,7 @@
       "Kana": "こひつじ",
       "Romaji": "Kohitsuji",
       "Meaning": "Lamb",
-      "SpriteID": "Lamb",
+      "SpriteID": "Lamb.png",
       "SentencesExamples": {
         "Sentence": [
           "子羊 が 食べて いる。",
@@ -176,7 +176,7 @@
       "Kana": "クジラ",
       "Romaji": "Kujira",
       "Meaning": "Whale",
-      "SpriteID": "Pictures/Animals/Whale.png",
+      "SpriteID": "Whale.png",
       "SentencesExamples": {
         "Sentence": [
           "クジラたち が、いきつぎ に でてきて いる",
