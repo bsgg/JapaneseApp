@@ -85,7 +85,9 @@ namespace JapaneseApp
         public string Meaning;
         public string Romaji;
         public string SpriteID;
+        public Sprite SpriteObj = null;
         public SentencesExamples SentencesExamples;
+        
     }
 
     [Serializable]
@@ -125,30 +127,7 @@ namespace JapaneseApp
             return null;
         }
     }
-
-
     
-
-   /* [Serializable]
-    public class SpritesData
-    {
-        public VocabularyControl.ECategory Category;
-
-        [SerializeField]  public List<Sprite> Sprites;
-        public Sprite Sprite(string id)
-        {
-            for (int i = 0; i < Sprites.Count; i++)
-            {
-                Debug.Log("Sprite: " + Sprites[i].name);
-                if (Sprites[i].name.Equals(id))
-                {
-                    return Sprites[i];
-                }
-            }
-
-            return null;
-        }
-    }*/
 
     [Serializable]
     public class VocabularyData
@@ -159,68 +138,12 @@ namespace JapaneseApp
         public WordData WordSet;        
     }
 
-    [Serializable]
-    public class SpriteData
-    {
-        public List<Sprite> Sprites;
-        public Sprite GetSprite(string id)
-        {
-            for (int i = 0; i < Sprites.Count; i++)
-            {
-                Debug.Log("Sprite: " + Sprites[i].name);
-                if (Sprites[i].name.Equals(id))
-                {
-                    return Sprites[i];
-                }
-            }
-
-            return null;
-        }
-
-        public SpriteData()
-        {
-            Sprites = new List<Sprite>();
-        }
-    }
-
-
     #endregion DataModel
 
     public class VocabularyControl : Base
     {
         public enum EMenu { NONE = -1, Category, WordDay, RandomWord };
-       /* public enum ECategory
-        {   NONE = -1,
-            Animals,
-            Places,
-            Technology,
-            Profesions,
-            Actions,
-            Colours,
-            Home,
-            Food,
-            Numbers,
-            Dates,
-            Family,
-            Objects,
-            BodyParts,
-            Adjectives,
-            Questions,
-            Misc,
-            NUM
-        };*/
-
-        //[SerializeField] private string m_DataPath = "Data/Vocabulary/";
-
-        [SerializeField] public List<SpriteData> m_SpriteData;
-
-        [SerializeField] public List<Sprite> m_SpriteSet;
-
-        /* [SerializeField]
-         private List<SpritesData> m_SpriteSet;*/
-
-        /* [SerializeField]
-         private List<WordData> m_VocabularySet;*/
+       
         [SerializeField]
         private List<VocabularyData> m_VocabularyData;
 
@@ -248,17 +171,11 @@ namespace JapaneseApp
             m_ExamplesUI.Hide();
             m_CategoriesUI.Hide();
 
-            m_SpriteSet = new List<Sprite>();
-
-            // Load the data
-            //m_VocabularySet = new List<WordData>();
 
             m_VocabularyData = new List<VocabularyData>();
             for (int i = 0; i < FileRequestManager.Instance.VocabularyIndexData.Data.Count; i++)
             {
-                //string path = m_DataPath + m_VocabularyData[i].FileName;
-                //string json = Utility.LoadJSONResource(path);
-                
+               
                 VocabularyData aux = new VocabularyData();
                 aux.Category = FileRequestManager.Instance.VocabularyIndexData.Data[i].Title;
                 string json = FileRequestManager.Instance.VocabularyIndexData.Data[i].Data;
@@ -284,6 +201,12 @@ namespace JapaneseApp
                             if (texture != null)
                             {
                                 Debug.Log("Texture not null " + spriteId + " " + texture.width + " " + texture.height);
+
+                                Rect rec = new Rect(0, 0, texture.width, texture.height);
+
+                                aux.WordSet.Data[iW].SpriteObj = Sprite.Create(texture, rec, new Vector2(0.5f, 0.5f), 100);                               
+
+                                
                             }
                         }
                             
@@ -485,26 +408,11 @@ namespace JapaneseApp
 
                 // Set sprite
                 m_VocabularyUI.SpriteBtn.Enable(false, m_DisableBtnColor);
-                if (!string.IsNullOrEmpty(word.SpriteID))
+                if (word.SpriteObj != null)
                 {
-                    //
-                    Sprite sprite = null;
+                    m_VocabularyUI.Sprite.SpriteObject = word.SpriteObj;
 
-                    // Find sprite
-                    /*for (int i=0; i< m_SpriteData.Count; i++)
-                    {
-                        if (m_SpriteData[i].Category == m_VocabularyData[m_SelectedCategory].Category)
-                        {
-                            sprite = m_SpriteData[i].GetSprite(word.SpriteID);
-                        }
-                    }*/
-
-                    if (sprite != null)
-                    {
-                        m_VocabularyUI.Sprite.SpriteObject = sprite;
-
-                        m_VocabularyUI.SpriteBtn.Enable(true, m_EnableBtnColor);
-                    }
+                    m_VocabularyUI.SpriteBtn.Enable(true, m_EnableBtnColor);                    
                 }
                 
                 m_VocabularyUI.Sprite.Hide();

@@ -253,11 +253,6 @@ namespace Utility
 
                 callbackRequest(texture);
 
-                /*Rect rec = new Rect(0, 0, texture.width, texture.height);
-
-                m_FileData.Data[i].Sprite = Sprite.Create(texture, rec, new Vector2(0.5f, 0.5f), 100);*/
-
-
             }
             else
             {
