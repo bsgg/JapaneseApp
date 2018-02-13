@@ -5,7 +5,7 @@
       "Kana": "とり",
       "Romaji": "Tori",
       "Meaning": "Bird",
-      "SpriteID": "Bird",
+      "SpriteID": "Pictures/Animals/Bird.png",
       "SentencesExamples": {
         "Sentence": [
           "鳥がニわいます",
@@ -33,7 +33,7 @@
       "Word": "猫",
       "Kana": "ねこ",
       "Romaji": "Neko",
-      "Meaning": "Cat",
+      "Meaning": "Pictures/Animals/Cat.png",
       "SpriteID": "Cat",
       "SentencesExamples": {
         "Sentence": [
@@ -64,7 +64,7 @@
       "Kana": "かに",
       "Romaji": "Kani",
       "Meaning": "Crab",
-      "SpriteID": "Crab",
+      "SpriteID": "Pictures/Animals/Crab.png",
       "SentencesExamples": {
         "Sentence": [
           "蟹がはまべをあるいている",
@@ -94,7 +94,7 @@
       "Kana": "いぬ",
       "Romaji": "Inu",
       "Meaning": "Dog",
-      "SpriteID": "Dog",
+      "SpriteID": "Pictures/Animals/Dog.png",
       "SentencesExamples": {
         "Sentence": [
           "犬です",
@@ -123,7 +123,7 @@
       "Kana": "キツネ",
       "Romaji": "Kitsune",
       "Meaning": "Fox",
-      "SpriteID": "Fox",
+      "SpriteID": "Pictures/Animals/Fox.png",
       "SentencesExamples": {
         "Sentence": [
           "雪 の 中 に いる キツネ"
@@ -176,7 +176,7 @@
       "Kana": "クジラ",
       "Romaji": "Kujira",
       "Meaning": "Whale",
-      "SpriteID": "Whale",
+      "SpriteID": "Pictures/Animals/Whale.png",
       "SentencesExamples": {
         "Sentence": [
           "クジラたち が、いきつぎ に でてきて いる",
