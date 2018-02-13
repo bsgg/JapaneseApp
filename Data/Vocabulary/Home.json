@@ -1,0 +1,173 @@
+{
+  "Data": [
+    {
+      "Word": "家",
+      "Kana": "いえ",
+      "Romaji": "Ie",
+      "Meaning": "House/Home",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "家です",
+          "家はどこですか",
+          "暖かい家"
+        ],
+        "Kana": [
+          "いえ です",
+          "いえ は どこ です か",
+          "あたたかい いえ"
+        ],
+        "Kanjis": [
+          "- 家 = House (いえ - Ie)",
+          "- 家 = House (いえ - Ie)",
+          "- 暖かい = Warm (あたたかい - attakai)|- 家 = House (いえ - Ie)"
+        ],
+        "Romaji": [
+          "Ie desu",
+          "Ie ha(wa) doko desu ka?",
+          "Attakai ie"
+        ],
+        "English": [
+          "It's a house",
+          "Where is the house?",
+          "Warm house"
+        ]
+      }
+    },
+    {
+      "Word": "居間",
+      "Kana": "いま",
+      "Romaji": "Ima",
+      "Meaning": "Living Room",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          " 居間の家具"
+        ],
+        "Kani": [
+          " いま の かぐ"
+        ],
+        "Kanjis": [
+          "- 居間 = Living Room (いま - Ima)|- 家具 = Furniture (かぐ - Kagu): "
+        ],
+        "Romaji": [
+          "Ima no kagu"
+        ],
+        "English": [
+          "Living room furniture."
+        ]
+      }
+    },
+    {
+      "Word": "椅子",
+      "Kana": "いす",
+      "Romaji": "Isu",
+      "Meaning": "Chair",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "部屋　に　三つ　椅子　が　あります",
+          "部屋　に　椅子　は　いくつ　あります　か"
+        ],
+        "Kana": [
+          "へや　に　みっ　いす　が　あります",
+          "へや　に　いす　は　いくつ　あります　か"
+        ],
+        "Kanjis": [
+          "- 部屋 = Room (へや - Heya)|- 三つ = 3 (みっ - Mittsu)|- 三 = 3 (さん - San)|- 椅子 = Chair (いす - isu)",
+          "- 部屋 = Room (へや - Heya)|- 椅子 = Chair (いす - isu)"
+        ],
+        "Romaji": [
+          "Heya ni mittsu isu ga arimasu",
+          "Heya ni isu wa ikutsu arimasu ka"
+        ],
+        "English": [
+          "There are three chairs in the room",
+          "How many chairs are there in the room?"
+        ]
+      }
+    },
+    {
+      "Word": "ベッド",
+      "Kana": "ベッド",
+      "Romaji": "Beddo",
+      "Meaning": "Bed",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "ベッド で 休む"
+        ],
+        "Kana": [
+          "ベッド で やすむ"
+        ],
+        "Kanjis": [
+          "- 休む = Rest (やすむ - Yasumu)"
+        ],
+        "Romaji": [
+          "Beddo de yasumu"
+        ],
+        "English": [
+          "Rest in bed"
+        ]
+      }
+    },
+    {
+      "Word": "裏庭",
+      "Kana": "うらにわ",
+      "Romaji": "Uraniwa",
+      "Meaning": "Backyard",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "裏庭 に は 広 い 花畑 が あります。",
+          "広 い 裏庭"
+        ],
+        "Kana": [
+          "うらにわ に は ひろい はなばたけ が あります。",
+          "ひろい い うらにわ"
+        ],
+        "Kanjis": [
+          "- 裏庭 = Backyard (うらにわ - Uraniwa)|- 広 = Wide (ひろい - Hiroi)|- 花畑 = Flower garden (はなばたけ - Hanabatake)",
+          "- 広 = Wide, Big (ひろい - Hiroi)|- 裏庭 = Backyard (うらにわ - Uraniwa)"
+        ],
+        "Romaji": [
+          "Uraniwa ni wa hiroi hanabatake ga arimasu.",
+          "Hiroi ni uraniwa."
+        ],
+        "English": [
+          "There is a huge flower garden in the backyard.",
+          "Wide backyard"
+        ]
+      }
+    },
+     {
+      "Word": "窓",
+      "Kana": "まど",
+      "Romaji": "Mado",
+      "Meaning": "Window",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "窓 を 開けて くれます か？",
+          "窓 を 閉めて くれます か？"
+        ],
+        "Kana": [
+          "まど を あけて くれます か？",
+          "まど を しめて くれます か？"
+        ],
+        "Kanjis": [
+          "- 窓 = Window (まど - Mado)|- 開けて = Open (あけて - Akete)",
+          "- 窓 = Window (まど - Mado)|- 閉めて = Close (しめて - Shimete)"
+        ],
+        "Romaji": [
+          "Mado o akete kudasai ka?",
+          "Mado o shimete kudasai ka?"
+        ],
+        "English": [
+          "Open the window, please",
+          "Close the window, please"
+        ]
+      }
+    }
+  ]
+}

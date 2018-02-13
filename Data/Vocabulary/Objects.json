@@ -1,0 +1,29 @@
+{
+	"Data":	
+	[
+    {
+      "Word": "眼鏡",
+      "Kana": "めがね",
+      "Romaji": "Megane",
+      "Meaning": "Glasses",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "私 は 眼鏡 を 着用"
+        ],
+        "Kana": [
+          "わたし は めがね を ちゃくよう"
+        ],
+        "Kanjis": [
+          "- 私 = I,Me (わたし - Watashi)|- 眼鏡 = Glasses (めがね - Megane)|- 着用 = Wear (ちゃくよう - Chakuyō)"
+        ],
+        "Romaji": [
+          "Watashi wa megane o chakuyō"
+        ],
+        "English": [
+          "I wear glasses"
+        ]
+      }
+    }
+	]
+}

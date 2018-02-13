@@ -1,0 +1,81 @@
+﻿{
+  "Data": [
+    {
+      "Word": "ぼうし",
+      "Kana": "ぼうし",
+      "Romaji": "Bōshi",
+      "Meaning": "Hat",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "ぼうし　を　かぶります",
+          "むらさきいろ　の　ぼうし　が　ほしい　です"
+        ],
+        "Kana": [
+          "ぼうし　を　かぶります",
+          "むらさきいろ　の　ぼうし　が　ほしい　です"
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romaji": [
+          "Bōshi wo kaburimasu",
+          "Murasakiiro no bōshi ga hoshii desu"
+        ],
+        "English": [
+          "I wear a hat",
+          "I want a purple hat"
+        ]
+      }
+    },
+    {
+      "Word": "スカート",
+      "Kana": "スカート",
+      "Romaji": "Sukāto",
+      "Meaning": "Skirt",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "むらさきいろ　の　スカート　は　ほしくない　です"
+        ],
+        "Kana": [
+          "むらさきいろ　の　スカート　は　ほしくない　です"
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          "Murasakiiro no Sukāto wa hoshikunai desu"
+        ],
+        "English": [
+          "I don't want a purple skirt"
+        ]
+      }
+    },
+    {
+      "Word": "シャツ",
+      "Kana": "シャツ",
+      "Romaji": "Shatsu",
+      "Meaning": "Shirt",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "ピンクいろ　の　シャツ　は　ほしくない　です"
+        ],
+        "Kana": [
+          "ピンクいろ　の　シャツ　は　ほしくない　です"
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          "Pinkuiro no shatsu wa hoshikunai desu"
+        ],
+        "English": [
+          "I don't want a pinku shirt"
+        ]
+      }
+    }
+  ]
+}

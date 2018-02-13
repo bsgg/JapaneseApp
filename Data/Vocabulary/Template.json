@@ -1,0 +1,34 @@
+{
+	"Data":	
+	[
+    {
+      "Word": "",
+      "Kana": "",
+      "Romaji": "",
+      "Meaning": "",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "",
+          ""
+        ],
+        "Kana": [
+          "",
+          ""
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romaji": [
+          "",
+          ""
+        ],
+        "English": [
+          "",
+          ""
+        ]
+      }
+    }
+	]
+}

@@ -1,0 +1,167 @@
+{
+  "Data": [
+
+    {
+      "Word": "パン",
+      "Kana": "パン",
+      "Romaji": "Pan",
+      "Meaning": "Bread",
+      "SpriteID": "Bread",
+      "SentencesExamples": {
+        "Sentence": [
+          "パン　が　あつい　です"
+        ],
+        "Kana": [
+          "パン　が　あつい　です"
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          "Pan ga atsui desu."
+        ],
+        "English": [
+          "The bread is hot"
+        ]
+      }
+    },
+
+    {
+      "Word": "肉",
+      "Kana": "にく",
+      "Romaji": "Niku",
+      "Meaning": "Meat",
+      "SpriteID": "Meat",
+      "SentencesExamples": {
+        "Sentence": [
+          "肉　は　食べません"
+        ],
+        "Kana": [
+          "にく　は　たべません"
+        ],
+        "Kanjis": [
+          "- 肉 = Meat (にく - Niku)|- 食べ = Eat (たべ - Tabe)"
+        ],
+        "Romaji": [
+          "Niku wa tabemasen"
+        ],
+        "English": [
+          "I don't eat meat."
+        ]
+      }
+    },
+    {
+      "Word": "水",
+      "Kana": "みず",
+      "Romaji": "Mizu",
+      "Meaning": "Water",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "これ は 水 で すか",
+          "それ　は　水　です",
+          "水　が　つめたい　です"
+        ],
+        "Kana": [
+          "これ は みず です か",
+          "それ　は　みず　です",
+          "みず　が　つめたい　です"
+        ],
+        "Kanjis": [
+          "- 水 = Water (みず - Mizu)",
+          "- 水 = Water (みず - Mizu)",
+          "- 水 = Water (みず - Mizu)"
+        ],
+        "Romaji": [
+          "Kore wa mizu desu ka?",
+          "Sore wa mizu desu",
+          "Mizu ga tsumetai desu."
+        ],
+        "English": [
+          "Is this water?",
+          "That is water.",
+          "The water is cold."
+        ]
+      }
+    },
+    {
+      "Word": "ご飯",
+      "Kana": "ごはん",
+      "Romaji": "Gohan",
+      "Meaning": "Rice",
+      "SpriteID": "Rice",
+      "SentencesExamples": {
+        "Sentence": [
+          "ご飯　を　食べます",
+          "ご飯　は　食べません"
+        ],
+        "Kana": [
+          "ごはん　を　たべます",
+          "ごはん　は　たべません"
+        ],
+        "Kanjis": [
+          "- ご飯 = Rice (ごはん - Gohan)|- 食べ = Eat (たべ - Tabe)",
+          "- ご飯 = Rice (ごはん - Gohan)|- 食べ = Eat (たべ - Tabe)"
+        ],
+        "Romaji": [
+          "Gohan o tabemasu",
+          "Gohan wa tabemasen"
+        ],
+        "English": [
+          "I eat rice.",
+          "I don't eat rice."
+        ]
+      }
+    },
+
+    {
+      "Word": "おちゃ",
+      "Kana": "おちゃ",
+      "Romaji": "Ocha",
+      "Meaning": "Tea",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "おちゃ　が　つめたい　です"
+        ],
+        "Kana": [
+          "おちゃ　が　つめたい　です"
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          "Ocha ga tsumetai desu"
+        ],
+        "English": [
+          "The tea is cold"
+        ]
+      }
+    },
+
+    {
+      "Word": "野菜",
+      "Kana": "やさい",
+      "Romaji": "Yasai",
+      "Meaning": "Vegetables",
+      "SpriteID": "Vegetables",
+      "SentencesExamples": {
+        "Sentence": [
+          "肉　と　野菜 を　食べます"
+        ],
+        "Kana": [
+          "にく　と　やさい を　たべます"
+        ],
+        "Kanjis": [
+          "- 肉 = Meat (にく - Niku)|- 野菜 = Vegetables (やさい - Yasai)|- 食べ = Eat (たべ - Tabe)"
+        ],
+        "Romaji": [
+          "Niku to yasai o tabemasu"
+        ],
+        "English": [
+          "I don't eat meat or vegetables."
+        ]
+      }
+    }
+  ]
+}

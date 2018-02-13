@@ -1,0 +1,303 @@
+{
+  "Data": [
+    {
+      "Word": "まずい",
+      "Kana": "まずい",
+      "Romaji": "Mazui",
+      "Meaning": "Taste bad",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "まずい　です",
+          "この　おちゃ　は　まずい　です"
+        ],
+        "Kana": [
+          "まずい　です",
+          "この　おちゃ　は　まずい　です"
+        ],
+        "Kanjis": [
+          "",
+          ""
+        ],
+        "Romaji": [
+          "Mazui desu",
+          "Kono ocha wa mazui desu"
+        ],
+        "English": [
+          "It tastes bad",
+          "This tea tastes bad."
+        ]
+      }
+    },
+    {
+      "Word": "つめたい",
+      "Kana": "つめたい",
+      "Romaji": "Tsumetai",
+      "Meaning": "Cold",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "おちゃ　が　つめたい　です",
+          "水　が　つめたい　です"
+        ],
+        "Kana": [
+          "おちゃ　が　つめたい　です",
+          "みず　が　つめたい　です"
+        ],
+        "Kanjis": [
+          "",
+          "- 水 = Water (みず - Mizu)"
+        ],
+        "Romaji": [
+          "Ocha ga tsumetai desu",
+          "Mizu ga tsumetai desu."
+        ],
+        "English": [
+          "The tea is cold",
+          "The water is cold."
+        ]
+      }
+    },
+    {
+      "Word": "あつい",
+      "Kana": "あつい",
+      "Romaji": "Atsui",
+      "Meaning": "Hot",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "パン　が　あつい　です"
+        ],
+        "Kana": [
+          "パン　が　あつい　です"
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          "Pan ga atsui desu."
+        ],
+        "English": [
+          "The bread is hot"
+        ]
+      }
+    },
+    {
+      "Word": "高い",
+      "Kana": "たかい",
+      "Romaji": "Takai",
+      "Meaning": "Expensive High, Tall",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "肉　は　高い　です",
+          "高い　肉　を　食べます"
+        ],
+        "Kana": [
+          "にく　は　たかい　です",
+          "たかい　にく　を　たべます"
+        ],
+        "Kanjis": [
+          "- 肉 = Meat (にく - Niku)|- 高い = Expensive (たかい - akai)",
+          "- 高い = Expensive (たかい - akai)|- 肉 = Meat (にく - Niku)|- 食べ = Eat (たべ - Tabe)"
+        ],
+        "Romaji": [
+          "Niku wa takai desu",
+          "Takai niku o tabemasu"
+        ],
+        "English": [
+          "Meat is expensive",
+          "I eat expensive meat."
+        ]
+      }
+    },
+    {
+      "Word": "甘い",
+      "Kana": "あまい",
+      "Romaji": "Amai",
+      "Meaning": "Sweet",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "この　おちゃ　は　甘い　です",
+          "甘い　パン　を　食べます"
+        ],
+        "Kana": [
+          "この　おちゃ　は　あまい　です",
+          "あまい　パン　を　たべます"
+        ],
+        "Kanjis": [
+          "- 甘い = Sweet (あまい - Amai)",
+          "- 甘い = Sweet (あまい - Amai)|- 食べ = Eat (たべ - Tabe)"
+        ],
+        "Romaji": [
+          "Kono ocha wa amai desu",
+          "Amai pan o tabemasu"
+        ],
+        "English": [
+          "This tea is sweet",
+          "I eat sweet pan."
+        ]
+      }
+    },
+    {
+      "Word": "辛い",
+      "Kana": "からい",
+      "Romaji": "Karai",
+      "Meaning": "Spicy",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "この　ごかん　は　辛い　です",
+          "辛い　です　か"
+        ],
+        "Kana": [
+          "この　ごかん　は　からい　です",
+          "からい　です　か"
+        ],
+        "Kanjis": [
+          "- 辛い = Spicy (からい - Karai)",
+          "- 辛い = Spicy (からい - Karai)"
+        ],
+        "Romaji": [
+          "Kono gohan wa karai desu",
+          "Karai desu ka"
+        ],
+        "English": [
+          "This rice is spicy",
+          "Is it spicy?"
+        ]
+      }
+    },
+
+    {
+      "Word": "古い",
+      "Kana": "ふるい",
+      "Romaji": "Furui",
+      "Meaning": "Old",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "この　れいぞうこ　は　古い　です"
+        ],
+        "Kana": [
+          "この　れいぞうこ　は　古い　です"
+        ],
+        "Kanjis": [
+          "- 古い = Old (ふるい - Furui)"
+        ],
+        "Romaji": [
+          "Kono Reizōko ha furui desu"
+        ],
+        "English": [
+          "This refrigerator is old"
+        ]
+      }
+    },
+
+    {
+      "Word": "新しい",
+      "Kana": "あたらしい",
+      "Romaji": "Atarashī",
+      "Meaning": "New",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "あの　テレビ　は　新しい　です",
+          "新しい　れいぞこう　です"
+        ],
+        "Kana": [
+          "あの　テレビ　は　あたらしい　です",
+          "あたらしい　れいぞこう　です"
+        ],
+        "Kanjis": [
+          "- 新しい = New (あたらしい - Atarashi)",
+          "- 新しい = New (あたらしい - Atarashi)"
+        ],
+        "Romaji": [
+          "Ano terebi ha atarashi desu",
+          "Atarashi reizokou desu"
+        ],
+        "English": [
+          "That television is new.",
+          "It is a new refrigerator"
+        ]
+      }
+    },
+
+    {
+      "Word": "低い",
+      "Kana": "ひくい",
+      "Romaji": "Hikui",
+      "Meaning": "Low",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "この　テーブル　は　低い　です"
+        ],
+        "Kana": [
+          "この　は　ひくい　です"
+        ],
+        "Kanjis": [
+          "- 低い = Low (ひくい - Hikui)"
+        ],
+        "Romaji": [
+          "Kono tēburu ha hikui desu"
+        ],
+        "English": [
+          "This table is low"
+        ]
+      }
+    },
+
+    {
+      "Word": "早い",
+      "Kana": "はやい",
+      "Romaji": "Hayai",
+      "Meaning": "Fast",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "タクシー　は　早い　です　か"
+        ],
+        "Kana": [
+          "タクシー　は　はやい　です　か"
+        ],
+        "Kanjis": [
+          "- 早い = Fast (はやい - Hayai)"
+        ],
+        "Romaji": [
+          "Takushī ha hayai desu ka"
+        ],
+        "English": [
+          "Are taxis fast?"
+        ]
+      }
+    },
+
+    {
+      "Word": "小さい",
+      "Kana": "はやい",
+      "Romaji": "Chīsai",
+      "Meaning": "Small",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "あなた　の　車　は　小さい　です"
+        ],
+        "Kana": [
+          "あなた　の　くるま　は　はやい　です"
+        ],
+        "Kanjis": [
+          "- 車 = Car (くるま - Kuruma)|- 小さい = Small (はやい - Chīsai)"
+        ],
+        "Romaji": [
+          "Anata no kuruma wa chīsai desu"
+        ],
+        "English": [
+          "Your car is small"
+        ]
+      }
+    }
+  ]
+}

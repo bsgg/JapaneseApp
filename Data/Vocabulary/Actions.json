@@ -1,0 +1,663 @@
+{
+  "Data": [
+    {
+      "Word": "焼く",
+      "Kana": "やく",
+      "Romaji": "Yaku",
+      "Meaning": "Bake",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "女の人 が ケーキ を 焼いて いる。",
+          "女の人 が ケーキ を 焼く。",
+          "女の人 が ケーキ を 焼いた。",
+          "その 男の人 は、奥さん の ため に ケーキを焼いている。"
+        ],
+        "Kana": [
+          "おんなのひと が ケーキ を やいて　いる。",
+          "おんなのひと が ケーキ を やく。",
+          "おんなのひと が ケーキ を やいた。",
+          "その おとこのひと は、おくさん の ため に ケーキ を やいて いる。"
+        ],
+        "Kanjis": [
+          "- 女の人 = Woman (おんなのひと - Onna no hito)|- 焼く　= Bake (やく - Yaku)",
+          "- 女の人 = Woman (おんなのひと - Onna no hito)|- 焼く　= Bake (やく - Yaku)",
+          "- 女の人 = Woman (おんなのひと - Onna no hito)|- 焼く　= Bake (やく - Yaku)",
+          "- 男の人 = Man (おとこのひと - Otoko no hito)|- 奥さん = Wife (おくさん - Okusan)|- 焼く　= Bake (やく - Yaku)"
+        ],
+        "Romaji": [
+          "Onna no hito ga kēki o yaite iru.",
+          "Onna no hito ga kēki o yaku.",
+          "Onna no hito ga kēki o yaita.",
+          "Sono otoko no hito wa, okusan no tame ni kēki o yaite iru."
+        ],
+        "English": [
+          "The woman is baking a cake.",
+          "The woman bakes a cake.",
+          "The woman baked a cake.",
+          "The man is baking a cake for his wife."
+        ]
+      }
+    },
+
+    {
+      "Word": "出る",
+      "Kana": "でる",
+      "Romaji": "Deru",
+      "Meaning": "Leave",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "私は、毎日8時に家を出ます。",
+          "家を出る",
+          "会社を出る"
+        ],
+        "Kana": [
+          "わたし は、まいにち はち じ に いえ　を でます",
+          "いえ　を　でる。",
+          "かいしゃ　を　でる。"
+        ],
+        "Kanjis": [
+          "- 私 = I/Me (わたし - Watashi)|- 毎日: Every day (まいにち - Mainichi)|- 時 = Time (じ - Ji)|- 出ます = Leave (でます - Demasu)",
+          "- 家 = Home (いえ - Ie)|- 出ます = Leave (でる - Deru)",
+          "- 会社 = Company (かいしゃ - Kaishya)|- 出 = Leave (でる - Deru)"
+        ],
+        "Romaji": [
+          "Watashi wa, mainichi hachi-ji ni ie o demasu.",
+          "Ie o deru",
+          "Kaisha o deru"
+        ],
+        "English": [
+          "I leave home at 8:00 every day.",
+          "Leave home",
+          "Leave a company"
+
+        ]
+      }
+    },
+
+    {
+      "Word": "食べる",
+      "Kana": "たべる",
+      "Romaji": "Taberu",
+      "Meaning": "Eat",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "ばんごはん　を　食べます",
+          "午前八時　に　あさごはん　を　食べます",
+          "おひるごはん　を　食べます"
+        ],
+        "Kana": [
+          "ばんごはん　を　たべます",
+          "ごせん　はち　じ　に　あさごはん　を　たべます",
+          "おひるごはん　を　たべます"
+        ],
+        "Kanjis": [
+          "- 食べ = Eat (たべ - Tabe)",
+          "- 午前 = a.m (ごせん - Gozen)|- 八 = 8 (はち - Hachi)|- 時 = O'clock (時 - Ji)|- 食べ = Eat (たべ - Tabe)",
+          "- 食べ = Eat (たべ - Tabe)"
+        ],
+        "Romaji": [
+          "Bangonhan o tabemasu",
+          "Gozen hachi-ji ni asagohan o tabemasu.",
+          "Ohirugohan o tabemasu."
+        ],
+        "English": [
+          "I eat dinner.",
+          "I eat breakfast at eight a.m",
+          "I eat lunch."
+
+        ]
+      }
+    },
+
+    {
+      "Word": "跳ぶ",
+      "Kana": "とぶ",
+      "Romaji": "Tobu",
+      "Meaning": "Jump",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "女の人が空中に跳びあがっている。"
+        ],
+        "Kana": [
+          "おんなのひとがくうちゅうにとびあがっている"
+        ],
+        "Kanjis": [
+          "- 女の人 = Woman (おんなのひと - Onna no hito)|- 空中 = Air (くうちゅう - Kūchū)|- 跳 = Jump (とぶ - Tobu)"
+        ],
+        "Romaji": [
+          "Onna no hito ga kūchū ni tobiagatte iru."
+        ],
+        "English": [
+          "The woman is jumping in the air."
+
+        ]
+      }
+    },
+    {
+      "Word": "助ける",
+      "Kana": "たすける",
+      "Romaji": "Tasukeru",
+      "Meaning": "Help",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "助けて！",
+          "助けに来る"
+        ],
+        "Kana": [
+          "たすけて",
+          "たすけにくる"
+        ],
+        "Kanjis": [
+          "- 助け = Help (たすけ - Tasuke)",
+          "- 助け = Help (たすけ - Tasuke) |- 来る = Come (くる - Kuru)"
+        ],
+        "Romaji": [
+          "Tasukete!",
+          "Tasuke ni kuru"
+        ],
+        "English": [
+          "Help me!",
+          "To come to help"
+        ]
+      }
+    },
+    {
+      "Word": "飲む",
+      "Kana": "のむ",
+      "Romaji": "Nomu",
+      "Meaning": "Drink",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          ""
+        ],
+        "Kana": [
+        ],
+        "Kanjis": [
+          ""
+        ],
+        "Romaji": [
+          ""
+        ],
+        "English": [
+          ""
+        ]
+      }
+    },
+    {
+      "Word": "好き",
+      "Kana": "すき",
+      "Romaji": "Suki",
+      "Meaning": "Like",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "ごはん　が　好き　です",
+          "学校　は　好き　です　か",
+          "やさい　は　すき　じゃ ない　です",
+          "肉　は　すき　じゃ　ない　です",
+          "さんぽ　が　好き　です",
+          "しごと　が　好き　です"
+        ],
+        "Kana": [
+          "ごはん　が　すき　です",
+          "学校　は　好き　です　か",
+          "やさいは　すき　じゃ ない　です",
+          "にく は　すき　じゃ　ない　です",
+          "さんぽ　が　すき　です",
+          "しごと　が　すき　です"
+        ],
+        "Kanjis": [
+          "- 好き = Like (すき - Suki)",
+          "- 学校 = School (がっこう - Gakkō)|- 好き = Like (すき - Suki)",
+          "- 好き = Like (すき - Suki)",
+          "- 肉 = Meat (にく - Niku)|- 好き = Like (すき - Suki)",
+          "- 好き = Like (すき - Suki)",
+          "- 好き = Like (すき - Suki)"
+        ],
+        "Romaji": [
+          "Gohan ga suki desu",
+          "Gakkō wa suki desu ka",
+          "Yasai suki ja nai desu",
+          "Niku suki ja nai desu",
+          "Sanpo ga suki desu",
+          "Shigoto ga suki desu"
+        ],
+        "English": [
+          "I like rice.",
+          "Do you like school?",
+          "I don't like vegetables",
+          "I don't like meat",
+          "I like to walk",
+          "I like to work"
+        ]
+      }
+    },
+    {
+      "Word": "きらい",
+      "Kana": "きらい",
+      "Romaji": "Kirai",
+      "Meaning": "Hate",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "おちゃ　が　きらい　です。",
+          "魚　が　きらい　です。"
+        ],
+        "Kana": [
+          "おちゃ　が　きらい　です",
+          "あかな　が　きらい　です。"
+        ],
+        "Kanjis": [
+          "",
+          "- 魚 = Fish (あかな - Sakana)"
+        ],
+        "Romaji": [
+          "Ocha ga kirai desu",
+          "Sakana ga kirai desu"
+        ],
+        "English": [
+          "I hate tea.",
+          "I hate fish."
+        ]
+      }
+    },
+    {
+      "Word": "洗う",
+      "Kana": "あらう",
+      "Romaji": "Arau",
+      "Meaning": "Wash",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "男の子が皿を洗う。",
+          "女の子が顔を洗った。"
+        ],
+        "Kana": [
+          "おとこ　の　こ　が　さら　を　あらう",
+          "おんあ　の　こ　が　かお　を　あらった"
+        ],
+        "Kanjis": [
+          "- 男 = Boy (おとこ - Otoko)|- 子 = Child (こ - Ko)|- 皿 = Dishes (さら - Sara)|- 洗う = Wash (あらう - Arau)",
+          "- 女 = Girl (おんな - Onna)|- 子 = Child (こ - Ko)|- 顔 = Face (かお - kao)|- 洗う = Wash (あらう - Arau)"
+        ],
+        "Romaji": [
+          "Otoko no ko ga sara o arau.",
+          "Onna no ko ga kao o aratta."
+        ],
+        "English": [
+          "The boy washes the dishes.",
+          "The girl washed her face."
+        ]
+      }
+    },
+
+    {
+      "Word": "勉強",
+      "Kana": "べんきょう",
+      "Romaji": "Benkyō",
+      "Meaning": "Study",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "あさって　勉強　します",
+          "あした　勉強　します"
+        ],
+        "Kana": [
+          "あさって　べんきょう　します",
+          "あした　べんきょう　します"
+        ],
+        "Kanjis": [
+          "- 勉強 = Study (benkyō - べんきょう)",
+          "- 勉強 = Study (benkyō - べんきょう)"
+        ],
+        "Romaji": [
+          "Osatte benkyō shimasu",
+          "Ashita benkyō shimasu"
+        ],
+        "English": [
+          "I will study the day after tomorrow.",
+          "I will study tomorrow."
+        ]
+      }
+    },
+
+    {
+      "Word": "買い",
+      "Kana": "かい",
+      "Romaji": "Kai",
+      "Meaning": "Buy",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "テーブル　を　買います"
+        ],
+        "Kana": [
+          "テーブル　を　かいます"
+        ],
+        "Kanjis": [
+          "- 買い = Buy (かい - Kai)"
+        ],
+        "Romaji": [
+          "Teeburu o kaimasu"
+        ],
+        "English": [
+          "I will buy a table."
+        ]
+      }
+    },
+
+
+    {
+      "Word": "見ます",
+      "Kana": "みます",
+      "Romaji": "Mimasu",
+      "Meaning": "Watch, See",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "えいが　見ます　か",
+          "ときどき　えいが　を　見ます",
+          "えいが　は　あまり　見ません"
+        ],
+        "Kana": [
+          "えいが　みます　か",
+          "ときどき　えいが　を　みます",
+          "えいが　は　あまり　みません"
+        ],
+        "Kanjis": [
+          "- 見 = Watch, See (み - Mi)",
+          "- 見 = Watch, See (み - Mi)",
+          "- 見 = Watch, See (み - Mi)"
+        ],
+        "Romaji": [
+          "Eiga mimasu ka",
+          "Tokidoki eiga o mimasu",
+          "Eiga wa amari mimasen"
+        ],
+        "English": [
+          "Do you watch movies?",
+          "I wach movies sometimes.",
+          "I don't watch a lot of movies"
+        ]
+      }
+    },
+
+    {
+      "Word": "書き",
+      "Kana": "かき",
+      "Romaji": "Kaki",
+      "Meaning": "Write",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "てがみ　は　書き　ます　か",
+          "てがみ　は　あまり　書きません"
+        ],
+        "Kana": [
+          "てがみ　は　かき　ます　か",
+          "てがみ　は　あまり　かきません"
+
+        ],
+        "Kanjis": [
+          "- 書き = Write (かき - Kaki)",
+          "- 書き = Write (かき - Kaki)"
+        ],
+        "Romaji": [
+          "Tegami wa kaki masu ka",
+          "Tegame wa amari kakimasen"
+        ],
+        "English": [
+          "Do you write letters?",
+          "I don't write a lot of letters."
+        ]
+      }
+    },
+
+    {
+      "Word": "遊び",
+      "Kana": "あそび",
+      "Romaji": "Asobi",
+      "Meaning": "Play",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "きのう　は　友だちと　遊びました",
+          "きのう はは　たくさん　遊びました"
+        ],
+        "Kana": [
+          "きのう　は　ともだちと　あそびました",
+          "きのう はは　たくさん　あそびました"
+        ],
+        "Kanjis": [
+          "- 友 = Friend (とも - Tomo)|- 遊び = Play (あそび - Asobi)",
+          "- 遊び = Play (あそび - Asobi)"
+        ],
+        "Romaji": [
+          "Kinō wa tomodachi asobimashita.",
+          "Kinō wa takusann asobimashita"
+        ],
+        "English": [
+          "I played with friends yesterday",
+          "I played a lot yesterday."
+        ]
+      }
+    },
+
+    {
+      "Word": "走り",
+      "Kana": "はしり",
+      "Romaji": "Hashiri",
+      "Meaning": "Run",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "走りません",
+          "かのじょ　は　あまり　走りません"
+        ],
+        "Kana": [
+          "はしりません",
+          "かのじょ　は　あまり　はしりません"
+        ],
+        "Kanjis": [
+          "- 走り = Run (はしり - Hashiri)",
+          "- 走り = Run (はしり - Hashiri)"
+        ],
+        "Romaji": [
+          "Hashirimasen.",
+          "Kanojo wa amari hashirimasen"
+        ],
+        "English": [
+          "I do not run",
+          "Seh doesn't run a lot."
+        ]
+      }
+    },
+
+    {
+      "Word": "読み",
+      "Kana": "よみ",
+      "Romaji": "Yomi",
+      "Meaning": "Read",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "てがみ　を　読みます",
+          "本 を　たくさん　読みます",
+          "本 は　あまり　読みません"
+        ],
+        "Kana": [
+          "てがみ　を　よみます",
+          "ほん を　たくさん　よみます",
+          "ほん は　あまり　よみます"
+        ],
+        "Kanjis": [
+          "- 読み = Read (よみ - Yomi)",
+          "- 本 = Book (ほん - Hon)|- 読み = Read (よみ - Yomi)",
+          "- 本 = Book (ほん - Hon)|- 読み = Read (よみ - Yomi)"
+        ],
+        "Romaji": [
+          "Tegami o yomimasu.",
+          "Hon o takusan yomimasu.",
+          "Hon wa amari yomimasen"
+        ],
+        "English": [
+          "I read a letter",
+          "I read a lot of books.",
+          "I don't read books much."
+        ]
+      }
+    },
+
+    {
+      "Word": "かき",
+      "Kana": "かき",
+      "Romaji": "Kaki",
+      "Meaning": "Draw",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "え を かきます"
+        ],
+        "Kana": [
+          "え を かきます"
+        ],
+        "Kanjis": [
+
+        ],
+        "Romaji": [
+          "E o kakimasu"
+        ],
+        "English": [
+          "I draw a picture"
+        ]
+      }
+    },
+
+    {
+      "Word": "とります",
+      "Kana": "とります",
+      "Romaji": "Torimasu",
+      "Meaning": "Take pictures",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "ときどき　しゃしん　を　とります",
+          "よく　しゃしん　を　とります",
+          "かれ　は　いつも　しゃしん　を　あります"
+        ],
+        "Kana": [
+          "ときどき　しゃしん　を　とります",
+          "よく　しゃしん　を　とります",
+          "かれ　は　いつも　しゃしん　を　あります"
+        ],
+        "Kanjis": [
+        ],
+        "Romaji": [
+          "Tokidoki shashin o torimasu",
+          "Yoku shashin o torimasu.",
+          "Kare wa itsumo shashin wo arimasu."
+        ],
+        "English": [
+          "I sometimes take pictures.",
+          "I often take pictures",
+          "He always takes pictures."
+        ]
+      }
+    },
+
+    {
+      "Word": "話す",
+      "Kana": "はなす",
+      "Romaji": "Hanasu",
+      "Meaning": "Talk",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "友達　と　話します",
+          "彼女　と　話しません"
+        ],
+        "Kana": [
+          "ともだち　と　はなします",
+          "かのじょ　と　はなしません"
+        ],
+        "Kanjis": [
+          "- 友達 = Friend (ともだち - Tomodachi)|- 話す = Talk (はなす - Hanasu)",
+          "- 彼女 = She (かのじょ - Kanojo)|- 話す = Talk (はなす - Hanasu)"
+
+        ],
+        "Romaji": [
+          "Tomodachi to hanashimasu",
+          "Kanojo to hanashimasen"
+        ],
+        "English": [
+          "I will talk to my friends",
+          "I don't talk to her"
+        ]
+      }
+    },
+
+    {
+      "Word": "来る",
+      "Kana": "くる",
+      "Romaji": "Kuru",
+      "Meaning": "Come",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "女 の 子 が ビデオ カメラ の 方に 来る。",
+          "ビデオカメラの方に来る"
+        ],
+        "Kana": [
+          "おんな の こ が ビデオ カメラ の ほう に くる。",
+          "ビデオカメラのほうにくる"
+        ],
+        "Kanjis": [
+          "- 女 = Girl (おんな - Onna)|- 方に = Towards (ほう に - hou)|-  来る = Come (くる - Kuru)",
+          "- 方に = Towards (ほう に - hou)|-  来る = Come (くる - Kuru)"
+        ],
+        "Romaji": [
+          "Onna no ko ga bideo kamera no hou ni Kuru",
+          "bideo kamera no hou ni kuru"
+        ],
+        "English": [
+          "The girl comes towards the video camera.",
+          "Come towards a video camera"
+        ]
+      }
+    },
+
+    {
+      "Word": "しごと",
+      "Kana": "しごと",
+      "Romaji": "Shigoto",
+      "Meaning": "Work",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "昨日　は　しごと でした"
+        ],
+        "Kana": [
+          "きのう　は　しごと でした"
+        ],
+        "Kanjis": [
+          "- 昨日 = Yesterday (のう - Kinō)"
+        ],
+        "Romaji": [
+          "Kinō wa shigoto deshita"
+        ],
+        "English": [
+          "I worked yesterday"
+        ]
+      }
+    }
+
+
+
+  ]
+}

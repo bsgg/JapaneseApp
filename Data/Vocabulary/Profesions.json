@@ -1,0 +1,65 @@
+{
+	"Data":	
+	[
+    {
+      "Word": "学生",
+      "Kana": "がくせい",
+      "Romaji": "Gakusei",
+      "Meaning": "Student",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "ﾏﾘｱさん 学生 です",
+          "わたし も 学生 です"
+        ],
+        "Kana": [
+          "ﾏﾘｱさん がくせい です",
+          "わたし も がくせい です"
+        ],
+        "Kanjis": [
+          "- 学生 = Student (がくせい - Gakusei)",
+          "- 学生 = Student (がくせい - Gakusei)"
+        ],
+        "Romaji": [
+          "Maria san gakusei desu.",
+          "Watashi mo gakusei desu."
+        ],
+        "English": [
+          "Maria is a student.",
+          "I am also a student."
+        ]
+      }
+    },
+    {
+      "Title": "",
+      "Word": "先生",
+      "Kana": "せんせい",
+      "Romaji": "Sensei",
+      "Meaning": "Teacher, Doctor",
+      "SpriteID": "",
+      "Description": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "マリア は 先生 です",
+          "先生 です か"
+        ],
+        "Kana": [
+          "マリア は せんせい です",
+          "せんせい です か"
+        ],
+        "Kanjis": [
+          "- 先生 = Teacher, Doctor (せんせい - Sensei)",
+          "- 先生 = Teacher, Doctor (せんせい - Sensei)"
+        ],
+        "Romaji": [
+          "Maria wa sensei desu.",
+          "Sensei desu ka?"
+        ],
+        "English": [
+          "Maria is a teacher.",
+          "Are you a teacher?"
+        ]
+      }
+    }
+	]
+}

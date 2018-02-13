@@ -1,0 +1,63 @@
+{
+  "Data": [
+    {
+      "Word": "手首",
+      "Kana": "てくび",
+      "Romaji": "Tekubi",
+      "Meaning": "Wrist",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "手首 の 怪我"
+        ],
+        "Kana": [
+          "てくび の けが"
+        ],
+        "Kanjis": [
+          "- 手首 = Wrist (てくび - Tekubi)|- 怪我 = Injury (けが - Kega)"
+        ],
+        "Romaji": [
+          "Tekubi no kega"
+        ],
+        "English": [
+          "Wrist injury"
+        ]
+      }
+    },
+
+     {
+      "Word": "手",
+      "Kana": "て",
+      "Romaji": "Te",
+      "Meaning": "Hand",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "右手",
+          "左手",
+          "子ども が 手 を 上げて いる。"
+        ],
+        "Kana": [
+          "みぎて",
+          "ひだりて",
+          "こども が て を あげて いる。"
+        ],
+        "Kanjis": [
+          "- 右 = Right (みぎ - Migi)|- 手 = Hand (て - Te)",
+          "- 左 = Left (ひだり - Hidari)|- 手 = Hand (て - Te)",
+          "- 子ども = Child (こども - Kodomo)|- 手 = Hand (て - Te)| - 上げて = Raise (あげて - Agete)"
+        ],
+        "Romaji": [
+          "Migi te",
+          "Hidari te",
+          "Kodomo ga te o agete iru"
+        ],
+        "English": [
+          "Right Hand",
+          "Left Hand",
+          "The child is raising his hand"
+        ]
+      }
+    }
+  ]
+}

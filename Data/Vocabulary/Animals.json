@@ -1,0 +1,228 @@
+{
+  "Data": [
+    {
+      "Word": "鳥",
+      "Kana": "とり",
+      "Romaji": "Tori",
+      "Meaning": "Bird",
+      "SpriteID": "Bird",
+      "SentencesExamples": {
+        "Sentence": [
+          "鳥がニわいます",
+          "鳥が七わいます"
+        ],
+        "Kana": [
+          "とり が ニ わ います",
+          "とり が 七 わ います"
+        ],
+        "Kanjis": [
+          "- 鳥 = Bird (とり - Tori)|- ニ = 2 (に - Ni)",
+          "- 鳥 = Bird (とり - Tori)|- 七 = 7 (なな - Nana)"
+        ],
+        "Romaji": [
+          "Tori ga ni wa imadesu",
+          "Tori ga nana ga imasu."
+        ],
+        "English": [
+          "There are two birds",
+          "There are seven birds"
+        ]
+      }
+    },
+    {
+      "Word": "猫",
+      "Kana": "ねこ",
+      "Romaji": "Neko",
+      "Meaning": "Cat",
+      "SpriteID": "Cat",
+      "SentencesExamples": {
+        "Sentence": [
+          "猫です",
+          "猫がいます"
+        ],
+		    "Kana":
+		    [
+		      "ねこ です",
+              "ねこ がいます"
+		    ],
+        "Kanjis": [
+          "- 猫 = Cat (ねこ - Neko)",
+          "- 猫 = Cat (ねこ - Neko)"
+        ],
+        "Romaji": [
+          "Neko desu",
+          "Neko ga imasu"
+        ],
+        "English": [
+          "It's a cat",
+          "There is a cat"
+        ]
+      }
+    },
+    {
+      "Word": "蟹",
+      "Kana": "かに",
+      "Romaji": "Kani",
+      "Meaning": "Crab",
+      "SpriteID": "Crab",
+      "SentencesExamples": {
+        "Sentence": [
+          "蟹がはまべをあるいている",
+          "オレンジと赤の蟹"
+        ],
+		    "Kana":
+		    [
+		      "かに が はまべ を あるいて いる",
+              "オレンジ と あか の かに"
+		    ],
+        "Kanjis": [
+          "- 蟹 = Crab (かに- Kani)",
+          "- 蟹 = Crab (かに- Kani)|- 赤 = Red (あか　- aka)"
+        ],
+        "Romaji": [
+          "Kani ga hamabe o aruite iru.",
+          "Orenji to aka no kani"
+        ],
+        "English": [
+          "The crab is walking on the beach.",
+          "Orange and red crab"
+        ]
+      }
+    },
+    {
+      "Word": "犬",
+      "Kana": "いぬ",
+      "Romaji": "Inu",
+      "Meaning": "Dog",
+      "SpriteID": "Dog",
+      "SentencesExamples": {
+        "Sentence": [
+          "犬です",
+          "犬と猫がいます"
+        ],
+        "Kana": [
+          "いぬ です",
+          "いぬ と ねこ が います"
+        ],
+        "Kanjis": [
+          "- 犬 = Dog (いぬ - Inu)",
+          "- 犬 = Dog (いぬ - Inu)|- 猫 = Cat (ねこ - Neko)"
+        ],
+        "Romaji": [
+          "Inu desu",
+          "Inu to neko ga imasu"
+        ],
+        "English": [
+          "It's a cat",
+          "There is a cat and a dog."
+        ]
+      }
+    },
+    {
+      "Word": "キツネ",
+      "Kana": "キツネ",
+      "Romaji": "Kitsune",
+      "Meaning": "Fox",
+      "SpriteID": "Fox",
+      "SentencesExamples": {
+        "Sentence": [
+          "雪 の 中 に いる キツネ"
+        ],
+        "Kana": [
+          "ゆき の なか に いる キツネ"
+        ],
+        "Kanjis": [
+          "- 雪 = Snow (ゆき - Yuki)|- 中 = During (なか - Naka)"
+        ],
+        "Romaji": [
+          "Yuki no naka ni iru kitsune."
+        ],
+        "English": [
+          "Fox in the snow"
+        ]
+      }
+    },
+    {
+      "Word": "子羊",
+      "Kana": "こひつじ",
+      "Romaji": "Kohitsuji",
+      "Meaning": "Lamb",
+      "SpriteID": "Lamb",
+      "SentencesExamples": {
+        "Sentence": [
+          "子羊 が 食べて いる。",
+          "小さい 子羊"
+        ],
+        "Kana": [
+          "こひつじ　が　たべて　いる",
+          "ちいさい こひつじ"
+        ],
+        "Kanjis": [
+          "- 子羊 = Lamb (こひつじ - Kohitsuji)|- 食べ = Eat (たべ - Tabe)",
+          "- 小さい = Small (ちいさい - Chiisai)|- 子羊 = Lamb (こひつじ - Kohitsuji)"
+        ],
+        "Romaji": [
+          "Kohitsuji ga tabete iru.",
+          "Chiisai  Kohitsuji"
+        ],
+        "English": [
+          "The lambs are eating.",
+          "Little lamb"
+        ]
+      }
+    },
+    {
+      "Word": "クジラ",
+      "Kana": "クジラ",
+      "Romaji": "Kujira",
+      "Meaning": "Whale",
+      "SpriteID": "Whale",
+      "SentencesExamples": {
+        "Sentence": [
+          "クジラたち が、いきつぎ に でてきて いる",
+          "クジラ が 海 を 泳いで いる。"
+        ],
+        "Kana": [
+          "クジラたち が、いきつぎ に でてきて いる",
+          "クジラ が うみ を およいで いる。"
+        ],
+        "Kanjis": [
+          "",
+          "- 海 = Ocean (うみ - Umi)|- 泳いで = Swiming (およいで - Oyaide)"
+        ],
+        "Romaji": [
+          "Kujira-tachi ga, ikitsugi ni detekite iru",
+          "Kujira ga umi o oyaide iru."
+        ],
+        "English": [
+          "The whales is coming up for air",
+          "The whale is swimming in the ocean."
+        ]
+      }
+    },
+    {
+      "Word": "熊",
+      "Kana": "くま",
+      "Romaji": "Kuma",
+      "Meaning": "Bear",
+      "SpriteID": "",
+      "SentencesExamples": {
+        "Sentence": [
+          "熊 は 強い 動物 です。"
+        ],
+        "Kana": [
+          "くま は つよい どうぶつ です。"
+        ],
+        "Kanjis": [
+          "- 熊 = Bear (くま - Kuma)|- 強い = Strong (つよい - Tsuyoi)|- 動物 = Animal (どうぶつ - Dōbutsu)"
+        ],
+        "Romaji": [
+          "Kuma ga tsuyoi dōbutsu desu."
+        ],
+        "English": [
+          "Bears are strong animals"
+        ]
+      }
+    }
+  ]
+}
