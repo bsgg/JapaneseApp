@@ -173,12 +173,12 @@ namespace JapaneseApp
 
 
             m_VocabularyData = new List<VocabularyData>();
-            for (int i = 0; i < FileRequestManager.Instance.VocabularyIndexData.Data.Count; i++)
+            for (int i = 0; i < AppController.Instance.Launcher.VocabularyIndexData.Data.Count; i++)
             {
                
                 VocabularyData aux = new VocabularyData();
-                aux.Category = FileRequestManager.Instance.VocabularyIndexData.Data[i].Title;
-                string json = FileRequestManager.Instance.VocabularyIndexData.Data[i].Data;
+                aux.Category = AppController.Instance.Launcher.VocabularyIndexData.Data[i].Title;
+                string json = AppController.Instance.Launcher.VocabularyIndexData.Data[i].Data;
                 if (!string.IsNullOrEmpty(json))
                 {
                     try
@@ -187,7 +187,7 @@ namespace JapaneseApp
                     }
                     catch (Exception e)
                     {
-                        Debug.LogError("[VocabularyControl.Init] Exception at: " + FileRequestManager.Instance.VocabularyIndexData.Data[i].URL + " " + e.ToString());
+                        Debug.LogError("[VocabularyControl.Init] Exception at: " + AppController.Instance.Launcher.VocabularyIndexData.Data[i].URL + " " + e.ToString());
                     }
                     for (int iW = 0; iW< aux.WordSet.Data.Count; iW++)
                     {
@@ -196,7 +196,7 @@ namespace JapaneseApp
                         {
                             Texture2D texture = null;
                             Debug.Log("Requesting texture..." + spriteId);
-                            yield return FileRequestManager.Instance.RequestPicture("Pictures",spriteId, (result) => texture = result);
+                            yield return AppController.Instance.Launcher.RequestPicture("Pictures",spriteId, (result) => texture = result);
 
                             if (texture != null)
                             {
@@ -216,36 +216,10 @@ namespace JapaneseApp
                 }
                 else
                 {
-                    Debug.Log("[VocabularyControl.Init] JSON not found: " + FileRequestManager.Instance.VocabularyIndexData.Data[i].URL);
+                    Debug.Log("[VocabularyControl.Init] JSON not found: " + AppController.Instance.Launcher.VocabularyIndexData.Data[i].URL);
                 }
             }
-
-            // Load sprites
             
-
-
-
-
-            /*for (int i = 0; i < m_VocabularyData.Count; i++)
-            {
-                string path = m_DataPath + m_VocabularyData[i].FileName;
-                string json = Utility.LoadJSONResource(path);
-                if (!string.IsNullOrEmpty(json))
-                {
-                    try
-                    {
-                        m_VocabularyData[i].WordSet = JsonMapper.ToObject<WordData>(json);
-                    }
-                    catch(Exception e)
-                    {
-                        Debug.LogError("[VocabularyControl.Init] Bad Format JSON File: " + path);
-                    }                    
-
-                }else
-                {
-                    Debug.Log("[VocabularyControl.Init] JSON not found: " + path);
-                }
-            }*/
         }        
 
         #region Navigation

@@ -45,23 +45,31 @@ namespace JapaneseApp
 
 
         [Header("Controls")]
-        [SerializeField]
-        private VocabularyControl m_VocabularyControl;
 
         [SerializeField]
-        private GrammarControl m_GrammarControl;
+        private LauncherControl m_Launcher;
+        public LauncherControl Launcher
+        {
+            get { return m_Launcher; }
+        }
 
         [SerializeField]
-        private MainMenuController m_MainMenuController;
+        private VocabularyControl m_Vocabulary;
 
         [SerializeField]
-        private ABCControl m_HiraganaController;
+        private GrammarControl m_Grammar;
 
         [SerializeField]
-        private ABCControl m_KatakanaController;
+        private MainMenuController m_MainMenu;
 
         [SerializeField]
-        private DialogControl m_DialogControl;
+        private ABCControl m_Hiragana;
+
+        [SerializeField]
+        private ABCControl m_Katakana;
+
+        [SerializeField]
+        private DialogControl m_Dialog;
 
         [SerializeField]
         private TopBar m_TopBar;
@@ -85,23 +93,23 @@ namespace JapaneseApp
                 m_DebugUI.Hide();
             }
 
+            m_Launcher.Init();
+            m_Launcher.Show();
+;
+            yield return m_Launcher.InitRoutine();
 
-            yield return FileRequestManager.Instance.RequestDataFiles();
+            yield return m_Vocabulary.InitRoutine();
 
-            yield return m_VocabularyControl.InitRoutine();
+            m_Launcher.Hide();
 
-            m_GrammarControl.Init();
+            m_Grammar.Init();
 
-            m_HiraganaController.Init();
-            m_KatakanaController.Init();
+            m_Hiragana.Init();
+            m_Katakana.Init();
 
-            m_MainMenuController.Init();
-            m_DialogControl.Init();
-
-
+            m_MainMenu.Init();
+            m_Dialog.Init();
             ShowMainMenu();
-
-           
 
         }
 
@@ -109,8 +117,8 @@ namespace JapaneseApp
         {
             m_TopBar.Title = "JPWorld";
             m_TopBar.CloseBtn.SetActive(false);
-            m_MainMenuController.Show();
-            m_CurrentControl = m_MainMenuController;
+            m_MainMenu.Show();
+            m_CurrentControl = m_MainMenu;
         }
         
         private void Update()
@@ -123,7 +131,7 @@ namespace JapaneseApp
         
         public void Back()
         {
-            if (m_CurrentControl == m_MainMenuController)
+            if (m_CurrentControl == m_MainMenu)
             {
                 Application.Quit();
             }
@@ -139,9 +147,9 @@ namespace JapaneseApp
         {
             m_TopBar.Title = "Vocabulary";
             m_TopBar.CloseBtn.SetActive(true);
-            m_MainMenuController.Hide();
-            m_CurrentControl = m_VocabularyControl;
-            m_VocabularyControl.SelectMenu(VocabularyControl.EMenu.Category);
+            m_MainMenu.Hide();
+            m_CurrentControl = m_Vocabulary;
+            m_Vocabulary.SelectMenu(VocabularyControl.EMenu.Category);
 
         }
 
@@ -149,55 +157,55 @@ namespace JapaneseApp
         {
             m_TopBar.Title = "Vocabulary";
             m_TopBar.CloseBtn.SetActive(true);
-            m_MainMenuController.Hide();
-            m_CurrentControl = m_VocabularyControl;
+            m_MainMenu.Hide();
+            m_CurrentControl = m_Vocabulary;
 
-            m_VocabularyControl.SelectMenu(VocabularyControl.EMenu.WordDay);
+            m_Vocabulary.SelectMenu(VocabularyControl.EMenu.WordDay);
         }
 
         public void OnRandomWordPress()
         {
             m_TopBar.Title = "Vocabulary";
             m_TopBar.CloseBtn.SetActive(true);
-            m_MainMenuController.Hide();
-            m_CurrentControl = m_VocabularyControl;
-            m_VocabularyControl.SelectMenu(VocabularyControl.EMenu.RandomWord);
+            m_MainMenu.Hide();
+            m_CurrentControl = m_Vocabulary;
+            m_Vocabulary.SelectMenu(VocabularyControl.EMenu.RandomWord);
         }
 
         public void OnGrammarPress()
         {
             m_TopBar.Title = "Grammar";
             m_TopBar.CloseBtn.SetActive(true);
-            m_MainMenuController.Hide();
-            m_CurrentControl = m_GrammarControl;
-            m_GrammarControl.ShowCategories();
+            m_MainMenu.Hide();
+            m_CurrentControl = m_Grammar;
+            m_Grammar.ShowCategories();
         }
 
         public void OnHiraganaPress()
         {
             m_TopBar.Title = "Hiragana";
             m_TopBar.CloseBtn.SetActive(true);
-            m_MainMenuController.Hide();
-            m_CurrentControl = m_HiraganaController;
-            m_HiraganaController.Show();
+            m_MainMenu.Hide();
+            m_CurrentControl = m_Hiragana;
+            m_Hiragana.Show();
         }
 
         public void OnKatakanaPress()
         {
             m_TopBar.Title = "Katakana";
             m_TopBar.CloseBtn.SetActive(true);
-            m_MainMenuController.Hide();
-            m_CurrentControl = m_KatakanaController;
-            m_KatakanaController.Show();
+            m_MainMenu.Hide();
+            m_CurrentControl = m_Katakana;
+            m_Katakana.Show();
         }
 
         public void OnDialogPress()
         {
             m_TopBar.Title = "Dialogs";
             m_TopBar.CloseBtn.SetActive(true);
-            m_MainMenuController.Hide();
-            m_CurrentControl = m_DialogControl;
-            m_DialogControl.Show();
+            m_MainMenu.Hide();
+            m_CurrentControl = m_Dialog;
+            m_Dialog.Show();
         }
 
         #endregion MainMenuHandles

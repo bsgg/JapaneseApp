@@ -5,19 +5,18 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-namespace Utility
+namespace JapaneseApp
 {
-
-    [System.Serializable]
+    [Serializable]
     public class IndexFile
     {
         public string Title;
         public string URL;
         public string Data;
-        public FileRequestManager.EDATATYPE DataType;
+        public LauncherControl.EDATATYPE DataType;
     }
 
-    [System.Serializable]
+    [Serializable]
     public class FileData
     {
         public List<IndexFile> Data;
@@ -27,29 +26,13 @@ namespace Utility
         }
     }
 
-    public class FileRequestManager : MonoBehaviour
+    public class LauncherControl : Base
     {
         public enum EDATATYPE { GRAMMAR, VOCABULARY };
 
-        #region Instance
-        private static FileRequestManager m_Instance;
-        public static FileRequestManager Instance
-        {
-            get
-            {
-                if (m_Instance == null)
-                {
-                    m_Instance = (FileRequestManager)FindObjectOfType(typeof(FileRequestManager));
-
-                    if (m_Instance == null)
-                    {
-                        Debug.LogError("An instance of " + typeof(FileRequestManager) + " is needed in the scene, but there is none.");
-                    }
-                }
-                return m_Instance;
-            }
-        }
-        #endregion Instance
+        [SerializeField]
+        private LauncherUI m_UI;
+        
 
         [SerializeField]
         private string m_ServerUrl = "http://beatrizcv.com/Data/FileData.json";
@@ -80,8 +63,22 @@ namespace Utility
             m_VocabularyIndexData = new FileData();
         }
 
-        private IEnumerator RequestIndexFile(string fileName,Action<FileData> callbackIndexRequest)
+        public override void Show()
         {
+            base.Show();
+            m_UI.Show();
+        }
+
+
+        public override void Hide()
+        {
+            base.Hide();
+            m_UI.Hide();
+        }
+
+        private IEnumerator RequestIndexFile(string fileName,Action<FileData> callbackIndexRequest)
+        { 
+
             FileData tempFileData = new FileData();
 
             if (string.IsNullOrEmpty(fileName))
@@ -91,7 +88,7 @@ namespace Utility
                 yield return null;
             }
 
-            string url = System.IO.Path.Combine(m_ServerUrl, fileName);
+            string url = Path.Combine(m_ServerUrl, fileName);
 
             Debug.Log("<color=blue>" + "[FileRequestManager.RequestIndexFile] Requesting file from: " + url + "</color>");
 
@@ -141,11 +138,13 @@ namespace Utility
             callbackIndexRequest(tempFileData);
         }
 
-        public IEnumerator RequestDataFiles()
+        public override IEnumerator InitRoutine()
         {
             m_VocabularyIndexData = new FileData();
             m_PercentProgress = 0.0f;
             m_ProgressText = m_PercentProgress.ToString() + " % ";
+
+            m_UI.ContentText = "Connecting the server to download the files...";
 
             if (string.IsNullOrEmpty(m_ServerUrl))
             {
@@ -153,13 +152,15 @@ namespace Utility
                 yield return null;
             }
 
+            m_UI.ContentText = "Downloading..." + m_PercentProgress + "%";
+
             // Request vocabulary
             yield return RequestIndexFile(
                 m_VocabularyIndexFileURL,
                 (result) => m_VocabularyIndexData = result); // Store the result in a lambda expresion
 
-
-
+            m_PercentProgress = 100.0f;
+            m_UI.ContentText = "Finish..." + m_PercentProgress + "%";
 
 
 
