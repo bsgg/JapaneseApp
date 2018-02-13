@@ -1,5 +1,4 @@
-﻿using LitJson;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -157,19 +156,13 @@ namespace JapaneseApp
         public string Category;
         public string FileName;
 
-        public WordData WordSet;
-        //public List<Sprite> Sprites;       
-
-        
-       
+        public WordData WordSet;        
     }
 
     [Serializable]
     public class SpriteData
     {
-        public string Category;
         public List<Sprite> Sprites;
-
         public Sprite GetSprite(string id)
         {
             for (int i = 0; i < Sprites.Count; i++)
@@ -182,6 +175,11 @@ namespace JapaneseApp
             }
 
             return null;
+        }
+
+        public SpriteData()
+        {
+            Sprites = new List<Sprite>();
         }
     }
 
@@ -212,11 +210,11 @@ namespace JapaneseApp
             NUM
         };*/
 
-        [SerializeField] private string m_DataPath = "Data/Vocabulary/";
+        //[SerializeField] private string m_DataPath = "Data/Vocabulary/";
 
         [SerializeField] public List<SpriteData> m_SpriteData;
 
-        
+        [SerializeField] public List<Sprite> m_SpriteSet;
 
         /* [SerializeField]
          private List<SpritesData> m_SpriteSet;*/
@@ -243,47 +241,66 @@ namespace JapaneseApp
         [SerializeField]
         private Color m_DisableBtnColor;
 
-        public override void Init()
+        public override IEnumerator InitRoutine()
         {
-            base.Init();
            
             m_VocabularyUI.Hide();
             m_ExamplesUI.Hide();
             m_CategoriesUI.Hide();
 
+            m_SpriteSet = new List<Sprite>();
+
             // Load the data
             //m_VocabularySet = new List<WordData>();
 
             m_VocabularyData = new List<VocabularyData>();
-            for (int i = 0; i < FileRequestManager.Instance.FileData.Data.Count; i++)
+            for (int i = 0; i < FileRequestManager.Instance.VocabularyIndexData.Data.Count; i++)
             {
                 //string path = m_DataPath + m_VocabularyData[i].FileName;
                 //string json = Utility.LoadJSONResource(path);
                 
                 VocabularyData aux = new VocabularyData();
-                aux.Category = FileRequestManager.Instance.FileData.Data[i].FileName;
-                aux.Category = FileRequestManager.Instance.FileData.Data[i].FileName;
-                string json = FileRequestManager.Instance.FileData.Data[i].Data;
+                aux.Category = FileRequestManager.Instance.VocabularyIndexData.Data[i].Title;
+                string json = FileRequestManager.Instance.VocabularyIndexData.Data[i].Data;
                 if (!string.IsNullOrEmpty(json))
                 {
                     try
                     {
-
-
-                        aux.WordSet = JsonMapper.ToObject<WordData>(json);
-                        m_VocabularyData.Add(aux);
+                        aux.WordSet = JsonUtility.FromJson<WordData>(json);
                     }
                     catch (Exception e)
                     {
-                        Debug.LogError("[VocabularyControl.Init] Exception at: " + FileRequestManager.Instance.FileData.Data[i].URL + " " + e.ToString());
+                        Debug.LogError("[VocabularyControl.Init] Exception at: " + FileRequestManager.Instance.VocabularyIndexData.Data[i].URL + " " + e.ToString());
                     }
+                    for (int iW = 0; iW< aux.WordSet.Data.Count; iW++)
+                    {
+                        string spriteId = aux.WordSet.Data[iW].SpriteID;
+                        if (!string.IsNullOrEmpty(spriteId))
+                        {
+                            Texture2D texture = null;
+                            Debug.Log("Requesting texture..." + spriteId);
+                            yield return FileRequestManager.Instance.RequestPicture("Pictures",spriteId, (result) => texture = result);
+
+                            if (texture != null)
+                            {
+                                Debug.Log("Texture not null " + spriteId + " " + texture.width + " " + texture.height);
+                            }
+                        }
+                            
+                    }
+                    m_VocabularyData.Add(aux);                                            
 
                 }
                 else
                 {
-                    Debug.Log("[VocabularyControl.Init] JSON not found: " + FileRequestManager.Instance.FileData.Data[i].URL);
+                    Debug.Log("[VocabularyControl.Init] JSON not found: " + FileRequestManager.Instance.VocabularyIndexData.Data[i].URL);
                 }
             }
+
+            // Load sprites
+            
+
+
 
 
             /*for (int i = 0; i < m_VocabularyData.Count; i++)
@@ -609,7 +626,6 @@ namespace JapaneseApp
         }
 
         #endregion MenuButtons
-
 
         #region WordOfDay
 

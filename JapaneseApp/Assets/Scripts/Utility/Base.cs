@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 namespace JapaneseApp
 {
@@ -14,7 +15,17 @@ namespace JapaneseApp
         public virtual void Init()
         {
             m_Visible = false;
+
+
         }
+
+        public virtual IEnumerator InitRoutine()
+        {
+            m_Visible = false;
+            yield break;
+        }
+
+
 
         public virtual void Finish() {}
 

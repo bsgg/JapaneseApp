@@ -86,9 +86,9 @@ namespace JapaneseApp
             }
 
 
-            yield return FileRequestManager.Instance.RequestFiles();
+            yield return FileRequestManager.Instance.RequestDataFiles();
 
-            m_VocabularyControl.Init();
+            yield return m_VocabularyControl.InitRoutine();
 
             m_GrammarControl.Init();
 
