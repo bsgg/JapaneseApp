@@ -49,14 +49,7 @@ namespace JapaneseApp
                 return m_VocabularyIndexData;
             }
         }
-
-        private float m_PercentProgress;
-        private string m_ProgressText;
-
-        public string ProgressText
-        {
-            get { return m_ProgressText; }
-        }
+        private float m_FileIndexTotalPercent = 80.0f;
 
         private void Start()
         {
@@ -66,9 +59,10 @@ namespace JapaneseApp
         public override void Show()
         {
             base.Show();
+            
             m_UI.Show();
         }
-
+        
 
         public override void Hide()
         {
@@ -76,9 +70,38 @@ namespace JapaneseApp
             m_UI.Hide();
         }
 
-        private IEnumerator RequestIndexFile(string fileName,Action<FileData> callbackIndexRequest)
-        { 
+        public void UpdateProgress(string text, float value)
+        {
+            m_UI.ContentText = text;
+            m_UI.Progress = value;
+        }
 
+        public override IEnumerator Initialize()
+        {
+            m_UI.Progress = 0.0f;
+            m_UI.Show();
+
+            m_VocabularyIndexData = new FileData();
+            m_UI.ContentText = "Connecting to the server to download the files...";
+
+            if (string.IsNullOrEmpty(m_ServerUrl))
+            {
+                Debug.Log("<color=blue>" + "[FileRequestManager.RequestVocabularyData] No server url found" + "</color>");
+                yield return null;
+            }
+
+            // Request vocabulary
+            yield return RequestIndexFile(
+                m_VocabularyIndexFileURL,
+                (result) => m_VocabularyIndexData = result); // Store the result in a lambda expresion
+
+            m_UI.Progress = m_FileIndexTotalPercent / 100.0f;
+            m_UI.ContentText = " All files downloaded ";
+
+        }
+
+        private IEnumerator RequestIndexFile(string fileName,Action<FileData> callbackIndexRequest)
+        {
             FileData tempFileData = new FileData();
 
             if (string.IsNullOrEmpty(fileName))
@@ -105,8 +128,7 @@ namespace JapaneseApp
 
             try
             {
-
-                tempFileData = JsonUtility.FromJson<FileData>(jsonData);
+                tempFileData = JsonUtility.FromJson<FileData>(jsonData);                
 
             }
             catch (Exception e)
@@ -116,8 +138,18 @@ namespace JapaneseApp
 
             // Convert each data in tempFileData
             Debug.Log("<color=blue>" + "[FileRequestManager.RequestIndexFile] Requesting... " + tempFileData.Data.Count + " Files " + "</color>");
+                       
+
+            float percent = 0.0f;
+            m_UI.Progress = percent;
+
+            float amount = m_FileIndexTotalPercent / tempFileData.Data.Count;
+            //m_UI.ContentText = "Loading: " + percent + "%";
+
             for (int i = 0; i < tempFileData.Data.Count; i++)
             {
+                m_UI.ContentText = "Loading " + tempFileData.Data[i].Title + " File";
+
                 string urlFile = Path.Combine(m_ServerUrl, tempFileData.Data[i].URL);
 
                 if (string.IsNullOrEmpty(urlFile))
@@ -132,98 +164,18 @@ namespace JapaneseApp
                 yield return www;
 
                 tempFileData.Data[i].Data = www.text;
+
+                percent += amount;
+                m_UI.Progress = percent/100.0f;
+
+                //m_UI.ContentText = "Loading: " + percent + "%";
             }
 
             // Call callback
             callbackIndexRequest(tempFileData);
         }
 
-        public override IEnumerator InitRoutine()
-        {
-            m_VocabularyIndexData = new FileData();
-            m_PercentProgress = 0.0f;
-            m_ProgressText = m_PercentProgress.ToString() + " % ";
-
-            m_UI.ContentText = "Connecting the server to download the files...";
-
-            if (string.IsNullOrEmpty(m_ServerUrl))
-            {
-                Debug.Log("<color=blue>" + "[FileRequestManager.RequestVocabularyData] No server url found" + "</color>");
-                yield return null;
-            }
-
-            m_UI.ContentText = "Downloading..." + m_PercentProgress + "%";
-
-            // Request vocabulary
-            yield return RequestIndexFile(
-                m_VocabularyIndexFileURL,
-                (result) => m_VocabularyIndexData = result); // Store the result in a lambda expresion
-
-            m_PercentProgress = 100.0f;
-            m_UI.ContentText = "Finish..." + m_PercentProgress + "%";
-
-
-
-
-            /*string url = System.IO.Path.Combine(m_ServerUrl, m_VocabularyIndexFileURL);
-
-            Debug.Log("<color=blue>" + "[FileRequestManager.RequestVocabularyData] Requesting file from: " + url + "</color>");
-
-            WWW wwwFile = new WWW(url);
-            yield return wwwFile;
-            string jsonData = wwwFile.text;
-            if (!string.IsNullOrEmpty(jsonData))
-            {
-                
-                m_VocabularyIndexData = JsonUtility.FromJson<FileData>(jsonData);
-
-                Debug.Log("<color=blue>" + "[FileRequestManager] Requesting... " + m_VocabularyIndexData.Data.Count + " Files " + "</color>");
-
-                //JapaneseApp.AppController.Instance.DebugUI.Log0 = "[FileRequestManager] Requesting... " + m_VocabularyIndexData.Data.Count;
-                for (int i = 0; i < m_VocabularyIndexData.Data.Count; i++)
-                {
-                    string urlFile = System.IO.Path.Combine(m_ServerUrl, m_VocabularyIndexData.Data[i].URL);
-
-                    Debug.Log("<color=blue>" + "[FileRequestManager] Requesting... " + urlFile + " Files " + "</color>");
-
-                    if (string.IsNullOrEmpty(urlFile))
-                    {
-                        continue;
-                    }
-
-                    // Request
-                    Debug.Log("<color=blue>" + "[FileRequestManager] Requesting: " + (i + 1) + "/" + m_VocabularyIndexData.Data.Count + " : " + m_VocabularyIndexData.Data[i].Title + "</color>");
-                    // JapaneseApp.AppController.Instance.DebugUI.Log0 = "[FileRequestManager] Requesting: " + (i + 1) + "/" + m_VocabularyIndexData.Data.Count + " : " + m_VocabularyIndexData.Data[i].Title;
-
-                    WWW www = new WWW(urlFile);
-                    while (!www.isDone)
-                    {
-                        m_PercentProgress = www.progress * 100.0f;
-                        m_ProgressText = m_PercentProgress.ToString() + " % ";
-                        yield return null;
-                    }
-
-                    m_PercentProgress = www.progress * 100.0f;
-                    m_ProgressText = m_PercentProgress.ToString() + " % ";
-
-                    m_VocabularyIndexData.Data[i].Data = www.text;
-
-
-                    Debug.Log("<color=blue>" + "[FileRequestManager] Data Retrieved: " + m_VocabularyIndexData.Data[i].Data +  "</color>");
-                }
-                
-            }else
-            {
-                Debug.LogWarning("<color=blue>" + "[FileRequestManager] File Data Json is null or empty" + "</color>");
-            } */
-        }
-
-
-        public enum EMediaType {NONE, PICTURE, AUDIO };
-
-
-
-        public IEnumerator RequestPicture(string folderName, string fileNname, Action<Texture2D> callbackRequest)
+        public IEnumerator LoadPicture(string folderName, string fileName, Action<Texture2D> callbackRequest)
         {
 
             string localDirectory = Path.Combine(Application.persistentDataPath, folderName);
@@ -233,7 +185,9 @@ namespace JapaneseApp
                 Directory.CreateDirectory(localDirectory);
             }
 
-            string localPath = Path.Combine(localDirectory, fileNname);
+            string localPath = Path.Combine(localDirectory, fileName);
+
+            m_UI.ContentText = "Loading " + fileName + " File";
 
             Debug.Log("<color=blue>" + "[FileRequestManager.RequestMedia] Local path :" + localPath + "</color>");
 
@@ -258,7 +212,7 @@ namespace JapaneseApp
             else
             {
                 string directory = Path.Combine(m_ServerUrl, folderName);
-                string serverFileURL = Path.Combine(directory, fileNname);
+                string serverFileURL = Path.Combine(directory, fileName);
 
                 Debug.Log("<color=blue>" + "[FileRequestManager.RequestPicture] Requesting file :" + serverFileURL + "</color>");
 

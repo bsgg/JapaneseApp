@@ -74,9 +74,9 @@ namespace JapaneseApp
         [SerializeField]
         private Color m_DisableBtnColor;
 
-        public override void Init()
+        public override IEnumerator Initialize()
         {
-            base.Init();
+           
 
             m_GrammarUI.Hide();
             m_ExampleUI.Hide();
@@ -112,9 +112,11 @@ namespace JapaneseApp
                 }
             }
 
-
             m_SelectedGrammar = 0;
+
+            yield break;
         }
+
 
         public override void Hide()
         {

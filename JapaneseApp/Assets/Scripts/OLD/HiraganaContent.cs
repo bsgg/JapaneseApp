@@ -32,9 +32,8 @@ namespace JapaneseApp
         private HiraganaDrill m_CurrentDrill;
 
 
-        public override void Init()
+        public override IEnumerator Initialize()
         {
-            base.Init();
             m_CurrentMenu = ETYPEMENU.NONE;
             m_HiraganaTable.Hide();
             m_MainScrollMenu.Hide();
@@ -55,7 +54,9 @@ namespace JapaneseApp
             }
             m_MainScrollMenu.InitScrollMenu(lTitle);
             m_MainScrollMenu.ScrollMenu.OnButtonPress += OnButtonMenuPress;
-            
+
+            yield break;
+
 
         }
         public override void Show()

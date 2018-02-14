@@ -144,9 +144,8 @@ namespace JapaneseApp
         [SerializeField] private CategoriesUI m_CategoriesUI;
         [SerializeField] private DialogUI m_DialogUI;
 
-        public override void Init()
+        public override IEnumerator Initialize()
         {
-            base.Init();
 
             m_CategoriesUI.Hide();
             m_DialogUI.Hide();
@@ -179,7 +178,9 @@ namespace JapaneseApp
                         Debug.LogError("[DialogControl.Init] Bad Format JSON File: " + path);
                     }                    
                 }
-            }                 
+            }
+
+            yield break;
         }
 
         private void SetDialog(int id)

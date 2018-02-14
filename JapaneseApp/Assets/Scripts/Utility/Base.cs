@@ -12,20 +12,11 @@ namespace JapaneseApp
             get { return m_Visible; }
         }
 
-        public virtual void Init()
+        
+        public virtual IEnumerator Initialize()
         {
-            m_Visible = false;
-
-
-        }
-
-        public virtual IEnumerator InitRoutine()
-        {
-            m_Visible = false;
             yield break;
         }
-
-
 
         public virtual void Finish() {}
 

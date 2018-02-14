@@ -164,18 +164,15 @@ namespace JapaneseApp
         [SerializeField]
         private Color m_DisableBtnColor;
 
-        public override IEnumerator InitRoutine()
-        {
-           
+        public override IEnumerator Initialize()
+        {           
             m_VocabularyUI.Hide();
             m_ExamplesUI.Hide();
             m_CategoriesUI.Hide();
 
-
             m_VocabularyData = new List<VocabularyData>();
             for (int i = 0; i < AppController.Instance.Launcher.VocabularyIndexData.Data.Count; i++)
-            {
-               
+            {               
                 VocabularyData aux = new VocabularyData();
                 aux.Category = AppController.Instance.Launcher.VocabularyIndexData.Data[i].Title;
                 string json = AppController.Instance.Launcher.VocabularyIndexData.Data[i].Data;
@@ -189,6 +186,7 @@ namespace JapaneseApp
                     {
                         Debug.LogError("[VocabularyControl.Init] Exception at: " + AppController.Instance.Launcher.VocabularyIndexData.Data[i].URL + " " + e.ToString());
                     }
+
                     for (int iW = 0; iW< aux.WordSet.Data.Count; iW++)
                     {
                         string spriteId = aux.WordSet.Data[iW].SpriteID;
@@ -196,7 +194,8 @@ namespace JapaneseApp
                         {
                             Texture2D texture = null;
                             Debug.Log("Requesting texture..." + spriteId);
-                            yield return AppController.Instance.Launcher.RequestPicture("Pictures",spriteId, (result) => texture = result);
+
+                            yield return AppController.Instance.Launcher.LoadPicture("Pictures",spriteId, (result) => texture = result);
 
                             if (texture != null)
                             {
@@ -204,8 +203,7 @@ namespace JapaneseApp
 
                                 Rect rec = new Rect(0, 0, texture.width, texture.height);
 
-                                aux.WordSet.Data[iW].SpriteObj = Sprite.Create(texture, rec, new Vector2(0.5f, 0.5f), 100);                               
-
+                                aux.WordSet.Data[iW].SpriteObj = Sprite.Create(texture, rec, new Vector2(0.5f, 0.5f), 100);                              
                                 
                             }
                         }

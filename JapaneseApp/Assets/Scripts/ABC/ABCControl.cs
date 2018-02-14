@@ -52,10 +52,8 @@ namespace JapaneseApp
         private VWord m_SelectedABC;
         private int m_SelectedExample;
 
-        public override void Init()
-        {
-            base.Init();            
-
+        public override IEnumerator Initialize()
+        {   
             // Load the data
             m_ABCSet = new ABCData();
            
@@ -139,9 +137,9 @@ namespace JapaneseApp
 
             // Set table
 
-            m_ABCCharUI.Init();
-
             m_ABCCharUI.Hide();
+
+            yield break;
         }
 
         public override void Back()

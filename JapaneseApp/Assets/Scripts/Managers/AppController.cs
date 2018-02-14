@@ -93,22 +93,28 @@ namespace JapaneseApp
                 m_DebugUI.Hide();
             }
 
-            m_Launcher.Init();
-            m_Launcher.Show();
-;
-            yield return m_Launcher.InitRoutine();
+            // Hide all
+            m_Launcher.Hide();
+            m_Vocabulary.Hide();
 
-            yield return m_Vocabulary.InitRoutine();
+            m_Grammar.Hide();
+            m_Hiragana.Hide();
+            m_Katakana.Hide();
+            m_MainMenu.Hide();
+            m_Dialog.Hide();
+
+
+            // Hide all
+            yield return m_Launcher.Initialize();
+
+            yield return m_Vocabulary.Initialize();
+
+            m_Launcher.UpdateProgress("Completed " , 1.0f);
+
+            yield return new WaitForSeconds(0.5f);
 
             m_Launcher.Hide();
 
-            m_Grammar.Init();
-
-            m_Hiragana.Init();
-            m_Katakana.Init();
-
-            m_MainMenu.Init();
-            m_Dialog.Init();
             ShowMainMenu();
 
         }
