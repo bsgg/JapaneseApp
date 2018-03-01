@@ -1,0 +1,60 @@
+﻿{
+  "Title": "Are You in Control of Your Possessions in Japan?",
+  "Audio": "Dialog_08",
+
+  "Kanji": 
+  [
+    "アナウンス：　次 は 東京ー。東京ー",
+    "男：　あ。。。すみません！忘れ物　です！　傘！",
+    "女：　いいえ　ちがいます。私　の　傘　じゃ　ない　です。",
+    "男：　じゃ、　誰　の　傘　です　か",
+    "ファブリツィオ：　あ、　私　の　です！私　の　傘　です！すみません。ありがとう　ございます。"
+  ],
+
+  "Kana": 
+  [
+    "アナウンス：　つぎ　は　とうきょうー。とうきょうー。",
+    "おとこ：　あ。。。すみません！わすれもの　です！　かさ！",
+    "おんな：　いいえ　ちがいます。わたし　の　かさ　じゃ　ない　です。",
+    "おとこ：　じゃ、　だれ　の　かさ　です　か",
+    "ファブリツィオ：　あ、　わたし　の　です！わたし　の　かさ　です！すみません。ありがとう　ございます。"
+  ],
+
+  "Romaji": [
+
+    "Anaunsu: Tsugi wa Tokyo. Tokyo.",
+    "Otoko: A... Sumimasen! Wasuremono desu! Kasa!",
+    "Onna: Iie, chigaimasu. Watashi no kasa ja nai desu.",
+    "Otoko: Ja, Dare no kasa desu ka?",
+    "Faburitsio: A, watashi no desu! Watashi no kasa desu! Sumimasen. Arigatou gozaimasu."
+  ],
+
+  "English": [
+     
+    "Announcement: The next station is Tokyo.",
+    "Man: Oh, Excuse me. You forgot something! you're umbrella!",
+    "Woman: No, It's not my umbrella.",
+    "Man: Oh, Whose umbrella is it then?",
+    "Fabritzio: Oh, It's mine. It's my umbrella. Thank you so much."
+  ],
+
+  "Vocabulary": [
+    "次 = Next (つぎ - Tsugi)",
+    "忘れ物 = Something forgotten, lost (わすれもの - Wasuremono)",
+    "傘 = Umbrella (かさ - Kase)",
+    "誰 = Who (だれ - Dare)",
+    "誰の = Whose, Who becomes posesive (だれの - Dare no)"
+  ],
+
+  "Description": 
+  [
+    "To express possession you need to use the particle の(No):",
+    "- これ　は　わたし　の　ペン　です　(Sore ha watashi no pen desu) = That is my pen.",
+    "- それ　は　みなみ　の　ほん　です　(Kore ha Minami no hon desu) = This is Minami's book.",
+    "- だれ　の　かさ　です　か？(Dare no kasa desu ka?) = Whose umbrella is it?",
+    "Pattern: This is mine!",
+    "- これ　は　わたし　の　です (Kore wa watashi no desu) = This is mine.",
+    "- これ　は　ケン　の　です　(Kore wa Ken no desu) = This is ken's",
+    "- これ　は　みなみ　の　じゃ　ない　です (Kore wa Minami no ja nai desu) = This isn't Minimi's"
+  ]
+}

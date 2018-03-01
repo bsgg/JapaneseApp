@@ -28,17 +28,20 @@ namespace JapaneseApp
 
     public class LauncherControl : Base
     {
-        public enum EDATATYPE { GRAMMAR, VOCABULARY };
+        public enum EDATATYPE { GRAMMAR, VOCABULARY, DIALOG };
 
         [SerializeField]
         private LauncherUI m_UI;
         
 
         [SerializeField]
-        private string m_ServerUrl = "http://beatrizcv.com/Data/FileData.json";
+        private string m_ServerUrl = "http://beatrizcv.com/Data/Japanese";
 
         [SerializeField]
-        private string m_VocabularyIndexFileURL = "http://beatrizcv.com/Data/FileData.json";
+        private string m_VocabularyIndexFileName = "VocabularyIndexData.json";
+
+        [SerializeField]
+        private string m_DialogIndexFileName = "DialogIndexData.json";
 
         [SerializeField]
         private FileData m_VocabularyIndexData;
@@ -49,6 +52,17 @@ namespace JapaneseApp
                 return m_VocabularyIndexData;
             }
         }
+
+        [SerializeField]
+        private FileData m_DialogIndexData;
+        public FileData DialogIndexData
+        {
+            get
+            {
+                return m_DialogIndexData;
+            }
+        }
+
         private float m_FileIndexTotalPercent = 80.0f;
 
         private void Start()
@@ -92,8 +106,13 @@ namespace JapaneseApp
 
             // Request vocabulary
             yield return RequestIndexFile(
-                m_VocabularyIndexFileURL,
+                m_VocabularyIndexFileName,
                 (result) => m_VocabularyIndexData = result); // Store the result in a lambda expresion
+
+            yield return RequestIndexFile(
+                m_DialogIndexFileName,
+                (result) => m_DialogIndexData = result); // Store the result in a lambda expresion
+
 
             m_UI.Progress = m_FileIndexTotalPercent / 100.0f;
             m_UI.ContentText = " All files downloaded ";

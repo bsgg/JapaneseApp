@@ -1,0 +1,61 @@
+﻿{
+  "Title": "The hottest way to break the Ice in Japan",
+  "Audio": "Dialog_11",
+
+  "Kanji": [
+    "北川冬香：　おはようございます。",
+    "にしもとしゅう:　おはようございます。冬香さん。　今日　は　暑い　です　ね。",
+    "北川冬香： そう　です　ね。でも、　ここ　は　とても　涼しい　です　ね。　",
+    "にしもとしゅう:　寒い　です　か",
+    "北川冬香：　寒くない　です。ちょうど　いい　です。"
+  ],
+
+  "Kana": [
+    "きたがわ　ふゆか:　おはようございます。",
+    "にしもとしゅう:　おはようございます。ふゆかさん。　きょう　は　あつい　です　ね。",
+    "きたがわ　ふゆか: そう　です　ね。でも、　ここ　は　とても　すずしい　です　ね　",
+    "にしもとしゅう:　さむい　です　か",
+    "きたがわ　ふゆか　さむくない　です。ちょうど　いい　です。"
+  ],
+
+  "Romaji": [
+
+    "Kitagawa Fuyuka: Ohayou gozaimasu.",
+    "Nishimoto Shū: Ohayou gozaimasu. Fuyuka-San. Kyō wa atsui desu ne.",
+    "Kitagawa Fuyuka: Sō desu ne. Demo, koko wa totemo suzushī desu ne.",
+    "Nishimoto Shū: Samui desu ka",
+    "Kitagawa Fuyuka: Samukunai desu. Chōdo ii desu."
+  ],
+
+  "English": [
+
+    "Kitagawa Fuyuka: Good morning.",
+    "Nishimoto Shū: Good morning. Fuyuka-San. It's hot today, isn't it",
+    "Kitagawa Fuyuka: Yes it is. But, it's very cold in here, isn't it.",
+    "Nishimoto Shū: Is it cold?",
+    "Kitagawa Fuyuka: It's not cold. It's just right."
+  ],
+
+  "Vocabulary": [
+    "今日 (きょう - Kyō) = Today",
+    "暑い (あつい - Atsui) = Hot",
+    "でも (Demo) = But, However",
+    "とても (Totemo) = Very, extremely",
+    "涼しい (すずしい - suzushī) = Cool (Weather)",
+    "寒い (さむい - Samui) = Cold (Weather)",
+    "ちょうど (Chōdo) = Just, right",
+    "いい (ii) = Good, nice, pleasant, fine (Adjective)",
+    "暖かい　(あたたかい - Atatakai) = Warm (Weather)"
+  ],
+
+  "Description": [
+    "The are 2 types of adjectives in Japanese language [-i Adjectives] and [-na adjectives]",
+    "[-i Adjectives]: end with -i when they come before nouns:",
+    "- 今日　は　あつい　です(Kyō wa atsui desu) = Today is hot",
+    "- 今日　は　とても　さむい　です(Kyō wa totemo samui desu) = Today is very cold",
+    "",
+    "To make the negative form of an [i] adjetive, you have to change -i to -kunai: ",
+    "-　これ　は　いい　です (Kore wa ii desu) = This is good.",
+    "-　これ　は　よくない　です (Kore wa yokunai desu) = This isn't good."
+  ]
+}

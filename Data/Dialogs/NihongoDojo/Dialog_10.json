@@ -1,0 +1,54 @@
+﻿{
+  "Title": "The Fortunes of Rain in Japan",
+  "Audio": "Dialog_10",
+
+  "Kanji": [
+    "西本秋: 傘　です。どうぞ",
+    "お客さん:　ありがとう　ございます。じゃ,　また",
+    "西本秋: ありがとう　ございますた!　雷",
+    "ファブリツィオ：　ない！　私の傘！　　　の　 傘！　ない！",
+    "西本秋:　え。。。　あれ　は　ファブリツィオ　の　 傘　です　か? ごめん!　い... いくら　です　か?",
+    "ファブリツィオ： 28000円！",
+    "西本秋: にまん　はつせんえん?！"
+  ],
+
+  "Kana": [
+    "にしもとしゆう: かさ　です。どうぞ",
+    "あきやくさん:　ありがとう　ございます。じゃ,　また",
+    "にしもとしゆう: ありがとう　ございますた!　かみなり",
+    "ファブリツィオ：　ない！　わたし　の　かさ！　バーニーズ　ニュー　ヨーク　　の　かさ！　ない！",
+    "にしもとしゆう:　え。。。　あれ　は　ファブリツィオ　の　かさ　です　か? ごめん!　い... いくら　です　か?",
+    "ファブリツィオ： にまん　はつせんえん！",
+    "にしもとしゆう: にまん　はつせんえん?！"
+  ],
+
+  "Romaji": [
+
+    "Nishimoto Shū: Kasa desu. Dōzo",
+    "O-Kyaku-San: Arigatō gozaimasu. Ja, mata.",
+    "Nishimoto Shū: Arigatō gozaimashita! Kaminari",
+    "Faburitsio: Nai! Watashi no kasa!　Bānīzu Nyū Yōku no kasa! Nai!",
+    "Nishimoto Shū: E... Are wa Faburitsio no kasa desu ka? Gomen! I...Ikura desu ka?",
+    "Faburitsio: Niman hassen-en",
+    "Nishimoto Shū: Niman hassen-en?!"
+  ],
+
+  "English": [
+
+    "Nishimoto Shū: Please take this umbrella.",
+    "O-Kyaku-San: Thank you very much. See you then.",
+    "Nishimoto Shū: Thank you!",
+    "Faburitsio: My umbrella is missing! My umbrella! My Barneys of New York umbrella! My umbrella is missing!",
+    "Nishimoto Shū: Oh... Is that your umbrella Faburitsio? I´m sorry! How much was it?",
+    "Faburitsio: It was 28000 Yen!",
+    "Nishimoto Shū: 28000 Yen?!"
+  ],
+
+  "Vocabulary": [
+    "いくら(Ikura) = How much",
+    "お客さん = Customer (あきやくさん - O-Kyaku-San)"
+  ],
+
+  "Description": [
+  ]
+}

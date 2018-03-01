@@ -1,0 +1,51 @@
+﻿{
+  "Title": "Are there cream puffs?",
+  "Audio": "Dialog_07",
+
+  "Kanji": 
+  [
+    "アンナ： ケーキ　が　いっぱい　あります　ね",
+    "寮母: すみません、シュークリーム　は　あります　か",
+    "店員: はい、　こちら　です",
+    "寮母: シュークリーム　を　2つ　ください" 
+  ],
+
+  "Kana": 
+  [
+    "アンナ： ケーキ　が　いっぱい　あります　ね",
+    "さくら： すみません、シュークリーム　は　あります　か",
+    "クラーク: はい、　こちら　です",
+    "さくら： シュークリーム　を　ふたつ　ください"
+  ],
+
+  "Romaji": [
+
+    "Anna: Kēki ga ippai arimasu ne.",
+    "Sakura: Sumimasen, shūkurīmu wa arimasu ka?",
+    "Kurāku: Hai, kochira desu.",
+    "Sakura: Shūkurīmu o futatsu kudasai."
+  ],
+
+  "English": [
+     
+    "Anna: There are a lot of cakes.",
+    "Sakura: Excuse me, Are there any cream puffs?",
+    "Clerk: Yes this way.",
+    "Sakura: Two cream puffs, please."
+  ],
+
+  "Vocabulary": [
+    "ケーキ: Cake (Kēki)",
+    "シュークリーム: Cream puffs (Shūkurīmu)",
+    "こちら: This way, Direction (Kochira)",
+    "2つ: 2 pieces (Futatsu)"
+  ],
+
+  "Description": 
+  [
+    "2つ: 2 pieces. It's pronounced ふたつ (futatsu). The particle つ (tsu) is used to count things. Examples: 1: １つ （ひとつ - Hitotsu) \n 2: 2つ: （ふたつ - Futatsu) \n 3: 3つ （みっつ - Mittsu)",
+    "あります (Arimasu): There is/There are => It's a stative verb which describes the state in which things are.",
+    "あります uses the particle が (ga) that indicates the subject.  が (ga) is essentially uses when we introduce a person or a thing for the first time. The the particle changes to は (ha)",
+    "Example: You go to a shop to buy a tshirt and you ask: える　さいず　が　あります　か (Eru saizu ga arimasu ka?) = Are there any L-size shirts?"
+  ]
+}
