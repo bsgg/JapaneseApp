@@ -194,6 +194,85 @@ namespace JapaneseApp
             callbackIndexRequest(tempFileData);
         }
 
+        public IEnumerator LoadAudio(string folderName, string fileName, string ext,Action<AudioClip> callbackRequest)
+        {
+            string localDirectory = Path.Combine(Application.persistentDataPath, folderName);
+
+            if (!Directory.Exists(localDirectory))
+            {
+                Directory.CreateDirectory(localDirectory);
+            }
+
+            string fileNameExt = fileName + ext;
+            string localPath = Path.Combine(localDirectory, fileNameExt);
+
+            m_UI.ContentText = "Loading " + fileName + " File";
+
+            Debug.Log("<color=blue>" + "[FileRequestManager.RequestMedia] Local path :" + localPath + "</color>");
+
+            if (File.Exists(localPath))
+            {
+                Debug.Log("<color=blue>" + "[FileRequestManager.RequestMedia] File exits at :" + localPath + "</color>");
+
+                byte[] bytes = File.ReadAllBytes(localPath);
+
+                yield return new WaitForEndOfFrame();
+
+                
+                AudioClip audio = AudioClip.Create(fileName, bytes.Length, 1, 44100, false);
+              
+
+                yield return new WaitForEndOfFrame();
+
+                callbackRequest(audio);
+
+            }
+            else
+            {
+                string directory = Path.Combine(m_ServerUrl, folderName);
+                string serverFileURL = Path.Combine(directory, fileNameExt);
+
+                Debug.Log("<color=blue>" + "[FileRequestManager.RequestPicture] Requesting file :" + serverFileURL + "</color>");
+
+                WWW wwwFile = new WWW(serverFileURL);
+
+                yield return wwwFile;
+
+                AudioClip audio = wwwFile.GetAudioClip(false,true);
+                audio.name = fileName;
+
+                yield return new WaitForEndOfFrame();
+
+                
+
+                if (audio != null)
+                {
+
+                    callbackRequest(audio);
+
+                    yield return new WaitForEndOfFrame();
+
+                    // Save bytes
+                    byte[] bytes = wwwFile.bytes;
+                    File.WriteAllBytes(localPath, bytes);
+
+                    Debug.Log("<color=blue>" + "[FileRequestManager.RequestPicture] Writing: " + wwwFile.bytes.Length + "  At: " + localPath + "</color>");
+
+                    yield return new WaitForEndOfFrame();
+                }
+                else
+                {
+                    Debug.Log("<color=blue>" + "[FileRequestManager.RequestMedia] Pciture data is null: " + serverFileURL + "</color>");
+
+                    callbackRequest(null);
+                }
+
+                wwwFile.Dispose();
+                wwwFile = null;
+            }
+
+        }
+
         public IEnumerator LoadPicture(string folderName, string fileName, Action<Texture2D> callbackRequest)
         {
 

@@ -193,14 +193,10 @@ namespace JapaneseApp
                         if (!string.IsNullOrEmpty(spriteId))
                         {
                             Texture2D texture = null;
-                            Debug.Log("Requesting texture..." + spriteId);
-
                             yield return AppController.Instance.Launcher.LoadPicture("Pictures",spriteId, (result) => texture = result);
 
                             if (texture != null)
                             {
-                                Debug.Log("Texture not null " + spriteId + " " + texture.width + " " + texture.height);
-
                                 Rect rec = new Rect(0, 0, texture.width, texture.height);
 
                                 aux.WordSet.Data[iW].SpriteObj = Sprite.Create(texture, rec, new Vector2(0.5f, 0.5f), 100);                              

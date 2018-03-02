@@ -107,9 +107,15 @@ namespace JapaneseApp
             // Hide all
             yield return m_Launcher.Initialize();
 
-            yield return m_Vocabulary.Initialize();
+            m_Launcher.UpdateProgress("Completed m_Launcher", 1.0f);
 
-            m_Launcher.UpdateProgress("Completed " , 1.0f);
+           // yield return m_Vocabulary.Initialize();
+
+            //m_Launcher.UpdateProgress("Completed Vocabulary", 1.0f);
+
+            yield return m_Dialog.Initialize();
+
+            m_Launcher.UpdateProgress("Completed m_Dialog", 1.0f);
 
             yield return new WaitForSeconds(0.5f);
 

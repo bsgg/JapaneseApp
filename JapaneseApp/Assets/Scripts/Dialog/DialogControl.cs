@@ -9,7 +9,7 @@ namespace JapaneseApp
 {
     #region DataModel
 
-    [System.Serializable]
+    [Serializable]
     public class Dialog
     {
         [SerializeField]
@@ -77,7 +77,7 @@ namespace JapaneseApp
 
     #endregion DataModel  
 
-    [System.Serializable]
+    [Serializable]
     public class DialogObject
     {
         public string Name;
@@ -85,7 +85,7 @@ namespace JapaneseApp
         public Dialog Data;
     }
 
-    [System.Serializable]
+    [Serializable]
     public class DialogSet
     {
         public string Title;
@@ -144,14 +144,77 @@ namespace JapaneseApp
         [SerializeField] private CategoriesUI m_CategoriesUI;
         [SerializeField] private DialogUI m_DialogUI;
 
+        [SerializeField] private List<DialogObject> m_DialogData;
+        [SerializeField] private List<AudioClip> m_AudioClipList;
+
         public override IEnumerator Initialize()
         {
 
             m_CategoriesUI.Hide();
             m_DialogUI.Hide();
 
+
+            m_DialogSet = new List<DialogSet>();
+
+            m_AudioClipList = new List<AudioClip>();
+            m_DialogData = new List<DialogObject>();
+
+            for (int i = 0; i < AppController.Instance.Launcher.DialogIndexData.Data.Count; i++)
+            {
+               
+                string json = AppController.Instance.Launcher.DialogIndexData.Data[i].Data;
+                if (!string.IsNullOrEmpty(json))
+                {
+                    try
+                    {
+                        //Dialog auxDialog = JsonUtility.FromJson<Dialog>(json);
+                        DialogObject obj = new DialogObject();
+                        obj.Data = JsonMapper.ToObject<Dialog>(json);
+                        obj.Name = obj.Data.Title;
+
+                        Debug.Log("<color=blue>" + "[DialogControl.Initialize] Converted: " + obj.Data.Title + "</color>");
+
+                        m_DialogData.Add(obj);                        
+
+                    }
+                    catch (Exception e)
+                    {
+                        Debug.LogError("[DialogControl.Initialize] Exception at: " + AppController.Instance.Launcher.DialogIndexData.Data[i].Title + " Data: " + json + " " + e.ToString());
+                    }
+
+                    
+
+                }
+                else
+                {
+                    Debug.LogError("[DialogControl.Initialize] Unable to parse " + AppController.Instance.Launcher.DialogIndexData.Data[i].URL + " Data is null or empty ");
+                }
+            }
+
+            for (int i=0; i<m_DialogData.Count; i++)
+            {
+                string audio = m_DialogData[i].Data.Audio;
+
+                // Download audio
+                AudioClip clip = null;
+                yield return AppController.Instance.Launcher.LoadAudio("Audio", audio, ".mp3", (result) => clip = result);
+
+                if (clip != null)
+                {
+                    Debug.Log("<color=blue>" + "[DialogControl.Initialize] Clipe loaded : " + clip.length + " " + clip.name + "</color>");
+                    m_DialogData[i].Audio = clip;
+
+                }
+                else
+                {
+                    Debug.Log("<color=blue>" + "[DialogControl.Initialize] Clip NULL : " + audio + "</color>");
+                }
+
+            }
+           // yield break;
+
             // Load the data
-            for (int i = 0; i < m_DialogSet.Count; i++)
+            /*for (int i = 0; i < m_DialogSet.Count; i++)
             {
                 string category = m_DialogSet[i].Category.ToString();
 
@@ -178,7 +241,7 @@ namespace JapaneseApp
                         Debug.LogError("[DialogControl.Init] Bad Format JSON File: " + path);
                     }                    
                 }
-            }
+            }*/
 
             yield break;
         }
