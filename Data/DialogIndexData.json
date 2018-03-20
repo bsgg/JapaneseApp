@@ -10,6 +10,76 @@
 		"Title": "I'm Home",
 		"URL": "Dialogs/NHSEasyJapanese/Dialog_04.json",
 		"DataType": 2
+	  },
+	  {
+		"Title": "They are my treasures",
+		"URL": "Dialogs/NHSEasyJapanese/Dialog_05.json",
+		"DataType": 2
+	  },
+	  {
+		"Title": "What is your number",
+		"URL": "Dialogs/NHSEasyJapanese/Dialog_06.json",
+		"DataType": 2
+	  },
+	  {
+		"Title": "Are there cream puffs?",
+		"URL": "Dialogs/NHSEasyJapanese/Dialog_07.json",
+		"DataType": 2
+	  },
+	  {
+		"Title": "Once more, please",
+		"URL": "Dialogs/NHSEasyJapanese/Dialog_08.json",
+		"DataType": 2
+	  },
+	  {
+		"Title": "From What time?",
+		"URL": "Dialogs/NHSEasyJapanese/Dialog_09.json",
+		"DataType": 2
+	  },
+	  {
+		"Title": "Is everyone here?",
+		"URL": "Dialogs/NHSEasyJapanese/Dialog_10.json",
+		"DataType": 2
+	  },
+	  {
+		"Title": "Please come, by all means.",
+		"URL": "Dialogs/NHSEasyJapanese/Dialog_11.json",
+		"DataType": 2
+	  },
+	  {
+		"Title": "When did you come to Japan?",
+		"URL": "Dialogs/NHSEasyJapanese/Dialog_12.json",
+		"DataType": 2
+	  },
+	  {
+		"Title": "I like novels",
+		"URL": "Dialogs/NHSEasyJapanese/Dialog_13.json",
+		"DataType": 2
+	  },
+	  {
+		"Title": "May I throw away waste here?",
+		"URL": "Dialogs/NHSEasyJapanese/Dialog_14.json",
+		"DataType": 2
+	  },
+	  {
+		"Title": "They are sleeping",
+		"URL": "Dialogs/NHSEasyJapanese/Dialog_15.json",
+		"DataType": 2
+	  },
+	  {
+		"Title": "Please go up the stairs, and go to the right",
+		"URL": "Dialogs/NHSEasyJapanese/Dialog_16.json",
+		"DataType": 2
+	  },
+	  {
+		"Title": "What is your recommendation?",
+		"URL": "Dialogs/NHSEasyJapanese/Dialog_17.json",
+		"DataType": 2
+	  },
+	  {
+		"Title": "I'm lost",
+		"URL": "Dialogs/NHSEasyJapanese/Dialog_18.json",
+		"DataType": 2
 	  }
 	]      
 }

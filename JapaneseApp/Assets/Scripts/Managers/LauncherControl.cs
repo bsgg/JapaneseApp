@@ -15,8 +15,9 @@ namespace JapaneseApp
         public string Data;
         public LauncherControl.EDATATYPE DataType;
     }
+    
 
-    [Serializable]
+    [Serializable] 
     public class FileData
     {
         public List<IndexFile> Data;
@@ -218,13 +219,17 @@ namespace JapaneseApp
 
                 yield return new WaitForEndOfFrame();
 
-                
-                AudioClip audio = AudioClip.Create(fileName, bytes.Length, 1, 44100, false);
-              
+                if (bytes.Length > 0)
+                {
+                    AudioClip audio = AudioClip.Create(fileName, bytes.Length, 1, 44100, false);
+                    yield return new WaitForEndOfFrame();
 
-                yield return new WaitForEndOfFrame();
-
-                callbackRequest(audio);
+                    callbackRequest(audio);
+                }else
+                {
+                    Debug.Log("<color=blue>" + "[FileRequestManager.RequestMedia] Unable to load audio :" + localPath + " the lenght is 0</color>");
+                    callbackRequest(null);
+                }
 
             }
             else

@@ -154,7 +154,7 @@ namespace JapaneseApp
             m_DialogUI.Hide();
 
 
-            m_DialogSet = new List<DialogSet>();
+            m_DialogSet = new List<DialogSet>(); 
 
             m_AudioClipList = new List<AudioClip>();
             m_DialogData = new List<DialogObject>();
@@ -181,9 +181,6 @@ namespace JapaneseApp
                     {
                         Debug.LogError("[DialogControl.Initialize] Exception at: " + AppController.Instance.Launcher.DialogIndexData.Data[i].Title + " Data: " + json + " " + e.ToString());
                     }
-
-                    
-
                 }
                 else
                 {

@@ -1,0 +1,60 @@
+{
+  "Title": "I'm lost",
+  "Audio": "NHSEasyJapanese_18",
+
+  "Kanji": [
+    "アンナ: もしもし、さくら　さん　助けて　ください。　道　に　迷って　しまいました。",
+    "さくら: 今、　どこ？",
+    "アンナ: 目　の　前　に　郵便局　が　あります",
+    "さくら:　分かった　そこ　に　いて"
+  ],
+
+  "Kana": [
+    "アンナ: もしもし、さくら　さん　たすけて　ください。　みち　に　まよって　しまいました。",
+    "さくら: いま、　どこ？",
+    "アンナ: め　の　まえ　に　ゆうびんきょく　が　あります",
+    "さくら:　わかった　そこ　に　いて"
+  ],
+
+  "Romaji": [
+
+    "Anna: Moshimoshi, Sakura-san tasukete kudasai.　Michi ni mayotte shimaimashita.",
+    "Sakura: Ima, doko?",
+    "Anna: Me no mae ni yuubinkyoku ga arimasu.",
+    "Sakura: Wakatta, soko ni ite."
+  ],
+
+  "English": [
+
+    "Anna: Hello, Sakura San, Please help me. I'm lost.",
+    "Sakura: Where are you now?",
+    "Anna: There is a post office, right in front of me.",
+    "Sakura: I see, Stay there."
+  ],
+
+  "Vocabulary": [
+    " - もしもし(Moshimoshi) = Hello on the phone.",
+    " - たすけて (Tasukete) = Help => Te form of たすけます (Tasukemasu)",
+    " - 道 (みち - Michi) = Way",
+    " - まよって (Mayotte) = Te form of まよいます(Mayoimasu), to become lost.",
+    " - 今 (いま - Ima) = Now",
+    " - どこ (Doko) = Where",
+    " - 目 (め - Me) = Eyes",
+    " - 前 (まえ - Mae) = Front",
+    " - 目の前 (めのまえ - Me no mae) = Right in front",
+    " - 郵便局 (ゆうびんきょく - yuubinkyoku) = Post office",
+    " - いて (Ite) = To stay"
+  ],
+
+  "Description": [
+    "- Te form verb + しまいました　(Shimaimashita)",
+    "If you say しまいました　(Shimaimashita) after the Te from of verbs, you indicates that you ended or completed an action.",
+    "You can no longer redo that action.",
+    "You often use しまいました　(Shimaimashita) when you have failed in doing something or showing regred for what you've done.",
+    "",
+    "For example you've broken a dish. To break わります (Warimasu)",
+    "- Te form of わります is わって (Watte)",
+    "- Add しまいました　(Shimaimashita)",
+    " わって しまいました (Watte Shimaimashita) = I have broken a dish (You can't break that dish again)"
+  ]
+}
