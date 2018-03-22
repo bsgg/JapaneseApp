@@ -96,6 +96,68 @@
 		"Category": "NHS Easy Japanese",
 		"URL": "Dialogs/NHSEasyJapanese/Dialog_18.json",
 		"DataType": 2
+	  },
+	  
+	  
+	  {
+		"Title": "In the office",
+		"Category": "Nihongo Dojo",
+		"URL": "Dialogs/NihongoDojo/Dialog_01.json",
+		"DataType": 2
+	  },
+	  {
+		"Title": "What can I eat?",
+		"Category": "Nihongo Dojo",
+		"URL": "Dialogs/NihongoDojo/Dialog_02.json",
+		"DataType": 2
+	  },
+	  {
+		"Title": "Are You Prepared if You Catch a Cold in Japan?!",
+		"Category": "Nihongo Dojo",
+		"URL": "Dialogs/NihongoDojo/Dialog_03.json",
+		"DataType": 2
+	  },
+	  {
+		"Title": "In Japan, It's all in the numbers.",
+		"Category": "Nihongo Dojo",
+		"URL": "Dialogs/NihongoDojo/Dialog_05.json",
+		"DataType": 2
+	  },
+	  {
+		"Title": "Money makes the World go round.",
+		"Category": "Nihongo Dojo",
+		"URL": "Dialogs/NihongoDojo/Dialog_06.json",
+		"DataType": 2
+	  },
+	  {
+		"Title": "How much did you say that costs?",
+		"Category": "Nihongo Dojo",
+		"URL": "Dialogs/NihongoDojo/Dialog_07.json",
+		"DataType": 2
+	  },
+	  {
+		"Title": "Are You in Control of Your Possessions in Japan?",
+		"Category": "Nihongo Dojo",
+		"URL": "Dialogs/NihongoDojo/Dialog_08.json",
+		"DataType": 2
+	  },
+	  {
+		"Title": "Whose Umbrella is that?!",
+		"Category": "Nihongo Dojo",
+		"URL": "Dialogs/NihongoDojo/Dialog_09.json",
+		"DataType": 2
+	  },
+	  {
+		"Title": "The Fortunes of Rain in Japan",
+		"Category": "Nihongo Dojo",
+		"URL": "Dialogs/NihongoDojo/Dialog_10.json",
+		"DataType": 2
+	  },
+	  {
+		"Title": "The hottest way to break the Ice in Japan",
+		"Category": "Nihongo Dojo",
+		"URL": "Dialogs/NihongoDojo/Dialog_11.json",
+		"DataType": 2
 	  }
 	]      
 }
