@@ -3,81 +3,97 @@
 	[
 	  {
 		"Title": "Where is the toilet?",
+		"Category": "NHS Easy Japanese",
 		"URL": "Dialogs/NHSEasyJapanese/Dialog_03.json",
 		"DataType": 2
 	  },
 	  {
 		"Title": "I'm Home",
+		"Category": "NHS Easy Japanese",
 		"URL": "Dialogs/NHSEasyJapanese/Dialog_04.json",
 		"DataType": 2
 	  },
 	  {
 		"Title": "They are my treasures",
+		"Category": "NHS Easy Japanese",
 		"URL": "Dialogs/NHSEasyJapanese/Dialog_05.json",
 		"DataType": 2
 	  },
 	  {
 		"Title": "What is your number",
+		"Category": "NHS Easy Japanese",
 		"URL": "Dialogs/NHSEasyJapanese/Dialog_06.json",
 		"DataType": 2
 	  },
 	  {
 		"Title": "Are there cream puffs?",
+		"Category": "NHS Easy Japanese",
 		"URL": "Dialogs/NHSEasyJapanese/Dialog_07.json",
 		"DataType": 2
 	  },
 	  {
 		"Title": "Once more, please",
+		"Category": "NHS Easy Japanese",
 		"URL": "Dialogs/NHSEasyJapanese/Dialog_08.json",
 		"DataType": 2
 	  },
 	  {
 		"Title": "From What time?",
+		"Category": "NHS Easy Japanese",
 		"URL": "Dialogs/NHSEasyJapanese/Dialog_09.json",
 		"DataType": 2
 	  },
 	  {
 		"Title": "Is everyone here?",
+		"Category": "NHS Easy Japanese",
 		"URL": "Dialogs/NHSEasyJapanese/Dialog_10.json",
 		"DataType": 2
 	  },
 	  {
 		"Title": "Please come, by all means.",
+		"Category": "NHS Easy Japanese",
 		"URL": "Dialogs/NHSEasyJapanese/Dialog_11.json",
 		"DataType": 2
 	  },
 	  {
 		"Title": "When did you come to Japan?",
+		"Category": "NHS Easy Japanese",
 		"URL": "Dialogs/NHSEasyJapanese/Dialog_12.json",
 		"DataType": 2
 	  },
 	  {
 		"Title": "I like novels",
+		"Category": "NHS Easy Japanese",
 		"URL": "Dialogs/NHSEasyJapanese/Dialog_13.json",
 		"DataType": 2
 	  },
 	  {
 		"Title": "May I throw away waste here?",
+		"Category": "NHS Easy Japanese",
 		"URL": "Dialogs/NHSEasyJapanese/Dialog_14.json",
 		"DataType": 2
 	  },
 	  {
 		"Title": "They are sleeping",
+		"Category": "NHS Easy Japanese",
 		"URL": "Dialogs/NHSEasyJapanese/Dialog_15.json",
 		"DataType": 2
 	  },
 	  {
 		"Title": "Please go up the stairs, and go to the right",
+		"Category": "NHS Easy Japanese",
 		"URL": "Dialogs/NHSEasyJapanese/Dialog_16.json",
 		"DataType": 2
 	  },
 	  {
 		"Title": "What is your recommendation?",
+		"Category": "NHS Easy Japanese",
 		"URL": "Dialogs/NHSEasyJapanese/Dialog_17.json",
 		"DataType": 2
 	  },
 	  {
 		"Title": "I'm lost",
+		"Category": "NHS Easy Japanese",
 		"URL": "Dialogs/NHSEasyJapanese/Dialog_18.json",
 		"DataType": 2
 	  }

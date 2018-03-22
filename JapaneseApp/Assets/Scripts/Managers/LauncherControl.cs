@@ -11,9 +11,10 @@ namespace JapaneseApp
     public class IndexFile
     {
         public string Title;
+        public string Category;
         public string URL;
         public string Data;
-        public LauncherControl.EDATATYPE DataType;
+        public LauncherControl.EDATATYPE DataType;       
     }
     
 

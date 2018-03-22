@@ -88,11 +88,20 @@ namespace JapaneseApp
     [Serializable]
     public class DialogSet
     {
-        public string Title;
+        //public string Title;
 
-        public DialogControl.ECategory Category;
+        public string Category;
+
+        //public DialogControl.ECategory Category;
 
         public List<DialogObject> DialogDictionary;
+
+        public DialogSet(string category)
+        {
+            //Title = title;
+            Category = category;
+            DialogDictionary = new List<DialogObject>();
+        }
 
         //public List<Dialog> ListDialogData;
 
@@ -103,24 +112,24 @@ namespace JapaneseApp
             DialogDictionary = new List<DialogObject>();
         }*/
 
-       /* public AudioClip GetAudio(string name)
-        {
-            for (int i = 0; i < DialogDictionary.Count; i++)
-            {
-                if (AudioClips[i].name.Equals(name))
-                {
-                    return AudioClips[i];
-                }
-            }
+        /* public AudioClip GetAudio(string name)
+         {
+             for (int i = 0; i < DialogDictionary.Count; i++)
+             {
+                 if (AudioClips[i].name.Equals(name))
+                 {
+                     return AudioClips[i];
+                 }
+             }
 
-            return null;
-        }
+             return null;
+         }
 
-        public AudioClip GetAudio(int id)
-        {
-            if ((id < 0) || (id >= AudioClips.Count)) return null;
-            return AudioClips[id];
-        }*/
+         public AudioClip GetAudio(int id)
+         {
+             if ((id < 0) || (id >= AudioClips.Count)) return null;
+             return AudioClips[id];
+         }*/
     }
 
     public class DialogControl : Base
@@ -145,6 +154,7 @@ namespace JapaneseApp
         [SerializeField] private DialogUI m_DialogUI;
 
         [SerializeField] private List<DialogObject> m_DialogData;
+
         [SerializeField] private List<AudioClip> m_AudioClipList;
 
         public override IEnumerator Initialize()
@@ -154,15 +164,30 @@ namespace JapaneseApp
             m_DialogUI.Hide();
 
 
-            m_DialogSet = new List<DialogSet>(); 
 
-            m_AudioClipList = new List<AudioClip>();
-            m_DialogData = new List<DialogObject>();
+
+            /*for (int i=0;i< (int)ECategory.NUM; i++)
+            {
+                ECategory c = (ECategory)i;
+                DialogSet ds = new DialogSet(c.ToString(), c);
+
+                m_DialogSet.Add(ds);
+            }*/
+
+
+
+            //m_AudioClipList = new List<AudioClip>();
+            //m_DialogData = new List<DialogObject>();
+
+            m_DialogSet = new List<DialogSet>();
+
 
             for (int i = 0; i < AppController.Instance.Launcher.DialogIndexData.Data.Count; i++)
             {
-               
-                string json = AppController.Instance.Launcher.DialogIndexData.Data[i].Data;
+                IndexFile index = AppController.Instance.Launcher.DialogIndexData.Data[i];
+
+                
+                string json = index.Data;
                 if (!string.IsNullOrEmpty(json))
                 {
                     try
@@ -172,9 +197,33 @@ namespace JapaneseApp
                         obj.Data = JsonMapper.ToObject<Dialog>(json);
                         obj.Name = obj.Data.Title;
 
-                        Debug.Log("<color=blue>" + "[DialogControl.Initialize] Converted: " + obj.Data.Title + "</color>");
 
-                        m_DialogData.Add(obj);                        
+
+                        Debug.Log("<color=blue>" + "[DialogControl.Initialize] index.Category: " + index.Category + " Converted: " + obj.Data.Title + "</color>");
+
+                        // Check categories
+                        bool addNewCategory = true;
+                        for (int j=0; j< m_DialogSet.Count; j++)
+                        {
+                            string category = m_DialogSet[j].Category;
+                            // Same category add to this element
+                            if (category == index.Category)
+                            {
+                                addNewCategory = false;
+                                m_DialogSet[j].DialogDictionary.Add(obj);
+                                break;
+                            }
+                        }
+
+                        if (addNewCategory)
+                        {
+                            DialogSet set = new DialogSet(index.Category);
+                            set.DialogDictionary.Add(obj);
+                            m_DialogSet.Add(set);                            
+                        }                       
+
+
+                        //m_DialogData.Add(obj);                        
 
                     }
                     catch (Exception e)
@@ -187,8 +236,33 @@ namespace JapaneseApp
                     Debug.LogError("[DialogControl.Initialize] Unable to parse " + AppController.Instance.Launcher.DialogIndexData.Data[i].URL + " Data is null or empty ");
                 }
             }
+            for (int i = 0; i < m_DialogSet.Count; i++)
+            {
+                for (int j = 0; j< m_DialogSet[i].DialogDictionary.Count; j++)
+                {
+                    string audio = m_DialogSet[i].DialogDictionary[j].Data.Audio;
 
-            for (int i=0; i<m_DialogData.Count; i++)
+                    AudioClip clip = null;
+                    yield return AppController.Instance.Launcher.LoadAudio("Audio", audio, ".mp3", (result) => clip = result);
+
+                    if (clip != null)
+                    {
+                        Debug.Log("<color=blue>" + "[DialogControl.Initialize] Clipe loaded : " + clip.length + " " + clip.name + "</color>");
+                        m_DialogSet[i].DialogDictionary[j].Audio = clip;
+
+                    }
+                    else
+                    {
+                        Debug.Log("<color=blue>" + "[DialogControl.Initialize] Clip NULL : " + audio + "</color>");
+                    }
+
+                }
+            }
+
+
+
+
+            /*for (int i=0; i<m_DialogData.Count; i++)
             {
                 string audio = m_DialogData[i].Data.Audio;
 
@@ -207,7 +281,7 @@ namespace JapaneseApp
                     Debug.Log("<color=blue>" + "[DialogControl.Initialize] Clip NULL : " + audio + "</color>");
                 }
 
-            }
+            }*/
            // yield break;
 
             // Load the data
@@ -327,7 +401,7 @@ namespace JapaneseApp
 
             for (int i = 0; i < m_DialogSet.Count; i++)
             {
-                categories.Add(m_DialogSet[i].Title);
+                categories.Add(m_DialogSet[i].Category);
             }
 
             m_CategoriesUI.ScrollMenu.InitScroll(categories);
