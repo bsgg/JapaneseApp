@@ -107,19 +107,25 @@ namespace JapaneseApp
             // Hide all
             yield return m_Launcher.Initialize();
 
-            m_Launcher.UpdateProgress("Completed m_Launcher", 1.0f);
+            //m_Launcher.UpdateProgress("Data downloads completed!", 1.0f);
 
-           // yield return m_Vocabulary.Initialize();
+            yield return m_Vocabulary.Initialize();
 
             //m_Launcher.UpdateProgress("Completed Vocabulary", 1.0f);
 
             yield return m_Dialog.Initialize();
 
-            m_Launcher.UpdateProgress("Completed m_Dialog", 1.0f);
+            m_Launcher.UpdateProgress("All downloads Completed!", 1.0f);
 
             yield return new WaitForSeconds(0.5f);
 
-            m_Launcher.Hide();
+            /*m_Launcher.UI.ActiveButtons(true);
+
+            m_TopBar.Title = "JPWorld";
+            m_TopBar.CloseBtn.SetActive(false);
+            m_CurrentControl = m_Launcher;*/
+
+            //m_Launcher.Hide();
 
             ShowMainMenu();
 
@@ -129,8 +135,10 @@ namespace JapaneseApp
         {
             m_TopBar.Title = "JPWorld";
             m_TopBar.CloseBtn.SetActive(false);
-            m_MainMenu.Show();
-            m_CurrentControl = m_MainMenu;
+            m_Launcher.UI.ActiveButtons(true);
+            //m_MainMenu.Show();
+            m_Launcher.Show();
+            m_CurrentControl = m_Launcher;
         }
         
         private void Update()
@@ -159,6 +167,7 @@ namespace JapaneseApp
         {
             m_TopBar.Title = "Vocabulary";
             m_TopBar.CloseBtn.SetActive(true);
+            m_Launcher.Hide();
             m_MainMenu.Hide();
             m_CurrentControl = m_Vocabulary;
             m_Vocabulary.SelectMenu(VocabularyControl.EMenu.Category);
@@ -169,6 +178,7 @@ namespace JapaneseApp
         {
             m_TopBar.Title = "Vocabulary";
             m_TopBar.CloseBtn.SetActive(true);
+            m_Launcher.Hide();
             m_MainMenu.Hide();
             m_CurrentControl = m_Vocabulary;
 
@@ -179,6 +189,7 @@ namespace JapaneseApp
         {
             m_TopBar.Title = "Vocabulary";
             m_TopBar.CloseBtn.SetActive(true);
+            m_Launcher.Hide();
             m_MainMenu.Hide();
             m_CurrentControl = m_Vocabulary;
             m_Vocabulary.SelectMenu(VocabularyControl.EMenu.RandomWord);
@@ -188,6 +199,7 @@ namespace JapaneseApp
         {
             m_TopBar.Title = "Grammar";
             m_TopBar.CloseBtn.SetActive(true);
+            m_Launcher.Hide();
             m_MainMenu.Hide();
             m_CurrentControl = m_Grammar;
             m_Grammar.ShowCategories();
@@ -197,6 +209,7 @@ namespace JapaneseApp
         {
             m_TopBar.Title = "Hiragana";
             m_TopBar.CloseBtn.SetActive(true);
+            m_Launcher.Hide();
             m_MainMenu.Hide();
             m_CurrentControl = m_Hiragana;
             m_Hiragana.Show();
@@ -206,6 +219,7 @@ namespace JapaneseApp
         {
             m_TopBar.Title = "Katakana";
             m_TopBar.CloseBtn.SetActive(true);
+            m_Launcher.Hide();
             m_MainMenu.Hide();
             m_CurrentControl = m_Katakana;
             m_Katakana.Show();
@@ -215,6 +229,7 @@ namespace JapaneseApp
         {
             m_TopBar.Title = "Dialogs";
             m_TopBar.CloseBtn.SetActive(true);
+            m_Launcher.Hide();
             m_MainMenu.Hide();
             m_CurrentControl = m_Dialog;
             m_Dialog.Show();

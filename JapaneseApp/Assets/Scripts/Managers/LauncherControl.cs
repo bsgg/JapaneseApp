@@ -33,7 +33,14 @@ namespace JapaneseApp
 
         [SerializeField]
         private LauncherUI m_UI;
-        
+        public LauncherUI UI
+        {
+            get
+            {
+                return m_UI;
+            }
+        }
+
 
         [SerializeField]
         private string m_ServerUrl = "http://beatrizcv.com/Data/Japanese";
@@ -88,16 +95,18 @@ namespace JapaneseApp
         public void UpdateProgress(string text, float value)
         {
             m_UI.ContentText = text;
-            m_UI.Progress = value;
+            m_UI.ProgressValue = value;
         }
 
         public override IEnumerator Initialize()
         {
-            m_UI.Progress = 0.0f;
+            m_UI.ProgressValue = 0.0f;
             m_UI.Show();
 
+            m_UI.ActiveButtons(false);
+
             m_VocabularyIndexData = new FileData();
-            m_UI.ContentText = "Connecting to the server to download the files...";
+            m_UI.ContentText = "Connecting to the server to download the data...";
 
             if (string.IsNullOrEmpty(m_ServerUrl))
             {
@@ -115,8 +124,8 @@ namespace JapaneseApp
                 (result) => m_DialogIndexData = result); // Store the result in a lambda expresion
 
 
-            m_UI.Progress = m_FileIndexTotalPercent / 100.0f;
-            m_UI.ContentText = " All files downloaded ";
+            m_UI.ProgressValue = m_FileIndexTotalPercent / 100.0f;
+            //m_UI.ContentText = " Completed! ";
 
         }
 
@@ -161,14 +170,14 @@ namespace JapaneseApp
                        
 
             float percent = 0.0f;
-            m_UI.Progress = percent;
+            m_UI.ProgressValue = percent;
 
             float amount = m_FileIndexTotalPercent / tempFileData.Data.Count;
             //m_UI.ContentText = "Loading: " + percent + "%";
 
             for (int i = 0; i < tempFileData.Data.Count; i++)
             {
-                m_UI.ContentText = "Loading " + tempFileData.Data[i].Title + " File";
+                m_UI.ContentText = "Downloading File " + (i+1) + "/" + (tempFileData.Data.Count) + ": " + tempFileData.Data[i].Title;
 
                 string urlFile = Path.Combine(m_ServerUrl, tempFileData.Data[i].URL);
 
@@ -186,7 +195,7 @@ namespace JapaneseApp
                 tempFileData.Data[i].Data = www.text;
 
                 percent += amount;
-                m_UI.Progress = percent/100.0f;
+                m_UI.ProgressValue = percent/100.0f;
 
                 //m_UI.ContentText = "Loading: " + percent + "%";
             }
@@ -207,7 +216,7 @@ namespace JapaneseApp
             string fileNameExt = fileName + ext;
             string localPath = Path.Combine(localDirectory, fileNameExt);
 
-            m_UI.ContentText = "Loading " + fileName + " File";
+            m_UI.ContentText = "Downloading Audio File: " + fileName;
 
             Debug.Log("<color=blue>" + "[FileRequestManager.RequestMedia] Local path :" + localPath + "</color>");
 

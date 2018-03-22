@@ -17,11 +17,19 @@ namespace JapaneseApp
             get { return m_AcceptButton; }
         }
 
-        [SerializeField] private Image m_Progress;
-        public float Progress
+        
+
+        [SerializeField] private GameObject m_ProgressBar;
+        public GameObject ProgressBar
         {
-            set { m_Progress.fillAmount = value; }
-            get { return m_Progress.fillAmount; }
+            get { return m_ProgressBar; }
+        }
+
+        [SerializeField] private Image m_ProgressValue;
+        public float ProgressValue
+        {
+            set { m_ProgressValue.fillAmount = value; }
+            get { return m_ProgressValue.fillAmount; }
         }
 
         [SerializeField]
@@ -30,6 +38,15 @@ namespace JapaneseApp
         {
             set { m_ContentText.text = value; }
             get { return m_ContentText.text; }
+        }
+
+        [SerializeField] private Button[] m_MenuButtons;
+        public void ActiveButtons(bool active)
+        {
+            for (int i=0; i < m_MenuButtons.Length; i++)
+            {
+                m_MenuButtons[i].interactable = active;
+            }
         }
 
     }
