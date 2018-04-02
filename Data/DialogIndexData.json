@@ -158,6 +158,12 @@
 		"Category": "Nihongo Dojo",
 		"URL": "Dialogs/NihongoDojo/Dialog_11.json",
 		"DataType": 2
+	  },
+	  {
+		"Title": "Where Can You Go in Japan That Leaves You Feeling More Beautiful Inside AND Out?",
+		"Category": "Nihongo Dojo",
+		"URL": "Dialogs/NihongoDojo/Dialog_12.json",
+		"DataType": 2
 	  }
 	]      
 }
